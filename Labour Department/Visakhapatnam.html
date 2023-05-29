@@ -1,0 +1,2726 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Mirrored from around.createx.studio/index.html by HTTrack Website Copier/3.x [XR&CO'2017], Thu, 04 May 2023 10:10:51 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>Around | Multipurpose Bootstrap Template</title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="Around - Multipurpose Bootstrap HTML Template">
+    <meta name="keywords" content="bootstrap, business, corporate, coworking space, services, creative agency, dashboard, e-commerce, mobile app showcase, saas, multipurpose, product landing, shop, software, ui kit, web studio, landing, dark mode, html5, css3, javascript, gallery, slider, touch, creative">
+    <meta name="author" content="Createx Studio">
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon and Touch Icons-->
+ <link rel="apple-touch-icon" sizes="180x180" href="assets/img/Logo-ap.png">
+ <link rel="icon" type="image/png" sizes="32x32" href="assets/img/Logo-ap.png">
+ <link rel="icon" type="image/png" sizes="16x16" href="assets/img/Logo-ap.png">    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" color="#6366f1" href="assets/favicon/safari-pinned-tab.svg">
+    <meta name="msapplication-TileColor" content="#080032">
+    <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="theme-color" content="white">
+    <!-- Theme mode-->
+    <script>
+      let mode = window.localStorage.getItem('mode'),
+          root = document.getElementsByTagName('html')[0];
+      if (mode !== undefined && mode === 'dark') {
+        root.classList.add('dark-mode');
+      } else {
+        root.classList.remove('dark-mode');
+      }
+      
+      
+    </script>
+    <!-- Scroll down animated button-->
+    <style>
+
+
+      .scroll-down-btn {
+        display: inline-block;
+        text-decoration: none;
+      }
+      .scroll-down-btn p {
+        margin-top: 1.25rem;
+        color: white;
+        font-size: .875rem;
+        font-weight: 500;
+        letter-spacing: .375rem;
+        text-indent: .375rem;
+        animation: colorText 5s ease-out infinite, nudgeText 5s ease-out infinite;
+      }
+      .mouse {
+        background: #2c333e linear-gradient(transparent 0%, transparent 50%, white 50%, white 100%);
+        position: relative;
+        width: 38px;
+        height: 65px;
+        margin: 0 auto;
+        border-radius: 6rem;
+        background-size: 100% 200%;
+        animation: colorSlide 5s linear infinite, nudgeMouse 5s ease-out infinite;
+      }
+      .mouse:before, .mouse:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+      }
+      .mouse:before {
+        width: 34px;
+        height: 61px;
+        background-color: #121519;
+        border-radius: 6rem;
+      }
+      .mouse:after {
+        background-color: white;
+        width: .375rem;
+        height: .375rem;
+        border-radius: 100%;
+        animation: trackBallSlide 5s linear infinite;
+      }
+      @keyframes colorSlide {
+        0% { background-position: 0% 100%; }
+        20% { background-position: 0% 0%; }
+        21% { background-color: #2c333e; }
+        29.99% {
+          background-color: white;
+          background-position: 0% 0%;
+        }
+        30% {
+          background-color: #2c333e;
+          background-position: 0% 100%;
+        }
+        50% { background-position: 0% 0%; }
+        51% { background-color: #2c333e; }
+        59% {
+          background-color: white;
+          background-position: 0% 0%;
+        }
+        60% {
+          background-color: #2c333e;
+          background-position: 0% 100%;
+        }
+        80% { background-position: 0% 0%; }
+        81% { background-color: #2c333e; }
+        90%, 100% {
+          background-color: white;
+        }
+      }
+      @keyframes trackBallSlide {
+        0% {
+          opacity: 1;
+          transform: scale(1) translateY(-20px);
+        }
+        6% {
+          opacity: 1;
+          transform: scale(0.9) translateY(5px);
+        }
+        14% {
+          opacity: 0;
+          transform: scale(0.4) translateY(40px);
+        }
+        15%, 19% {
+          opacity: 0;
+          transform: scale(0.4) translateY(-20px);
+        }
+        28%, 29.99% {
+          opacity: 1;
+          transform: scale(1) translateY(-20px);
+        }
+        30% {
+          opacity: 1;
+          transform: scale(1) translateY(-20px);
+        }
+        36% {
+          opacity: 1;
+          transform: scale(0.9) translateY(5px);
+        }
+        44% {
+          opacity: 0;
+          transform: scale(0.4) translateY(40px);
+        }
+        45%, 49% {
+          opacity: 0;
+          transform: scale(0.4) translateY(-20px);
+        }
+        58%, 59.99% {
+          opacity: 1;
+          transform: scale(1) translateY(-20px);
+        }
+        60% {
+          opacity: 1;
+          transform: scale(1) translateY(-20px);
+        }
+        66% {
+          opacity: 1;
+          transform: scale(0.9) translateY(5px);
+        }
+        74% {
+          opacity: 0;
+          transform: scale(0.4) translateY(40px);
+        }
+        75%, 79% {
+          opacity: 0;
+          transform: scale(0.4) translateY(-20px);
+        }
+        88%, 100% {
+          opacity: 1;
+          transform: scale(1) translateY(-20px);
+        }
+      }
+      @keyframes nudgeMouse {
+        0%, 30%, 60%, 90% { transform: translateY(0); }
+        20%, 50%, 80% { transform: translateY(8px); }
+      }
+      @keyframes nudgeText {
+        0%, 30%, 60%, 90% { transform: translateY(0); }
+        20%, 50%, 80% { transform: translateY(2px); }
+      }
+      @keyframes colorText {
+        21%, 51%, 81% { color: #2c333e; }
+        30%, 60%, 90% { color: white; }
+      }
+      
+    </style>
+    <!-- Page loading styles-->
+    <style>
+      .page-loading {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all .4s .2s ease-in-out;
+        transition: all .4s .2s ease-in-out;
+        background-color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 9999;
+      }
+      .dark-mode .page-loading {
+        background-color: #121519;
+      }
+      .page-loading.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .page-loading-inner {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: opacity .2s ease-in-out;
+        transition: opacity .2s ease-in-out;
+        opacity: 0;
+      }
+      .page-loading.active > .page-loading-inner {
+        opacity: 1;
+      }
+      .page-loading-inner > span {
+        display: block;
+        font-family: 'Inter', sans-serif;
+        font-size: 1rem;
+        font-weight: normal;
+        color: #6f788b;
+      }
+      .dark-mode .page-loading-inner > span {
+        color: #fff;
+        opacity: .6;
+      }
+      .page-spinner {
+        display: inline-block;
+        width: 2.75rem;
+        height: 2.75rem;
+        margin-bottom: .75rem;
+        vertical-align: text-bottom;
+        background-color: #d7dde2; 
+        border-radius: 50%;
+        opacity: 0;
+        -webkit-animation: spinner .75s linear infinite;
+        animation: spinner .75s linear infinite;
+      }
+      .dark-mode .page-spinner {
+        background-color: rgba(255,255,255,.25);
+      }
+      @-webkit-keyframes spinner {
+        0% {
+          -webkit-transform: scale(0);
+          transform: scale(0);
+        }
+        50% {
+          opacity: 1;
+          -webkit-transform: none;
+          transform: none;
+        }
+      }
+      @keyframes spinner {
+        0% {
+          -webkit-transform: scale(0);
+          transform: scale(0);
+        }
+        50% {
+          opacity: 1;
+          -webkit-transform: none;
+          transform: none;
+        }
+      }
+
+     
+      
+    </style>
+    <!-- Page loading scripts-->
+    <script>
+      (function () {
+        window.onload = function () {
+          const preloader = document.querySelector('.page-loading');
+          preloader.classList.remove('active');
+          setTimeout(function () {
+            preloader.remove();
+          }, 1500);
+        };
+      })();
+      
+    </script>
+    <!-- Import Google Font-->
+    <link rel="preconnect" href="../external.html?link=https://fonts.googleapis.com/">
+    <link rel="preconnect" href="../external.html?link=https://fonts.gstatic.com/" crossorigin>
+    <link href="../external.html?link=https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" id="google-font">
+    <!-- Vendor styles-->
+    <link rel="stylesheet" media="screen" href="assets/vendor/aos/dist/aos.css"/>
+    <link rel="stylesheet" media="screen" href="assets/vendor/img-comparison-slider/dist/styles.css"/>
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="assets/css/theme.min.css">
+    <link rel="stylesheet" media="screen" href="assets/vendor/swiper/swiper-bundle.min.css"/>
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="assets/css/theme.min.css">
+    <!-- Customizer generated styles-->
+    <style id="customizer-styles"></style>
+    <!-- Google Tag Manager-->
+    
+  </head>
+  <!-- Body-->
+  <body>
+    <!-- Google Tag Manager (noscript)-->
+   
+    <!-- Page loading spinner-->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div><span>Loading...</span>
+      </div>
+    </div>
+    <!-- Customizer modal-->
+    <div class="modal fade" id="customizer-modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Your custom styles</h4>
+            <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body py-4">
+            <p class="mb-3">Grab the generated styles below. Wrap them inside <code>&lt;style&gt;</code> tag and put in the <code>&lt;head&gt;</code> section of your HTML document.</p>
+            <p class="mb-4"><span class='fw-medium'>IMPORTANT:</span> In order for these styles to take effect you have to placed them below:<br><code>&lt;link rel=&quot;stylesheet&quot; media=&quot;screen&quot; href=&quot;assets/css/theme.min.css&quot;&gt;</code></p>
+            <div class="bg-secondary overflow-hidden rounded-4">
+              <pre class="text-wrap bg-transparent border-0 text-dark p-4" id="custom-generated-styles"></pre>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary w-100 w-sm-auto mb-3 mb-sm-0" type="button" data-bs-dismiss="modal">Close</button>
+            <button class="btn btn-primary w-100 w-sm-auto ms-sm-3" type="button" id="copy-styles-btn"><i class="ai-copy me-2 ms-n1"></i>Copy styles</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Customizer toggler-->
+    <!-- <a class="position-fixed top-50 bg-light text-dark fw-medium border rounded-pill shadow text-decoration-none" href="#customizer" data-bs-toggle="offcanvas" style="right: -1.75rem; margin-top: -1rem; padding: .25rem .75rem; transform: rotate(-90deg); font-size: calc(var(--ar-body-font-size) * .8125); letter-spacing: .075rem; z-index: 1030;"><i class="ai-settings text-primary fs-base me-1 ms-n1"></i>Customize</a>
+    <div class="offcanvas offcanvas-end" id="customizer" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1">
+      <div class="offcanvas-header border-bottom">
+        <h4 class="offcanvas-title">Customize theme</h4>
+        <button class="btn-close" type="button" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="d-flex align-items-center mb-3"><i class="ai-paint-roll text-muted fs-4 me-2"></i>
+          <h5 class="mb-0">Colors</h5>
+        </div>
+        <div class="row row-cols-3 g-3 mb-5" id="theme-colors">
+          <div class="col">
+            <div class="text-dark fs-sm fw-medium mb-2">Primary</div>
+            <div class="color-swatch" id="theme-primary" data-color-labels="[&quot;theme-primary&quot;, &quot;primary&quot;, &quot;primary-rgb&quot;]">
+              <label class="ratio ratio-4x3 border rounded-1 cursor-pointer mb-1" for="primary" style="background-color: #448c74;" role="button"></label>
+              <input class="form-control form-control-sm" type="text" value="#448c74">
+              <input class="visually-hidden" type="color" id="primary" value="#448c74">
+            </div>
+          </div>
+          <div class="col">
+            <div class="text-dark fs-sm fw-medium mb-2">Warning</div>
+            <div class="color-swatch" id="theme-warning" data-color-labels="[&quot;theme-warning&quot;, &quot;warning&quot;, &quot;warning-rgb&quot;]">
+              <label class="ratio ratio-4x3 border rounded-1 cursor-pointer mb-1" for="warning" style="background-color: #edcb50;" role="button"></label>
+              <input class="form-control form-control-sm" type="text" value="#edcb50">
+              <input class="visually-hidden" type="color" id="warning" value="#edcb50">
+            </div>
+          </div>
+          <div class="col">
+            <div class="text-dark fs-sm fw-medium mb-2">Info</div>
+            <div class="color-swatch" id="theme-info" data-color-labels="[&quot;theme-info&quot;, &quot;info&quot;, &quot;info-rgb&quot;]">
+              <label class="ratio ratio-4x3 border rounded-1 cursor-pointer mb-1" for="info" style="background-color: #3f7fca;" role="button"></label>
+              <input class="form-control form-control-sm" type="text" value="#3f7fca">
+              <input class="visually-hidden" type="color" id="info" value="#3f7fca">
+            </div>
+          </div>
+          <div class="col">
+            <div class="text-dark fs-sm fw-medium pt-1 mb-2">Success</div>
+            <div class="color-swatch" id="theme-success" data-color-labels="[&quot;theme-success&quot;, &quot;success&quot;, &quot;success-rgb&quot;]">
+              <label class="ratio ratio-4x3 border rounded-1 cursor-pointer mb-1" for="success" style="background-color: #3fca90;" role="button"></label>
+              <input class="form-control form-control-sm" type="text" value="#3fca90">
+              <input class="visually-hidden" type="color" id="success" value="#3fca90">
+            </div>
+          </div>
+          <div class="col">
+            <div class="text-dark fs-sm fw-medium pt-1 mb-2">Danger</div>
+            <div class="color-swatch" id="theme-danger" data-color-labels="[&quot;theme-danger&quot;, &quot;danger&quot;, &quot;danger-rgb&quot;]">
+              <label class="ratio ratio-4x3 border rounded-1 cursor-pointer mb-1" for="danger" style="background-color: #ed5050;" role="button"></label>
+              <input class="form-control form-control-sm" type="text" value="#ed5050">
+              <input class="visually-hidden" type="color" id="danger" value="#ed5050">
+            </div>
+          </div>
+        </div>
+        <div class="d-flex align-items-center mb-3"><i class="ai-align-left text-muted fs-4 me-2"></i>
+          <h5 class="mb-0">Typography <span class="text-muted fs-sm fw-normal">(1rem = 16px)</span></h5>
+        </div>
+        <div class="mb-5">
+          <div class="mb-3">
+            <label class="text-dark fs-sm fw-medium pt-1 mb-2" for="font-url">Google font URL</label>
+            <input class="form-control" type="url" value="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" id="font-url">
+          </div>
+          <div class="mb-3">
+            <label class="text-dark fs-sm fw-medium pt-1 mb-2" for="body-font-family">Font family</label>
+            <input class="form-control" type="text" value="'Inter', sans-serif" id="body-font-family">
+          </div>
+          <div class="row row-cols-2">
+            <div class="col mb-3">
+              <label class="d-flex w-100 text-dark fs-sm fw-medium pt-1 mb-2" for="root-font-size">Root font size, rem</label>
+              <select class="form-select" id="root-font-size">
+                <option value=".75rem">.75</option>
+                <option value=".875rem">.875</option>
+                <option value="1rem" selected>1</option>
+                <option value="1.05rem">1.05</option>
+                <option value="1.1rem">1.1</option>
+                <option value="1.15rem">1.15</option>
+                <option value="1.25rem">1.25</option>
+                <option value="1.375rem">1.375</option>
+              </select>
+            </div>
+            <div class="col mb-3">
+              <label class="d-flex w-100 text-dark fs-sm fw-medium pt-1 mb-2" for="body-font-size">Body font size, rem</label>
+              <select class="form-select" id="body-font-size">
+                <option value=".75rem">.75</option>
+                <option value=".875rem">.875</option>
+                <option value="1rem" selected>1</option>
+                <option value="1.15rem">1.15</option>
+                <option value="1.25rem">1.25</option>
+                <option value="1.375rem">1.375</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex align-items-center mt-n2 mb-3"><i class="ai-maximize text-muted fs-5 me-2"></i>
+          <h5 class="mb-0">Borders / Rounding</h5>
+        </div>
+        <div class="mb-3">
+          <label class="d-flex w-100 text-dark fs-sm fw-medium pt-1 mb-2" for="border-width">Border width, px</label>
+          <input class="form-control" type="number" min="0" step="1" value="1" id="border-width">
+        </div>
+        <div class="mb-3">
+          <label class="d-flex w-100 text-dark fs-sm fw-medium pt-1 mb-2" for="border-radius">Rounded base, rem</label>
+          <input class="form-control" type="number" min="0" step=".05" value="1" id="border-radius">
+        </div>
+        <div id="theme-border-radiuses">
+          <div class="mb-3">
+            <label class="d-flex w-100 text-dark fs-sm fw-medium pt-1 mb-2" for="border-radius-sm">
+              Rounded SM<span class='text-muted fw-normal ms-1'> = Rounded base multiplied by</span></label>
+            <input class="form-control" type="number" min="0" step=".05" value=".75" id="border-radius-sm">
+          </div>
+          <div class="mb-3">
+            <label class="d-flex w-100 text-dark fs-sm fw-medium pt-1 mb-2" for="border-radius-lg">
+              Rounded LG<span class='text-muted fw-normal ms-1'> = Rounded base multiplied by</span></label>
+            <input class="form-control" type="number" min="0" step=".05" value="1.125" id="border-radius-lg">
+          </div>
+          <div class="mb-3">
+            <label class="d-flex w-100 text-dark fs-sm fw-medium pt-1 mb-2" for="border-radius-xl">
+              Rounded XL<span class='text-muted fw-normal ms-1'> = Rounded base multiplied by</span></label>
+            <input class="form-control" type="number" min="0" step=".05" value="1.5" id="border-radius-xl">
+          </div>
+          <div class="mb-3">
+            <label class="d-flex w-100 text-dark fs-sm fw-medium pt-1 mb-2" for="border-radius-2xl">
+              Rounded 2XL<span class='text-muted fw-normal ms-1'> = Rounded base multiplied by</span></label>
+            <input class="form-control" type="number" min="0" step=".05" value="2.25" id="border-radius-2xl">
+          </div>
+        </div>
+      </div>
+      <div class="offcanvas-header border-top d-none" id="customizer-btns">
+        <button class="btn btn-secondary w-100 me-3" type="button" id="customizer-reset-btn"><i class="ai-undo fs-lg me-2 ms-n1"></i>Reset</button>
+        <button class="btn btn-primary w-100" type="button" data-bs-toggle="modal" data-bs-target="#customizer-modal"><i class="ai-code-curly fs-lg me-2 ms-n1"></i>Show styles</button>
+      </div>
+    </div> -->
+    <!-- Page wrapper-->
+    
+    <main class="page-wrapper">
+      <div class="dark-mode">
+       <!-- <div class="mini-nav">
+        <div class="container">
+          <div class="row">
+            <div class="mobiel">
+              <p class="mini-nav-envelope"><i class="fa fa-envelope" style="font-size:14px;color:white"></i>labourdepartment@gmail.com
+              </p>
+              <p class="mini-nav-envelope"><i class="fa fa-phone" style="font-size:14px;color:white"></i>
+              </i>0000000000
+              </p>
+            </div>
+           
+          </div>
+
+        </div>
+         
+      
+       </div> -->
+       <div class="container">
+        <div class="pt-1 pb-3">
+
+          <img class="float-start" src="/assets/img/Logo-ap.png" alt="" srcset="">
+          <img class="m-auto d-block pt-2" src="/assets/img/Logo-labour.png" alt="" srcset="">
+
+        </div>
+      </div>
+
+
+
+
+
+    </div>
+
+
+    <header class="navbar navbar-expand-lg labour-header">
+      <div class="container">
+
+        <button class="navbar-toggler ms-sm-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span
+            class="navbar-toggler-icon"></span></button>
+        <nav class="collapse navbar-collapse" id="navbarNav" style="font-size: 14px;">
+          <ul class="navbar-nav navbar-nav-scroll me-auto" style="--ar-scroll-height: 520px;">
+            <li class="nav-item dropdown">
+              <!-- <a href="index.html" aria-expanded="false"><img href="index.html
+                " src="/assets/img/home-icon.png" alt="" srcset=""></a> -->
+              <!-- <a href="/index.html" title="Home" class="home"><i style="font-size:26px;color:white" class="fa fa-home"> </i></a> -->
+              <a class="nav-link menu-space" href="/index.html"><img src="/assets/img/home-icon.png" alt=""
+                  srcset=""></a>
+
+            </li>
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle active menu-space"
+                data-bs-toggle="dropdown" aria-expanded="false">ABOUT US</a>
+              <!-- <ul class="dropdown-menu">
+                <li class="dropdown"><a class="dropdown-item"
+                    href="https://onlineap.meeseva.gov.in/CitizenPortal/UserInterface/Citizen/Home.aspx"
+                    data-bs-toggle="dropdown" aria-expanded="false">About Us</a>
+                </li>
+
+              </ul> -->
+              <ul class="dropdown-menu">
+                <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                    aria-expanded="false">Labour Department</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="labour-department-directory.html">Directory</a></li>
+                    <li><a class="dropdown-item" href="labour-department-schemes.html">Schemes</a></li>
+
+                  </ul>
+                </li>
+                <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                    aria-expanded="false">Welfare Board</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="welfare-board-directory.html">Directory</a></li>
+                    <li><a class="dropdown-item" href="welfare-board-schemes.html">Schemes</a></li>
+
+                  </ul>
+                </li>
+                <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                    aria-expanded="false">BOCWW Board</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="bocww-board-directory.html">Directory</a></li>
+                    <li><a class="dropdown-item" href="bocww-board-schemes.html">Schemes</a></li>
+
+                  </ul>
+                </li>
+              </ul>
+
+            </li>
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle active menu-space" href="#"
+                 aria-expanded="false">OTHER LINKS</a>
+
+              <ul class="dropdown-menu">
+                <li class="dropdown"><a class="dropdown-item" href="https://apbocwwb.ap.nic.in/" target="_blank"
+                     aria-expanded="false">BOCWWB</a>
+
+                </li>
+                <li class="dropdown"><a class="dropdown-item"
+                    href="http://aplabourwelfareboard.ap.gov.in/aplwb/index.jsp" target="_blank" 
+                    aria-expanded="false">Welfare Board</a>
+
+                </li>
+
+              </ul>
+
+            </li>
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle active menu-space" href="#"
+                 aria-expanded="false">REGISTRATIONS</a>
+
+              <ul class="dropdown-menu">
+                <li class="dropdown"><a class="dropdown-item"
+                    href="https://onlineap.meeseva.gov.in/CitizenPortal/UserInterface/Citizen/Home.aspx" target="_blank"
+                     aria-expanded="false"> Login for E-Registration/License/Renewal Under all
+                    Labour Laws</a>
+
+                </li>
+                <li class="dropdown"><a class="dropdown-item"
+                    href="https://onlineap.meeseva.gov.in/CitizenPortal/UserInterface/Citizen/Home.aspx" target="_blank"
+                     aria-expanded="false"> Combined Annual E-Return of Establishments Under
+                    All Labour Laws</a>
+
+                </li>
+                <li class="dropdown"><a class="dropdown-item"
+                    href="https://ap.meeseva.gov.in/DeptPortal/UserInterface/LoginForm.aspx" target="_blank" 
+                    aria-expanded="false"> Download Certificate</a>
+
+                </li>
+                <li class="dropdown"><a class="dropdown-item"
+                    href="https://ap.meeseva.gov.in/DeptPortal/UserInterface/LoginForm.aspx" target="_blank"
+                    aria-expanded="false"> Third party Verification of Registration/License</a>
+
+                </li>
+              </ul>
+
+            </li>
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle active menu-space" href="#"
+                 aria-expanded="false">POLICY & LEGISLATION</a>
+              <ul class="dropdown-menu">
+                <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#" 
+                    aria-expanded="false">Acts/Rules/Amendments</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="list-of-central-state.html">List of Central and State</a></li>
+                    <li><a class="dropdown-item" href="Extracts of Central and State.html"> Extracts of Central and
+                        State</a></li>
+                    <li><a class="dropdown-item" href="Recent Amendments & New Acts.html"> Recent Amendments & New
+                        Acts</a></li>
+                    <li><a class="dropdown-item" href="Amendments.html"> Amendments</a></li>
+                    <li><a class="dropdown-item" href="Enhancement of Wage Limit.html"> Enhancement of Wage Limit</a>
+                    </li>
+                    <li><a class="dropdown-item" href="Integrated Registration Act,2015.html"> Integrated Registration
+                        Act,2015</a></li>
+                    <li><a class="dropdown-item" href="Contract Labour Act,2015.html"> Contract Labour Act,2015</a></li>
+                    <li><a class="dropdown-item" href="ReOrganisation Act 2014.html"> ReOrganisation Act 2014</a></li>
+
+
+                  </ul>
+                </li>
+                <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#" 
+                    aria-expanded="false">Regulations/Procedures</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="Functional Areas.html"> Functional Areas</a></li>
+                    <li><a class="dropdown-item" href="inspection-procedure.html"> Inspection Procedure</a></li>
+                    <li><a class="dropdown-item" href="list-Voilations.html"> Checklist for Voilations</a></li>
+                    <li><a class="dropdown-item" href="Register Returns and Forms.html"> Register Returns and Forms</a>
+                    </li>
+                    <li><a class="dropdown-item" href="Exemptions and Self Certification.html"> Exemptions and Self
+                        Certification</a></li>
+                    <li><a class="dropdown-item" href="/assets/pdf/PSDGA/AP_public_services_Ordinance_Gazette_copy.pdf" target="_blank"> PSDGA Ordinance</a></li>
+                    <li><a class="dropdown-item" href="/assets/pdf/PSDGA/PSDGA_Rules_Gazette_Notification.pdf" target="_blank"> PSDGA Rules</a></li>
+                    <li><a class="dropdown-item" href="Concillation_Officer_Manual.html">
+                        Concillation_Officer_Manual</a></li>
+
+                  </ul>
+                </li>
+                <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#" 
+                    aria-expanded="false">Notifications</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="Delegation of Powers to Officers.html"> Delegation of Powers to
+                        Officers</a></li>
+                    <li><a class="dropdown-item" href="Quasi Judicial Functions.html"> Quasi Judicial Functions</a></li>
+                    <li><a class="dropdown-item" href="Officer Under Various Acts.html"> Officer Under Various Acts</a>
+                    </li>
+                    <li><a class="dropdown-item" href="Sez Notifications.html"> Sez Notifications</a></li>
+                    <li><a class="dropdown-item" href="Online Registrations Instructions.html"> Online Registrations
+                        Instructions</a></li>
+                    <li><a class="dropdown-item" href="National, Festival & Other Holidays.html"> National, Festival &
+                        Other Holidays</a></li>
+                    <li><a class="dropdown-item" href="/assets/pdf/Acts/Notifications/Contract_Labour_Regulation_and_Abolition_Amendment.pdf" target="_blank"> Contract Labour</a></li>
+
+                  </ul>
+                </li>
+              </ul>
+
+            </li>
+
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle active menu-space" href="#"
+                 aria-expanded="false">GENERAL</a>
+              <ul class="dropdown-menu">
+                <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#" 
+                    aria-expanded="false">G.O's</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="PMJJBY - YSR Bima.html"> PMJJBY - YSR Bima</a></li>
+                    <li><a class="dropdown-item" href="Jurisidiction of Officers of The Dept.html"> Jurisidiction of
+                        Officers of The Dept</a></li>
+                    <li><a class="dropdown-item" href="National,Festival & Special Holidays.html"> National,Festival &
+                        Special Holidays</a></li>
+                    <li><a class="dropdown-item" href="Child Labour Subject.html"> Child Labour Subject</a></li>
+                    <li><a class="dropdown-item" href="Staff List of Labour Department.html"> Staff List of Labour
+                        Department</a></li>
+                    <li><a class="dropdown-item" href="General.html"> General</a></li>
+
+
+
+                  </ul>
+                </li>
+                <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#"
+                    aria-expanded="false">General Info</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="Minimum,Contract & Outsource.html"> Minimum,Contract &
+                        Outsource</a></li>
+                    <li><a class="dropdown-item" href="Child Labour.html"> Child Labour</a></li>
+                    <li><a class="dropdown-item" href="Transfers.html"> Transfers</a></li>
+                    <li><a class="dropdown-item" href="Services.html"> Services</a></li>
+                    <li><a class="dropdown-item" href="Risk Assessment Criteria.html"> Risk Assessment Criteria</a></li>
+                    <li><a class="dropdown-item" href="Exempted Establishments.html"> Exempted Establishments</a></li>
+
+
+                  </ul>
+                </li>
+                <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#" 
+                    aria-expanded="false">PMJJBY - YSR Bima</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="IRDA Licenced Broking Agencies.html"> IRDA Licenced Broking
+                        Agencies</a></li>
+                    <li><a class="dropdown-item" href="/assets/pdf/Age_group_wise_members.pdf" target="_blank"> Age Wise No.of Members</a></li>
+                    <li><a class="dropdown-item" href="/assets/pdf/Note_on_CB_Updated.pdf" target="_blank"> Note On PMJJBY</a></li>
+                    <li><a class="dropdown-item" href="/assets/pdf/Clarfication_payment_to_Natural_death_for_Building_worker.pdf" target="_blank"> Natural
+                        Death/Permanent/Partial Disability Due to accident</a></li>
+
+
+                  </ul>
+                </li>
+              </ul>
+
+            </li>
+       
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle active menu-space" href="#"
+               aria-expanded="false">EODB</a>
+
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/eodb-reforms.html"
+                  >EODB Reforms</a>
+
+              </li>
+              <!-- <li><a class="dropdown-item" href="PMJJBY - YSR Bima.html"> PMJJBY - YSR Bima</a></li> -->
+
+              <li class="dropdown"><a class="dropdown-item"
+                  href="/EODB DashBoard.html" 
+                  aria-expanded="false">EODB DashBoard</a>
+
+              </li>
+              <li class="dropdown"><a class="dropdown-item"
+                href="EODB Report.html" 
+                aria-expanded="false">EODB Report</a>
+
+            </li>
+            <li class="dropdown"><a class="dropdown-item"
+              href="Latest GO's.html" 
+              aria-expanded="false">Latest GO's</a>
+
+          </li>
+
+            </ul>
+
+          </li>
+
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle active menu-space" href="#"
+                 aria-expanded="false">RTI</a>
+
+              <ul class="dropdown-menu">
+                <li class="dropdown"><a class="dropdown-item" target="_blank"
+                    href="/assets/pdf/RTI.pdf"
+                     aria-expanded="false">Notes</a>
+                </li>
+                <li class="dropdown"><a class="dropdown-item"
+                    href="/assets/pdf/RTI/NEW DIARY.pdf" target="_blank"
+                     aria-expanded="false"> Sub Notes</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle active menu-space" href="#"
+                 aria-expanded="false">REPORTS</a>
+              <ul class="dropdown-menu">
+                <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#" 
+                    aria-expanded="false">Inspection Archives</a>
+                  <ul class="dropdown-menu" style="overflow-y: scroll;
+                  height: 400px;">
+                    <li><a class="dropdown-item" href="Srikakulam.html"> Srikakulam</a></li>
+                    <li><a class="dropdown-item" href="parvathipuram-manyam.html">Parvathipuram Manyam </a></li>
+                    <li><a class="dropdown-item" href="Vizaianagaram.html"> Vizaianagaram</a></li>
+                    <li><a class="dropdown-item" href="Visakhapatnam.html"> Visakhapatnam</a></li>
+                    <li><a class="dropdown-item" href="alluri-sitha-rama-raju.html"> Alluri Sitharama Raju</a></li>
+                    <li><a class="dropdown-item" href="anakapalli.html"> Anakapalli</a></li>
+                    <li><a class="dropdown-item" href="kakinada.html"> Kakinada</a></li>
+                    <li><a class="dropdown-item" href="East Godavari.html"> East Godavari</a></li>
+                    <li><a class="dropdown-item" href="ambedhkr-konaseema.html">Dr.B.R. Ambedkar Konaseema</a></li>
+                    <li><a class="dropdown-item" href="eluru.html">Eluru</a></li>
+                    <li><a class="dropdown-item" href="West Godavari.html"> West Godavari</a></li>
+                    <li><a class="dropdown-item" href="ntr.html">NTR</a></li>
+                    <li><a class="dropdown-item" href="Krishna.html"> Krishna</a></li>
+                    <li><a class="dropdown-item" href="palnadu.html">Palnadu</a></li>
+                    <li><a class="dropdown-item" href="Guntur.html"> Guntur</a></li>
+                    <li><a class="dropdown-item" href="baptla.html">Bapatla</a></li>
+                    <li><a class="dropdown-item" href="Prakasam.html"> Prakasam</a></li>
+                    <li><a class="dropdown-item" href="Nellore.html"> Nellore</a></li>
+                    <li><a class="dropdown-item" href="Kurnool.html"> Kurnool</a></li>
+                    <li><a class="dropdown-item" href="nandyal.html">Nandyal</a></li>
+                    <li><a class="dropdown-item" href="Anantapur.html"> Anantapur</a></li>
+                    <li><a class="dropdown-item" href="sri-satya-sai.html">Sri Sathya Sai</a></li>
+                    <li><a class="dropdown-item" href="Kadapa.html"> YSR</a></li>
+                    <li><a class="dropdown-item" href="annamayya.html">Annamayya</a></li>
+                    <li><a class="dropdown-item" href="tirupathi.html">Tirupathi</a></li>
+                    <li><a class="dropdown-item" href="Chittoor.html"> Chittoor</a></li>
+
+
+                  </ul>
+                </li>
+              </ul>
+
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link menu-space" href="/assets/pdf/CitizenCharter/citizencharter.pdf" target="_blank"  alt=""srcset=""
+                >CITIZEN CHARTER</a>
+            </li>
+            <li class="nav-item"><a class="nav-link menu-space" href="contact-us.html">CONTACT</a></li>
+            <li class="nav-item"><a class="nav-link menu-space"
+                href="https://labour.ap.gov.in/EODB/Login.aspx" target="_blank">LOGIN</a></li>
+                
+          </ul>
+          <!-- <div class="d-sm-none p-3 mt-n3">
+                <a class="btn btn-primary w-100  mb-1" href="../external.html?link=https://themes.getbootstrap.com/product/around-multipurpose-template-ui-kit/" target="_blank" rel="noopener"><i class="ai-cart fs-xl me-2 ms-n1"></i>Buy now</a></div>
+            -->
+        </nav>
+      </div>
+    </header>
+      </div>
+      <!-- Page content-->
+      <!-- Hero-->
+      <div class="">
+        <!-- Breadcrumb-->
+        <div class="col-md-12">
+          <div class="ignore-dark-mode overflow-hidden mb-5 mt-0" style="background-color: #F2F6FF;">
+            <div class="row align-items-center g-0">
+              <div class="col-md-12 offset-xl-1 text-center text-md-start">
+                <div class="py-4 px-4 px-sm-5 pe-md-0 ps-xl-4">
+                  <nav aria-label="breadcrumb">
+                    <ol class="pt-lg-3 pb-lg-4 pb-2 breadcrumb text-center">
+                      <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Reports</li>
+                      <li class="breadcrumb-item active" aria-current="page">Inspection Archives</li>
+                      <li class="breadcrumb-item active" aria-current="page">Visakhapatnam</li>
+                    </ol>
+                  </nav>
+                  <h2 class="h1 pb-2 pb-xl-4">
+                    <span class='text-primary'>VISAKHAPATNAM</span></h2>
+                </div>
+              </div>
+              <!-- <div class="col-md-6 col-xl-5 d-flex justify-content-end"><img src="assets/img/banner-labour.png" width="491" alt="Banner"></div> -->
+            </div>
+          </div>
+        </div>
+      
+        <div class="accordion focus-sector-accordion focus-sector-content container" id="accordionExample" style="width: 100%; overflow: auto;">
+          <table class="table container pharma-table">
+            <thead>
+                <tr>
+                    <th>Sl.No</th>
+                    <th>Name Of Establishment</th>
+                    <th>Address</th>
+                    <th>Employer Name</th>
+                    <th>Contact No</th>
+                    <th>Date</th>
+                    <th>Report</th>
+
+                </tr>
+            </thead>
+            <tbody>
+
+          <tr>
+              <td style="text-align:center">1</td>
+              <td>Syndicate Precions</td>
+              <td>48-14-28 RT Road Opp Chitralaya </td>
+              <td></td>
+              <td></td>
+              <td>21.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp1.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">2</td>
+              <td>Puja Furnitures</td>
+              <td>KSR Complex Shop No.7 Dondaparthy Jn </td>
+              <td>B Ravikumar</td>
+              <td>94400387959</td>
+              <td>27.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp2.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">3</td>
+              <td>Sri Annapurna Medicals</td>
+              <td>46-15-48 Sri Surya Lakshmi <br> Complex Dondaparthy Jn </td>
+              <td>Manesh Sharma</td>
+              <td>9949017678</td>
+              <td>27.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp3.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">4</td>
+              <td>Sri Venkateswara Furnitures</td>
+              <td>46-15-171 Shop No. 5 KSR <br> Complex Dondaparthi </td>
+              <td>D Nageswararao</td>
+              <td>9848374759</td>
+              <td>27.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp4.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">5</td>
+              <td>Seshagirirao Hardware shop</td>
+              <td>Dondaparthy Jn </td>
+              <td>KV Sundar</td>
+              <td>9440996481</td>
+              <td>27.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp5.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">6</td>
+              <td>Sri Sai Durga Manoj Textiles</td>
+              <td>46-15-45 Donfdaparthy </td>
+              <td>V Nagalakshmi</td>
+              <td>0891-2511488</td>
+              <td>27.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp6.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">7</td>
+              <td>Sai MANOJ Textiles</td>
+              <td>46-15-45/1 Dondaparthy </td>
+              <td>S Venkatarao</td>
+              <td>0891-2511488</td>
+              <td>27.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp7.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">8</td>
+              <td>New Glass</td>
+              <td>46-15-6/2 Main Road Dondaparthi </td>
+              <td>MD Hussain</td>
+              <td>9440156242</td>
+              <td>25.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp8.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">9</td>
+              <td>Sri Sai Hot chips</td>
+              <td>Dondaparthi vishakhapatnam</td>
+              <td>N Krishna</td>
+              <td>9440166774</td>
+              <td>25.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp9.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">10</td>
+              <td>Lucky Jeans corner</td>
+              <td>Opp Jagadamba Jn </td>
+              <td>Grandhi Subramanyam</td>
+              <td></td>
+              <td>22.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp10.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">11</td>
+              <td>Ram's Mens wear</td>
+              <td>Jagadamba Jn </td>
+              <td>Y Ramaraju</td>
+              <td></td>
+              <td>22.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp11.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">12</td>
+              <td>WOW The Saloon </td>
+              <td>Opp Vartha Office Green Park Road </td>
+              <td>Mantri Seshagiri</td>
+              <td></td>
+              <td>17.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp12.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">13</td>
+              <td>Kokila Matching Centre</td>
+              <td>12-4-28 2nd Floor Opp <br> Vartha Office  Greenpark Road</td>
+              <td>R Srinivasa Reddy <br> Nadigatla Sekhar</td>
+              <td></td>
+              <td>15.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp13.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">14</td>
+              <td>Visakha Dairy Parlour</td>
+              <td>Opp Vartha Press Jagadamba Jn </td>
+              <td>Yella Surya Kantham</td>
+              <td></td>
+              <td>16.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp14.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">15</td>
+              <td>TWISTERS Car Accessories </td>
+              <td>12-4-28 Opp Vartha Offce <br> Jagadamnba Jn Vosakhapatnam</td>
+              <td>Madduvaru Mohan Praneeth</td>
+              <td></td>
+              <td>16.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp15.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">16</td>
+              <td>Srinivasa Enterprises</td>
+              <td>Jagadamba Jn </td>
+              <td>Grandhi Srinivasarao</td>
+              <td></td>
+              <td>22.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp16.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">17</td>
+              <td>SR Shopping Mall</td>
+              <td>Apurupa Archade Jagadamba Jn </td>
+              <td>Siriyapuneedi Gopinadhareddy</td>
+              <td></td>
+              <td>18.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp17.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">18</td>
+              <td>Comforts Matching &amp; <br> Ladies wear</td>
+              <td>Greenpark Road </td>
+              <td>Molabanthi Raghavarao</td>
+              <td></td>
+              <td>15.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp18.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">19</td>
+              <td>The Jeans Shoppe </td>
+              <td>28-2-8 Jagadamba Centre </td>
+              <td>Ponuganti Tirupathireddy</td>
+              <td></td>
+              <td>22.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp19.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">20</td>
+              <td>Sree Rameswari Digital <br> Communications</td>
+              <td>28-2-5 Opp Jagadamba Theatre </td>
+              <td>Motamarri Sujatha</td>
+              <td></td>
+              <td>22.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp20.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">21</td>
+              <td>Fashion Virus</td>
+              <td>28-2-9 Jagadamba Centre </td>
+              <td>Ponugoti Hemalatha</td>
+              <td></td>
+              <td>22.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp21.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">22</td>
+              <td>WINGS</td>
+              <td>28-2-6 Opp Jagadamba Centre </td>
+              <td>K Narayana Reddy</td>
+              <td></td>
+              <td>22.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp22.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">23</td>
+              <td>AP31 TB 8550</td>
+              <td>Vinis Retail India Pvt Ltd</td>
+              <td>Sanjay Hirawat Waltair <br> Uplands Visdakhapatnam</td>
+              <td>9032409222</td>
+              <td>18.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp23.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">24</td>
+              <td>Narayana Rice Traders</td>
+              <td>11-4-10/4 Kurmannapalem </td>
+              <td>Potnuru Srinivasarao</td>
+              <td>9949410009</td>
+              <td>10.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp24.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">25</td>
+              <td>Sri Santhasri Fancy <br> &amp; Cut Pieces</td>
+              <td>Kurmannapalem </td>
+              <td>Pentakota Ramalakshmi</td>
+              <td></td>
+              <td>8.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp25.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">26</td>
+              <td>Sri Bhagavan Furnioture</td>
+              <td>Duvvada Road Kurmannapalem </td>
+              <td>Lalam Sridevi</td>
+              <td></td>
+              <td>8.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp26.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">27</td>
+              <td>M/S Sri Siva Sai Kirana <br> &amp; General Stores</td>
+              <td>Duvvada Station Road </td>
+              <td>Dadisetti Keshavarao</td>
+              <td></td>
+              <td>4.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp27.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">28</td>
+              <td>Suren Foods</td>
+              <td>31-25-53/1 Srikrishna <br> Nagar Kurmannapalem </td>
+              <td>Budumuru Kalyani</td>
+              <td>9032717635</td>
+              <td>20.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp28.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">29</td>
+              <td>Sri Durga Bhavani Garden <br> Restaurant &amp; Curry Parce</td>
+              <td>Main Road Aganampudi </td>
+              <td>P Srinivasarao</td>
+              <td></td>
+              <td>27.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp29.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">30</td>
+              <td>Sri Sruna Enterprises</td>
+              <td>31-27-21/1 Railway Station <br> Road Kurmannapalem </td>
+              <td>Mutyala Aruna Kumari</td>
+              <td></td>
+              <td>20.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp30.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">31</td>
+              <td>Mahalakshmi Electrical <br> &amp; Hardware</td>
+              <td>31-27-26 Duvvada Station <br> Road Kurmannapalem </td>
+              <td>Kuparam Devari</td>
+              <td>9948480502</td>
+              <td>15.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp31.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">32</td>
+              <td>AOEX Meadows PVt Ltd</td>
+              <td>104/2 Opp SBT Hotel <br> NH5 Old Gajuwaka </td>
+              <td>Teeparthi  Gangadhara Ramarao</td>
+              <td></td>
+              <td>16.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp32.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">33</td>
+              <td>Sivarama Sweets and Bakery</td>
+              <td>Main Road Aganampudi </td>
+              <td>Nakka Sivarama Krishna</td>
+              <td></td>
+              <td>27.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp33.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">34</td>
+              <td> Steel Plant Employee <br> Consumers Co-op Stores Ltd</td>
+              <td>Railway Station Road Sai <br> Chanra Apartments Kurmannapalem </td>
+              <td>M Krishnarao</td>
+              <td></td>
+              <td>18.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp34.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">35</td>
+              <td>New J R Medicals &amp; <br> General Stores</td>
+              <td>DL. No.723/AP/VM/A/2005R <br> Sheela Nagar Adari Complex -12</td>
+              <td>Viroti Sivaram Kumar</td>
+              <td></td>
+              <td>22.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp35.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">36</td>
+              <td>Ravi teja Supplers</td>
+              <td>Opp New Horizen School Kurmannapalem </td>
+              <td>S Venkataramana</td>
+              <td></td>
+              <td>10.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp36.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">37</td>
+              <td>Bindusree Indane Service</td>
+              <td>8-76 Main Road Talari <br> Complex Aganampudi </td>
+              <td>V Gangulaiah</td>
+              <td>0891-2757848</td>
+              <td>28.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp37.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">38</td>
+              <td>Friends.Com Internet <br> &amp; Meeseva</td>
+              <td>KAR Complex Aganapudi </td>
+              <td>Doddi Prasad</td>
+              <td></td>
+              <td>27.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp38.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">39</td>
+              <td>Hotel Sri Gouri Shankar</td>
+              <td>Near Bridge Railway Station <br> Road Kurmannapalem </td>
+              <td>Bode Ratna Kumari</td>
+              <td></td>
+              <td>21.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp39.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">40</td>
+              <td>Rama Enterprises</td>
+              <td>31-27-34/A/2</td>
+              <td>Duvvada Station <br> Road Kurmannapalem </td>
+              <td></td>
+              <td>3.05.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp40.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">41</td>
+              <td>Hari Om Enterprises</td>
+              <td>Ayurvedic &amp; Herbal Products Prince <br> Complex Duvvada Station <br> Road Kurmannapalem </td>
+              <td>Keti Prasad</td>
+              <td></td>
+              <td>9.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp41.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">42</td>
+              <td>Bhargavi Electronics</td>
+              <td>Duvvada Staion Road Near <br> Annapurana Thatre Kurmannapalem </td>
+              <td>Beemisetty Jayalakshmi</td>
+              <td></td>
+              <td>7.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp42.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">43</td>
+              <td>Khazaana Jewellers Pvt Ltd</td>
+              <td>9-7-277 Gajuwaka Main Road Gajuwaka </td>
+              <td>Kishore Kumar Jain</td>
+              <td></td>
+              <td>2.08.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp43.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">44</td>
+              <td>Vasudha Ceramics</td>
+              <td>31-8-2-4 Kurmannapalem </td>
+              <td>Manappuram Chandra Sekhar</td>
+              <td></td>
+              <td>2.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp44.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">45</td>
+              <td>Ganesh Glass &amp; Plywood</td>
+              <td>31-27-14/1 Fakirthakiya <br> Jn Duvvada Jn Road </td>
+              <td>Kesanakurthi Srinivas</td>
+              <td></td>
+              <td>20.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp45.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">46</td>
+              <td>Krishna Glass &amp; <br> Plywood Centre </td>
+              <td>Near Canara Bank Duvvada Station Road </td>
+              <td>Uppada Srinivasarao</td>
+              <td></td>
+              <td>10.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp46.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">47</td>
+              <td>Ganesh Tailors</td>
+              <td>Opp Annapurna Theatre <br> Kurmannapalem </td>
+              <td></td>
+              <td></td>
+              <td>8.4.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp47.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">48</td>
+              <td>Maruthi Plywood &amp; Glass</td>
+              <td>Beside Canara Bank Duvvada Station Road </td>
+              <td>Ashok Lalji patel</td>
+              <td></td>
+              <td>4.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp48.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">49</td>
+              <td>Balaji Departmental Stores</td>
+              <td>Railway Station Road Kurmannapalem </td>
+              <td>Rentala Venkata Sudhakar</td>
+              <td></td>
+              <td>18.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp49.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">50</td>
+              <td>Adikamala Kirana <br> &amp; General Stores</td>
+              <td>Duvvada Staion Road  Kurmannapalem </td>
+              <td>Vooda Suneetha</td>
+              <td>9247872907</td>
+              <td>18.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp50.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">51</td>
+              <td>Sri Durga Shoe Mart</td>
+              <td>Railway Staion road Kurmannapalem </td>
+              <td>Pediredla Venkata Naidu</td>
+              <td></td>
+              <td>18.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp51.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">52</td>
+              <td>Sri Sairam Medical Stores</td>
+              <td>Duvvada Station Road Kurmannapalem </td>
+              <td>Nakkolla Padma</td>
+              <td></td>
+              <td>18.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp52.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">53</td>
+              <td>Sudha Enterprises</td>
+              <td>31-12-1/2 Duvvada Station <br> Road Kurmannapalem </td>
+              <td>Y Venkata Sudhakar</td>
+              <td></td>
+              <td>16.4.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp53.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">54</td>
+              <td>Sudha Agencies</td>
+              <td>31-12-1/2 Duvvada Station <br> Road Kurmannapalem </td>
+              <td>Y Raghuramayya</td>
+              <td></td>
+              <td>16.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp54.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">55</td>
+              <td>Sri Satya Sai Plywood <br> &amp; hardware</td>
+              <td>31-12-1 Railway Staion <br> Road Kurmannapalem </td>
+              <td>Adigarla Jaya</td>
+              <td></td>
+              <td>16.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp55.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">56</td>
+              <td>Aruna Suppliers</td>
+              <td>Duvvada Station Road Kurmannapalem </td>
+              <td>Kandregula Ramanarao</td>
+              <td></td>
+              <td>15.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp56.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">57</td>
+              <td>Vijaya Gayatri Printers</td>
+              <td>31-27-26 SKML Complex Railway <br> Staion Road Kurmannapalem </td>
+              <td>G Ravikumar</td>
+              <td></td>
+              <td>15.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp57.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">58</td>
+              <td>Sri Sai Medical &amp; <br> General Stores</td>
+              <td>Prince Enclave Duvvada <br> Station Road Kurmannapalem </td>
+              <td>Siddhanthi Lalitha Kumari </td>
+              <td></td>
+              <td>10.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp58.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">59</td>
+              <td>Mayuri Foot wear</td>
+              <td>Duvvada Station Road Kurmannapalem </td>
+              <td>Dasari Venkataramana</td>
+              <td>992418367</td>
+              <td>10.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp59.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">60</td>
+              <td>M/s Gouri Enterorises</td>
+              <td>Duvvada Station Road Kurmannapalem </td>
+              <td>Mindrana Sathiraju</td>
+              <td></td>
+              <td>10.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp60.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">61</td>
+              <td>Nex-Gen Infor Tech</td>
+              <td>Opp Margadarshi Chits Kurmannapalem </td>
+              <td>Bezawada Raviteja</td>
+              <td>9652478478</td>
+              <td>9.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp61.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">62</td>
+              <td>Hemanth Books and Stationery</td>
+              <td>Duvvada Station Road Kurmannapalem </td>
+              <td>Pothala Chadra Rao</td>
+              <td></td>
+              <td>9.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp62.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">63</td>
+              <td>Priya Computers</td>
+              <td>Prince Enclave Duvvada <br> Station Road Kurmannapalem </td>
+              <td>Dheeraj Kumar</td>
+              <td></td>
+              <td>9.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp63.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">64</td>
+              <td>Sri Kanakadurga Plastics</td>
+              <td>31-27-51  Opp. Margadarshi Chits <br> Duvvada Station Road Kurmannapalem </td>
+              <td>Medatati Lakshmi</td>
+              <td></td>
+              <td>9.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp64.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">65</td>
+              <td>Chandan Cloth Stores</td>
+              <td>31-27-51 Opp Margadarshi Chits <br> Duvvada Station Road Kurmannapalem </td>
+              <td>Kasina  Venkateswararao</td>
+              <td></td>
+              <td>9.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp65.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">66</td>
+              <td>Ambika Shoppee</td>
+              <td>Duvvada Staion Road near <br> Annapurna  Theatre Kurmannapalem </td>
+              <td>Kasina Srinubabu</td>
+              <td></td>
+              <td>8.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp66.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">67</td>
+              <td>Sai Sampath Medical <br> &amp; General Stores</td>
+              <td>Opp Annapurna Theatre Kurmannapalem </td>
+              <td>Nakkala Devudu</td>
+              <td></td>
+              <td>8.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp67.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">68</td>
+              <td>Anjani Sweets</td>
+              <td>Opp Annapurna Theatre Kurmannapalem </td>
+              <td>Muggala Rajya Lakshmi</td>
+              <td></td>
+              <td>8.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp68.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">69</td>
+              <td>Sri ambika Plywood <br> &amp; glass Centre</td>
+              <td>5-148/3 Opp Annapurna <br> Theatrwe Kurmannapalem </td>
+              <td>Sai Santosh Kumar Ramani</td>
+              <td></td>
+              <td>8.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp69.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">70</td>
+              <td>Jai Krishna Books <br> &amp; Stastionery Stores</td>
+              <td>31-27-52/1 Opp Margadarshi <br> Chits Kurmannapalem </td>
+              <td>Sivakoti Kanakadurga</td>
+              <td></td>
+              <td>8.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp70.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">71</td>
+              <td>DTDC Courier &amp; Cargo Ltd</td>
+              <td>Opp Annapurna Theatre Kurmannapalem </td>
+              <td>Kandula Venkata Satya Kumar</td>
+              <td></td>
+              <td>7.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp71.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">72</td>
+              <td>Bangaru Fashions</td>
+              <td>Opp Annapurna Theatre Kurmannapalem </td>
+              <td>Kasina Sateesh Babu</td>
+              <td></td>
+              <td>7.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp72.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">73</td>
+              <td>Sri Pinakini Shoe Mart</td>
+              <td>31-27-63 Duvvada Station <br> Road Kurmannapalem </td>
+              <td>T Sankatarao</td>
+              <td></td>
+              <td>7.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp73.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">74</td>
+              <td>Praneeth Jhome Made</td>
+              <td>Surya Complex Opp Annapurna <br> Theatre Kurmannapalem </td>
+              <td>Vengala Lakshmana Rao</td>
+              <td></td>
+              <td>7.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp74.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">75</td>
+              <td>Jaya Sai Studio</td>
+              <td>Shop No.2 Vijaya Complex Kurmannapalem </td>
+              <td>Turpati Eswararao</td>
+              <td></td>
+              <td>7.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp75.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">76</td>
+              <td>Sai gayatri Store</td>
+              <td>Opp Annapurna Theatre Kurmannapalem </td>
+              <td>Subuddi Ramprasad</td>
+              <td></td>
+              <td>7.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp76.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">77</td>
+              <td>New White Dry Cleaners</td>
+              <td>31-27-66/1 Railway Station <br> Road Kurmannapalem </td>
+              <td>Chintala Apparao</td>
+              <td>9703575137</td>
+              <td>7.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp77.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">78</td>
+              <td>TIP TOP Ladies Tailors</td>
+              <td>Upstairs SAC Complex railway <br> Station Road Kurmannapalem </td>
+              <td>Nousha Pasha</td>
+              <td></td>
+              <td>7.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp78.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">79</td>
+              <td>Manikanta Tours &amp; Travels</td>
+              <td>31-27-66 SV Complex Station <br> Road Kurmannapalem </td>
+              <td>Bellam Vasu Babu</td>
+              <td></td>
+              <td>7.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp79.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">80</td>
+              <td>Venkat departmental Stores</td>
+              <td>Kurmannapalem Railway Station <br> Road Vioisakhapatnam</td>
+              <td>Lankalapalli Venkatarao</td>
+              <td></td>
+              <td>7.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp80.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">81</td>
+              <td>Indian Opticals</td>
+              <td>Beside Annapurna Theatre Duvvada <br> Station Road Kurmannapalem </td>
+              <td>M Resham</td>
+              <td></td>
+              <td>4.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp81.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">82</td>
+              <td>Vijayadurga Cloth Show room</td>
+              <td>Railway Station Road Kurmannapalem </td>
+              <td>Boddu Veerabhadra Rao</td>
+              <td>9494926211</td>
+              <td>4.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp82.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">83</td>
+              <td>Sri Sia Krishna</td>
+              <td>Kurmannapalem Duvvada Station Road </td>
+              <td>Pokuluri Sivarama Krishan</td>
+              <td>9701552626</td>
+              <td>4.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp83.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">84</td>
+              <td>SVS Furnitures</td>
+              <td>Opp Police Station NH % Kurmannapalem </td>
+              <td>K Maheswararao</td>
+              <td></td>
+              <td>2.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp84.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">85</td>
+              <td>Sri Durga Restaurant &amp; Bar</td>
+              <td>Opp Police Station NH % Kurmannapalem </td>
+              <td>Karikapati Rukman</td>
+              <td></td>
+              <td>2.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp85.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">86</td>
+              <td>Sri Krishan Baba Auto Centre</td>
+              <td>Authorized Service Centre <br> &amp; Spares Kurmannapalem </td>
+              <td>Seeni Srinivasarao</td>
+              <td></td>
+              <td>2.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp86.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">87</td>
+              <td>Elishadai Fabrication &amp; Grill</td>
+              <td>Duvvada Staion Road Kurmannapalem </td>
+              <td>Karri varaprasad</td>
+              <td></td>
+              <td>20.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp87.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">88</td>
+              <td>Sri Sai Ram Home <br> Foods and Bekery</td>
+              <td>HIG 207 Phase I Duvvada <br> Station Road Kurmannapalem </td>
+              <td>Kosuri Suryakumari</td>
+              <td></td>
+              <td>21.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp88.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">89</td>
+              <td>AP31TE4511</td>
+              <td>CARE Waltair  College of NUrsing</td>
+              <td>T Mohan Sankar 10-50-11/5 <br> Waltair Main Road </td>
+              <td></td>
+              <td>8.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp89.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">90</td>
+              <td>AP31TT8350</td>
+              <td>Hirawats Fashion Centre Pvt Ltd</td>
+              <td>TC Hirawat 30-15-166 <br> Dabagardens </td>
+              <td></td>
+              <td>17.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp90.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">91</td>
+              <td>AP31TE0440</td>
+              <td>Hirawat Industries</td>
+              <td>Ashok Kumkar Hirawat <br> 30-15-166 dabagardens </td>
+              <td></td>
+              <td>17.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp91.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">92</td>
+              <td>AP31TT1973</td>
+              <td>M/s Swamy Sons Agencies Ovt Ltd</td>
+              <td>K Eswararao 31-12-13 Allipuram </td>
+              <td></td>
+              <td>17.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp92.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">93</td>
+              <td>AP31TB9781</td>
+              <td>Seven Hills Health care Pvt Ltd</td>
+              <td>L Ratnakar Rao Rockdale Layout </td>
+              <td></td>
+              <td>19.03.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp93.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">94</td>
+              <td>AP31TE1153</td>
+              <td>Vinis Industries Pvt Ltd Autonagara </td>
+              <td>Sanjay Kumar Hirawat 10-1-10/2 <br> Hirawat Tower Waltai Uplands </td>
+              <td></td>
+              <td>21.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp94.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">95</td>
+              <td>AP31TB4289</td>
+              <td>Devine Touch Play School plot no <br> 9 Gangapuir Layout Governor <br> Bunglow Siripuram </td>
+              <td>Neha Das </td>
+              <td>9848198614</td>
+              <td>21.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp95.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">96</td>
+              <td>AP16TD 4507, AP16 TD <br> 9253, AP16TB8882</td>
+              <td>Jai Balaji Transport 29-9-1 <br> Lalitha Colony dabagardens </td>
+              <td>G Bhaskara Reddy</td>
+              <td></td>
+              <td>22.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp96.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">97</td>
+              <td>AP31TT1598, AP31TB9448</td>
+              <td>Bethany Public School</td>
+              <td>Anitha Aidintyz </td>
+              <td></td>
+              <td>8.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp97.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">98</td>
+              <td>Bean Board</td>
+              <td>10-30-20 Ram Residence <br> Opp HSBC Siripuram </td>
+              <td>David T De Langhlu</td>
+              <td></td>
+              <td>6.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp98.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">99</td>
+              <td>Woodland (Seating Systems)</td>
+              <td>10-12-4(6) Rednam House <br> Rednam Gardens </td>
+              <td>P Narasimhareddy</td>
+              <td></td>
+              <td>7.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp99.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">100</td>
+              <td>AKZO Noble India Ltd</td>
+              <td>14-1-12/A Nouroji Road Besides <br> Seven Hills Hospital </td>
+              <td>v Arun Swamy</td>
+              <td></td>
+              <td>17.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp100.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">101</td>
+              <td>S F Marine Off Shore <br> &amp; Iron Suppliers</td>
+              <td>28-11-39 Kailash Hotel Jn Suryabagh </td>
+              <td>Taha Haju</td>
+              <td></td>
+              <td>21.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp101.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">102</td>
+              <td>Summit Electronics</td>
+              <td>28-9-60 Suryabagh </td>
+              <td>Vishal B Jain</td>
+              <td></td>
+              <td>23.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp102.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">103</td>
+              <td>Industrial Electronics</td>
+              <td>28-11-11, Prema Plaza Suryabagh </td>
+              <td>Chandrakanth Parakh</td>
+              <td></td>
+              <td>30.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp103.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">104</td>
+              <td>Babu Dresses</td>
+              <td>Main Road Tagarapuvalasa  Dist</td>
+              <td>Lanka Appalaraju</td>
+              <td>9849050521</td>
+              <td>7.05.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp104.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">105</td>
+              <td>Jyothi Collections</td>
+              <td>Tagarapuvalasa  Dist</td>
+              <td>M Gurunadharao</td>
+              <td></td>
+              <td>7..05.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp105.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">106</td>
+              <td>Sri Siva Jyothi Home Needs</td>
+              <td>Main Road Tagarapuvalasa</td>
+              <td>Badiginti Maheswararao</td>
+              <td>9440913575</td>
+              <td>7.05.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp106.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">107</td>
+              <td>Fresh Choice</td>
+              <td>Sai Aditya Foods an Retails <br> Pothina Mallayyapalem Doble Road </td>
+              <td>S Narayana Raju</td>
+              <td>9246774615</td>
+              <td>8.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp107.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">108</td>
+              <td>Neeraj Shivareddy Sweets</td>
+              <td>Main Road Tagarapuvalasa </td>
+              <td>Marda Lakshmi</td>
+              <td></td>
+              <td>27.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp108.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">109</td>
+              <td>Teja Fashions</td>
+              <td>Main Road Tagarapuvalasa </td>
+              <td>V Vijayakumar</td>
+              <td>9885936264</td>
+              <td>27.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp109.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">110</td>
+              <td>Goutham Fancy 7 Bangles</td>
+              <td>Main Road Tagarapuvalasa </td>
+              <td>Madabaathula Madhusudana</td>
+              <td>9985363515</td>
+              <td>27.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp110.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">111</td>
+              <td>Fancy Centre</td>
+              <td>Main Road Tagarapuvalasa </td>
+              <td>Madabathula Vinod Kumar</td>
+              <td></td>
+              <td>27.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp111.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">112</td>
+              <td>Sri Sai Manikanta fancy</td>
+              <td>Main Road Tagarapuvalasa </td>
+              <td>Vempada Aravinda Kumar</td>
+              <td>9885474306</td>
+              <td>27.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp112.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">113</td>
+              <td>Home Sweets </td>
+              <td>Dangeti Narasimha Murthy V Madugula </td>
+              <td></td>
+              <td></td>
+              <td>29.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp113.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">114</td>
+              <td>Sri Satya ganesh Cloth Centre</td>
+              <td>Opp High School K Kotapadu </td>
+              <td>Amjuru Varalakshmi</td>
+              <td></td>
+              <td>4.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp114.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">115</td>
+              <td>Sai Praneetha Enterprises </td>
+              <td>Pendurthi Road K Kotapadu </td>
+              <td>Ch Vanitha</td>
+              <td></td>
+              <td>4.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp115.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">116</td>
+              <td>Vinayaka Cell Phones</td>
+              <td>K Kotapadu </td>
+              <td>B Praveen</td>
+              <td></td>
+              <td>4.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp116.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">117</td>
+              <td>Neelamma Enterprises</td>
+              <td>Man Road k Kotapadu </td>
+              <td>Rongali Venkatarao</td>
+              <td></td>
+              <td>4.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp117.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">118</td>
+              <td>Green Valley Restaurant</td>
+              <td>Araku Valley </td>
+              <td>S Gulabi</td>
+              <td>9440082245</td>
+              <td>15.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp118.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">119</td>
+              <td>Rahmath Educational Society</td>
+              <td>K Kotapadu </td>
+              <td>Mathews</td>
+              <td>9985931580</td>
+              <td>10.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp119.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">120</td>
+              <td>Babu Metal Stores</td>
+              <td>Main Road k Kotapadu </td>
+              <td>Patnala Chakravarthy</td>
+              <td></td>
+              <td>15.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp120.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">121</td>
+              <td>Irani Tea Stall</td>
+              <td>Main Road Chodavaram </td>
+              <td>Appanna</td>
+              <td></td>
+              <td>17.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp121.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">122</td>
+              <td>Srinivasa Press</td>
+              <td>Chodavaram </td>
+              <td>S Srinivasarao</td>
+              <td></td>
+              <td>17.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp122.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">123</td>
+              <td>Kokila Hair Styles</td>
+              <td>Near RTC Bus Stand Chodavaram </td>
+              <td>K Sathibabu</td>
+              <td></td>
+              <td>17.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp123.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">124</td>
+              <td>Sri Divakar Medical Stores</td>
+              <td>Main Road Govada </td>
+              <td>K Ananthalakshmi</td>
+              <td></td>
+              <td>18.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp124.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">125</td>
+              <td>Prasad Medical &amp; General Stores</td>
+              <td>Chodavaram </td>
+              <td>Ch Prasadarao</td>
+              <td></td>
+              <td>18.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp125.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">126</td>
+              <td>Balaji Lodge</td>
+              <td>Padmapuram Jn Araku Valley </td>
+              <td>Ramesh</td>
+              <td>9440113396</td>
+              <td>22.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp126.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">127</td>
+              <td>Star Annapurna Multi <br> Cuisin Restarant</td>
+              <td>Araku Valley </td>
+              <td>N ramaiah</td>
+              <td></td>
+              <td>22.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp127.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">128</td>
+              <td>Green Valley Inn</td>
+              <td>Opp MRO Office College Road araku </td>
+              <td>S Gulabhi</td>
+              <td></td>
+              <td>22.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp128.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">129</td>
+              <td>Sri Sai Nivas Lodge</td>
+              <td>Araku Valley </td>
+              <td>b Chinnaiah</td>
+              <td>9963433733</td>
+              <td>22.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp129.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">130</td>
+              <td>Sai Balaji Saree mandir</td>
+              <td>Araku Valley </td>
+              <td>Grandhi Satyanarayana</td>
+              <td>9440487884</td>
+              <td>22.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp129.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">131</td>
+              <td>Sri Sai Ganesh Agencies</td>
+              <td>Araku Valley </td>
+              <td>B Narayan Naidu</td>
+              <td></td>
+              <td>22.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp131.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">132</td>
+              <td>Dimsa Resorts</td>
+              <td>Araku Valley </td>
+              <td>M Appalaraju</td>
+              <td>9440136066</td>
+              <td>22.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp132.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">133</td>
+              <td>Gouri Bhaskar Agencies</td>
+              <td>5-79 Yandapallivalasa Araku, </td>
+              <td>K Gouri Bhaskar</td>
+              <td>9704319410</td>
+              <td>22.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp133.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">134</td>
+              <td>Vellangine Lodge</td>
+              <td>Beside Jyothi Mahal Araku Valley </td>
+              <td>P Raviprakash</td>
+              <td>9441789656</td>
+              <td>22.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp134.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">135</td>
+              <td>Jyothi Mahal</td>
+              <td>RS Padmapuram Araku </td>
+              <td>P appalanarasamma</td>
+              <td></td>
+              <td>22.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp135.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">136</td>
+              <td>Hotel Rajadhani</td>
+              <td>Araku Valley </td>
+              <td>P Balaraju</td>
+              <td>9949468666</td>
+              <td>22.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp136.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">137</td>
+              <td>Sudeksha Fish Land</td>
+              <td>Araku Valley </td>
+              <td>S Sudhiksha</td>
+              <td>9441944642</td>
+              <td>23.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp137.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">138</td>
+              <td>Sai Baba Medicals <br> &amp; General Stores</td>
+              <td>Main Road Araku </td>
+              <td>A Kameswararao</td>
+              <td></td>
+              <td>23.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp138.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">139</td>
+              <td>Ramu Kirana</td>
+              <td>Arakuvalley </td>
+              <td>M Ramu</td>
+              <td></td>
+              <td>23.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp139.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">140</td>
+              <td>Tejeswari Home <br> Foods and Bakery</td>
+              <td>Araku Valley </td>
+              <td>R Srinivasa Rao</td>
+              <td>9441945399</td>
+              <td>23.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp140.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">141</td>
+              <td>Varsha Bangalore <br> Ayyengar Bakery</td>
+              <td>Araku Valley </td>
+              <td>Nagesh</td>
+              <td></td>
+              <td>23.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp141.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">142</td>
+              <td>ayuri Silk House</td>
+              <td>Araku Valley </td>
+              <td>B Rajarao</td>
+              <td></td>
+              <td>23.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp142.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">143</td>
+              <td>Srinivasa Medical <br> 7 General Stores</td>
+              <td>Main Road Araku </td>
+              <td>V Subramanya Gupta</td>
+              <td></td>
+              <td>23.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp143.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">144</td>
+              <td>F A Cloth Centre <br> Cloth &amp; Readymade</td>
+              <td>Araku Valley </td>
+              <td>B Chittibabu</td>
+              <td></td>
+              <td>23.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp144.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">145</td>
+              <td>Hotel New Annapoorna</td>
+              <td>Araku Valley </td>
+              <td>Sarvakoti Latchu</td>
+              <td></td>
+              <td>23.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp145.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">146</td>
+              <td>Sairam Suvarna Inn Cottage</td>
+              <td>Yadapallivalasa Araku Vally </td>
+              <td>S Ramachandra</td>
+              <td></td>
+              <td>23.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp146.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">147</td>
+              <td>Sri Devi Halwa Shop </td>
+              <td>V Madugula </td>
+              <td>SPL Ramana</td>
+              <td></td>
+              <td>29.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp147.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">148</td>
+              <td>Panduranga Halwa shop</td>
+              <td>V Madugula </td>
+              <td>Gopi Krishna</td>
+              <td>9703155946</td>
+              <td>29.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp148.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">149</td>
+              <td>Dangeti Krishna Halwa</td>
+              <td>V Madugula </td>
+              <td>Dangeti Krishna Rao</td>
+              <td>9985272984</td>
+              <td>29.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp149.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">150</td>
+              <td>Bhupati Fuel Inn</td>
+              <td>MK Vallapuram </td>
+              <td>P Satyanarayana raju</td>
+              <td></td>
+              <td>29.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp150.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">151</td>
+              <td>Balaram Petroleum</td>
+              <td>MK Vallapuram </td>
+              <td>K Kumari</td>
+              <td></td>
+              <td>29.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp151.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">152</td>
+              <td>Pardhasaradhi Halwa Shop</td>
+              <td>V Madugula </td>
+              <td>K Marlakonda</td>
+              <td>8985649308 <br> 8985649308</td>
+              <td>29.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp152.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">153</td>
+              <td>Satya Venkata Modayamba <br> Sweet Stall</td>
+              <td>V Madugula </td>
+              <td>V Trinadaharao</td>
+              <td></td>
+              <td>29.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp153.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">154</td>
+              <td>Dangeti Narasimhamurthy <br> Sweet</td>
+              <td>V Madugula </td>
+              <td>D Narasimhamurthy</td>
+              <td>9799295085</td>
+              <td>29.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp154.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">155</td>
+              <td>Sri Sai Kriushan Parlour</td>
+              <td>Bus Stand Madugula </td>
+              <td>Dangeti Gopi Krishan</td>
+              <td></td>
+              <td>29.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp155.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">156</td>
+              <td>Ma Vantillu Curry Point</td>
+              <td>Shop No.7 PMR Shopping <br> Complex Aganampudi </td>
+              <td>Kesineni Karthik</td>
+              <td></td>
+              <td>27.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp156.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">157</td>
+              <td>Venkata Padma General Stores</td>
+              <td>7-16-72/1 Main Road&lt; <br> Old Gajuvaka </td>
+              <td>Mahankali Rajendra</td>
+              <td></td>
+              <td>24.05.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp157.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">158</td>
+              <td>VDR Jeevandhara Pharmacy</td>
+              <td>3-12-81 Near Canara Bank Railway <br> Station Road, Kurmannapalem n</td>
+              <td>VV Narasimhamurthy Raju</td>
+              <td></td>
+              <td>16.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp158.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">159</td>
+              <td>Sai Gayatri Welding</td>
+              <td>31-25-30 Railway <br> Station Road Kurmannapalem </td>
+              <td>Konda Srinu</td>
+              <td></td>
+              <td>15.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp159.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">160</td>
+              <td>Hruha Priya Home <br> Foods &amp; Sweets</td>
+              <td>Railway Station <br> Road Kurmannapalem </td>
+              <td>Dali Naidu</td>
+              <td>9948859777</td>
+              <td>9.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp160.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">161</td>
+              <td>Neel Kamal Enterprises</td>
+              <td>31-27-63/3 Station <br> Road Kurmannapalem </td>
+              <td>Dalaram Choudary</td>
+              <td></td>
+              <td>8.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp161.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">162</td>
+              <td>Dhanalakshmi Readymade</td>
+              <td>27-31-61 Opp Annapurna <br> Theatre Kurmannapalem </td>
+              <td>Sarapu Sireesh</td>
+              <td></td>
+              <td>8.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp162.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">163</td>
+              <td>Uma Mobile &amp; Digital Shoppe</td>
+              <td>Opp New Horizon School <br> Duvvada Station Road Kurmannapalem </td>
+              <td>Budda Umasankar</td>
+              <td></td>
+              <td>10.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp163.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">164</td>
+              <td>Lucknow Colections</td>
+              <td>31-27-60 Opp Annapurna <br> Theatre Kurmannapalem </td>
+              <td>Jasmin Khan</td>
+              <td></td>
+              <td>8.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp164.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">165</td>
+              <td>Sri Sai Durga Medical <br> &amp; General Stores</td>
+              <td>Phase 1 Kurmannapalem <br> Station Road </td>
+              <td>Indiga Srinivasarao</td>
+              <td></td>
+              <td>21.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp165.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">166</td>
+              <td>Steel City Sweets</td>
+              <td>2-15 Main Road, NH 5 Aganampudi </td>
+              <td>Mutyala Apparao</td>
+              <td></td>
+              <td>27.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp166.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">167</td>
+              <td>Sri Vijaya Medicals <br> Chemists&amp; Druggists</td>
+              <td>Aditya Complex Station <br> Road Kurmannapalem </td>
+              <td>Bokku Venkataramana Murthy</td>
+              <td></td>
+              <td>4.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp167.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">168</td>
+              <td>Durga ramarao &amp; Co</td>
+              <td>Main Road Tagarapuvalasa </td>
+              <td>Durga rama Rao</td>
+              <td>9908215167</td>
+              <td>29.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp168.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">169</td>
+              <td>Kanakamahalakshmi Kirana <br> 7 General Stores</td>
+              <td>Tagarapuvalasa </td>
+              <td>Bandaru Nitin Kumar</td>
+              <td></td>
+              <td>29.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp169.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">170</td>
+              <td>Sri Devi Silk Palace</td>
+              <td>Tagarapuvalasa </td>
+              <td>Durga Naga varalakshmi</td>
+              <td></td>
+              <td>29.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp170.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">171</td>
+              <td>Stylo Cut Pieces</td>
+              <td>Mauin Road tagarapuvalasa </td>
+              <td>Vanapalli Simhachalam</td>
+              <td></td>
+              <td>29.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp171.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">172</td>
+              <td>Sumathi Enterprises</td>
+              <td>Main Road Tagarapuvalasa </td>
+              <td>Katheram Venkateswarlu</td>
+              <td></td>
+              <td>29.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp172.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">173</td>
+              <td>Bhagavan Enterprises</td>
+              <td>Main Road Tagarapuvalasa </td>
+              <td>Singivarapu Sanyasi Rao</td>
+              <td>9966603700</td>
+              <td>29.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp173.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">174</td>
+              <td>Stylo ready Made</td>
+              <td>Main Road Tagarapuvalasa </td>
+              <td>Vanapalli Kishore</td>
+              <td></td>
+              <td>29.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp174.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">175</td>
+              <td>Medinova Medicals</td>
+              <td>51-2-3/15 Near AMG Hospital <br> Nakkavanipalem </td>
+              <td>Raparthi Sudhakar</td>
+              <td></td>
+              <td>1.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp175.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">176</td>
+              <td>Karthikeya Electricals <br> Inverters &amp; Batteries</td>
+              <td>50-1-10 Nakkavanipalem </td>
+              <td>Varahabhatla Sai Krishana</td>
+              <td>7799334488</td>
+              <td>8.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp176.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">177</td>
+              <td>KK Saloon</td>
+              <td>50-1-12 Nakkavanipalem </td>
+              <td>Ponakalapalli Venkataramana</td>
+              <td>9866034696</td>
+              <td>9.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp177.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">178</td>
+              <td>Nirmala Jyothi Floor Mill</td>
+              <td>50-1-3 Gandhi Nagar Satyam Jn </td>
+              <td>Sakata Jagadamba</td>
+              <td>9440788288</td>
+              <td>9.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp178.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">179</td>
+              <td>Sai Lakshmi Home Foods</td>
+              <td>50-27-14 TPT Colony Seetammadhara </td>
+              <td>Burle Suribabu</td>
+              <td>9966539144</td>
+              <td>15.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp179.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">180</td>
+              <td>Vaisakhi Distributors Branch</td>
+              <td>50-40-28A TPT Colony Sitammadhara </td>
+              <td>V Satyanarayana</td>
+              <td>9246674477</td>
+              <td>17.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp180.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">181</td>
+              <td>Sri Sai Shankar</td>
+              <td>Shop No. 17 VUDA Janata <br> Complex Sitammadhara </td>
+              <td>Sai Sankar</td>
+              <td>9848344949</td>
+              <td>22.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp181.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">182</td>
+              <td>Variety Centre</td>
+              <td>shop No. 13 VUDA Janatha <br> Complex Sitammadhara </td>
+              <td>Jaideep</td>
+              <td>9347232999</td>
+              <td>22.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp182.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">183</td>
+              <td>Poonam Dresses</td>
+              <td>Shop No. 18 Janatha <br> Complex Sitammadhara </td>
+              <td>Vimala</td>
+              <td>9030370922</td>
+              <td>22.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp183.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">184</td>
+              <td>Sri LakshmI Sai Enterprises</td>
+              <td>50-40-29 TPT Colony Sitammadhara </td>
+              <td>Chandaka Venkata nagaraju</td>
+              <td>9951218555</td>
+              <td>23.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp184.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">185</td>
+              <td>Sri Kameswari Jewellers</td>
+              <td>50-40-31-3 TPT Colony Sitammadhara </td>
+              <td>Voona Venkatarmana Mohan</td>
+              <td>9491086565</td>
+              <td>23.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp185.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">186</td>
+              <td>Satya Sai Jewellers</td>
+              <td>50-43-31/4 TPT Colony Sitammadhara </td>
+              <td>Korada Nagabhushanam Gupta</td>
+              <td>9490011461</td>
+              <td>23.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp186.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">187</td>
+              <td>Rao's Snacks corner</td>
+              <td>50-53-4/7 Opp Bank of <br> Baroda Sitammadhara </td>
+              <td>Padala Mallikharjuna rao</td>
+              <td>9866531729</td>
+              <td>23.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp187.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">188</td>
+              <td>Sri Sairam Mess</td>
+              <td>8-44-1/4 China Waltair near old Cbi </td>
+              <td>Karadi pOlarao</td>
+              <td>7382466804</td>
+              <td>25.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp188.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">189</td>
+              <td>Sweet stall</td>
+              <td>MIG 27 Hb Colony </td>
+              <td>Akula Appalaraju</td>
+              <td>7674085588</td>
+              <td>30.05.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp189.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">190</td>
+              <td>Meghana Computer Repairs</td>
+              <td>MIG 29 2nd Bus Stop HB Colony </td>
+              <td>Sakuru Apparao</td>
+              <td>9848025870</td>
+              <td>30.05.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp190.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">191</td>
+              <td>Kalinga Function Hall</td>
+              <td>55-8-33/2 Hb Colony </td>
+              <td>PV Ramanamurthy</td>
+              <td>8106778695</td>
+              <td>22.05.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp191.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">192</td>
+              <td>Sri Devi Medicals</td>
+              <td>2-13-14 MIG 1A21 MVP Colony </td>
+              <td>Komireddi Venkatanaidu</td>
+              <td>9294058869</td>
+              <td>29.04.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp192.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">193</td>
+              <td>NCT Metal Mart</td>
+              <td>Near Venkateswara Swamy <br> Temple Sitammadhara </td>
+              <td>Epuri Chandra Sekhar</td>
+              <td>8897297057</td>
+              <td>22.05.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp193.pdf">Download</a></td>
+          </tr>
+          <tr>
+              <td style="text-align:center">194</td>
+              <td>Aaron Technologies</td>
+              <td>54-11-60 AP GO's Colony VS Krishna <br> Govt College Road Maddilapalem </td>
+              <td>PCD Raj</td>
+              <td>9441200163</td>
+              <td>23.05.2015</td>
+              <td><a target="_blank" href="/assets/pdf/InspectionReport/Vishakapatnum/vskp194.pdf">Download</a></td>
+          </tr>
+
+
+      </tbody>
+        </table>
+        </div>
+      </div>
+      
+       
+    </main>
+    <footer class="footer pt-4 pb-2 pb-md-5 pt-sm-5">
+      <div class="container-fluid pb-1 pb-md-0 px-md-5">
+        <div class="dark-mode footer-new-bg rounded-5 position-relative overflow-hidden w-100 py-5 px-3 px-sm-4 px-xl-5 mx-auto" style="max-width: 1660px;">
+          <div class="position-absolute top-50 start-50 translate-middle" style="width: 1664px;"><img src="assets/img/landing/web-studio/footer-wave.png" alt="Wave"></div>
+          <div class="container-fluid position-relative zindex-2 pt-md-3 pt-lg-4 pt-xl-5 pb-2">
+            <div class="row pb-2">
+           
+              <div class="col-md-4">
+                <h6 class="fw-bold"><i class='fa fa-user-circle-o'
+                    style='font-size:22px;color:white;padding-right: 10px;'></i>Key Contacts</h6>
+                <ul class="nav flex-column fs-sm">
+                  <li class="nav-item"><a class="nav-link fw-normal px-0 py-1" href="mailto:email@example.com"><i
+                        class='fa fa-user' style='font-size:18px;color:white;padding-right: 10px;'></i>
+                      Additional Commissioner of Labour
+                    </a></li>
+                  <li class="nav-item"><a class="nav-link fw-normal px-0 py-1" href="tel:+15262200444"><i
+                        class='fa fa-envelope'
+                        style='font-size:18px;color:white;padding-right: 10px;'></i>apjointcommissioneroflabour1@gmail.com</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <h6 class="fw-bold"><i class='fa fa-user-circle-o'
+                    style='font-size:22px;color:white;padding-right: 10px;'></i>Meeseva Tech Support</h6>
+                <ul class="nav flex-column fs-sm">
+                  <li class="nav-item"><a class="nav-link fw-normal px-0 py-1" href="mailto:email@example.com"><i
+                        class='fa fa-user' style='font-size:18px;color:white;padding-right: 10px;'></i>
+                      (Integrated Registration & Combined Annual Returns)</a></li>
+                  <li class="nav-item"><a class="nav-link fw-normal px-0 py-1" href="tel:+15262200459"><i
+                        class='fa fa-phone' style='font-size:18px;color:white;padding-right: 10px;'></i>040-45676688</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link fw-normal px-0 py-1" href="tel:+15262200444"><i
+                        class='fa fa-envelope'
+                        style='font-size:18px;color:white;padding-right: 10px;'></i>meeseva.support@aptonline.in</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-2">
+                <h6 class="fw-bold"><i class='fa fa-user-circle-o'
+                    style='font-size:22px;color:white;padding-right: 10px;'></i>Key Contacts</h6>
+                <ul class="nav flex-column fs-sm">
+                  <li class="nav-item"><a class="nav-link fw-normal px-0 py-1" href="mailto:email@example.com"><i
+                        class='fa fa-user' style='font-size:18px;color:white;padding-right: 10px;'></i>
+                      --</a></li>
+                  <li class="nav-item"><a class="nav-link fw-normal px-0 py-1" href="tel:+15262200459"><i
+                        class='fa fa-phone' style='font-size:18px;color:white;padding-right: 10px;'></i>+91
+                      949255104</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link fw-normal px-0 py-1" href="tel:+15262200444"><i
+                        class='fa fa-envelope'
+                        style='font-size:18px;color:white;padding-right: 10px;'></i>col.labour@gmail.com</a></li>
+                </ul>
+              </div>
+
+              <div class="col-md-2">
+                <h6 class="fw-bold"><i class='fa fa-user-circle-o'
+                    style='font-size:22px;color:white;padding-right: 10px;'></i>IT Cell</h6>
+                <ul class="nav flex-column fs-sm">
+                  <li class="nav-item"><a class="nav-link fw-normal px-0 py-1" href="mailto:email@example.com"><i
+                        class='fa fa-user' style='font-size:18px;color:white;padding-right: 10px;'></i>
+                      --</a></li>
+                  <li class="nav-item"><a class="nav-link fw-normal px-0 py-1" href="tel:+15262200459"><i
+                        class='fa fa-phone' style='font-size:18px;color:white;padding-right: 10px;'></i>+ 91
+                      8688256467</a></li>
+                  <li class="nav-item"><a class="nav-link fw-normal px-0 py-1" href="tel:+15262200444"><i
+                        class='fa fa-envelope'
+                        style='font-size:18px;color:white;padding-right: 10px;'></i>itcell.aplabour@gmail.com</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="d-sm-flex align-items-center justify-content-between pt-4 pt-md-5 mt-2 mt-md-0 mt-lg-2 mt-xl-4">
+
+
+              <div class="d-flex justify-content-center order-sm-2 me-md-n2">
+                <div class="nav flex-nowrap justify-content-center justify-content-sm-start order-sm-2 mb-3 mb-sm-0"><a
+                    class="nav-link fw-normal py-0 px-3" href="privacy-policy.html">Privacy Policy</a><a
+                    class="nav-link fw-normal py-0 px-3" href="disclaimer.html">Disclaimer</a></div>
+
+                <div class="d-sm-flex text-nowrap justify-content-center justify-content-md-start">
+
+                  <p class="fs-sm order-sm-1 text-center  pt-4 pt-sm-0 mb-0 me-4"><span class="text-white">&copy; 2023
+                      All
+                      rights reserved by Labour Department. Government Of Andhra Pradesh </span></p>
+                  </span></p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+    </footer>
+    <!-- Back to top button--><a class="btn-scroll-top" href="#top" data-scroll>
+      <svg viewBox="0 0 40 40" fill="currentColor" xmlns="../external.html?link=http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="19" fill="none" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"></circle>
+      </svg><i class="ai-arrow-up"></i></a>
+    <!-- Vendor scripts: js libraries and plugins-->
+    <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="assets/vendor/parallax-js/dist/parallax.min.js"></script>
+    <script src="assets/vendor/aos/dist/aos.js"></script>
+    <script src="assets/vendor/%40lottiefiles/lottie-player/dist/lottie-player.js"></script>
+    <script src="assets/vendor/img-comparison-slider/dist/index.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Main theme script-->
+    <script src="assets/js/theme.min.js"></script>
+    <!-- Customizer-->
+    <script>!function(){function e(e){return localStorage.getItem(e)}function r(e,r){localStorage.setItem(e,r)}var t=document.getElementById("customizer-styles"),n=document.getElementById("custom-generated-styles"),o=`\n    :root {\n      ${e("theme-primary")&&`--ar-primary: ${e("theme-primary")};`}\n      ${e("theme-primary-rgb")&&`--ar-primary-rgb: ${e("theme-primary-rgb")};`}\n      ${e("theme-warning")&&`--ar-warning-rgb: ${e("theme-warning")};`}\n      ${e("theme-warning-rgb")&&`--ar-warning-rgb: ${e("theme-warning-rgb")};`}\n      ${e("theme-info")&&`--ar-info-rgb: ${e("theme-info")};`}\n      ${e("theme-info-rgb")&&`--ar-info-rgb: ${e("theme-info-rgb")};`}\n      ${e("theme-success")&&`--ar-success-rgb: ${e("success-info")};`}\n      ${e("theme-success-rgb")&&`--ar-success-rgb: ${e("success-info-rgb")};`}\n      ${e("theme-danger")&&`--ar-danger-rgb: ${e("danger-info")};`}\n      ${e("theme-danger-rgb")&&`--ar-danger-rgb: ${e("danger-info-rgb")};`}\n      ${e("theme-font-family")&&`--ar-body-font-family: ${e("theme-font-family")};`}\n      ${e("theme-root-font-size")&&`--ar-root-font-size: ${e("theme-root-font-size")};`}\n      ${e("theme-body-font-size")&&`--ar-body-font-size: ${e("theme-body-font-size")};`}\n      ${e("theme-border-width")&&`--ar-border-width: ${e("theme-border-width")};`}\n      ${e("theme-border-radius")&&`--ar-border-radius: ${e("theme-border-radius")};`}\n      ${e("theme-border-radius-sm")&&`--ar-border-radius-sm: ${e("theme-border-radius-sm")};`}\n      ${e("theme-border-radius-lg")&&`--ar-border-radius-lg: ${e("theme-border-radius-lg")};`}\n      ${e("theme-border-radius-xl")&&`--ar-border-radius-xl: ${e("theme-border-radius-xl")};`}\n      ${e("theme-border-radius-2xl")&&`--ar-border-radius-2xl: ${e("theme-border-radius-2xl")};`}\n      ${e("theme-primary")&&`--ar-link-color: ${e("theme-primary")};`}\n      ${e("theme-primary-btn-hover-active-border-bg-color")&&`--ar-link-hover-color: ${e("theme-primary-btn-hover-active-border-bg-color")};`}\n    }\n    .btn-primary {\n      ${e("theme-primary")&&`--ar-btn-bg: ${e("theme-primary")};`}\n      ${e("theme-primary")&&`--ar-btn-border-color: ${e("theme-primary")};`}\n      ${e("theme-primary-btn-hover-active-border-bg-color")&&`--ar-btn-hover-bg: ${e("theme-primary-btn-hover-active-border-bg-color")};`}\n      ${e("theme-primary-btn-hover-active-border-bg-color")&&`--ar-btn-hover-border-color: ${e("theme-primary-btn-hover-active-border-bg-color")};`}\n      ${e("theme-primary-btn-hover-active-border-bg-color")&&`--ar-btn-active-bg: ${e("theme-primary-btn-hover-active-border-bg-color")};`}\n      ${e("theme-primary-btn-hover-active-border-bg-color")&&`--ar-btn-active-border-color: ${e("theme-primary-btn-hover-active-border-bg-color")};`}\n      ${e("theme-primary")&&`--ar-btn-disabled-bg: ${e("theme-primary")};`}\n      ${e("theme-primary")&&`--ar-btn-disabled-border-color: ${e("theme-primary")};`}\n    }\n    .btn-warning {\n      ${e("theme-warning")&&`--ar-btn-bg: ${e("theme-warning")};`}\n      ${e("theme-warning")&&`--ar-btn-border-color: ${e("theme-warning")};`}\n      ${e("theme-warning-btn-hover-active-border-bg-color")&&`--ar-btn-hover-bg: ${e("theme-warning-btn-hover-active-border-bg-color")};`}\n      ${e("theme-warning-btn-hover-active-border-bg-color")&&`--ar-btn-hover-border-color: ${e("theme-warning-btn-hover-active-border-bg-color")};`}\n      ${e("theme-warning-btn-hover-active-border-bg-color")&&`--ar-btn-active-bg: ${e("theme-warning-btn-hover-active-border-bg-color")};`}\n      ${e("theme-warning-btn-hover-active-border-bg-color")&&`--ar-btn-active-border-color: ${e("theme-warning-btn-hover-active-border-bg-color")};`}\n      ${e("theme-warning")&&`--ar-btn-disabled-bg: ${e("theme-warning")};`}\n      ${e("theme-warning")&&`--ar-btn-disabled-border-color: ${e("theme-warning")};`}\n    }\n    .btn-info {\n      ${e("theme-info")&&`--ar-btn-bg: ${e("theme-info")};`}\n      ${e("theme-info")&&`--ar-btn-border-color: ${e("theme-info")};`}\n      ${e("theme-info-btn-hover-active-border-bg-color")&&`--ar-btn-hover-bg: ${e("theme-info-btn-hover-active-border-bg-color")};`}\n      ${e("theme-info-btn-hover-active-border-bg-color")&&`--ar-btn-hover-border-color: ${e("theme-info-btn-hover-active-border-bg-color")};`}\n      ${e("theme-info-btn-hover-active-border-bg-color")&&`--ar-btn-active-bg: ${e("theme-info-btn-hover-active-border-bg-color")};`}\n      ${e("theme-info-btn-hover-active-border-bg-color")&&`--ar-btn-active-border-color: ${e("theme-info-btn-hover-active-border-bg-color")};`}\n      ${e("theme-info")&&`--ar-btn-disabled-bg: ${e("theme-info")};`}\n      ${e("theme-info")&&`--ar-btn-disabled-border-color: ${e("theme-info")};`}\n    }\n    .btn-success {\n      ${e("theme-success")&&`--ar-btn-bg: ${e("theme-success")};`}\n      ${e("theme-success")&&`--ar-btn-border-color: ${e("theme-success")};`}\n      ${e("theme-success-btn-hover-active-border-bg-color")&&`--ar-btn-hover-bg: ${e("theme-success-btn-hover-active-border-bg-color")};`}\n      ${e("theme-success-btn-hover-active-border-bg-color")&&`--ar-btn-hover-border-color: ${e("theme-success-btn-hover-active-border-bg-color")};`}\n      ${e("theme-success-btn-hover-active-border-bg-color")&&`--ar-btn-active-bg: ${e("theme-success-btn-hover-active-border-bg-color")};`}\n      ${e("theme-success-btn-hover-active-border-bg-color")&&`--ar-btn-active-border-color: ${e("theme-success-btn-hover-active-border-bg-color")};`}\n      ${e("theme-success")&&`--ar-btn-disabled-bg: ${e("theme-success")};`}\n      ${e("theme-success")&&`--ar-btn-disabled-border-color: ${e("theme-success")};`}\n    }\n    .btn-danger {\n      ${e("theme-danger")&&`--ar-btn-bg: ${e("theme-danger")};`}\n      ${e("theme-danger")&&`--ar-btn-border-color: ${e("theme-danger")};`}\n      ${e("theme-danger-btn-hover-active-border-bg-color")&&`--ar-btn-hover-bg: ${e("theme-danger-btn-hover-active-border-bg-color")};`}\n      ${e("theme-danger-btn-hover-active-border-bg-color")&&`--ar-btn-hover-border-color: ${e("theme-danger-btn-hover-active-border-bg-color")};`}\n      ${e("theme-danger-btn-hover-active-border-bg-color")&&`--ar-btn-active-bg: ${e("theme-danger-btn-hover-active-border-bg-color")};`}\n      ${e("theme-danger-btn-hover-active-border-bg-color")&&`--ar-btn-active-border-color: ${e("theme-danger-btn-hover-active-border-bg-color")};`}\n      ${e("theme-danger")&&`--ar-btn-disabled-bg: ${e("theme-danger")};`}\n      ${e("theme-danger")&&`--ar-btn-disabled-border-color: ${e("theme-danger")};`}\n    }\n    .btn-outline-primary {\n      ${e("theme-primary")&&`--ar-btn-color: ${e("theme-primary")};`}\n      ${e("theme-primary")&&`--ar-btn-border-color: ${e("theme-primary")};`}\n      ${e("theme-primary")&&`--ar-btn-hover-bg: ${e("theme-primary")};`}\n      ${e("theme-primary")&&`--ar-btn-hover-border-color: ${e("theme-primary")};`}\n      ${e("theme-primary")&&`--ar-btn-active-bg: ${e("theme-primary")};`}\n      ${e("theme-primary")&&`--ar-btn-active-border-color: ${e("theme-primary")};`}\n      ${e("theme-primary")&&`--ar-btn-disabled-color: ${e("theme-primary")};`}\n      ${e("theme-primary")&&`--ar-btn-disabled-border-color: ${e("theme-primary")};`}\n    }\n    .btn-outline-warning {\n      ${e("theme-warning")&&`--ar-btn-color: ${e("theme-warning")};`}\n      ${e("theme-warning")&&`--ar-btn-border-color: ${e("theme-warning")};`}\n      ${e("theme-warning")&&`--ar-btn-hover-bg: ${e("theme-warning")};`}\n      ${e("theme-warning")&&`--ar-btn-hover-border-color: ${e("theme-warning")};`}\n      ${e("theme-warning")&&`--ar-btn-active-bg: ${e("theme-warning")};`}\n      ${e("theme-warning")&&`--ar-btn-active-border-color: ${e("theme-warning")};`}\n      ${e("theme-warning")&&`--ar-btn-disabled-color: ${e("theme-warning")};`}\n      ${e("theme-warning")&&`--ar-btn-disabled-border-color: ${e("theme-warning")};`}\n    }\n    .btn-outline-info {\n      ${e("theme-info")&&`--ar-btn-color: ${e("theme-info")};`}\n      ${e("theme-info")&&`--ar-btn-border-color: ${e("theme-info")};`}\n      ${e("theme-info")&&`--ar-btn-hover-bg: ${e("theme-info")};`}\n      ${e("theme-info")&&`--ar-btn-hover-border-color: ${e("theme-info")};`}\n      ${e("theme-info")&&`--ar-btn-active-bg: ${e("theme-info")};`}\n      ${e("theme-info")&&`--ar-btn-active-border-color: ${e("theme-info")};`}\n      ${e("theme-info")&&`--ar-btn-disabled-color: ${e("theme-info")};`}\n      ${e("theme-info")&&`--ar-btn-disabled-border-color: ${e("theme-info")};`}\n    }\n    .btn-outline-success {\n      ${e("theme-success")&&`--ar-btn-color: ${e("theme-success")};`}\n      ${e("theme-success")&&`--ar-btn-border-color: ${e("theme-success")};`}\n      ${e("theme-success")&&`--ar-btn-hover-bg: ${e("theme-success")};`}\n      ${e("theme-success")&&`--ar-btn-hover-border-color: ${e("theme-success")};`}\n      ${e("theme-success")&&`--ar-btn-active-bg: ${e("theme-success")};`}\n      ${e("theme-success")&&`--ar-btn-active-border-color: ${e("theme-success")};`}\n      ${e("theme-success")&&`--ar-btn-disabled-color: ${e("theme-success")};`}\n      ${e("theme-success")&&`--ar-btn-disabled-border-color: ${e("theme-success")};`}\n    }\n    .btn-outline-danger {\n      ${e("theme-danger")&&`--ar-btn-color: ${e("theme-danger")};`}\n      ${e("theme-danger")&&`--ar-btn-border-color: ${e("theme-danger")};`}\n      ${e("theme-danger")&&`--ar-btn-hover-bg: ${e("theme-danger")};`}\n      ${e("theme-danger")&&`--ar-btn-hover-border-color: ${e("theme-danger")};`}\n      ${e("theme-danger")&&`--ar-btn-active-bg: ${e("theme-danger")};`}\n      ${e("theme-danger")&&`--ar-btn-active-border-color: ${e("theme-danger")};`}\n      ${e("theme-danger")&&`--ar-btn-disabled-color: ${e("theme-danger")};`}\n      ${e("theme-danger")&&`--ar-btn-disabled-border-color: ${e("theme-danger")};`}\n    }\n  `,a=o;a=o.replace(/null|\s*(?![A-Z])/g,"");t.append(a),a.split("}").map(function(e){-1!==e.indexOf("{--")&&n.append(e+"}")});var i={root:t.sheet.cssRules[0],primaryBtn:t.sheet.cssRules[1],warningBtn:t.sheet.cssRules[2],infoBtn:t.sheet.cssRules[3],successBtn:t.sheet.cssRules[4],dangerBtn:t.sheet.cssRules[5],primaryOutlineBtn:t.sheet.cssRules[6],warningOutlineBtn:t.sheet.cssRules[7],infoOutlineBtn:t.sheet.cssRules[8],successOutlineBtn:t.sheet.cssRules[9],dangerOutlineBtn:t.sheet.cssRules[10]};function b(){n.innerHTML=i.root.cssText.replace(/null|\s*(?![A-Z])/g,""),n.innerHTML+=-1===i.primaryBtn.cssText.indexOf("{ }")?i.primaryBtn.cssText.replace(/ /g,""):"",n.innerHTML+=-1===i.warningBtn.cssText.indexOf("{ }")?i.warningBtn.cssText.replace(/ /g,""):"",n.innerHTML+=-1===i.infoBtn.cssText.indexOf("{ }")?i.infoBtn.cssText.replace(/ /g,""):"",n.innerHTML+=-1===i.successBtn.cssText.indexOf("{ }")?i.successBtn.cssText.replace(/ /g,""):"",n.innerHTML+=-1===i.dangerBtn.cssText.indexOf("{ }")?i.dangerBtn.cssText.replace(/ /g,""):"",n.innerHTML+=-1===i.primaryOutlineBtn.cssText.indexOf("{ }")?i.primaryOutlineBtn.cssText.replace(/ /g,""):"",n.innerHTML+=-1===i.warningOutlineBtn.cssText.indexOf("{ }")?i.warningOutlineBtn.cssText.replace(/ /g,""):"",n.innerHTML+=-1===i.infoOutlineBtn.cssText.indexOf("{ }")?i.infoOutlineBtn.cssText.replace(/ /g,""):"",n.innerHTML+=-1===i.successOutlineBtn.cssText.indexOf("{ }")?i.successOutlineBtn.cssText.replace(/ /g,""):"",n.innerHTML+=-1===i.dangerOutlineBtn.cssText.indexOf("{ }")?i.dangerOutlineBtn.cssText.replace(/ /g,""):""}function s(e){var r=0,t=0,n=0;return 4==e.length?(r="0x"+e[1]+e[1],t="0x"+e[2]+e[2],n="0x"+e[3]+e[3]):7==e.length&&(r="0x"+e[1]+e[2],t="0x"+e[3]+e[4],n="0x"+e[5]+e[6]),+r+","+ +t+","+ +n}function c(e,r){var t=parseInt(e.replace("#",""),16),n=Math.round(2.55*r),o=(t>>16)+n,a=(t>>8&255)+n,i=(255&t)+n;return"#"+(16777216+65536*(o<255?o<1?0:o:255)+256*(a<255?a<1?0:a:255)+(i<255?i<1?0:i:255)).toString(16).slice(1)}for(var l=document.querySelectorAll("#theme-colors .color-swatch"),d=0;d<l.length;d++){var m=l[d].querySelector("label"),h=l[d].querySelector('input[type="color"]');colorInput=l[d].querySelector('input[type="text"]'),colorInput.value=e(l[d].id)||colorInput.value,h.value=e(l[d].id)||h.value,m.style.backgroundColor=e(l[d].id)||h.value,h.addEventListener("input",function(e){var n=e.target.parentElement.querySelector("label"),o=e.target.parentElement.querySelector('input[type="text"]'),a=e.target.value;t.sheet.cssRules[d+1];r("theme-"+e.target.id,a),r("theme-"+e.target.id+"-rgb",s(a)),r("theme-"+e.target.id+"-btn-hover-active-border-bg-color",c(a,-10)),n.style.backgroundColor=a,o.value=a,i.root.style.setProperty("--ar-"+e.target.id,a),i.root.style.setProperty("--ar-"+e.target.id+"-rgb",s(a)),i[e.target.id+"Btn"].style.setProperty("--ar-btn-bg",a),i[e.target.id+"Btn"].style.setProperty("--ar-btn-border-color",a),i[e.target.id+"Btn"].style.setProperty("--ar-btn-hover-bg",c(a,-10)),i[e.target.id+"Btn"].style.setProperty("--ar-btn-hover-border-color",c(a,-10)),i[e.target.id+"Btn"].style.setProperty("--ar-btn-active-bg",c(a,-10)),i[e.target.id+"Btn"].style.setProperty("--ar-btn-active-border-color",c(a,-10)),i[e.target.id+"Btn"].style.setProperty("--ar-btn-disabled-bg",a),i[e.target.id+"Btn"].style.setProperty("--ar-btn-disabled-border-color",a),i[e.target.id+"OutlineBtn"].style.setProperty("--ar-btn-color",a),i[e.target.id+"OutlineBtn"].style.setProperty("--ar-btn-border-color",a),i[e.target.id+"OutlineBtn"].style.setProperty("--ar-btn-hover-bg",a),i[e.target.id+"OutlineBtn"].style.setProperty("--ar-btn-hover-border-color",a),i[e.target.id+"OutlineBtn"].style.setProperty("--ar-btn-active-bg",a),i[e.target.id+"OutlineBtn"].style.setProperty("--ar-btn-active-border-color",a),i[e.target.id+"OutlineBtn"].style.setProperty("--ar-btn-disabled-color",a),i[e.target.id+"OutlineBtn"].style.setProperty("--ar-btn-disabled-border-color",a),"primary"===e.target.id&&(r("theme-link-hover-color",c(a,-10)),i.root.style.setProperty("--ar-link-color",a),i.root.style.setProperty("--ar-link-hover-color",c(a,-10))),b()}),colorInput.addEventListener("change",function(e){var t=e.target.parentElement.querySelector("label"),n=e.target.parentElement.querySelector('input[type="color"]'),o=e.target.value;0!=o.length&&o.startsWith("#")&&(r("theme-"+n.id,o),r("theme-"+n.id+"-rgb",s(o)),r("theme-"+n.id+"-btn-hover-active-border-bg-color",c(o,-10)),t.style.backgroundColor=o,n.value=o,i.root.style.setProperty("--ar-"+n.id,o),i.root.style.setProperty("--ar-"+n.id+"-rgb",s(o)),i[n.id+"Btn"].style.setProperty("--ar-btn-bg",o),i[n.id+"Btn"].style.setProperty("--ar-btn-border-color",o),i[n.id+"Btn"].style.setProperty("--ar-btn-hover-bg",c(o,-10)),i[n.id+"Btn"].style.setProperty("--ar-btn-hover-border-color",c(o,-10)),i[n.id+"Btn"].style.setProperty("--ar-btn-active-bg",c(o,-10)),i[n.id+"Btn"].style.setProperty("--ar-btn-active-border-color",c(o,-10)),i[n.id+"Btn"].style.setProperty("--ar-btn-disabled-bg",o),i[n.id+"Btn"].style.setProperty("--ar-btn-disabled-border-color",o),i[n.id+"OutlineBtn"].style.setProperty("--ar-btn-color",o),i[n.id+"OutlineBtn"].style.setProperty("--ar-btn-border-color",o),i[n.id+"OutlineBtn"].style.setProperty("--ar-btn-hover-bg",o),i[n.id+"OutlineBtn"].style.setProperty("--ar-btn-hover-border-color",o),i[n.id+"OutlineBtn"].style.setProperty("--ar-btn-active-bg",o),i[n.id+"OutlineBtn"].style.setProperty("--ar-btn-active-border-color",o),i[n.id+"OutlineBtn"].style.setProperty("--ar-btn-disabled-color",o),i[n.id+"OutlineBtn"].style.setProperty("--ar-btn-disabled-border-color",o),"primary"===n.id&&(r("theme-link-hover-color",c(o,-10)),i.root.style.setProperty("--ar-link-color",o),i.root.style.setProperty("--ar-link-hover-color",c(o,-10))),b())})}var g=document.getElementById("font-url"),u=document.getElementById("google-font");u.href=e("theme-font-url")||g.value,g.value=e("theme-font-url")||g.value,g.addEventListener("blur",function(e){var t=e.target.value;r("theme-font-url",t),u.href=t});var v=document.getElementById("body-font-family");v.value=e("theme-font-family")||v.value,v.addEventListener("blur",function(e){var t=e.target.value;r("theme-font-family",t),i.root.style.setProperty("--ar-body-font-family",t),b()});var $=document.getElementById("root-font-size");$.value=e("theme-root-font-size")||$.value,$.addEventListener("change",function(e){var t=e.target.value;r("theme-root-font-size",t),i.root.style.setProperty("--ar-root-font-size",t),b()});var y=document.getElementById("body-font-size");y.value=e("theme-body-font-size")||y.value,y.addEventListener("change",function(e){var t=e.target.value;r("theme-body-font-size",t),i.root.style.setProperty("--ar-body-font-size",t),b()});var p=document.getElementById("border-width");p.value=parseInt(e("theme-border-width"))||p.value,p.addEventListener("input",function(e){var t=e.target.value;r("theme-border-width",t+"px"),i.root.style.setProperty("--ar-border-width",t+"px"),b()});var f=document.getElementById("border-radius");f.value=parseFloat(e("theme-border-radius"))||f.value,f.addEventListener("input",function(e){var t=e.target.value;r("theme-border-radius",t+"rem"),i.root.style.setProperty("--ar-border-radius",t+"rem"),b()});var B=document.querySelectorAll('#theme-border-radiuses input[type="number"');for(d=0;d<B.length;d++)B[d].value=e("theme-"+B[d].id+"multiplier")||B[d].value,B[d].addEventListener("input",function(e){var t=e.target.value;r("theme-"+e.target.id,"calc(var(--ar-border-radius) * "+t+")"),r("theme-"+e.target.id+"multiplier",t),i.root.style.setProperty("--ar-"+e.target.id,"calc(var(--ar-border-radius) * "+t+")"),b()});var w=document.getElementById("customizer"),x=document.getElementById("customizer-btns");e("theme-customizer-btns")&&x.classList.remove("d-none"),w.addEventListener("change",function(e){r("theme-customizer-btns",!0),x.classList.remove("d-none")}),document.getElementById("customizer-reset-btn").addEventListener("click",function(){for(var e=[],r=0;r<localStorage.length;r++)"theme"==localStorage.key(r).substring(0,5)&&e.push(localStorage.key(r));for(r=0;r<e.length;r++)localStorage.removeItem(e[r]);window.location.reload()});var P=document.getElementById("copy-styles-btn");P.addEventListener("click",function(){var e=document.createRange();e.selectNode(n),window.getSelection().removeAllRanges(),window.getSelection().addRange(e),navigator.clipboard.writeText(n.innerHTML),this.innerHTML='<i class="ai-check me-2 ms-n1"></i>Copied!',setTimeout(function(){P.innerHTML='<i class="ai-copy me-2 ms-n1"></i>Copy styles'},2e3)})}();</script>
+  </body>
+
+<!-- Mirrored from around.createx.studio/index.html by HTTrack Website Copier/3.x [XR&CO'2017], Thu, 04 May 2023 10:13:29 GMT -->
+</html>
