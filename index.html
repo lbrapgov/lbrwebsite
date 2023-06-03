@@ -32,7 +32,7 @@
     <script src="/assets/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="/assets/css/animate.css">
-    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
@@ -414,6 +414,8 @@
   <link rel="stylesheet" media="screen" href="assets/vendor/swiper/swiper-bundle.min.css" />
   <!-- Main Theme Styles + Bootstrap-->
   <link rel="stylesheet" media="screen" href="assets/css/theme.min.css">
+  <!-- <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script> -->
+
   <!-- <link rel="stylesheet" href="/assets/css/slick.css"> -->
   <!-- Customizer generated styles-->
   <style id="customizer-styles"></style>
@@ -541,8 +543,8 @@
               <a href="index.html" aria-expanded="false"><img href="index.html
                 " src="/assets/img/home-icon.png" alt="" srcset=""></a>
               <a href="/index.html" title="Home" class="home"><i style="font-size:26px;color:white" class="fa fa-home"> </i></a>
-              <a class="nav-link menu-space" href="/index.html"><img src="/assets/img/home-icon.png" alt=""
-                  srcset=""></a>
+              <a href="index.html" class="menu__link" role="link" tabindex="1" title="labour">
+                <i class="fa fa-home" style="color: white;font-size: 20px;padding-top: 8px;"></i></a>
 
             </li> -->
             <li class="menu__item is-collapsed first collapsed menu-mlid-218">
@@ -919,28 +921,21 @@
                             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            <!-- <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button> -->
 
                           </div>
-                          <!-- <div class="carousel-inner" style="overflow: visible;">
-                            <div class="carousel-item active">
-                              <img src="/assets/img/slide-1.jpg" class="d-block" alt="..." style="height:66vh; width: 96%;">
-                            </div>
-                            <div class="carousel-item">
-                              <img src="/assets/img/slide-3.png" class="d-block" alt="..." style="height:66vh; width: 96%;">
-
-                                           </div>
-                            <div class="carousel-item">
-                              <img src="/assets/img/slide-2.jpeg" class="d-block" alt="..." style="height:66vh; width: 96%;">
-
-                            </div>
-                            
-                          </div> -->
+      
                           <div class="carousel-inner" style="overflow: visible;">
-                            <div class="carousel-item active">
+                            <!-- <div class="carousel-item active">
+                              <div class="container">
+                                <img src="/assets/img/banner-image-new.png" class="d-block" alt="..." style="width: 100%;">
+
+                              </div>
+                                           </div> -->
+                            <!-- <div class="carousel-item active">
                               <img src="/assets/img/banner-image-new.png" class="d-block" alt="..." style="width: 100%;">
-                            </div>
-                            <div class="carousel-item">
+                            </div> -->
+                            <div class="carousel-item active">
                               <div class="container">
                                 <div class="row cm-section">
                                   <div class="col-md-4 d-flex flex-column justify-content-center align-items-center">
@@ -956,8 +951,7 @@
                                       <div>
                                         <h6>Sri Y. S. JAGAN MOHAN REDDY</h6>
                                         <span>
-                                          Hon’ble Chief Minister </br>
-                                          Government of Andhra Pradesh
+                                          Hon’ble Chief Minister  
                                         </span>
                                       </div>
                                     </div>
@@ -981,7 +975,9 @@
                                       <div>
                                         <h6>Sri. Gummanur Jayaram</h6>
                                         <span>
-                                          Minister for Labour<br>
+                                          Minister for Labour
+                                        
+                                        of Andhra Pradesh
                   
                                         </span>
                                       </div>
@@ -1004,7 +1000,7 @@
                                         molestias doloremque!
                                       </p>
                                       <div>
-                                        <h6>M. Hari Jawaharlal IAS
+                                        <h6> Sri. M. Hari Jawaharlal IAS
                                         </h6>
                                         <span>
                                           Principal Secretary to Government
@@ -1034,123 +1030,33 @@
           <div class="quick-links">
             <div class="qlink-icon globe-1 animated bounceInRight">
                 <div class="qlink-border">
-                  <i class="icon-globe"></i>
-                  <!-- <i style="font-size:24px; color: white;" class="fa">&#xf2c3;</i> -->
+                  <i class="fa fa-cogs" style="font-size:20px;color:white"></i>
                 </div>
-                <a href="https://apiic.in/wp-content/uploads/2022/07/New-Allotment-Regulations-2020_compressed-1.pdf" target="_blank" title="New Allotment Regulations 2020">New Allotment Regulations 2020</a>
+                <a href="https://core.ap.gov.in/cmdashboard/index.aspx" target="_blank" title="New Allotment Regulations 2020">CM CORE DASHBOARD</a>
             </div>
             <div class="qlink-icon file animated bounceInRight">
                 <div class="qlink-border">
-                    <i class="icon-file"></i>
+                  <i class="fa fa-edit" style="font-size:20px;color:white"></i>
                 </div>
-                <a href="https://apiic.in/wp-content/uploads/2022/07/Final-Lease-Deed.pdf" target="_blank" title="Draft Lease Format">Draft Lease Format</a>
+                <a href="http://www.bima.ap.gov.in/" target="_blank" title="Draft Lease Format">YSR BHIMA</a>
             </div>
             <div class="qlink-icon globe-2 animated bounceInRight">
                 <div class="qlink-border">
-                    <i class="icon-globe"></i>
+                  <i class="fa fa-cogs" style="font-size:20px;color:white"></i>
                 </div>
-                <a href="#" title="GSTIN :37AABCA9029K1ZG 
-                    PAN NUMBER :AABCA9029K
-                ">GSTIN :37AABCA9029K1ZG <br>
-                    PAN NUMBER :AABCA9029K
-                </a>
+                <a href="http://aplabourwelfareboard.ap.gov.in/aplwb/index.jsp" target="_blank" title="Draft Lease Format">BENEFITS DISBURSEMENTS</a>
+
             </div>
             <div class="qlink-icon file1 animated bounceInRight">
                 <div class="qlink-border">
-                    <i class="icon-file"></i>
+                  <i class="fa fa-edit" style="font-size:20px;color:white"></i>
                 </div>
-                <a href="https://apiic.in/wp-content/uploads/2022/07/Approved-Circular.pdf" target="_blank" title="SC/ST Land Rebate Circular">SC/ST Land Rebate Circular</a>
+                <a href="http://labour.ap.gov.in:8080/industrialdisputes/indisputeshome.php" target="_blank" title="SC/ST Land Rebate Circular">INDUSTRIAL DISPUTES</a>
             </div>
         </div>
       </div>
   </section>
 
-    <!-- <section class="container pt-5 mt-5">
-      <div id="minsters-carousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#minsters-carousel" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#minsters-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#minsters-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="container">
-              <div class="row cm-section">
-                <div class="col-md-4 d-flex flex-column justify-content-center align-items-center">
-                  <img src="/assets/img/cm-pic.png" alt="" class="w-100 cm-section-img">
-                </div>
-                <div class="col-md-8 cm-message">
-                  <div>
-                    <h5>Chief Minister's Message</h5>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae inventore veritatis rerum facilis
-                      quod sed dolor quisquam nostrum eos quos, molestiae maiores porro laborum unde architecto quasi
-                      perspiciatis numquam ut.
-                    </p>
-                    <div>
-                      <h6>Sri Y. S. JAGAN MOHAN REDDY</h6>
-                      <span>
-                        Hon’ble Chief Minister </br>
-                        Government of Andhra Pradesh
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="container">
-              <div class="row cm-section">
-                <div class="col-md-4 d-flex flex-column justify-content-center align-items-center">
-                  <img src="/assets/img/minister-pic.png" alt="" class="cm-section-img" style="width:70%;">
-                </div>
-                <div class="col-md-8 cm-message">
-                  <div>
-                    <h5>Minister's Message</h5>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam aliquam tempore dolorem id
-                      harum a molestiae ullam similique eos, delectus, obcaecati quibusdam culpa ut? Soluta ratione ipsa
-                      totam aliquid tempora.
-                    </p>
-                    <div>
-                      <h6>Sri. Gummanur Jayaram</h6>
-                      <span>
-                        Minister for Labour<br>
-
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="container">
-              <div class="row cm-section">
-                <div class="col-md-4 d-flex flex-column justify-content-center align-items-center">
-                  <img src="/assets/img/commissioner-pic.png" alt="" class="cm-section-img" style="width:70%;">
-                </div>
-                <div class="col-md-8 cm-message">
-                  <div>
-                    <h5>Commissioner Message</h5>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam officiis id minus cumque tempore
-                      nobis quia, modi reiciendis cum at dolores deleniti cupiditate fugiat, impedit ipsam numquam odit
-                      molestias doloremque!
-                    </p>
-                    <div>
-                      <h6>Sri. M.V. Seshagiri Babu, IAS</h6>
-                      <span>
-                        Special Commissioner of Labour
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
 
     <section class="content-section mt-0 container focus-sector">
       <h2 class="text-center pb-5 pt-5 mt-5" style="color: #1751c1;">Quick Links</h2>
@@ -1220,7 +1126,7 @@
               <div class="accordion accordion-flush" id="accordionFlushExample">
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="flush-headingOne">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" style="color: #1751c1;">
                      Latest News
                     </button>
                   </h2>
@@ -1256,8 +1162,8 @@
                   </div>
                 </div>
                 <div class="accordion-item">
-                  <h2 class="accordion-header" id="flush-headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  <h2 class="accordion-header" id="flush-headingTwo"> 
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo" style="color: #1751c1;">
                       Latest Updates
                     </button>
                   </h2>
@@ -1361,7 +1267,7 @@
                 </div>
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="flush-headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree" style="color: #1751c1;">
                       Notices
                     </button>
                   </h2>
@@ -1425,11 +1331,11 @@
                 </div>
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="flush-headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefour" aria-expanded="false" aria-controls="flush-collapsefour" style="color: #1751c1;">
                       Common List of ACL's
                     </button>
                   </h2>
-                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                  <div id="flush-collapsefour" class="accordion-collapse collapse" aria-labelledby="flush-headingfour" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
                       <div class="mt-4">
                         <div class="d-flex">
@@ -1522,8 +1428,91 @@
 
     <section class="container pt-5">
       <h2 class="text-center pb-5 pt-5" style="color: #1751c1;">Our services</h2>
-
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4 pb-sm-3 pb-md-4 pb-xl-5">
+      <div class="container">
+        <div class="row justify-content-center my-5">
+          <div class="col-12 col-lg-3">
+                  <div class="card">
+                      <div class="card-body" style="background: #F44336; padding: 20px;">
+                          <a style="background: #F44336;"
+                           href="" class="btn btn-default hvr-bounce-to-bottom">Registrations <br>263049</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-12 col-lg-3">
+                  <div class="card">
+                      <div class="card-body" style="background: #E81E63; padding: 20px;" >
+                          <a style="background: #E81E63;"  href="" class="btn btn-default hvr-bounce-to-bottom">APSE <br> 261648</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-12 col-lg-3">
+                  <div class="card">
+                      <div class="card-body" style="background: #9C27B0; padding: 20px;">
+                          <a style="background: #9C27B0;" href="" class="btn btn-default hvr-bounce-to-bottom">Beedi & Cigar <br>18</a>
+                      </div>
+                  </div>
+              </div>
+           <div class="col-12 col-lg-3 pb-3">
+                  <div class="card">
+                      <div class="card-body" style="background: #673AB7; padding: 20px;">
+                          <a style="background: #673AB7;" href="" class="btn btn-default hvr-bounce-to-bottom">CLRA(PE)<br>379</a>
+                      </div>
+                  </div>
+              </div>
+          <div class="col-12 col-lg-3">
+                  <div class="card">
+                      <div class="card-body" style="background: #4CAF50; padding: 20px;">
+                          <a style="background: #4CAF50;" href="" class="btn btn-default hvr-bounce-to-bottom">CLRA(CLC)<br>583</a>
+                      </div>
+                  </div>
+              </div><div class="col-12 col-lg-3">
+                  <div class="card">
+                      <div class="card-body" style="background: #8BC34A; padding: 20px;">
+                          <a style="background: #8BC34A;" href="" class="btn btn-default hvr-bounce-to-bottom">ISMW(PE)<br>94</a>
+                      </div>
+                  </div>
+              </div><div class="col-12 col-lg-3">
+                  <div class="card">
+                      <div class="card-body" style="background: #03A9F4; padding: 20px;">
+                          <a style="background: #03A9F4;" href="" class="btn btn-default hvr-bounce-to-bottom">ISMW(CLC)<br>157</a>
+                      </div>
+                  </div>
+              </div>
+          <div class="col-12 col-lg-3 pb-3">
+                  <div class="card">
+                      <div class="card-body" style="background: #00BCD4; padding: 20px;">
+                          <a style="background: #00BCD4;" href="" class="btn btn-default hvr-bounce-to-bottom">MTW<br>121</a>
+                      </div>
+                  </div>
+              </div>
+           <div class="col-12 col-lg-3">
+                  <div class="card">
+                      <div class="card-body" style="background: #A99800; padding: 20px;">
+                          <a style="background: #A99800;" href="" class="btn btn-default hvr-bounce-to-bottom">PG<br>49</a>
+                      </div>
+                  </div>
+              </div> <div class="col-12 col-lg-3">
+                  <div class="card">
+                      <div class="card-body" style="background: #DDA602; padding: 20px;">
+                          <a style="background: #DDA602;" href="" class="btn btn-default hvr-bounce-to-bottom">AnnualReturns<br>3202</a>
+                      </div>
+                  </div>
+              </div> <div class="col-12 col-lg-3">
+                  <div class="card">
+                      <div class="card-body" style="background: #FF9800; padding: 20px;">
+                          <a style="background: #FF9800;" href="" class="btn btn-default hvr-bounce-to-bottom">CIS<br>33073</a>
+                      </div>
+                  </div>
+              </div> <div class="col-12 col-lg-3">
+                  <div class="card">
+                      <div class="card-body" style="background: #FF5722; padding: 20px;">
+                          <a style="background: #FF5722;" href="" class="btn btn-default hvr-bounce-to-bottom">JIS<br>0</a>
+                      </div>
+                  </div>
+              </div>
+        </div>
+      </div>
+      <!-- <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4 pb-sm-3 pb-md-4 pb-xl-5">
         <div class="col"><a class="card bg-secondary border-0 h-80 text-decoration-none"
             href="https://core.ap.gov.in/cmdashboard/index.aspx  "  target="_blank">
             <div class="card-body pb-0 text-center pt-4">
@@ -1574,23 +1563,20 @@
                   class="ai-arrow-right our-services-button"></i></div>
             </div>
           </a></div>
-      </div>
+      </div> -->
     </section>
 
 
 
+   
 
 
-
-    <section class="container pt-3">
-      <div class="row pt-2 pt-sm-4 pt-md-4 pt-lg-4 pb-xxl-2 mt-md-3 mt-lg-0">
-        <!-- <div class="col-lg-5 mb-5 mb-lg-0">
-            <div class="h1 text-center text-lg-start pb-md-2 pb-xl-0 mb-4 mb-xl-5">Improve your skills and gain knowledge in one application. Become the best version of yourself</div>
-            <div class="d-flex justify-content-center justify-content-lg-start"><a class="btn btn-dark btn-lg px-3 py-2 me-3" href="#"><img class="d-dark-mode-none mx-1" src="assets/img/market/appstore-light.svg" width="136" alt="App Store"><img class="d-none d-dark-mode-block mx-1" src="assets/img/market/appstore-dark.svg" width="136" alt="App Store"></a><a class="btn btn-dark btn-lg px-3 py-2" href="#"><img class="d-dark-mode-none mx-1" src="assets/img/market/googleplay-light.svg" width="135" alt="Google Play"><img class="d-none d-dark-mode-block mx-1" src="assets/img/market/googleplay-dark.svg" width="135" alt="Google Play"></a></div>
-          </div> -->
+    <!-- <section class="container pt-3">
+      <div class="row pt-sm-4 pt-md-4 pt-lg-4 pb-xxl-2 mt-md-3 mt-lg-0">
+       
         <div class="col-md-12">
           <div class="row">
-            <h2 class="text-center pb-5" style="color: #1751c1;">Act wise Registrations </h2>
+            <h2 class="text-center pb-5 pt-5" style="color: #1751c1;">Act wise Registrations </h2>
 
             <div class="col-md-3 pb-3">
               <div class="d-flex flex-column h-80 rounded-1 text-center p-3" style="background: #F44336; box-shadow: 0px 4px 20px rgb(0 0 0 / 20%);
@@ -1687,278 +1673,13 @@
 
         </div>
       </div>
-    </section>
+    </section> -->
 
 
 
 
     
-    <!-- <section class="schemes_policies">
-
-      <div class="container-fluid">
-        <h2 class="text-center pb-2" style="color: #1751c1;">Latest Updates</h2>
-
-        <div class="bg_schemesPolices focus-sector-schemes">
-          <section class="schemes_policies pharma-schemes">
-            <div class="container-fluid">
-              <div class="col-md-12">
-                <div>
-                  <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                      <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
-                        aria-selected="true">Latest Updates</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
-                        aria-selected="false">Notices</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <button class="nav-link" id="pills-list-tab" data-bs-toggle="pill" data-bs-target="#pills-list"
-                        type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Common List of
-                        ACL's</button>
-                    </li>
-                  </ul>
-                  <div class="tab-content mt-5" id="pills-tabContent">
-                    <div class="tab-pane fade active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                      <div class="row">
-                        <div class="col-md-6">
-                          <div class="zones pt-4">
-                            <div class="zone-item align-items-baseline">
-
-                              <div class="zone-icon"> <img src="/assets/img/zone-iocn.png" alt=""> </div>
-                              <div class="text">
-                              
-                           <p> <a class="latest-updates-links" href="/assets/pdf/2019LETF_MS15.pdf" target="_blank"> Ease of Compliance with Labour Laws – Exemption of all Shops and Establishments from
-                                  renewal of
-                                  registration under the Andhra Pradesh Shops & Establishments Act, 1988 – Notification
-                                  Issued–
-                                  Modification- Orders – Issued.</a></p>
-                              </div>
-                            </div>
-                            <div class="zone-item align-items-baseline">
-                              <div class="zone-icon"> <img src="/assets/img/zone-iocn.png" alt=""> </div>
-                              <div class="text">
-                                <p> <a class="latest-updates-links" href="/assets/pdf/LatestUpdates/STATUS_ON_GAZETTES.docx" target="_blank">Preliminary Notification On Revision Of Minimum Wages Scheduled Employments </p></a>
-                              </div>
-                            </div>
-                            <div class="zone-item align-items-baseline">
-                              <div class="zone-icon"> <img src="/assets/img/zone-iocn.png" alt=""> </div>
-                              <div class="text">
-                                <p><a class="latest-updates-links" href="/assets/pdf/LatestUpdates/Minimum_Wages_eGazette_01102018_31032019.pdf" target="_blank">Vda Points In Respect Of Scheduled Employments Under Minimum Wages Act Applicable
-                                  From 01.10.2018 TO
-                                  31.03.2019 </p></a>
-                              </div>
-                            </div>
-                            <div class="zone-item align-items-baseline">
-                              <div class="zone-icon"> <img src="/assets/img/zone-iocn.png" alt=""> </div>
-                              <div class="text">
-                                <p>May Day Celebrations A) Instructions B) Application Form For Best Management Award C)
-                                  Application Form
-                                  For Sharma Shakthi Award</p>
-                              </div>
-                            </div>
-                            <div class="zone-item align-items-baseline">
-                              <div class="zone-icon"> <img src="/assets/img/zone-iocn.png" alt=""> </div>
-                              <div class="text">
-                                <p><a class="latest-updates-links" href="/assets/pdf/LatestUpdates/code_of_discipline.pdf" target="_blank">Code Of Discipline</a></p>
-                              </div>
-                            </div>
-                            <div class="zone-item align-items-baseline">
-                              <div class="zone-icon"> <img src="/assets/img/zone-iocn.png" alt=""> </div>
-                              <div class="text">
-                                <p>Cpi Number For Industrial Workers Of Tri-Centre During The Period July'2017 TO
-                                  December'2017 A)
-                                  Instructions B) Cpi Numbers</p>
-                              </div>
-                            </div>
-                            <div class="zone-item align-items-baseline">
-                              <div class="zone-icon"> <img src="/assets/img/zone-iocn.png" alt=""> </div>
-                              <div class="text">
-                                <p><a class="latest-updates-links" href="/assets/pdf/LatestUpdates/Age_group_wise_members.xlsx" target="_blank">Age Group Wise Number Of Members Under PMJJBY-YSR BIMA</a> </p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="zones pt-4">
-                            <div class="zone-item align-items-baseline">
-                              <div class="zone-icon"> <img src="/assets/img/zone-iocn.png" alt=""> </div>
-                              <div class="text">
-                                <p><a class="latest-updates-links" href="/assets/pdf/LatestUpdates/AP_public_services_Ordinance_Gazette_copy.pdf" target="_blank">Public Service Delivery Guarentee Rules</a> </p>
-                              </div>
-                            </div>
-                            <div class="zone-item align-items-baseline">
-                              <div class="zone-icon"> <img src="/assets/img/zone-iocn.png" alt=""> </div>
-                              <div class="text">
-                                <p><a class="latest-updates-links" href="/assets/pdf/LatestUpdates/Note_on_CB_Updated.pdf" target="_blank">Note On PMJJBY-YSR BIMA Scheme </a></p>
-                              </div>
-                            </div>
-                            <div class="zone-item align-items-baseline">
-                              <div class="zone-icon"> <img src="/assets/img/zone-iocn.png" alt=""> </div>
-                              <div class="text">
-                                <p><a class="latest-updates-links" href="/assets/pdf/LatestUpdates/vda_01042018_30092018.pdf" target="_blank">Variable Dearness Allowance(VDA) For Industrial Workers & Agricultural Workers W.e.f
-                                  01-04-2018</a> </p>
-                              </div>
-                            </div>
-                            <div class="zone-item align-items-baseline">
-                              <div class="zone-icon"> <img src="/assets/img/zone-iocn.png" alt=""> </div>
-                              <div class="text">
-                                <p><a class="latest-updates-links" href="/assets/pdf/LatestUpdates/gazette_vda_01042018.pdf" target="_blank">Gazette Notifications On Cpi Numbers For VDA Calculation.(W.e.f From 01-04-2018).
-                                </a> </p>
-                              </div>
-                            </div>
-                            <div class="zone-item align-items-baseline">
-                              <div class="zone-icon"> <img src="/assets/img/zone-iocn.png" alt=""> </div>
-                              <div class="text">
-                                <p><a class="latest-updates-links" href="/assets/pdf/LatestUpdates/SKM_36717031409220.pdf" target="_blank">Cpi Numbers For Jute Mill Workers For The Period Of 6 Months Frm July-2016 TO
-                                  December 2016</a> </p>
-                              </div>
-                            </div>
-                            <div class="zone-item align-items-baseline">
-                              <div class="zone-icon"> <img src="/assets/img/zone-iocn.png" alt=""> </div>
-                              <div class="text">
-                                <p><a class="latest-updates-links" href="/assets/pdf/LatestUpdates/List_of_call_centers.jpg" target="_blank">YSR BIMA - List Of Call Centres For Claim Information (వైఎస్ఆర్‌ బీమా క్రింద క్లెయిమ్
-                                  సమాచారం కొరకు
-                                  జిల్లా కాల్ సెంటర్లు).</a> </p>
-                              </div>
-                            </div>
-                            <div class="zone-item align-items-baseline">
-                              <div class="zone-icon"> <img src="/assets/img/zone-iocn.png" alt=""> </div>
-                              <div class="text">
-                                <p><a class="latest-updates-links" href="/assets/pdf/LatestUpdates/general_transfers_ln_2018.pdf" target="_blank">Public Services - Transfers And Postings Of Employees - Lifting Of Ban On Transfers
-                                  From 05-05-2018 To
-                                  04-06-2018 - Vacancy Positions.</a> </p>
-                              </div>
-                            </div>
-                            <div class="zone-item align-items-baseline">
-                              <div class="zone-icon"> <img src="/assets/img/zone-iocn.png" alt=""> </div>
-                              <div class="text">
-                                <p><a class="latest-updates-links" href="/assets/pdf/LatestUpdates/PSDGA_Rules_Gazette_Notification.pdf" target="_blank"> Public Service Delivery Guarantee Ordinance Gazette </a></p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="tab-pane fade" id="pills-profile" role="tabpane2" aria-labelledby="pills-profile-tab">
-                      <div class="row">
-                        <div class="col-md-6">
-                          <div class="zones pt-4">
-                            <div class="zone-item align-items-baseline">
-                              <div class="zone-icon"> <img src="/assets/img/zone-iocn.png" alt=""> </div>
-                              <div class="text">
-                                <p><a class="latest-updates-links" href="/assets/pdf/ShowCausee/2) Annexure-A.pdf" target="_blank">Annexure-A : Regular Cadre Strength of the ACLs with Stations in the Combined State
-                                  of AP</a> </p>
-                              </div>
-                            </div>
-                            <div class="zone-item align-items-baseline">
-                              <div class="zone-icon"> <img src="/assets/img/zone-iocn.png" alt=""> </div>
-                              <div class="text">
-                                <p><a class="latest-updates-links" href="/assets/pdf/ShowCausee/3) Annexure-B.pdf" target="_blank">Annexure-B : Deputation posts of ACL(SSS) of APBOCWW Board in the cadre of ACL</a> </p>
-                              </div>
-                            </div>
-                            <div class="zone-item align-items-baseline">
-                              <div class="zone-icon"> <img src="/assets/img/zone-iocn.png" alt=""> </div>
-                              <div class="text">
-                                <p><a class="latest-updates-links" href="/assets/pdf/ShowCausee/4) Annexure-C.pdf" target="_blank">Annexure-C : Inter-se-seniority of ALOs of Zone 1 to 6 & City Cadre in the Combined
-                                  State of AP</a> </p>
-                              </div>
-                            </div>
-                            <div class="zone-item align-items-baseline">
-                              <div class="zone-icon"> <img src="/assets/img/zone-iocn.png" alt=""> </div>
-                              <div class="text">
-                                <p><a class="latest-updates-links" href="/assets/pdf/ShowCausee/5) Annexure-D.pdf" target="_blank">Annexure-D : Inter-se-seniority of Supdts. of Subordinate Offices in the Combined
-                                  State of AP </a></p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="zones pt-4">
-                            <div class="zone-item align-items-baseline">
-                              <div class="zone-icon"> <img src="/assets/img/zone-iocn.png" alt=""> </div>
-                              <div class="text">
-                                <p><a class="latest-updates-links" href="/assets/pdf/ShowCausee/6) Annexure-E.pdf" target="_blank">Annexure-E : Seniority of Supdts. of Head Office in the Combined State of AP</a> </p>
-                              </div>
-                            </div>
-                            <div class="zone-item align-items-baseline">
-                              <div class="zone-icon"> <img src="/assets/img/zone-iocn.png" alt=""> </div>
-                              <div class="text">
-                                <p><a class="latest-updates-links" href="/assets/pdf/ShowCausee/7) Annexure-F.pdf" target="_blank">Annexure-F : Cycle of promotions of the post of ACLs treating the post as State wide
-                                  Post</a> </p>
-                              </div>
-                            </div>
-                            <div class="zone-item align-items-baseline">
-                              <div class="zone-icon"> <img src="/assets/img/zone-iocn.png" alt=""> </div>
-                              <div class="text">
-                                <p><a class="latest-updates-links" href="/assets/pdf/ShowCausee/8) Annexure-G.pdf" target="_blank">Annexure-G : Names of all persons promoted as ACLs in the panel years 2008 - 09 to
-                                  2010-11 and working as
-                                  ACLs, retired etc. as on 01.06.2014 and covered in the review </a></p>
-                              </div>
-                            </div>
-                            <div class="zone-item align-items-baseline">
-                              <div class="zone-icon"> <img src="/assets/img/zone-iocn.png" alt=""> </div>
-                              <div class="text">
-                                <p><a class="latest-updates-links" href="/assets/pdf/ShowCausee/9) Annexure-H.pdf" target="_blank">Annexure-H : Name of persons promoted as ACLs in the panel years 2008-09 to 2010-11
-                                  and working as ACLs
-                                  and working in the feeder post of ALO/ Supdt and come up in the review for promotion
-                                  as ACL consequent on
-                                  review of promotions</a></p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="tab-pane fade" id="pills-list" role="tabpane2" aria-labelledby="pills-profile-tab">
-                      <div class="row">
-                        <div class="col-md-6">
-                          <div class="zones pt-4">
-                            <div class="zone-item align-items-baseline">
-                              <div class="zone-icon"> <img src="/assets/img/zone-iocn.png" alt=""> </div>
-                              <div class="text">
-                                <p><a class="latest-updates-links" href="/assets/pdf/FreshNotie/Review of promotions treats to post of ACL as State wide post - Show Cause Notice Issued.pdf" target="_blank">Review of promotions treats to post of ACL as State wide post - Show Cause Notice
-                                  Issued</a> </p>
-                              </div>
-                            </div>
-                            <div class="zone-item align-items-baseline">
-                              <div class="zone-icon"> <img src="/assets/img/zone-iocn.png" alt=""> </div>
-                              <div class="text">
-                                <p><a class="latest-updates-links" href="/assets/pdf/FreshNotie/Annexure - A.pdf" target="_blank">Annexure - A</a> </p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="zones pt-4">
-                            <div class="zone-item align-items-baseline">
-                              <div class="zone-icon"> <img src="/assets/img/zone-iocn.png" alt=""> </div>
-                              <div class="text">
-                                <p><a class="latest-updates-links" href="/assets/pdf/FreshNotie/Annexure - B.pdf" target="_blank">Annexure - B</a> </p>
-                              </div>
-                            </div>
-                            <div class="zone-item align-items-baseline">
-                              <div class="zone-icon"> <img src="/assets/img/zone-iocn.png" alt=""> </div>
-                              <div class="text">
-                                <p><a class="latest-updates-links" href="/assets/pdf/FreshNotie/Objections.pdf" target="_blank">Objections</a> </p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-        </div>
-      </div>
-    </section> -->
-
+    
 
     <footer class="footer pt-4 pb-2 pb-md-5 pt-sm-5">
       <div class="container-fluid pb-1 pb-md-0 px-md-5">
