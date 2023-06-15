@@ -5,6 +5,14 @@ $(function(){
 
 
 
-  function googleTranslateElementInit() {
-    new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-  }
+
+function googleTranslateElementInit() {
+new google.translate.TranslateElement({
+pageLanguage: 'en',
+autoDisplay: 'true',
+includedLanguages:'en,te', 
+layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
+}, 'google_translate_element');
+
+}
+

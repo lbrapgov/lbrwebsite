@@ -1,1814 +1,1430 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
-<!-- Mirrored from around.createx.studio/index.html by HTTrack Website Copier/3.x [XR&CO'2017], Thu, 04 May 2023 10:10:51 GMT -->
-<!-- Added by HTTrack -->
-<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 
 <head>
-  <meta charset="utf-8">
-  <title>Around | Multipurpose Bootstrap Template</title>
-  <!-- SEO Meta Tags-->
-  <meta name="description" content="Around - Multipurpose Bootstrap HTML Template">
-  <meta name="keywords"
-    content="bootstrap, business, corporate, coworking space, services, creative agency, dashboard, e-commerce, mobile app showcase, saas, multipurpose, product landing, shop, software, ui kit, web studio, landing, dark mode, html5, css3, javascript, gallery, slider, touch, creative">
-  <meta name="author" content="Createx Studio">
-  <!-- Viewport-->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Favicon and Touch Icons-->
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/Logo-ap.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/Logo-ap.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/Logo-ap.png">
+  <meta charset="utf-8" />
+  <meta name="MobileOptimized" content="width" />
+  <meta name="HandheldFriendly" content="true" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="/assets/images/Logo-ap.png" type="image/png" />
 
-
-  <link rel="manifest" href="assets/favicon/site.webmanifest">
-  <meta name="msapplication-TileColor" content="#080032">
+  <title>Home | Labour</title>
+  <link rel="stylesheet" media="screen" href="assets/css/theme.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <meta name="theme-color" content="white">
-  
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-    <script src="/assets/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/assets/css/animate.css">
-  
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    <!-- Theme mode-->
-  <script>
-    let mode = window.localStorage.getItem('mode'),
-      root = document.getElementsByTagName('html')[0];
-    if (mode !== undefined && mode === 'dark') {
-      root.classList.add('dark-mode');
-    } else {
-      root.classList.remove('dark-mode');
-    }
 
-
-  </script>
-  <!-- Scroll down animated button-->
-  <style>
-    .scroll-down-btn {
-      display: inline-block;
-      text-decoration: none;
-    }
-
-    .scroll-down-btn p {
-      margin-top: 1.25rem;
-      color: white;
-      font-size: .875rem;
-      font-weight: 500;
-      letter-spacing: .375rem;
-      text-indent: .375rem;
-      animation: colorText 5s ease-out infinite, nudgeText 5s ease-out infinite;
-    }
-
-    .mouse {
-      background: #2c333e linear-gradient(transparent 0%, transparent 50%, white 50%, white 100%);
-      position: relative;
-      width: 38px;
-      height: 65px;
-      margin: 0 auto;
-      border-radius: 6rem;
-      background-size: 100% 200%;
-      animation: colorSlide 5s linear infinite, nudgeMouse 5s ease-out infinite;
-    }
-
-    .mouse:before,
-    .mouse:after {
-      content: '';
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      margin: auto;
-    }
-
-    .mouse:before {
-      width: 34px;
-      height: 61px;
-      background-color: #121519;
-      border-radius: 6rem;
-    }
-
-    .mouse:after {
-      background-color: white;
-      width: .375rem;
-      height: .375rem;
-      border-radius: 100%;
-      animation: trackBallSlide 5s linear infinite;
-    }
-
-    @keyframes colorSlide {
-      0% {
-        background-position: 0% 100%;
-      }
-
-      20% {
-        background-position: 0% 0%;
-      }
-
-      21% {
-        background-color: #2c333e;
-      }
-
-      29.99% {
-        background-color: white;
-        background-position: 0% 0%;
-      }
-
-      30% {
-        background-color: #2c333e;
-        background-position: 0% 100%;
-      }
-
-      50% {
-        background-position: 0% 0%;
-      }
-
-      51% {
-        background-color: #2c333e;
-      }
-
-      59% {
-        background-color: white;
-        background-position: 0% 0%;
-      }
-
-      60% {
-        background-color: #2c333e;
-        background-position: 0% 100%;
-      }
-
-      80% {
-        background-position: 0% 0%;
-      }
-
-      81% {
-        background-color: #2c333e;
-      }
-
-      90%,
-      100% {
-        background-color: white;
-      }
-    }
-
-    @keyframes trackBallSlide {
-      0% {
-        opacity: 1;
-        transform: scale(1) translateY(-20px);
-      }
-
-      6% {
-        opacity: 1;
-        transform: scale(0.9) translateY(5px);
-      }
-
-      14% {
-        opacity: 0;
-        transform: scale(0.4) translateY(40px);
-      }
-
-      15%,
-      19% {
-        opacity: 0;
-        transform: scale(0.4) translateY(-20px);
-      }
-
-      28%,
-      29.99% {
-        opacity: 1;
-        transform: scale(1) translateY(-20px);
-      }
-
-      30% {
-        opacity: 1;
-        transform: scale(1) translateY(-20px);
-      }
-
-      36% {
-        opacity: 1;
-        transform: scale(0.9) translateY(5px);
-      }
-
-      44% {
-        opacity: 0;
-        transform: scale(0.4) translateY(40px);
-      }
-
-      45%,
-      49% {
-        opacity: 0;
-        transform: scale(0.4) translateY(-20px);
-      }
-
-      58%,
-      59.99% {
-        opacity: 1;
-        transform: scale(1) translateY(-20px);
-      }
-
-      60% {
-        opacity: 1;
-        transform: scale(1) translateY(-20px);
-      }
-
-      66% {
-        opacity: 1;
-        transform: scale(0.9) translateY(5px);
-      }
-
-      74% {
-        opacity: 0;
-        transform: scale(0.4) translateY(40px);
-      }
-
-      75%,
-      79% {
-        opacity: 0;
-        transform: scale(0.4) translateY(-20px);
-      }
-
-      88%,
-      100% {
-        opacity: 1;
-        transform: scale(1) translateY(-20px);
-      }
-    }
-
-    @keyframes nudgeMouse {
-
-      0%,
-      30%,
-      60%,
-      90% {
-        transform: translateY(0);
-      }
-
-      20%,
-      50%,
-      80% {
-        transform: translateY(8px);
-      }
-    }
-
-    @keyframes nudgeText {
-
-      0%,
-      30%,
-      60%,
-      90% {
-        transform: translateY(0);
-      }
-
-      20%,
-      50%,
-      80% {
-        transform: translateY(2px);
-      }
-    }
-
-    @keyframes colorText {
-
-      21%,
-      51%,
-      81% {
-        color: #2c333e;
-      }
-
-      30%,
-      60%,
-      90% {
-        color: white;
-      }
-    }
-  </style>
-  <!-- Page loading styles-->
-  <style>
-    .page-loading {
-      position: fixed;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      -webkit-transition: all .4s .2s ease-in-out;
-      transition: all .4s .2s ease-in-out;
-      background-color: #fff;
-      opacity: 0;
-      visibility: hidden;
-      z-index: 9999;
-    }
-
-    .dark-mode .page-loading {
-      background-color: #121519;
-    }
-
-    .page-loading.active {
-      opacity: 1;
-      visibility: visible;
-    }
-
-    .page-loading-inner {
-      position: absolute;
-      top: 50%;
-      left: 0;
-      width: 100%;
-      text-align: center;
-      -webkit-transform: translateY(-50%);
-      transform: translateY(-50%);
-      -webkit-transition: opacity .2s ease-in-out;
-      transition: opacity .2s ease-in-out;
-      opacity: 0;
-    }
-
-    .page-loading.active>.page-loading-inner {
-      opacity: 1;
-    }
-
-    .page-loading-inner>span {
-      display: block;
-      font-family: 'Inter', sans-serif;
-      font-size: 1rem;
-      font-weight: normal;
-      color: #6f788b;
-    }
-
-    .dark-mode .page-loading-inner>span {
-      color: #fff;
-      opacity: .6;
-    }
-
-    .page-spinner {
-      display: inline-block;
-      width: 2.75rem;
-      height: 2.75rem;
-      margin-bottom: .75rem;
-      vertical-align: text-bottom;
-      background-color: #d7dde2;
-      border-radius: 50%;
-      opacity: 0;
-      -webkit-animation: spinner .75s linear infinite;
-      animation: spinner .75s linear infinite;
-    }
-
-    .dark-mode .page-spinner {
-      background-color: rgba(255, 255, 255, .25);
-    }
-
-    @-webkit-keyframes spinner {
-      0% {
-        -webkit-transform: scale(0);
-        transform: scale(0);
-      }
-
-      50% {
-        opacity: 1;
-        -webkit-transform: none;
-        transform: none;
-      }
-    }
-
-    @keyframes spinner {
-      0% {
-        -webkit-transform: scale(0);
-        transform: scale(0);
-      }
-
-      50% {
-        opacity: 1;
-        -webkit-transform: none;
-        transform: none;
-      }
-    }
-  </style>
-  <!-- Page loading scripts-->
-  <script>
-    (function () {
-      window.onload = function () {
-        const preloader = document.querySelector('.page-loading');
-        preloader.classList.remove('active');
-        setTimeout(function () {
-          preloader.remove();
-        }, 1500);
-      };
-    })();
-
-  </script>
-  <!-- Import Google Font-->
-  <link rel="preconnect" href="../external.html?link=https://fonts.googleapis.com/">
-  <link rel="preconnect" href="../external.html?link=https://fonts.gstatic.com/" crossorigin>
-  <link
-    href="../external.html?link=https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap"
-    rel="stylesheet" id="google-font">
-  <!-- Vendor styles-->
-  <link rel="stylesheet" media="screen" href="assets/vendor/aos/dist/aos.css" />
-  <link rel="stylesheet" media="screen" href="assets/vendor/img-comparison-slider/dist/styles.css" />
-  <!-- Main Theme Styles + Bootstrap-->
-  <link rel="stylesheet" media="screen" href="assets/css/theme.min.css">
-  <link rel="stylesheet" media="screen" href="assets/vendor/swiper/swiper-bundle.min.css" />
-  <!-- Main Theme Styles + Bootstrap-->
-  <link rel="stylesheet" media="screen" href="assets/css/theme.min.css">
-  <!-- <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script> -->
-
-  <!-- <link rel="stylesheet" href="/assets/css/slick.css"> -->
-  <!-- Customizer generated styles-->
-  <style id="customizer-styles"></style>
-  <!-- Google Tag Manager-->
-
+  <link rel="stylesheet" media="all" href="libraries/superfish/css/superfish63d9.css?rvdmaf" />
+  <link rel="stylesheet" media="all" href="modules/custom/cmf_design/css/base63d9.css?rvdmaf" />
+  <link rel="stylesheet" media="all" href="modules/custom/cmf_design/css/base-responsive63d9.css?rvdmaf" />
+  <link rel="stylesheet" media="all" href="modules/custom/cmf_design/css/dropdown63d9.css?rvdmaf" />
+  <link rel="stylesheet" media="all" href="modules/custom/cmf_design/css/flexslider63d9.css?rvdmaf" />
+  <link rel="stylesheet" media="all" href="modules/custom/cmf_design/css/font-awesome.min63d9.css?rvdmaf" />
+  <link rel="stylesheet" media="all" href="modules/custom/cmf_design/css/grid63d9.css?rvdmaf" />
+  <link rel="stylesheet" media="all" href="modules/custom/cmf_design/css/font63d9.css?rvdmaf" />
+  <link rel="stylesheet" media="all" href="modules/custom/cmf_design/css/jquery.mCustomScrollbar63d9.css?rvdmaf" />
+  <link rel="stylesheet" media="all" href="modules/contrib/quicktabs/css/quicktabs63d9.css?rvdmaf" />
+  <link rel="stylesheet" media="all" href="themes/swfone/theme/css/bootstrap.min63d9.css?rvdmaf" />
+  <link rel="stylesheet" media="all" href="themes/swfone/theme/css/animate.min63d9.css?rvdmaf" />
+  <link rel="stylesheet" media="all" href="themes/swfone/theme/css/aos63d9.css?rvdmaf" />
+  <link rel="stylesheet" media="all" href="themes/swfone/theme/css/bootstrap63d9.css?rvdmaf" />
+  <link rel="stylesheet" media="all" href="themes/swfone/theme/css/site63d9.css?rvdmaf" />
+  <link rel="stylesheet" media="all" href="themes/swfone/theme/css/custom63d9.css?rvdmaf" />
+  <link rel="stylesheet" media="all" href="themes/swfone/theme/css/site-responsive63d9.css?rvdmaf" />
 </head>
-<!-- Body-->
-
-<body>
-  <!-- Google Tag Manager (noscript)-->
-
-  <!-- Page loading spinner-->
-  <div class="page-loading active">
-    <div class="page-loading-inner">
-      <div class="page-spinner"></div><span>Loading...</span>
-    </div>
-  </div>
-  <!-- Customizer modal-->
-  <div class="modal fade" id="customizer-modal" tabindex="-1" role="dialog">
-    <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title">Your custom styles</h4>
-          <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body py-4">
-          <p class="mb-3">Grab the generated styles below. Wrap them inside <code>&lt;style&gt;</code> tag and put in
-            the <code>&lt;head&gt;</code> section of your HTML document.</p>
-          <p class="mb-4"><span class='fw-medium'>IMPORTANT:</span> In order for these styles to take effect you have to
-            placed them
-            below:<br><code>&lt;link rel=&quot;stylesheet&quot; media=&quot;screen&quot; href=&quot;assets/css/theme.min.css&quot;&gt;</code>
-          </p>
-          <div class="bg-secondary overflow-hidden rounded-4">
-            <pre class="text-wrap bg-transparent border-0 text-dark p-4" id="custom-generated-styles"></pre>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button class="btn btn-secondary w-100 w-sm-auto mb-3 mb-sm-0" type="button"
-            data-bs-dismiss="modal">Close</button>
-          <button class="btn btn-primary w-100 w-sm-auto ms-sm-3" type="button" id="copy-styles-btn"><i
-              class="ai-copy me-2 ms-n1"></i>Copy styles</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <main class="page-wrapper">
-    <div class="dark-mode">
-      <!-- <ul class="mini-header">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#news">News</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#about">About</a></li>
-      </ul> -->
-     
-      <div class="info-nav">
-        <div class="info-navBg">
-            <div class="container d-flex">
-              <div class="col-md-12">
-                <div class="row">
-                  <div class="col-md-3">
-                    <div class="contact-info">
-                      <i class="fa fa-phone" aria-hidden="true"></i>
-                      +91-863-2381850
-                  </div>
-                  </div>
-                  <div class="col-md-3">
-                  </div>
-                  <div class="col-md-3">
-
-                  </div>
-                  <div class="col-md-3">
-                    <div id="google_translate_element"></div>
-
-                  </div>
-                </div>
-              </div>
-               
-               
-                </div>
-        </div>
-    </div>
-      <!-- <div class="mini-nav">
-        <div class="container">
-          <div class="row">
-            <div class="mobiel">
-              <p class="mini-nav-envelope"><i class="fa fa-envelope" style="font-size:14px;color:white"></i>labourdepartment@gmail.com
-              </p>
-              <p class="mini-nav-envelope"><i class="fa fa-phone" style="font-size:14px;color:white"></i>
-              </i>0000000000
-              </p>
-            </div>
-           
-          </div>
-
-        </div>
-         
-      
-       </div> -->
-      <div class="container">
-        <div class="pt-1 pb-3">
-
-          <img class="float-start" src="/assets/img/Logo-ap.png" alt="" srcset="">
-          <img class="m-auto d-block pt-2" src="/assets/img/Logo-labour.png" alt="" srcset="">
-
-        </div>
-      </div>
-
-
-
-
-
-    </div>
-
-
-    <header class="navbar navbar-expand-lg labour-header">
-      <div class="container">
-        
-        <button class="navbar-toggler ms-sm-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span
-            class="navbar-toggler-icon"></span></button>
-        <nav class="collapse navbar-collapse" id="navbarNav" style="font-size: 14px;">
-          <ul class="navbar-nav navbar-nav-scroll me-auto" style="--ar-scroll-height: 520px;">
-            <!-- <li class="nav-item dropdown">
-              <a href="index.html" aria-expanded="false"><img href="index.html
-                " src="/assets/img/home-icon.png" alt="" srcset=""></a>
-              <a href="/index.html" title="Home" class="home"><i style="font-size:26px;color:white" class="fa fa-home"> </i></a>
-              <a href="index.html" class="menu__link" role="link" tabindex="1" title="labour">
-                <i class="fa fa-home" style="color: white;font-size: 20px;padding-top: 8px;"></i></a>
-
-            </li> -->
-            <li class="menu__item is-collapsed first collapsed menu-mlid-218">
-              <a href="index.html" class="menu__link" role="link" tabindex="1" title="labour">
-                <i class="fa fa-home" style="color: white;font-size: 20px;padding-top: 8px;"></i></a></li>
-            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle active menu-space"
-                data-bs-toggle="dropdown" aria-expanded="false">ABOUT US</a>
-              <!-- <ul class="dropdown-menu">
-                <li class="dropdown"><a class="dropdown-item"
-                    href="https://onlineap.meeseva.gov.in/CitizenPortal/UserInterface/Citizen/Home.aspx"
-                    data-bs-toggle="dropdown" aria-expanded="false">About Us</a>
-                </li>
-
-              </ul> -->
-              <ul class="dropdown-menu">
-                <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown"
-                    aria-expanded="false">Labour Department</a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="labour-department-directory.html">Directory</a></li>
-                    <li><a class="dropdown-item" href="labour-department-schemes.html">Schemes</a></li>
-
-                  </ul>
-                </li>
-                <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown"
-                    aria-expanded="false">Welfare Board</a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="welfare-board-directory.html">Directory</a></li>
-                    <li><a class="dropdown-item" href="welfare-board-schemes.html">Schemes</a></li>
-
-                  </ul>
-                </li>
-                <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown"
-                    aria-expanded="false">BOCWW Board</a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="bocww-board-directory.html">Directory</a></li>
-                    <li><a class="dropdown-item" href="bocww-board-schemes.html">Schemes</a></li>
-
-                  </ul>
-                </li>
-              </ul>
-
-            </li>
-            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle active menu-space" href="#"
-                 aria-expanded="false">OTHER LINKS</a>
-
-              <ul class="dropdown-menu">
-                <li class="dropdown"><a class="dropdown-item" href="https://apbocwwb.ap.nic.in/" target="_blank"
-                     aria-expanded="false">BOCWWB</a>
-
-                </li>
-                <li class="dropdown"><a class="dropdown-item"
-                    href="http://aplabourwelfareboard.ap.gov.in/aplwb/index.jsp" target="_blank" 
-                    aria-expanded="false">Welfare Board</a>
-
-                </li>
-
-              </ul>
-
-            </li>
-            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle active menu-space" href="#"
-                 aria-expanded="false">REGISTRATIONS</a>
-
-              <ul class="dropdown-menu">
-                <li class="dropdown"><a class="dropdown-item"
-                    href="https://onlineap.meeseva.gov.in/CitizenPortal/UserInterface/Citizen/Home.aspx" target="_blank"
-                     aria-expanded="false"> Login for E-Registration/License/Renewal Under all
-                    Labour Laws</a>
-
-                </li>
-                <li class="dropdown"><a class="dropdown-item"
-                    href="https://onlineap.meeseva.gov.in/CitizenPortal/UserInterface/Citizen/Home.aspx" target="_blank"
-                     aria-expanded="false"> Combined Annual E-Return of Establishments Under
-                    All Labour Laws</a>
-
-                </li>
-                <li class="dropdown"><a class="dropdown-item"
-                    href="https://ap.meeseva.gov.in/DeptPortal/UserInterface/LoginForm.aspx" target="_blank" 
-                    aria-expanded="false"> Download Certificate</a>
-
-                </li>
-                <li class="dropdown"><a class="dropdown-item"
-                    href="https://ap.meeseva.gov.in/DeptPortal/UserInterface/LoginForm.aspx" target="_blank"
-                    aria-expanded="false"> Third party Verification of Registration/License</a>
-
-                </li>
-              </ul>
-
-            </li>
-            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle active menu-space" data-bs-toggle="dropdown"
-              aria-expanded="false">POLICY & LEGISLATION</a>
-           <ul class="dropdown-menu">
-             <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown"
-                 aria-expanded="false">Acts/Rules/Amendments</a>
-               <ul class="dropdown-menu">
-                 <li><a class="dropdown-item" href="list-of-central-state.html">List of Central and State</a></li>
-                 <li><a class="dropdown-item" href="Extracts of Central and State.html"> Extracts of Central and
-                     State</a></li>
-                 <li><a class="dropdown-item" href="Recent Amendments & New Acts.html"> Recent Amendments & New
-                     Acts</a></li>
-                 <li><a class="dropdown-item" href="Amendments.html"> Amendments</a></li>
-                 <li><a class="dropdown-item" href="Enhancement of Wage Limit.html"> Enhancement of Wage Limit</a>
-                 </li>
-                 <li><a class="dropdown-item" href="Integrated Registration Act,2015.html"> Integrated Registration
-                     Act,2015</a></li>
-                 <li><a class="dropdown-item" href="Contract Labour Act,2015.html"> Contract Labour Act,2015</a></li>
-                 <li><a class="dropdown-item" href="ReOrganisation Act 2014.html"> ReOrganisation Act 2014</a></li>
-
-
-               </ul>
-             </li>
-             <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown"
-                 aria-expanded="false">Regulations/Procedures</a>
-               <ul class="dropdown-menu">
-                 <li><a class="dropdown-item" href="Functional Areas.html"> Functional Areas</a></li>
-                 <li><a class="dropdown-item" href="inspection-procedure.html"> Inspection Procedure</a></li>
-                 <li><a class="dropdown-item" href="list-Voilations.html"> Checklist for Voilations</a></li>
-                 <li><a class="dropdown-item" href="Register Returns and Forms.html"> Register Returns and Forms</a>
-                 </li>
-                 <li><a class="dropdown-item" href="Exemptions and Self Certification.html"> Exemptions and Self
-                     Certification</a></li>
-                 <li><a class="dropdown-item" href="/assets/pdf/PSDGA/AP_public_services_Ordinance_Gazette_copy.pdf" target="_blank"> PSDGA Ordinance</a></li>
-                 <li><a class="dropdown-item" href="/assets/pdf/PSDGA/PSDGA_Rules_Gazette_Notification.pdf" target="_blank"> PSDGA Rules</a></li>
-                 <li><a class="dropdown-item" href="Concillation_Officer_Manual.html">
-                     Concillation_Officer_Manual</a></li>
-
-               </ul>
-             </li>
-             <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown"
-                 aria-expanded="false">Notifications</a>
-               <ul class="dropdown-menu">
-                 <li><a class="dropdown-item" href="Delegation of Powers to Officers.html"> Delegation of Powers to
-                     Officers</a></li>
-                 <li><a class="dropdown-item" href="Quasi Judicial Functions.html"> Quasi Judicial Functions</a></li>
-                 <li><a class="dropdown-item" href="Officer Under Various Acts.html"> Officer Under Various Acts</a>
-                 </li>
-                 <li><a class="dropdown-item" href="Sez Notifications.html"> Sez Notifications</a></li>
-                 <li><a class="dropdown-item" href="Online Registrations Instructions.html"> Online Registrations
-                     Instructions</a></li>
-                 <li><a class="dropdown-item" href="National, Festival & Other Holidays.html"> National, Festival &
-                     Other Holidays</a></li>
-                 <li><a class="dropdown-item" href="/assets/pdf/Acts/Notifications/Contract_Labour_Regulation_and_Abolition_Amendment.pdf" target="_blank"> Contract Labour</a></li>
-
-               </ul>
-             </li>
-           </ul>
-
-         </li>
-
-            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle active menu-space" href="#"
-                 aria-expanded="false">GENERAL</a>
-              <ul class="dropdown-menu">
-                <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#" 
-                    aria-expanded="false">G.O's</a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="PMJJBY - YSR Bima.html"> PMJJBY - YSR Bima</a></li>
-                    <li><a class="dropdown-item" href="Jurisidiction of Officers of The Dept.html"> Jurisidiction of
-                        Officers of The Dept</a></li>
-                    <li><a class="dropdown-item" href="National,Festival & Special Holidays.html"> National,Festival &
-                        Special Holidays</a></li>
-                    <li><a class="dropdown-item" href="Child Labour Subject.html"> Child Labour Subject</a></li>
-                    <li><a class="dropdown-item" href="Staff List of Labour Department.html"> Staff List of Labour
-                        Department</a></li>
-                    <li><a class="dropdown-item" href="General.html"> General</a></li>
-
-
-
-                  </ul>
-                </li>
-                <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#"
-                    aria-expanded="false">General Info</a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="Minimum,Contract & Outsource.html"> Minimum,Contract &
-                        Outsource</a></li>
-                    <li><a class="dropdown-item" href="Child Labour.html"> Child Labour</a></li>
-                    <li><a class="dropdown-item" href="Transfers.html"> Transfers</a></li>
-                    <li><a class="dropdown-item" href="Services.html"> Services</a></li>
-                    <li><a class="dropdown-item" href="Risk Assessment Criteria.html"> Risk Assessment Criteria</a></li>
-                    <li><a class="dropdown-item" href="Exempted Establishments.html"> Exempted Establishments</a></li>
-
-
-                  </ul>
-                </li>
-                <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#" 
-                    aria-expanded="false">PMJJBY - YSR Bima</a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="IRDA Licenced Broking Agencies.html"> IRDA Licenced Broking
-                        Agencies</a></li>
-                    <li><a class="dropdown-item" href="/assets/pdf/Age_group_wise_members.pdf" target="_blank"> Age Wise No.of Members</a></li>
-                    <li><a class="dropdown-item" href="/assets/pdf/Note_on_CB_Updated.pdf" target="_blank"> Note On PMJJBY</a></li>
-                    <li><a class="dropdown-item" href="/assets/pdf/Clarfication_payment_to_Natural_death_for_Building_worker.pdf" target="_blank"> Natural
-                        Death/Permanent/Partial Disability Due to accident</a></li>
-
-
-                  </ul>
-                </li>
-              </ul>
-
-            </li>
-       
-            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle active menu-space" href="#"
-               aria-expanded="false">EODB</a>
-
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="/eodb-reforms.html"
-                  >EODB Reforms</a>
-
-              </li>
-              <!-- <li><a class="dropdown-item" href="PMJJBY - YSR Bima.html"> PMJJBY - YSR Bima</a></li> -->
-
-              <li class="dropdown"><a class="dropdown-item"
-                  href="/EODB DashBoard.html" 
-                  aria-expanded="false">EODB DashBoard</a>
-
-              </li>
-              <li class="dropdown"><a class="dropdown-item"
-                href="EODB Report.html" 
-                aria-expanded="false">EODB Report</a>
-
-            </li>
-            <li class="dropdown"><a class="dropdown-item"
-              href="Latest GO's.html" 
-              aria-expanded="false">Latest GO's</a>
-
-          </li>
-
-            </ul>
-
-          </li>
-
-            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle active menu-space" href="#"
-                 aria-expanded="false">RTI</a>
-
-              <ul class="dropdown-menu">
-                <li class="dropdown"><a class="dropdown-item" target="_blank"
-                    href="/assets/pdf/RTI.pdf"
-                     aria-expanded="false">Notes</a>
-                </li>
-                <li class="dropdown"><a class="dropdown-item"
-                    href="/assets/pdf/RTI/NEW DIARY.pdf" target="_blank"
-                     aria-expanded="false"> Sub Notes</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle active menu-space" href="#"
-                 aria-expanded="false">REPORTS</a>
-              <ul class="dropdown-menu">
-                <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#" 
-                    aria-expanded="false">Inspection Archives</a>
-                  <ul class="dropdown-menu" style="overflow-y: scroll;
-                  height: 400px;">
-                    <li><a class="dropdown-item" href="Srikakulam.html"> Srikakulam</a></li>
-                    <li><a class="dropdown-item" href="parvathipuram-manyam.html">Parvathipuram Manyam </a></li>
-                    <li><a class="dropdown-item" href="Vizaianagaram.html"> Vizaianagaram</a></li>
-                    <li><a class="dropdown-item" href="Visakhapatnam.html"> Visakhapatnam</a></li>
-                    <li><a class="dropdown-item" href="alluri-sitha-rama-raju.html"> Alluri Sitharama Raju</a></li>
-                    <li><a class="dropdown-item" href="anakapalli.html"> Anakapalli</a></li>
-                    <li><a class="dropdown-item" href="kakinada.html"> Kakinada</a></li>
-                    <li><a class="dropdown-item" href="East Godavari.html"> East Godavari</a></li>
-                    <li><a class="dropdown-item" href="ambedhkr-konaseema.html">Dr.B.R. Ambedkar Konaseema</a></li>
-                    <li><a class="dropdown-item" href="eluru.html">Eluru</a></li>
-                    <li><a class="dropdown-item" href="West Godavari.html"> West Godavari</a></li>
-                    <li><a class="dropdown-item" href="ntr.html">NTR</a></li>
-                    <li><a class="dropdown-item" href="Krishna.html"> Krishna</a></li>
-                    <li><a class="dropdown-item" href="palnadu.html">Palnadu</a></li>
-                    <li><a class="dropdown-item" href="Guntur.html"> Guntur</a></li>
-                    <li><a class="dropdown-item" href="baptla.html">Bapatla</a></li>
-                    <li><a class="dropdown-item" href="Prakasam.html"> Prakasam</a></li>
-                    <li><a class="dropdown-item" href="Nellore.html"> Nellore</a></li>
-                    <li><a class="dropdown-item" href="Kurnool.html"> Kurnool</a></li>
-                    <li><a class="dropdown-item" href="nandyal.html">Nandyal</a></li>
-                    <li><a class="dropdown-item" href="Anantapur.html"> Anantapur</a></li>
-                    <li><a class="dropdown-item" href="sri-satya-sai.html">Sri Sathya Sai</a></li>
-                    <li><a class="dropdown-item" href="Kadapa.html"> YSR</a></li>
-                    <li><a class="dropdown-item" href="annamayya.html">Annamayya</a></li>
-                    <li><a class="dropdown-item" href="tirupathi.html">Tirupathi</a></li>
-                    <li><a class="dropdown-item" href="Chittoor.html"> Chittoor</a></li>
-
-
-                  </ul>
-                </li>
-              </ul>
-
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link menu-space" href="/assets/pdf/CitizenCharter/citizencharter.pdf" target="_blank"  alt=""srcset=""
-                >CITIZEN CHARTER</a>
-            </li>
-            <li class="nav-item"><a class="nav-link menu-space" href="contact-us.html">CONTACT</a></li>
-            <li class="nav-item"><a class="nav-link menu-space"
-                href="https://labour.ap.gov.in/EODB/Login.aspx" target="_blank">LOGIN</a></li>
-                
-          </ul>
-          <!-- <div class="d-sm-none p-3 mt-n3">
-                <a class="btn btn-primary w-100  mb-1" href="../external.html?link=https://themes.getbootstrap.com/product/around-multipurpose-template-ui-kit/" target="_blank" rel="noopener"><i class="ai-cart fs-xl me-2 ms-n1"></i>Buy now</a></div>
-            -->
-        </nav>
-      </div>
-    </header>
-    </div>
-    <!-- Page content-->
-    <!-- Hero-->
-    <!-- <section class="ignore-dark-mode position-relative py-5" style="height: 80vh;">
-      <div class="swiper swiper-scale-effect position-absolute top-0 start-0 w-100 h-100" data-swiper-options="{
-      &quot;effect&quot;: &quot;fade&quot;,
-      &quot;speed&quot;: 800,
-      &quot;autoplay&quot;: {
-        &quot;delay&quot;: 7000,
-        &quot;disableOnInteraction&quot;: false
-      },
-      &quot;pagination&quot;: {
-        &quot;el&quot;: &quot;.swiper-pagination&quot;,
-        &quot;clickable&quot;: true
-      }
-    }">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="swiper-slide-cover bg-position-top-center"
-              style="background-image: url(/assets/img/slide-1.jpg);"></div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper-slide-cover bg-position-top-center"
-              style="background-image: url(/assets/img/slide-3.png);">
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper-slide-cover bg-position-top-center"
-              style="background-image: url(/assets/img/slide-2.jpeg);"></div>
-          </div>
-        </div>
-        <div class="swiper-pagination mb-4"></div>
-      </div>
-      
-    </section> -->
-
-    <section class="home-banner">
-      <div class="Homebanner-overlay area">
-      <ul class="circles">
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-          </ul> 
-          <div class="container h-100">
-              <div class="row h-100">
-                  <div class="col-md-4">
-                      <div class="h-100 banner-content">
-                          <div class="home-content aos-init aos-animate" data-aos="fade-right">
-                              <h5><span>WELCOME TO</span>  <br>LABOUR COMMISSIONERATE</h5>
-                              <p>
-                                The Labour Commissionerate facilitates not only conflict resolution between the management and the trade unions in the organized industrial sectors but also serves the greater purpose of enhancing the welfare of the large and heterogenous sections of the unorganized working classes through the just enforcement of labour laws as well as through the proper implementation of the various social security schemes.
-                              </p>
-                              <div class="watchVideo_btn">
-                                  <a type="button" href="/about-us.html"  class="btn btn-info">
-                                      ABOUT US
-                                      <i class="icon-play-video animated pulse infinite" aria-hidden="true"></i>
-                                  </a>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-md-8">
-                      <div class="banner-content aos-init aos-animate" data-aos="zoom-in"style="padding-top: -12px; overflow:visible;">
-                    
-                        
-
-                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                          <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                            <!-- <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button> -->
-
-                          </div>
-      
-                          <div class="carousel-inner" style="overflow: visible;">
-                            <!-- <div class="carousel-item active">
-                              <div class="container">
-                                <img src="/assets/img/banner-image-new.png" class="d-block" alt="..." style="width: 100%;">
-
-                              </div>
-                                           </div> -->
-                            <!-- <div class="carousel-item active">
-                              <img src="/assets/img/banner-image-new.png" class="d-block" alt="..." style="width: 100%;">
-                            </div> -->
-                            <div class="carousel-item active">
-                              <div class="container">
-                                <div class="row cm-section">
-                                  <div class="col-md-4 d-flex flex-column justify-content-center align-items-center">
-                                    <img src="/assets/img/cm-pic.png" alt="" class="w-100 cm-section-img">
-                                  </div>
-                                  <div class="col-md-8 cm-message">
-                                    <div>
-                                      <h5>Chief Minister's Message</h5>
-                                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae inventore veritatis rerum facilis
-                                        quod sed dolor quisquam nostrum eos quos, molestiae maiores porro laborum unde architecto quasi
-                                        perspiciatis numquam ut.
-                                      </p>
-                                      <div>
-                                        <h6>Sri Y. S. JAGAN MOHAN REDDY</h6>
-                                        <span>
-                                          Hon’ble Chief Minister  
-                                        </span>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                                           </div>
-                            <div class="carousel-item">
-                              <div class="container">
-                                <div class="row cm-section">
-                                  <div class="col-md-4 d-flex flex-column justify-content-center align-items-center">
-                                    <img src="/assets/img/minister-pic.png" alt="" class="cm-section-img" style="width:70%;">
-                                  </div>
-                                  <div class="col-md-8 cm-message">
-                                    <div>
-                                      <h5>Minister's Message</h5>
-                                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam aliquam tempore dolorem id
-                                        harum a molestiae ullam similique eos, delectus, obcaecati quibusdam culpa ut? Soluta ratione ipsa
-                                        totam aliquid tempora.
-                                      </p>
-                                      <div>
-                                        <h6>Sri. Gummanur Jayaram</h6>
-                                        <span>
-                                          Minister for Labour
-                                        
-                                        of Andhra Pradesh
-                  
-                                        </span>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="carousel-item">
-                              <div class="container">
-                                <div class="row cm-section">
-                                  <div class="col-md-4 d-flex flex-column justify-content-center align-items-center">
-                                    <img src="/assets/img/Hari jawaharlal IAS.png" alt="" class="cm-section-img" style="width:70%;">
-                                  </div>
-                                  <div class="col-md-8 cm-message">
-                                    <div>
-                                      <h5>Secretary Message</h5>
-                                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam officiis id minus cumque tempore
-                                        nobis quia, modi reiciendis cum at dolores deleniti cupiditate fugiat, impedit ipsam numquam odit
-                                        molestias doloremque!
-                                      </p>
-                                      <div>
-                                        <h6> Sri. M. Hari Jawaharlal IAS
-                                        </h6>
-                                        <span>
-                                          Principal Secretary to Government
-                                        </span>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            
-                          </div>
-                          <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                          </button>
-                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                          </button> -->
-                        </div>
-                          
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <div class="quick-links">
-            <div class="qlink-icon globe-1 animated bounceInRight">
-                <div class="qlink-border">
-                  <i class="fa fa-cogs" style="font-size:20px;color:white"></i>
-                </div>
-                <a href="https://core.ap.gov.in/cmdashboard/index.aspx" target="_blank" title="New Allotment Regulations 2020">CM CORE DASHBOARD</a>
-            </div>
-            <div class="qlink-icon file animated bounceInRight">
-                <div class="qlink-border">
-                  <i class="fa fa-edit" style="font-size:20px;color:white"></i>
-                </div>
-                <a href="http://www.bima.ap.gov.in/" target="_blank" title="Draft Lease Format">YSR BHIMA</a>
-            </div>
-            <div class="qlink-icon globe-2 animated bounceInRight">
-                <div class="qlink-border">
-                  <i class="fa fa-cogs" style="font-size:20px;color:white"></i>
-                </div>
-                <a href="http://aplabourwelfareboard.ap.gov.in/aplwb/index.jsp" target="_blank" title="Draft Lease Format">BENEFITS DISBURSEMENTS</a>
-
-            </div>
-            <div class="qlink-icon file1 animated bounceInRight">
-                <div class="qlink-border">
-                  <i class="fa fa-edit" style="font-size:20px;color:white"></i>
-                </div>
-                <a href="http://labour.ap.gov.in:8080/industrialdisputes/indisputeshome.php" target="_blank" title="SC/ST Land Rebate Circular">INDUSTRIAL DISPUTES</a>
-            </div>
-        </div>
-      </div>
-  </section>
-
-
-    <section class="content-section mt-0 container focus-sector">
-      <h2 class="text-center pb-5 pt-5 mt-5" style="color: #1751c1;">Quick Links</h2>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-sm-12 col-md-4 custom-focus-card">
-            <div class="card department-card" style="
-                    position: relative;
-                    display: flex;
-                    flex-direction: column;
-                    min-width: 0;
-                    word-wrap: break-word;
-                    background-color: #fff;
-                    background-clip: border-box;
-                    border-radius: 0.25rem;
-                ">
-              <span class="badge"></span>
-              <p class="state-govt">Introduction</p>
-              <div class="mt-4">
-                <div class="d-flex">
-                  <img class="arrow" src="/assets/img/right-arrow.png" alt="arrow" />
-                  <a href="/about-us.html" class="arrow-data">
-                    About Us
-                  </a>
-                </div>
-                <div class="d-flex">
-                  <img class="arrow" src="/assets/img/right-arrow.png" alt="arrow" />
-                  <a href="http://factories.ap.gov.in/factories/" target="_blank" class="arrow-data">
-                    Factories Portal
-                  </a>
-                </div>
-                <div class="d-flex">
-                  <img class="arrow" src="/assets/img/right-arrow.png" alt="arrow" />
-                  <a href="https://www.apindustries.gov.in/APIndus/Default.aspx" target="_blank" class="arrow-data">
-                    Industries Portal
-                  </a>
-                </div>
-                <div class="d-flex">
-                  <img class="arrow" src="/assets/img/right-arrow.png" alt="arrow" />
-                  <a href="https://shramsuvidha.gov.in/home" target="_blank" class="arrow-data">
-                    Shram Suvidha Portal
-                  </a>
-                </div>
-                <div class="d-flex">
-                  <img class="arrow" src="/assets/img/right-arrow.png" alt="arrow" />
-                  <a href="https://labour.gov.in/" target="_blank" class="arrow-data">
-                    Ministry of Labour & Employment Portal
-                  </a>
-                </div>
-
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-12 col-md-4 custom-focus-card">
-            <div class="card department-card govt-india" style="
-                  position: relative;
-                  display: flex;
-                  flex-direction: column;
-                  min-width: 0;
-                  word-wrap: break-word;
-                  background-color: #fff;
-                  background-clip: border-box;
-                  border-radius: 0.25rem;
-              ">
-              <!-- <span class="badge govt-badge"></span> -->
-              <!-- <p class="state-govt govt-india-label">Latest News</p> -->
-              <div class="accordion accordion-flush" id="accordionFlushExample">
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="flush-headingOne">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" style="color: #1751c1;">
-                     Latest News
-                    </button>
-                  </h2>
-                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">
-                       <div class="mt-4">
-                <div class="d-flex">
-                  <img class="arrow" src="/assets/img/right-arrow.png" alt="arrow" />
-                  <a href="/National,Festival & Special Holidays.html" target="_blank" class="arrow-data">
-                    National on Festival Holidays for the period of 2020. </a>
-                </div>
-                <div class="d-flex">
-                  <img class="arrow" src="/assets/img/right-arrow.png" alt="arrow" />
-                  <a href="/eodb-reforms.html" target="_blank" class="arrow-data">
-                    Ease of Doing Business (EoDB) </a>
-                </div>
-                <div class="d-flex">
-                  <img class="arrow" src="/assets/img/right-arrow.png" alt="arrow" />
-                  <a href="https://onlineap.meeseva.gov.in/CitizenPortal/userinterface/citizen/Home.aspx" target="_blank" class="arrow-data">
-                    Integrated Registration under Labour Laws is enabled in Meeseva Citizen Portal </a>
-                </div>
-                <div class="d-flex">
-                  <img class="arrow" src="/assets/img/right-arrow.png" alt="arrow" />
-                  <a href="/PMJJBY - YSR Bima.html" target="_blank"
-                    class="arrow-data">Age Group Wise Number Of Members Under PMJJBY-YSR BIMA.</a>
-                </div>
-               
-               
-                
-                
-              </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="flush-headingTwo"> 
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo" style="color: #1751c1;">
-                      Latest Updates
-                    </button>
-                  </h2>
-                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">
-                      <div class="mt-4">
-                        <div class="d-flex">
-                          <img class="arrow" src="/assets/img/right-arrow.png" alt="arrow" />
-                          <a href="/assets/pdf/2019LETF_MS15.pdf" target="_blank" class="arrow-data">
-                            Ease of Compliance with Labour Laws – Exemption of all Shops and Establishments from
-                                  renewal of
-                                  registration under the Andhra Pradesh Shops & Establishments Act, 1988 – Notification
-                                  Issued–
-                                  Modification- Orders – Issued. </a>
-                        </div>
-                        <div class="d-flex">
-                          <img class="arrow" src="/assets/img/right-arrow.png" alt="arrow" />
-                          <a href="/assets/pdf/LatestUpdates/STATUS_ON_GAZETTES.docx" target="_blank" class="arrow-data">
-                            Preliminary Notification On Revision Of Minimum Wages Scheduled Employments </a>
-                        </div>
-                        <div class="d-flex">
-                          <img class="arrow" src="/assets/img/right-arrow.png" alt="arrow" />
-                          <a href="/assets/pdf/LatestUpdates/Minimum_Wages_eGazette_01102018_31032019.pdf" target="_blank" class="arrow-data">
-                            Vda Points In Respect Of Scheduled Employments Under Minimum Wages Act Applicable
-                                  From 01.10.2018 TO
-                                  31.03.2019  </a>
-                        </div>
-                        <div class="d-flex">
-                          <img class="arrow" src="/assets/img/right-arrow.png" alt="arrow" />
-                          <a href="" target="_blank"
-                            class="arrow-data">May Day Celebrations A) Instructions B) Application Form For Best Management Award C)
-                            Application Form
-                            For Sharma Shakthi Award</a>
-                        </div>
-                        <div class="d-flex">
-                          <img class="arrow" src="/assets/img/right-arrow.png" alt="arrow" />
-                          <a href="/assets/pdf/LatestUpdates/code_of_discipline.pdf" target="_blank"
-                            class="arrow-data">Code Of Discipline</a>
-                        </div>
-                        <div class="d-flex">
-                          <img class="arrow" src="/assets/img/right-arrow.png" alt="arrow" />
-                          <a href="" target="_blank"
-                            class="arrow-data">Cpi Number For Industrial Workers Of Tri-Centre During The Period July'2017 TO
-                            December'2017 A)
-                            Instructions B) Cpi Numbers</a>
-                        </div>
-                        <div class="d-flex">
-                          <img class="arrow" src="/assets/img/right-arrow.png" alt="arrow" />
-                          <a href="/assets/pdf/LatestUpdates/Age_group_wise_members.xlsx" target="_blank"
-                            class="arrow-data">Age Group Wise Number Of Members Under PMJJBY-YSR BIMA</a>
-                        </div>
-                        <div class="d-flex">
-                          <img class="arrow" src="/assets/img/right-arrow.png" alt="arrow" />
-                          <a href="/assets/pdf/LatestUpdates/AP_public_services_Ordinance_Gazette_copy.pdf" target="_blank"
-                            class="arrow-data">Public Service Delivery Guarentee Rules</a>
-                        </div>
-                        <div class="d-flex">
-                          <img class="arrow" src="/assets/img/right-arrow.png" alt="arrow" />
-                          <a href="/assets/pdf/LatestUpdates/Note_on_CB_Updated.pdf" target="_blank"
-                            class="arrow-data">Note On PMJJBY-YSR BIMA Scheme</a>
-                        </div>
-                        <div class="d-flex">
-                          <img class="arrow" src="/assets/img/right-arrow.png" alt="arrow" />
-                          <a href="/assets/pdf/LatestUpdates/vda_01042018_30092018.pdf" target="_blank"
-                            class="arrow-data">Variable Dearness Allowance(VDA) For Industrial Workers & Agricultural Workers W.e.f
-                            01-04-2018</a>
-                        </div>
-                        <div class="d-flex">
-                          <img class="arrow" src="/assets/img/right-arrow.png" alt="arrow" />
-                          <a href="/assets/pdf/LatestUpdates/gazette_vda_01042018.pdf" target="_blank"
-                            class="arrow-data">Gazette Notifications On Cpi Numbers For VDA Calculation.(W.e.f From 01-04-2018)</a>
-                        </div>
-                        <div class="d-flex">
-                          <img class="arrow" src="/assets/img/right-arrow.png" alt="arrow" />
-                          <a href="/assets/pdf/LatestUpdates/SKM_36717031409220.pdf" target="_blank"
-                            class="arrow-data">Cpi Numbers For Jute Mill Workers For The Period Of 6 Months Frm July-2016 TO
-                            December 2016</a>
-                        </div>
-                        <div class="d-flex">
-                          <img class="arrow" src="/assets/img/right-arrow.png" alt="arrow" />
-                          <a href="/assets/pdf/LatestUpdates/List_of_call_centers.jpg" target="_blank"
-                            class="arrow-data">YSR BIMA - List Of Call Centres For Claim Information (వైఎస్ఆర్‌ బీమా క్రింద క్లెయిమ్
-                            సమాచారం కొరకు
-                            జిల్లా కాల్ సెంటర్లు).</a>
-                        </div>
-                        <div class="d-flex">
-                          <img class="arrow" src="/assets/img/right-arrow.png" alt="arrow" />
-                          <a href="/assets/pdf/LatestUpdates/general_transfers_ln_2018.pdf" target="_blank"
-                            class="arrow-data">Public Services - Transfers And Postings Of Employees - Lifting Of Ban On Transfers
-                            From 05-05-2018 To
-                            04-06-2018 - Vacancy Positions.</a>
-                        </div>
-                        <div class="d-flex">
-                          <img class="arrow" src="/assets/img/right-arrow.png" alt="arrow" />
-                          <a href="/assets/pdf/LatestUpdates/PSDGA_Rules_Gazette_Notification.pdf" target="_blank"
-                            class="arrow-data">Public Service Delivery Guarantee Ordinance Gazette</a>
-                        </div>
-                      </div>
-                      </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="flush-headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree" style="color: #1751c1;">
-                      Notices
-                    </button>
-                  </h2>
-                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">
-                      <div class="mt-4">
-                        <div class="d-flex">
-                          <img class="arrow" src="/assets/img/right-arrow.png" alt="arrow" />
-                          <a href="/assets/pdf/ShowCausee/2) Annexure-A.pdf" target="_blank" class="arrow-data">
-                            Annexure-A : Regular Cadre Strength of the ACLs with Stations in the Combined State
-                                  of AP </a>
-                        </div>
-                        <div class="d-flex">
-                          <img class="arrow" src="/assets/img/right-arrow.png" alt="arrow" />
-                          <a href="/assets/pdf/ShowCausee/3) Annexure-B.pdf" target="_blank" class="arrow-data">
-                            Annexure-B : Deputation posts of ACL(SSS) of APBOCWW Board in the cadre of ACL </a>
-                        </div>
-                        <div class="d-flex">
-                          <img class="arrow" src="/assets/img/right-arrow.png" alt="arrow" />
-                          <a href="/assets/pdf/ShowCausee/4) Annexure-C.pdf" target="_blank" class="arrow-data">
-                            Annexure-C : Inter-se-seniority of ALOs of Zone 1 to 6 & City Cadre in the Combined
-                                  State of AP  </a>
-                        </div>
-                        <div class="d-flex">
-                          <img class="arrow" src="/assets/img/right-arrow.png" alt="arrow" />
-                          <a href="/assets/pdf/ShowCausee/5) Annexure-D.pdf" target="_blank"
-                            class="arrow-data">Annexure-D : Inter-se-seniority of Supdts. of Subordinate Offices in the Combined
-                            State of AP</a>
-                        </div>
-                        <div class="d-flex">
-                          <img class="arrow" src="/assets/img/right-arrow.png" alt="arrow" />
-                          <a href="/assets/pdf/ShowCausee/6) Annexure-E.pdf" target="_blank"
-                            class="arrow-data">Annexure-E : Seniority of Supdts. of Head Office in the Combined State of AP</a>
-                        </div>
-                        <div class="d-flex">
-                          <img class="arrow" src="/assets/img/right-arrow.png" alt="arrow" />
-                          <a href="/assets/pdf/ShowCausee/7) Annexure-F.pdf" target="_blank"
-                            class="arrow-data">Annexure-F : Cycle of promotions of the post of ACLs treating the post as State wide
-                            Post</a>
-                        </div>
-                        <div class="d-flex">
-                          <img class="arrow" src="/assets/img/right-arrow.png" alt="arrow" />
-                          <a href="/assets/pdf/ShowCausee/8) Annexure-G.pdf" target="_blank"
-                            class="arrow-data">Annexure-G : Names of all persons promoted as ACLs in the panel years 2008 - 09 to
-                            2010-11 and working as
-                            ACLs, retired etc. as on 01.06.2014 and covered in the review </a>
-                        </div>
-                        <div class="d-flex">
-                          <img class="arrow" src="/assets/img/right-arrow.png" alt="arrow" />
-                          <a href="/assets/pdf/ShowCausee/9) Annexure-H.pdf" target="_blank"
-                            class="arrow-data">Annexure-H : Name of persons promoted as ACLs in the panel years 2008-09 to 2010-11
-                            and working as ACLs
-                            and working in the feeder post of ALO/ Supdt and come up in the review for promotion
-                            as ACL consequent on
-                            review of promotions</a>
-                        </div>
-            
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="flush-headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefour" aria-expanded="false" aria-controls="flush-collapsefour" style="color: #1751c1;">
-                      Common List of ACL's
-                    </button>
-                  </h2>
-                  <div id="flush-collapsefour" class="accordion-collapse collapse" aria-labelledby="flush-headingfour" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">
-                      <div class="mt-4">
-                        <div class="d-flex">
-                          <img class="arrow" src="/assets/img/right-arrow.png" alt="arrow" />
-                          <a href="/assets/pdf/FreshNotie/Review of promotions treats to post of ACL as State wide post - Show Cause Notice Issued.pdf" target="_blank" class="arrow-data">
-                            Review of promotions treats to post of ACL as State wide post - Show Cause Notice
-                                  Issued </a>
-                        </div>
-                        <div class="d-flex">
-                          <img class="arrow" src="/assets/img/right-arrow.png" alt="arrow" />
-                          <a href="/assets/pdf/FreshNotie/Annexure - A.pdf" target="_blank" class="arrow-data">
-                            Annexure - A</a>
-                        </div>
-                        <div class="d-flex">
-                          <img class="arrow" src="/assets/img/right-arrow.png" alt="arrow" />
-                          <a href="/assets/pdf/FreshNotie/Annexure - B.pdf" target="_blank" class="arrow-data">
-                            Annexure - B </a>
-                        </div>
-                        <div class="d-flex">
-                          <img class="arrow" src="/assets/img/right-arrow.png" alt="arrow" />
-                          <a href="/assets/pdf/FreshNotie/Objections.pdf" target="_blank"
-                            class="arrow-data">Objections</a>
-                        </div>
-                       
-            
-                      </div>
-                      </div>
-                  </div>
-                </div>
-              </div>
-             
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-12 col-md-4">
-            <div class="card department-card industry-association" style="
-                  position: relative;
-                  display: flex;
-                  flex-direction: column;
-                  min-width: 0;
-                  word-wrap: break-word;
-                  background-color: #fff;
-                  background-clip: border-box;
-                  border-radius: 0.25rem;
-              ">
-              <span class="badge industry-badge"></span>
-              <p class="state-govt industry-association-label">Quick Links</p>
-              <div class="mt-4">
-                <div class="d-flex">
-                  <img class="arrow" src="/assets/img/right-arrow.png" alt="arrow" />
-                  <a href="/assets/pdf/FreshNotie/SCRUTINYLIST.pdf" target="_blank" class="arrow-data">Selection & Merit list of
-                    applicants for outsourced posts (staff nurses, lab technicians and ECG technicians) in insurance
-                    medical ervices department
-                  </a>
-
-                </div>
-                <div class="d-flex">
-                  <img class="arrow" src="/assets/img/right-arrow.png" alt="arrow" />
-                  <a href="/assets/pdf/FreshNotie/Pressnote.pdf" target="_blank" class="arrow-data">Press Note of A.P Insurance Medical
-                    Services Dept. Out Sourcing Selection Notification . Last date for submission of application :
-                    07.04.2021
-                  </a>
-                </div>
-                <div class="d-flex">
-                  <img class="arrow" src="/assets/img/right-arrow.png" alt="arrow" />
-                  <a href="https://spandana.ap.gov.in/" target="_blank" class="arrow-data">
-                    Spandana
-                  </a>
-                </div>
-                <div class="d-flex">
-                  <img class="arrow" src="/assets/img/right-arrow.png" alt="arrow" />
-                  <a href="/assets/pdf/Recent GO's And Circulars/General GOs/VDA wef 01.04.2020.pdf" target="_blank" class="arrow-data">
-                    VDA w.e.f.01.04.2020.
-                  </a>
-                </div>
-                <div class="d-flex">
-                  <img class="arrow" src="/assets/img/right-arrow.png" alt="arrow" />
-                  <a href="/assets/pdf/Recent GO's And Circulars/General GOs/Contract Labour VDA Points 18.05.2020.pdf" target="_blank" class="arrow-data">
-                    Contract Labour VDA Points 01.04.2020 to 30.09.2020
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-    </section>
-    
-
-    <section class="container pt-5">
-      <h2 class="text-center pb-5 pt-5" style="color: #1751c1;">Our services</h2>
-      <div class="container">
-        <div class="row justify-content-center my-5">
-          <div class="col-12 col-lg-3">
-                  <div class="card">
-                      <div class="card-body" style="background: #F44336; padding: 20px;">
-                          <a style="background: #F44336;"
-                           href="" class="btn btn-default hvr-bounce-to-bottom">Registrations <br>263049</a>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-12 col-lg-3">
-                  <div class="card">
-                      <div class="card-body" style="background: #E81E63; padding: 20px;" >
-                          <a style="background: #E81E63;"  href="" class="btn btn-default hvr-bounce-to-bottom">APSE <br> 261648</a>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-12 col-lg-3">
-                  <div class="card">
-                      <div class="card-body" style="background: #9C27B0; padding: 20px;">
-                          <a style="background: #9C27B0;" href="" class="btn btn-default hvr-bounce-to-bottom">Beedi & Cigar <br>18</a>
-                      </div>
-                  </div>
-              </div>
-           <div class="col-12 col-lg-3 pb-3">
-                  <div class="card">
-                      <div class="card-body" style="background: #673AB7; padding: 20px;">
-                          <a style="background: #673AB7;" href="" class="btn btn-default hvr-bounce-to-bottom">CLRA(PE)<br>379</a>
-                      </div>
-                  </div>
-              </div>
-          <div class="col-12 col-lg-3">
-                  <div class="card">
-                      <div class="card-body" style="background: #4CAF50; padding: 20px;">
-                          <a style="background: #4CAF50;" href="" class="btn btn-default hvr-bounce-to-bottom">CLRA(CLC)<br>583</a>
-                      </div>
-                  </div>
-              </div><div class="col-12 col-lg-3">
-                  <div class="card">
-                      <div class="card-body" style="background: #8BC34A; padding: 20px;">
-                          <a style="background: #8BC34A;" href="" class="btn btn-default hvr-bounce-to-bottom">ISMW(PE)<br>94</a>
-                      </div>
-                  </div>
-              </div><div class="col-12 col-lg-3">
-                  <div class="card">
-                      <div class="card-body" style="background: #03A9F4; padding: 20px;">
-                          <a style="background: #03A9F4;" href="" class="btn btn-default hvr-bounce-to-bottom">ISMW(CLC)<br>157</a>
-                      </div>
-                  </div>
-              </div>
-          <div class="col-12 col-lg-3 pb-3">
-                  <div class="card">
-                      <div class="card-body" style="background: #00BCD4; padding: 20px;">
-                          <a style="background: #00BCD4;" href="" class="btn btn-default hvr-bounce-to-bottom">MTW<br>121</a>
-                      </div>
-                  </div>
-              </div>
-           <div class="col-12 col-lg-3">
-                  <div class="card">
-                      <div class="card-body" style="background: #A99800; padding: 20px;">
-                          <a style="background: #A99800;" href="" class="btn btn-default hvr-bounce-to-bottom">PG<br>49</a>
-                      </div>
-                  </div>
-              </div> <div class="col-12 col-lg-3">
-                  <div class="card">
-                      <div class="card-body" style="background: #DDA602; padding: 20px;">
-                          <a style="background: #DDA602;" href="" class="btn btn-default hvr-bounce-to-bottom">AnnualReturns<br>3202</a>
-                      </div>
-                  </div>
-              </div> <div class="col-12 col-lg-3">
-                  <div class="card">
-                      <div class="card-body" style="background: #FF9800; padding: 20px;">
-                          <a style="background: #FF9800;" href="" class="btn btn-default hvr-bounce-to-bottom">CIS<br>33073</a>
-                      </div>
-                  </div>
-              </div> <div class="col-12 col-lg-3">
-                  <div class="card">
-                      <div class="card-body" style="background: #FF5722; padding: 20px;">
-                          <a style="background: #FF5722;" href="" class="btn btn-default hvr-bounce-to-bottom">JIS<br>0</a>
-                      </div>
-                  </div>
-              </div>
-        </div>
-      </div>
-      <!-- <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4 pb-sm-3 pb-md-4 pb-xl-5">
-        <div class="col"><a class="card bg-secondary border-0 h-80 text-decoration-none"
-            href="https://core.ap.gov.in/cmdashboard/index.aspx  "  target="_blank">
-            <div class="card-body pb-0 text-center pt-4">
-              <img class="" src="/assets/img/cm-core-dashboard.png" alt="" srcset="">
-
-              <h3 class="h4 card-title mt-3">CM CORE DASHBOARD</h3>
-            </div>
-            <div class="card-footer border-0 py-0 my-2 mb-sm-4 text-center">
-              <div class="btn our-services-button btn-lg btn-icon btn-outline-primary rounded-circle pe-none bg-red"><i class="ai-arrow-right"></i>
-              </div>
-            </div>
-          </a></div>
-        <div class="col"><a class="card bg-secondary border-0 h-80 text-decoration-none"
-            href="http://www.bima.ap.gov.in/" target="_blank">
-            <div class="card-body pb-0 text-center pt-4">
-              <img class="" src="/assets/img/ysr-bhima.png" alt="" srcset="">
-
-              <h3 class="h4 card-title mt-3">YSR <br> BHIMA</h3>
-            </div>
-            <div class="card-footer border-0 py-0 my-2 mb-sm-4 text-center">
-              <div class="btn our-services-button btn-lg btn-icon btn-outline-primary rounded-circle pe-none"><i class="ai-arrow-right"></i>
-              </div>
-            </div>
-          </a></div>
-        <div class="col"><a class="card bg-secondary border-0 h-80 text-decoration-none"
-            href="http://aplabourwelfareboard.ap.gov.in/aplwb/index.jsp" target="_blank">
-            <div class="card-body pb-0 text-center pt-4">
-              <img class="" src="/assets/img/benifits-disbursements.png" alt="" srcset="">
-
-
-              <h3 class="h4 card-title mt-3">BENEFITS DISBURSEMENTS</h3>
-            </div>
-            <div class="card-footer border-0 py-0 my-2 mb-sm-4 text-center">
-              <div class="btn our-services-button btn-lg btn-icon btn-outline-primary rounded-circle pe-none "><i
-                  class="ai-arrow-right"></i></div>
-            </div>
-          </a></div>
-        <div class="col"><a class="card bg-secondary border-0 h-80 text-decoration-none"
-            href="http://labour.ap.gov.in:8080/industrialdisputes/indisputeshome.php" target="_blank">
-            <div class="card-body pb-0 text-center pt-4">
-              <img class="pb-2" src="/assets/img/industrial-disputes.png" alt="" srcset="">
-
-
-              <h3 class="h4 card-title mt-3">INDUSTRIAL DISPUTES</h3>
-            </div>
-            <div class="card-footer border-0 py-0 my-2 mb-sm-4 text-center">
-              <div class="btn our-services-button btn-lg btn-icon btn-outline-primary rounded-circle pe-none "><i
-                  class="ai-arrow-right our-services-button"></i></div>
-            </div>
-          </a></div>
-      </div> -->
-    </section>
-
-
-
+<body class="en layout-one-sidebar layout-sidebar-first path-frontpage">
+  <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    <div class="hdg"></div>
+    <!--Start Header Section-->
    
-
-
-    <!-- <section class="container pt-3">
-      <div class="row pt-sm-4 pt-md-4 pt-lg-4 pb-xxl-2 mt-md-3 mt-lg-0">
-       
-        <div class="col-md-12">
-          <div class="row">
-            <h2 class="text-center pb-5 pt-5" style="color: #1751c1;">Act wise Registrations </h2>
-
-            <div class="col-md-3 pb-3">
-              <div class="d-flex flex-column h-80 rounded-1 text-center p-3" style="background: #F44336; box-shadow: 0px 4px 20px rgb(0 0 0 / 20%);
-              ">
-                <div class="text-white act-wise-registrations">All Registrations</div>
-                <div class="text-white act-wise-registrations-text">263049</div>
+      <div id="block-cmfdesignstructure" class="block block-cmf-design">
+        <div class="content">
+          <div class="wrapper common-wrapper">
+            <div class="container common-container four_content top-header">
+              <div class="common-left clearfix">
+                <ul>
+                  <!-- <li><a href="https://www.ap.gov.in/" title="Government of Andhra pradesh">Government of Andhra Pradesh</a>
+                  </li> -->
+                  <li><a href="https://www.ap.gov.in/" title="ఆంధ్ర ప్రదేశ్ప్రభుత్వం">ఆంధ్రప్రదేశ్ ప్రభుత్వం </a></li>
+                </ul>
               </div>
-            </div>
-            <div class="col-md-3 pb-3">
-              <div class="d-flex flex-column h-80  rounded-1 text-center p-3" style="background: #E81E63;     box-shadow: 0px 4px 20px rgb(0 0 0 / 20%);
-              ">
-                <div class="text-white act-wise-registrations">APSE
-                </div>
-                <div class="text-white act-wise-registrations-text">261648
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3 pb-3">
-              <div class="d-flex flex-column h-80 rounded-1 text-center p-3" style="background: #9C27B0;     box-shadow: 0px 4px 20px rgb(0 0 0 / 20%);
-              ">
-                <div class="text-white act-wise-registrations">Beedi & Cigar
-                </div>
-                <div class="text-white act-wise-registrations-text">18</div>
-              </div>
-            </div>
-            <div class="col-md-3 pb-3">
-              <div class="d-flex flex-column h-80 rounded-1 text-center p-3" style="background: #673AB7;     box-shadow: 0px 4px 20px rgb(0 0 0 / 20%);
-              ">
-                <div class="text-white act-wise-registrations">CLRA (PE)
-                </div>
-                <div class="text-white act-wise-registrations-text">379</div>
-              </div>
-            </div>
-            <div class="col-md-3 pb-3">
-              <div class="d-flex flex-column h-80 rounded-1 text-center p-3" style="background: #4CAF50;     box-shadow: 0px 4px 20px rgb(0 0 0 / 20%);
-              ">
-                <div class="text-white act-wise-registrations">CLRA (CLC)</div>
-                <div class="text-white act-wise-registrations-text">583</div>
-              </div>
-            </div>
-            <div class="col-md-3 pb-3">
-              <div class="d-flex flex-column h-80 rounded-1 text-center p-3" style="background: #8BC34A;     box-shadow: 0px 4px 20px rgb(0 0 0 / 20%);
-              ">
-                <div class="text-white act-wise-registrations">ISMW (PE)
-                </div>
-                <div class="text-white act-wise-registrations-text">94</div>
-              </div>
-            </div>
-            <div class="col-md-3 pb-3">
-              <div class="d-flex flex-column h-80  rounded-1 text-center p-3" style="background: #03A9F4;     box-shadow: 0px 4px 20px rgb(0 0 0 / 20%);
-              ">
-                <div class="text-white act-wise-registrations">ISMW (CLC)
-                </div>
-                <div class="text-white act-wise-registrations-text">157</div>
-              </div>
-            </div>
-            <div class="col-md-3 pb-3">
-              <div class="d-flex flex-column h-80 rounded-1 text-center p-3" style="background: #00BCD4;     box-shadow: 0px 4px 20px rgb(0 0 0 / 20%);
-              ">
-                <div class="text-white act-wise-registrations">MTW</div>
-                <div class="text-white act-wise-registrations-text">121</div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="d-flex flex-column h-80 rounded-1 text-center p-3" style="background: #A99800;     box-shadow: 0px 4px 20px rgb(0 0 0 / 20%);
-              ">
-                <div class="text-white act-wise-registrations">PG</div>
-                <div class="text-white act-wise-registrations-text">49</div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="d-flex flex-column h-80 rounded-1 text-center p-3" style="background: #DDA602;     box-shadow: 0px 4px 20px rgb(0 0 0 / 20%);
-              ">
-                <div class="text-white act-wise-registrations">Annual Returns
-                </div>
-                <div class="text-white act-wise-registrations-text">3202</div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="d-flex flex-column h-80 rounded-1 text-center p-3" style="background: #FF9800;     box-shadow: 0px 4px 20px rgb(0 0 0 / 20%);
-              ">
-                <div class="text-white act-wise-registrations">CIS</div>
-                <div class="text-white act-wise-registrations-text">33073</div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="d-flex flex-column h-80 rounded-1 text-center p-3" style="background: #FF5722;     box-shadow: 0px 4px 20px rgb(0 0 0 / 20%);
-              ">
-                <div class="text-white act-wise-registrations">JIS</div>
-                <div class="text-white act-wise-registrations-text">0</div>
+              <div class="common-right clearfix">
+                <ul id="header-nav">
+                  <li class="ico-accessibility cf">
+                    <a href="#" id="toggleAccessibility" title="Accessibility Dropdown">
+                      <img class="top" src="modules/custom/cmf_design/images/ico-accessibility.png"
+                        alt="Accessibility Dropdown" />
+                    </a>
+                    <ul>
+                      <li> <a class="fontincrease" title="Increase font size" href="#">A<sup>+</sup></a> </li>
+                      <li> <a class="fontreset" title="Reset font size" href="#">A<sup>&nbsp;</sup></a> </li>
+                      <li> <a class="fontdecrease" title="Decrease font size" href="#">A<sup>-</sup></a> </li>
+                      <li> <a href="#" class="high-contrast dark" title="High Contrast">A</a> </li>
+                      <li> <a href="#" class="high-contrast light" title="Normal Contrast">A</a> </li>
+                    </ul>
+                  </li>
+                  <li class="ico-sitemap cf"><a href="sitemap.html" title="Sitemap">
+                      <img class="top" src="modules/custom/cmf_design/images/ico-sitemap.png" alt="Sitemap" /></a>
+                  </li>
+                  <li>
+                    <div id="google_translate_element"></div>
+                    </li>
+                </ul>
               </div>
             </div>
           </div>
-
         </div>
       </div>
-    </section> -->
+
+    <!--end Header Section-->
+
+    <section id="fontSize" class="body-wrapper ">
+      <div class="clearfix"></div>
+      <!--Start code for navigation-->
+      <section class="wrapper header-wrapper">
+        <div class="container-fluid header-container">
+          <h1 class="logo"> <a href="index.html" title="Labour and Employee&#039;s State Insurance Department"> <img
+                src="/assets/images/Logo-ap.png" title="Labour and Employee&#039;s State Insurance Department">
+              <span>Andhra Pradesh Labour Department </span>
+              <span>Government of Andhra Pradesh</span> </a></h1>
+          <!-- Minister header section -->
+          <div class="float-right">
+            <div>
+              <div class="views-element-container block block-views block-views-blockminister-block-1"
+                id="block-views-block-minister-block-1">
+
+
+                <div class="content">
+                  <div>
+                    <div class="js-view-dom-id-692484219d7968fd28fee2f45b98eee25e6d8e30d5779bc41b8be2f22e1480fa">
 
 
 
 
-    
-    
-
-    <footer class="footer pt-4 pb-2 pb-md-5 pt-sm-5">
-      <div class="container-fluid pb-1 pb-md-0">
-        <div class="dark-mode footer-new-bg rounded-5 position-relative overflow-hidden w-100 py-5 px-3 px-sm-4 px-xl-5 mx-auto" style="max-width: 1660px;">
-          <div class="position-absolute top-50 start-50 translate-middle" style="width: 1664px;"><img src="assets/img/landing/web-studio/footer-wave.png" alt="Wave"></div>
-          <div class="container-fluid position-relative zindex-2 pt-md-3 pt-lg-4 pt-xl-5 pb-2">
-            <div class="row pb-2">
-           
-              <div class="col-md-4">
-                <h6 class="fw-bold"><i class='fa fa-user-circle-o'
-                    style='font-size:22px;color:white;padding-right: 10px;'></i>Key Contacts</h6>
-                <ul class="nav flex-column fs-sm">
-                  <li class="nav-item"><a class="nav-link fw-normal px-0 py-1" href="mailto:email@example.com"><i
-                        class='fa fa-user' style='font-size:18px;color:white;padding-right: 10px;'></i>
-                      Additional Commissioner of Labour
-                    </a></li>
-                  <li class="nav-item"><a class="nav-link fw-normal px-0 py-1" href="tel:+15262200444"><i
-                        class='fa fa-envelope'
-                        style='font-size:18px;color:white;padding-right: 10px;'></i>apjointcommissioneroflabour1@gmail.com</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-md-4">
-                <h6 class="fw-bold"><i class='fa fa-user-circle-o'
-                    style='font-size:22px;color:white;padding-right: 10px;'></i>Meeseva Tech Support</h6>
-                <ul class="nav flex-column fs-sm">
-                  <li class="nav-item"><a class="nav-link fw-normal px-0 py-1" href="mailto:email@example.com"><i
-                        class='fa fa-user' style='font-size:18px;color:white;padding-right: 10px;'></i>
-                      (Integrated Registration & Combined Annual Returns)</a></li>
-                  <li class="nav-item"><a class="nav-link fw-normal px-0 py-1" href="tel:+15262200459"><i
-                        class='fa fa-phone' style='font-size:18px;color:white;padding-right: 10px;'></i>040-45676688</a>
-                  </li>
-                  <li class="nav-item"><a class="nav-link fw-normal px-0 py-1" href="tel:+15262200444"><i
-                        class='fa fa-envelope'
-                        style='font-size:18px;color:white;padding-right: 10px;'></i>meeseva.support@aptonline.in</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-md-2">
-                <h6 class="fw-bold"><i class='fa fa-user-circle-o'
-                    style='font-size:22px;color:white;padding-right: 10px;'></i>Key Contacts</h6>
-                <ul class="nav flex-column fs-sm">
-                  <li class="nav-item"><a class="nav-link fw-normal px-0 py-1" href="mailto:email@example.com"><i
-                        class='fa fa-user' style='font-size:18px;color:white;padding-right: 10px;'></i>
-                      --</a></li>
-                  <li class="nav-item"><a class="nav-link fw-normal px-0 py-1" href="tel:+15262200459"><i
-                        class='fa fa-phone' style='font-size:18px;color:white;padding-right: 10px;'></i>+91
-                      949255104</a>
-                  </li>
-                  <li class="nav-item"><a class="nav-link fw-normal px-0 py-1" href="tel:+15262200444"><i
-                        class='fa fa-envelope'
-                        style='font-size:18px;color:white;padding-right: 10px;'></i>col.labour@gmail.com</a></li>
-                </ul>
-              </div>
-
-              <div class="col-md-2">
-                <h6 class="fw-bold"><i class='fa fa-user-circle-o'
-                    style='font-size:22px;color:white;padding-right: 10px;'></i>IT Cell</h6>
-                <ul class="nav flex-column fs-sm">
-                  <li class="nav-item"><a class="nav-link fw-normal px-0 py-1" href="mailto:email@example.com"><i
-                        class='fa fa-user' style='font-size:18px;color:white;padding-right: 10px;'></i>
-                      --</a></li>
-                  <li class="nav-item"><a class="nav-link fw-normal px-0 py-1" href="tel:+15262200459"><i
-                        class='fa fa-phone' style='font-size:18px;color:white;padding-right: 10px;'></i>+ 91
-                      8688256467</a></li>
-                  <li class="nav-item"><a class="nav-link fw-normal px-0 py-1" href="tel:+15262200444"><i
-                        class='fa fa-envelope'
-                        style='font-size:18px;color:white;padding-right: 10px;'></i>itcell.aplabour@gmail.com</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="d-sm-flex align-items-center justify-content-between pt-4 pt-md-5 mt-2 mt-md-0 mt-lg-2 mt-xl-4">
 
 
-              <div class="d-flex justify-content-center order-sm-2 me-md-n2">
-                <div class="nav flex-nowrap justify-content-center justify-content-sm-start order-sm-2 mb-3 mb-sm-0"><a
-                    class="nav-link fw-normal py-0 px-3" href="privacy-policy.html">Privacy Policy</a><a
-                    class="nav-link fw-normal py-0 px-3" href="disclaimer.html">Disclaimer</a></div>
 
-                <div class="d-sm-flex text-nowrap justify-content-center justify-content-md-start">
 
-                  <p class="fs-sm order-sm-1 text-center  pt-4 pt-sm-0 mb-0 me-4"><span class="text-white">&copy; 2023
-                      All
-                      rights reserved by Labour Department. Government Of Andhra Pradesh </span></p>
-                  </span></p>
+                      <div class="views-row">
+                        <div><span>
+                            <div class="minister">
+                              <a class="float-left" href="#" title="Shri Y.S Jagan Mohan Reddy">Shri Y.S Jagan Mohan
+                                Reddy <br>
+                                <span>Hon&#039;ble Chief Minister</span></a>
+                              <img src="/assets/images/cm-pic1.png" width="100" height="100"
+                                alt="Shri Y.S Jagan Mohan Reddy" typeof="Image" />
+
+
+                            </div>
+                          </span></div>
+                      </div>
+
+
+
+
+
+
+
+
+                    </div>
+                  </div>
 
                 </div>
               </div>
+
+            </div>
+
+          </div>
+          <!-- Minister header section close  -->
+          <div class="clearfix"></div>
+        </div>
+      </section>
+      <nav class="wrapper nice-menu" id="main_menu">
+        <div class="container-fluid nav-container">
+          <!--<div class="toggle-menu"> <a href="#"><i class="fa fa-bars"></i></a></div>-->
+          <!--Main nav goes here-->
+          <div>
+            <div id="block-labourdepartmentmenu" class="block block-superfish block-superfishlabour-department-menu">
+
+
+              <div class="content">
+
+                <ul id="superfish-labour-department-menu"
+                  class="menu sf-menu sf-labour-department-menu sf-horizontal sf-style-none">
+
+                  <li id="labour-department-menu-menu-link-content41906444-70b9-47d6-81b9-d0a7823528db"
+                    class="active-trail sf-depth-1 sf-no-children"><a href="index.html" title="Home"
+                      class="is-active sf-depth-1">HOME</a></li>
+                  <li id="labour-department-menu-menu-link-content11dd3140-8231-45a1-833d-b911375f88e5"
+                     class="sf-depth-1 menuparent"><span title="About Us" class="sf-depth-1 menuparent nolink">ABOUT US</span>
+                     <ul>
+                      <li id="labour-department-menu-menu-link-contenteb7bb29b-3f94-4f04-8d1f-5151da96a9ac"
+                        class="sf-depth-2 sf-no-children"><a href="/about-us.html"
+                          title="About Department" class="sf-depth-2">About Department</a></li>
+                          <li id="labour-department-menu-menu-link-content3c6ccfd1-d195-4114-a696-62d6adb6832c"
+                        class="sf-depth-2 menuparent"><span title="Who&#039;s Who"
+                          class="sf-depth-2 menuparent nolink">Labour Department</span>
+                        <ul>
+                          <li id="labour-department-menu-menu-link-content84b1ecb3-7564-41aa-9edd-f259f04c98b1"
+                            class="sf-depth-3 sf-no-children"><a href="/labour-department-directory.html"
+                              title="Web Directory" class="sf-depth-3">Directory</a></li>
+                              <li id="labour-department-menu-menu-link-content84b1ecb3-7564-41aa-9edd-f259f04c98b1"
+                            class="sf-depth-3 sf-no-children"><a href="/labour-department-schemes.html"
+                              title="Web Directory" class="sf-depth-3">Schemes</a></li>
+                        </ul>
+                      </li>
+                      <li id="labour-department-menu-menu-link-content3c6ccfd1-d195-4114-a696-62d6adb6832c"
+                        class="sf-depth-2 menuparent"><span title="Who&#039;s Who"
+                          class="sf-depth-2 menuparent nolink">Welfare Board</span>
+                        <ul>
+                          <li id="labour-department-menu-menu-link-content84b1ecb3-7564-41aa-9edd-f259f04c98b1"
+                            class="sf-depth-3 sf-no-children"><a href="welfare-board-directory.html"
+                              title="Web Directory" class="sf-depth-3">Directory</a></li>
+                              <li id="labour-department-menu-menu-link-content84b1ecb3-7564-41aa-9edd-f259f04c98b1"
+                            class="sf-depth-3 sf-no-children"><a href="welfare-board-schemes.html"
+                              title="Web Directory" class="sf-depth-3">Schemes</a></li>
+                        </ul>
+                      </li>
+                      <li id="labour-department-menu-menu-link-content3c6ccfd1-d195-4114-a696-62d6adb6832c"
+                        class="sf-depth-2 menuparent"><span title="Who&#039;s Who"
+                          class="sf-depth-2 menuparent nolink">BOCWW Board</span>
+                        <ul>
+                          <li id="labour-department-menu-menu-link-content84b1ecb3-7564-41aa-9edd-f259f04c98b1"
+                            class="sf-depth-3 sf-no-children"><a href="bocww-board-directory.html"
+                              title="Web Directory" class="sf-depth-3">Directory</a></li>
+                              <li id="labour-department-menu-menu-link-content84b1ecb3-7564-41aa-9edd-f259f04c98b1"
+                            class="sf-depth-3 sf-no-children"><a href="bocww-board-schemes.html"
+                              title="Web Directory" class="sf-depth-3">Schemes</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li id="labour-department-menu-menu-link-content11dd3140-8231-45a1-833d-b911375f88e5"
+                    class="sf-depth-1 menuparent"><span title="About Us" class="sf-depth-1 menuparent nolink">OTHER LINKS</span>
+                    <ul>
+                      <li id="labour-department-menu-menu-link-contenteb7bb29b-3f94-4f04-8d1f-5151da96a9ac"
+                        class="sf-depth-2 sf-no-children"><a target="_blank" href="https://apbocwwb.ap.nic.in/"
+                          title="About Department" class="sf-depth-2">BOCWWB</a></li>
+                      <li id="labour-department-menu-menu-link-content39512021-d118-4653-a8d5-355f1323d463"
+                        class="sf-depth-2 sf-no-children"><a target="_blank" href="http://aplabourwelfareboard.ap.gov.in/aplwb/index.jsp" title="Organogram"
+                          class="sf-depth-2">Welfare Board</a></li>
+                      
+                      
+                    </ul>
+                  </li>
+                  <li id="labour-department-menu-menu-link-content11dd3140-8231-45a1-833d-b911375f88e5"
+                    class="sf-depth-1 menuparent"><span title="About Us"
+                      class="sf-depth-1 menuparent nolink">REGISTRATIONS</span>
+                    <ul>
+                      <li id="labour-department-menu-menu-link-contenteb7bb29b-3f94-4f04-8d1f-5151da96a9ac"
+                        class="sf-depth-2 sf-no-children"><a target="_blank" href="https://onlineap.meeseva.gov.in/CitizenPortal/UserInterface/Citizen/Home.aspx"
+                          title="About Department" class="sf-depth-2">Login for E-Registration/License/Renewal Under all
+                    Labour Laws</a></li>
+                      <li id="labour-department-menu-menu-link-content39512021-d118-4653-a8d5-355f1323d463"
+                        class="sf-depth-2 sf-no-children"><a target="_blank" href="https://onlineap.meeseva.gov.in/CitizenPortal/UserInterface/Citizen/Home.aspx" title="Organogram"
+                          class="sf-depth-2">Combined Annual E-Return of Establishments Under
+                    All Labour Laws</a></li>
+                      
+                      <li id="labour-department-menu-menu-link-contenta2eb7fe2-a11d-46fc-9906-638a29ef13f2"
+                        class="sf-depth-2 sf-no-children"><a target="_blank" href="https://ap.meeseva.gov.in/DeptPortal/UserInterface/LoginForm.aspx" title="Objective"
+                          class="sf-depth-2">Download Certificate</a></li>
+                          <li id="labour-department-menu-menu-link-contenta2eb7fe2-a11d-46fc-9906-638a29ef13f2"
+                        class="sf-depth-2 sf-no-children"><a target="_blank" href="https://ap.meeseva.gov.in/DeptPortal/UserInterface/LoginForm.aspx" title="Objective"
+                          class="sf-depth-2">Third party Verification of Registration/License</a></li>
+                    </ul>
+                  </li>
+                  <li id="labour-department-menu-menu-link-content11dd3140-8231-45a1-833d-b911375f88e5"
+                     class="sf-depth-1 menuparent"><span title="About Us" class="sf-depth-1 menuparent nolink">POLICY & LEGISLATION</span>
+                     <ul>
+
+                          <li id="labour-department-menu-menu-link-content3c6ccfd1-d195-4114-a696-62d6adb6832c"
+                        class="sf-depth-2 menuparent"><span title="Who&#039;s Who"
+                          class="sf-depth-2 menuparent nolink">Acts/Rules/Amendments</span>
+                        <ul>
+                          <li id="labour-department-menu-menu-link-content84b1ecb3-7564-41aa-9edd-f259f04c98b1"
+                            class="sf-depth-3 sf-no-children"><a href="list-of-central-state.html"
+                              title="Web Directory" class="sf-depth-3">List of Central and State</a></li>
+                              <li id="labour-department-menu-menu-link-content84b1ecb3-7564-41aa-9edd-f259f04c98b1"
+                            class="sf-depth-3 sf-no-children"><a href="Extracts of Central and State.html"
+                              title="Web Directory" class="sf-depth-3">Extracts of Central and
+                     State</a></li>
+                              <li id="labour-department-menu-menu-link-content84b1ecb3-7564-41aa-9edd-f259f04c98b1"
+                            class="sf-depth-3 sf-no-children"><a href="Recent Amendments & New Acts.html"
+                              title="Web Directory" class="sf-depth-3">Recent Amendments & New
+                     Acts</a></li>
+                              <li id="labour-department-menu-menu-link-content84b1ecb3-7564-41aa-9edd-f259f04c98b1"
+                            class="sf-depth-3 sf-no-children"><a href="Amendments.html"
+                              title="Web Directory" class="sf-depth-3">Amendments</a></li>
+                              <li id="labour-department-menu-menu-link-content84b1ecb3-7564-41aa-9edd-f259f04c98b1"
+                            class="sf-depth-3 sf-no-children"><a href="Enhancement of Wage Limit.html"
+                              title="Web Directory" class="sf-depth-3">Enhancement of Wage Limit</a></li>
+                              <li id="labour-department-menu-menu-link-content84b1ecb3-7564-41aa-9edd-f259f04c98b1"
+                            class="sf-depth-3 sf-no-children"><a href="Integrated Registration Act,2015.html"
+                              title="Web Directory" class="sf-depth-3">Integrated Registration</a></li>
+                              <li id="labour-department-menu-menu-link-content84b1ecb3-7564-41aa-9edd-f259f04c98b1"
+                            class="sf-depth-3 sf-no-children"><a href="Contract Labour Act,2015.html"
+                              title="Web Directory" class="sf-depth-3">Contract Labour Act,2015</a></li>
+                              <li id="labour-department-menu-menu-link-content84b1ecb3-7564-41aa-9edd-f259f04c98b1"
+                            class="sf-depth-3 sf-no-children"><a href="ReOrganisation Act 2014.html"
+                              title="Web Directory" class="sf-depth-3">ReOrganisation Act 2014</a></li>
+                        </ul>
+                      </li>
+                      <li id="labour-department-menu-menu-link-content3c6ccfd1-d195-4114-a696-62d6adb6832c"
+                        class="sf-depth-2 menuparent"><span title="Who&#039;s Who"
+                          class="sf-depth-2 menuparent nolink">Regulations/Procedures</span>
+                        <ul>
+                          <li id="labour-department-menu-menu-link-content84b1ecb3-7564-41aa-9edd-f259f04c98b1"
+                            class="sf-depth-3 sf-no-children"><a href="Functional Areas.html"
+                              title="Web Directory" class="sf-depth-3">Functional Areas</a></li>
+                              <li id="labour-department-menu-menu-link-content84b1ecb3-7564-41aa-9edd-f259f04c98b1"
+                            class="sf-depth-3 sf-no-children"><a href="inspection-procedure.html"
+                              title="Web Directory" class="sf-depth-3">Inspection Procedure</a></li>
+                              <li id="labour-department-menu-menu-link-content84b1ecb3-7564-41aa-9edd-f259f04c98b1"
+                            class="sf-depth-3 sf-no-children"><a href="list-Voilations.html"
+                              title="Web Directory" class="sf-depth-3">Checklist for Voilations</a></li>
+                              <li id="labour-department-menu-menu-link-content84b1ecb3-7564-41aa-9edd-f259f04c98b1"
+                            class="sf-depth-3 sf-no-children"><a href="Register Returns and Forms.html"
+                              title="Web Directory" class="sf-depth-3">Register Returns and Forms</a></li>
+                              <li id="labour-department-menu-menu-link-content84b1ecb3-7564-41aa-9edd-f259f04c98b1"
+                            class="sf-depth-3 sf-no-children"><a href="Exemptions and Self Certification.html"
+                              title="Web Directory" class="sf-depth-3">Exemptions and Self
+                     Certification</a></li>
+                              <li id="labour-department-menu-menu-link-content84b1ecb3-7564-41aa-9edd-f259f04c98b1"
+                            class="sf-depth-3 sf-no-children"><a target="_blank" href="/assets/pdf/PSDGA/AP_public_services_Ordinance_Gazette_copy.pdf"
+                              title="Web Directory" class="sf-depth-3">PSDGA Ordinance</a></li>
+                              <li id="labour-department-menu-menu-link-content84b1ecb3-7564-41aa-9edd-f259f04c98b1"
+                            class="sf-depth-3 sf-no-children"><a target="_blank" href="/assets/pdf/PSDGA/PSDGA_Rules_Gazette_Notification.pdf"
+                              title="Web Directory" class="sf-depth-3">PSDGA Rules</a></li>
+                              <li id="labour-department-menu-menu-link-content84b1ecb3-7564-41aa-9edd-f259f04c98b1"
+                            class="sf-depth-3 sf-no-children"><a href="Concillation_Officer_Manual.html"
+                              title="Web Directory" class="sf-depth-3">Concillation_Officer_Manual</a></li>
+                        </ul>
+                      </li>
+                      <li id="labour-department-menu-menu-link-content3c6ccfd1-d195-4114-a696-62d6adb6832c"
+                        class="sf-depth-2 menuparent"><span title="Who&#039;s Who"
+                          class="sf-depth-2 menuparent nolink">Notifications</span>
+                        <ul>
+                          <li id="labour-department-menu-menu-link-content84b1ecb3-7564-41aa-9edd-f259f04c98b1"
+                            class="sf-depth-3 sf-no-children"><a href="Delegation of Powers to Officers.html"
+                              title="Web Directory" class="sf-depth-3">Delegation of Powers to
+                     Officers</a></li>
+                              <li id="labour-department-menu-menu-link-content84b1ecb3-7564-41aa-9edd-f259f04c98b1"
+                            class="sf-depth-3 sf-no-children"><a href="Quasi Judicial Functions.html"
+                              title="Web Directory" class="sf-depth-3">Quasi Judicial Functions</a></li>
+                              <li id="labour-department-menu-menu-link-content84b1ecb3-7564-41aa-9edd-f259f04c98b1"
+                            class="sf-depth-3 sf-no-children"><a href="Officer Under Various Acts.html"
+                              title="Web Directory" class="sf-depth-3">Officer Under Various Acts</a></li>
+                              <li id="labour-department-menu-menu-link-content84b1ecb3-7564-41aa-9edd-f259f04c98b1"
+                            class="sf-depth-3 sf-no-children"><a href="Sez Notifications.html"
+                              title="Web Directory" class="sf-depth-3">Sez Notifications</a></li>
+                              <li id="labour-department-menu-menu-link-content84b1ecb3-7564-41aa-9edd-f259f04c98b1"
+                            class="sf-depth-3 sf-no-children"><a href="Online Registrations Instructions.html"
+                              title="Web Directory" class="sf-depth-3">Online Registrations
+                     Instructions</a></li>
+                              <li id="labour-department-menu-menu-link-content84b1ecb3-7564-41aa-9edd-f259f04c98b1"
+                            class="sf-depth-3 sf-no-children"><a href="National, Festival & Other Holidays.html"
+                              title="Web Directory" class="sf-depth-3">National, Festival &
+                     Other Holidays</a></li>
+                              <li id="labour-department-menu-menu-link-content84b1ecb3-7564-41aa-9edd-f259f04c98b1"
+                            class="sf-depth-3 sf-no-children"><a href="/assets/pdf/Acts/Notifications/Contract_Labour_Regulation_and_Abolition_Amendment.pdf" target="_blank"
+                              title="Web Directory" class="sf-depth-3">Contract Labour</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li id="labour-department-menu-menu-link-content11dd3140-8231-45a1-833d-b911375f88e5"
+                     class="sf-depth-1 menuparent"><span title="About Us" class="sf-depth-1 menuparent nolink">GENERAL</span>
+                     <ul>
+
+                          <li id="labour-department-menu-menu-link-content3c6ccfd1-d195-4114-a696-62d6adb6832c"
+                        class="sf-depth-2 menuparent"><span title="Who&#039;s Who"
+                          class="sf-depth-2 menuparent nolink">G.O's</span>
+                        <ul>
+                          <li id="labour-department-menu-menu-link-content84b1ecb3-7564-41aa-9edd-f259f04c98b1"
+                            class="sf-depth-3 sf-no-children"><a href="PMJJBY - YSR Bima.html"
+                              title="Web Directory" class="sf-depth-3">PMJJBY - YSR Bima</a></li>
+                              <li id="labour-department-menu-menu-link-content84b1ecb3-7564-41aa-9edd-f259f04c98b1"
+                            class="sf-depth-3 sf-no-children"><a href="Jurisidiction of Officers of The Dept.html"
+                              title="Web Directory" class="sf-depth-3">Jurisidiction of
+                        Officers of The Dept</a></li>
+                              <li id="labour-department-menu-menu-link-content84b1ecb3-7564-41aa-9edd-f259f04c98b1"
+                            class="sf-depth-3 sf-no-children"><a href="National,Festival & Special Holidays.html"
+                              title="Web Directory" class="sf-depth-3">National,Festival &
+                        Special Holidays</a></li>
+                              <li id="labour-department-menu-menu-link-content84b1ecb3-7564-41aa-9edd-f259f04c98b1"
+                            class="sf-depth-3 sf-no-children"><a href="Child Labour Subject.html"
+                              title="Web Directory" class="sf-depth-3">Child Labour Subject</a></li>
+                              <li id="labour-department-menu-menu-link-content84b1ecb3-7564-41aa-9edd-f259f04c98b1"
+                            class="sf-depth-3 sf-no-children"><a href="Staff List of Labour Department.html"
+                              title="Web Directory" class="sf-depth-3">Staff List of Labour
+                        Department</a></li>
+                              <li id="labour-department-menu-menu-link-content84b1ecb3-7564-41aa-9edd-f259f04c98b1"
+                            class="sf-depth-3 sf-no-children"><a href="General.html"
+                              title="Web Directory" class="sf-depth-3">General</a></li>
+                          
+                           
+                        </ul>
+                      </li>
+                      <li id="labour-department-menu-menu-link-content3c6ccfd1-d195-4114-a696-62d6adb6832c"
+                        class="sf-depth-2 menuparent"><span title="Who&#039;s Who"
+                          class="sf-depth-2 menuparent nolink">General Info</span>
+                        <ul>
+                          <li id="labour-department-menu-menu-link-content84b1ecb3-7564-41aa-9edd-f259f04c98b1"
+                            class="sf-depth-3 sf-no-children"><a href="Minimum,Contract & Outsource.html"
+                              title="Web Directory" class="sf-depth-3">Minimum,Contract &
+                        Outsource</a></li>
+                              <li id="labour-department-menu-menu-link-content84b1ecb3-7564-41aa-9edd-f259f04c98b1"
+                            class="sf-depth-3 sf-no-children"><a href="Child Labour.html"
+                              title="Web Directory" class="sf-depth-3">Child Labour</a></li>
+                              <li id="labour-department-menu-menu-link-content84b1ecb3-7564-41aa-9edd-f259f04c98b1"
+                            class="sf-depth-3 sf-no-children"><a href="Services.html"
+                              title="Web Directory" class="sf-depth-3">Services</a></li>
+                              <li id="labour-department-menu-menu-link-content84b1ecb3-7564-41aa-9edd-f259f04c98b1"
+                            class="sf-depth-3 sf-no-children"><a href="Risk Assessment Criteria.html"
+                              title="Web Directory" class="sf-depth-3">Risk Assessment Criteria</a></li>
+                              <li id="labour-department-menu-menu-link-content84b1ecb3-7564-41aa-9edd-f259f04c98b1"
+                            class="sf-depth-3 sf-no-children"><a href="Exempted Establishments.html"
+                              title="Web Directory" class="sf-depth-3">Exempted Establishments</a></li>
+                             
+                             
+                        </ul>
+                      </li>
+                      <li id="labour-department-menu-menu-link-content3c6ccfd1-d195-4114-a696-62d6adb6832c"
+                        class="sf-depth-2 menuparent"><span title="Who&#039;s Who"
+                          class="sf-depth-2 menuparent nolink">PMJJBY - YSR Bima</span>
+                        <ul>
+                          <li id="labour-department-menu-menu-link-content84b1ecb3-7564-41aa-9edd-f259f04c98b1"
+                            class="sf-depth-3 sf-no-children"><a href="IRDA Licenced Broking Agencies.html"
+                              title="Web Directory" class="sf-depth-3">IRDA Licenced Broking
+                        Agencies</a></li>
+                              <li id="labour-department-menu-menu-link-content84b1ecb3-7564-41aa-9edd-f259f04c98b1"
+                            class="sf-depth-3 sf-no-children"><a href="/assets/pdf/Age_group_wise_members.pdf" target="_blank"
+                              title="Web Directory" class="sf-depth-3"> Age Wise No.of Members</a></li>
+                              <li id="labour-department-menu-menu-link-content84b1ecb3-7564-41aa-9edd-f259f04c98b1"
+                            class="sf-depth-3 sf-no-children"><a href="/assets/pdf/Note_on_CB_Updated.pdf" target="_blank"
+                              title="Web Directory" class="sf-depth-3">Note On PMJJBY</a></li>
+                              <li id="labour-department-menu-menu-link-content84b1ecb3-7564-41aa-9edd-f259f04c98b1"
+                            class="sf-depth-3 sf-no-children"><a href="/assets/pdf/Clarfication_payment_to_Natural_death_for_Building_worker.pdf" target="_blank"
+                              title="Web Directory" class="sf-depth-3">Natural
+                        Death/Permanent/Partial Disability Due to accident</a></li>
+                            
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li id="labour-department-menu-menu-link-contentc4c75082-8dc1-4ee7-a750-2245e8c2d74e"
+                    class="sf-depth-1 menuparent"><span title="Media Gallery" class="sf-depth-1 menuparent nolink">EODB</span>
+                    <ul>
+                      <li id="labour-department-menu-menu-link-contentee5f3460-62d0-4424-8e12-64c48064f8f1"
+                        class="sf-depth-2 sf-no-children"><a href="/eodb-reforms.html"
+                          title="Photo Gallery" class="sf-depth-2">EODB Reforms</a></li>
+                      <li id="labour-department-menu-menu-link-content7541ad58-4f74-4875-847a-c5a265a0080d"
+                        class="sf-depth-2 sf-no-children"><a href="/EODB DashBoard.html"
+                          title="Video Gallery" class="sf-depth-2">EODB DashBoard</a></li>
+                          <li id="labour-department-menu-menu-link-content7541ad58-4f74-4875-847a-c5a265a0080d"
+                        class="sf-depth-2 sf-no-children"><a href="EODB Report.html"
+                          title="Video Gallery" class="sf-depth-2">EODB Report</a></li>
+                          <li id="labour-department-menu-menu-link-content7541ad58-4f74-4875-847a-c5a265a0080d"
+                        class="sf-depth-2 sf-no-children"><a href="Latest GO's.html"
+                          title="Video Gallery" class="sf-depth-2">Latest GO's</a></li>
+                    </ul>
+                  </li>
+                  <li id="labour-department-menu-menu-link-contentc4c75082-8dc1-4ee7-a750-2245e8c2d74e"
+                    class="sf-depth-1 menuparent"><span title="Media Gallery" class="sf-depth-1 menuparent nolink">RTI</span>
+                    <ul>
+                      <li id="labour-department-menu-menu-link-contentee5f3460-62d0-4424-8e12-64c48064f8f1"
+                        class="sf-depth-2 sf-no-children"><a target="_blank"
+                    href="/assets/pdf/RTI.pdf"
+                          title="Photo Gallery" class="sf-depth-2">Notes</a></li>
+                      <li id="labour-department-menu-menu-link-content7541ad58-4f74-4875-847a-c5a265a0080d"
+                        class="sf-depth-2 sf-no-children"><a href="/assets/pdf/RTI/NEW DIARY.pdf" target="_blank"
+                          title="Video Gallery" class="sf-depth-2">Sub Notes</a></li>
+                        
+                    </ul>
+                  </li>
+                  <li id="labour-department-menu-menu-link-contentc4c75082-8dc1-4ee7-a750-2245e8c2d74e"
+                    class="sf-depth-1 menuparent"><span title="Media Gallery" class="sf-depth-1 menuparent nolink">REPORTS</span>
+                    <ul>
+                        <li id="labour-department-menu-menu-link-content3c6ccfd1-d195-4114-a696-62d6adb6832c"
+                        class="sf-depth-2 menuparent"><span title="Who&#039;s Who"
+                          class="sf-depth-2 menuparent nolink">Inspection Archives</span>
+                        <ul style="height: 400px; overflow: scroll;">
+                          <li id="labour-department-menu-menu-link-content84b1ecb3-7564-41aa-9edd-f259f04c98b1"
+                            class="sf-depth-3 sf-no-children"><a href="Srikakulam.html"
+                              title="Web Directory" class="sf-depth-3">Srikakulam</a></li>
+                              <li id="labour-department-menu-menu-link-content84b1ecb3-7564-41aa-9edd-f259f04c98b1"
+                            class="sf-depth-3 sf-no-children"><a href="parvathipuram-manyam.html"
+                              title="Web Directory" class="sf-depth-3">Parvathipuram Manyam</a></li>
+                              <li id="labour-department-menu-menu-link-content84b1ecb3-7564-41aa-9edd-f259f04c98b1"
+                            class="sf-depth-3 sf-no-children"><a href="Vizaianagaram.html"
+                              title="Web Directory" class="sf-depth-3">Vizaianagaram</a></li>
+                              <li id="labour-department-menu-menu-link-content84b1ecb3-7564-41aa-9edd-f259f04c98b1"
+                            class="sf-depth-3 sf-no-children"><a href="Visakhapatnam.html"
+                              title="Web Directory" class="sf-depth-3">Visakhapatnam</a></li>
+                              <li id="labour-department-menu-menu-link-content84b1ecb3-7564-41aa-9edd-f259f04c98b1"
+                            class="sf-depth-3 sf-no-children"><a href="alluri-sitha-rama-raju.html"
+                              title="Web Directory" class="sf-depth-3">Alluri Sitharama Raju</a></li>
+                              <li id="labour-department-menu-menu-link-content84b1ecb3-7564-41aa-9edd-f259f04c98b1"
+                            class="sf-depth-3 sf-no-children"><a href="Anakapalli"
+                              title="Web Directory" class="sf-depth-3">Anakapalli</a></li>
+                              <li id="labour-department-menu-menu-link-content84b1ecb3-7564-41aa-9edd-f259f04c98b1"
+                            class="sf-depth-3 sf-no-children"><a href="kakinada.html"
+                              title="Web Directory" class="sf-depth-3">Kakinada</a></li>
+                              <li id="labour-department-menu-menu-link-content84b1ecb3-7564-41aa-9edd-f259f04c98b1"
+                            class="sf-depth-3 sf-no-children"><a href="East Godavari.html"
+                              title="Web Directory" class="sf-depth-3">East Godavari</a></li>
+                              <li id="labour-department-menu-menu-link-content84b1ecb3-7564-41aa-9edd-f259f04c98b1"
+                            class="sf-depth-3 sf-no-children"><a href="ambedhkr-konaseema.html"
+                              title="Web Directory" class="sf-depth-3">Dr.B.R. Ambedkar Konaseema</a></li>
+                              <li id="labour-department-menu-menu-link-content84b1ecb3-7564-41aa-9edd-f259f04c98b1"
+                            class="sf-depth-3 sf-no-children"><a href="eluru.html"
+                              title="Web Directory" class="sf-depth-3">Eluru</a></li>
+                              <li id="labour-department-menu-menu-link-content84b1ecb3-7564-41aa-9edd-f259f04c98b1"
+                            class="sf-depth-3 sf-no-children"><a href="West Godavari.html"
+                              title="Web Directory" class="sf-depth-3">West Godavari</a></li>
+                              <li id="labour-department-menu-menu-link-content84b1ecb3-7564-41aa-9edd-f259f04c98b1"
+                            class="sf-depth-3 sf-no-children"><a href="ntr.html"
+                              title="Web Directory" class="sf-depth-3">NTR</a></li>
+                              <li id="labour-department-menu-menu-link-content84b1ecb3-7564-41aa-9edd-f259f04c98b1"
+                            class="sf-depth-3 sf-no-children"><a href="Krishna.html"
+                              title="Web Directory" class="sf-depth-3">Krishna</a></li>
+                              <li id="labour-department-menu-menu-link-content84b1ecb3-7564-41aa-9edd-f259f04c98b1"
+                            class="sf-depth-3 sf-no-children"><a href="palnadu.html"
+                              title="Web Directory" class="sf-depth-3">Palnadu</a></li>
+                              <li id="labour-department-menu-menu-link-content84b1ecb3-7564-41aa-9edd-f259f04c98b1"
+                            class="sf-depth-3 sf-no-children"><a href="Guntur.html"
+                              title="Web Directory" class="sf-depth-3">Guntur</a></li>
+                              <li id="labour-department-menu-menu-link-content84b1ecb3-7564-41aa-9edd-f259f04c98b1"
+                            class="sf-depth-3 sf-no-children"><a href="baptla.html"
+                              title="Web Directory" class="sf-depth-3">Bapatla</a></li>
+                              <li id="labour-department-menu-menu-link-content84b1ecb3-7564-41aa-9edd-f259f04c98b1"
+                            class="sf-depth-3 sf-no-children"><a href="Prakasam.html"
+                              title="Web Directory" class="sf-depth-3">Prakasam</a></li>
+                              <li id="labour-department-menu-menu-link-content84b1ecb3-7564-41aa-9edd-f259f04c98b1"
+                            class="sf-depth-3 sf-no-children"><a href="Nellore.html"
+                              title="Web Directory" class="sf-depth-3">Nellore</a></li>
+                              <li id="labour-department-menu-menu-link-content84b1ecb3-7564-41aa-9edd-f259f04c98b1"
+                            class="sf-depth-3 sf-no-children"><a href="Kurnool.html"
+                              title="Web Directory" class="sf-depth-3">Kurnool</a></li>
+                              <li id="labour-department-menu-menu-link-content84b1ecb3-7564-41aa-9edd-f259f04c98b1"
+                            class="sf-depth-3 sf-no-children"><a href="nandyal.html"
+                              title="Web Directory" class="sf-depth-3">Nandyal</a></li>
+                              <li id="labour-department-menu-menu-link-content84b1ecb3-7564-41aa-9edd-f259f04c98b1"
+                            class="sf-depth-3 sf-no-children"><a href="Anantapur.html"
+                              title="Web Directory" class="sf-depth-3">Anantapur</a></li>
+                              <li id="labour-department-menu-menu-link-content84b1ecb3-7564-41aa-9edd-f259f04c98b1"
+                            class="sf-depth-3 sf-no-children"><a href="sri-satya-sai.html"
+                              title="Web Directory" class="sf-depth-3">Sri Sathya Sai</a></li>
+                              <li id="labour-department-menu-menu-link-content84b1ecb3-7564-41aa-9edd-f259f04c98b1"
+                            class="sf-depth-3 sf-no-children"><a href="Kadapa.html"
+                              title="Web Directory" class="sf-depth-3">YSR</a></li>
+                              <li id="labour-department-menu-menu-link-content84b1ecb3-7564-41aa-9edd-f259f04c98b1"
+                            class="sf-depth-3 sf-no-children"><a href="annamayya.html"
+                              title="Web Directory" class="sf-depth-3">Annamayya</a></li>
+                              <li id="labour-department-menu-menu-link-content84b1ecb3-7564-41aa-9edd-f259f04c98b1"
+                            class="sf-depth-3 sf-no-children"><a href="tirupathi.html"
+                              title="Web Directory" class="sf-depth-3">Tirupathi</a></li>
+                              <li id="labour-department-menu-menu-link-content84b1ecb3-7564-41aa-9edd-f259f04c98b1"
+                            class="sf-depth-3 sf-no-children"><a href="Chittoor.html"
+                              title="Web Directory" class="sf-depth-3">Chittoor</a></li>
+
+                            
+                        </ul>
+                      </li>
+                    
+                    </ul>
+                  </li>
+                  <li id="labour-department-menu-menu-link-contentfb6b1e8c-9116-4714-815c-0a8db9c138b4"
+                    class="sf-depth-1 sf-no-children"><a href="/assets/pdf/CitizenCharter/citizencharter.pdf" target="_blank" title="Contact Us"
+                      class="sf-depth-1">CITIZEN CHARTER</a></li>
+                 
+                  <li id="labour-department-menu-menu-link-contentfb6b1e8c-9116-4714-815c-0a8db9c138b4"
+                    class="sf-depth-1 sf-no-children"><a href="contact-us.html" title="Contact Us"
+                      class="sf-depth-1">CONTACT US</a></li>
+                      <li id="labour-department-menu-menu-link-contentc4c75082-8dc1-4ee7-a750-2245e8c2d74e"
+                    class="sf-depth-1 menuparent"><span title="Media Gallery" class="sf-depth-1 menuparent nolink">LOGIN</span>
+                    <ul>
+                      <li id="labour-department-menu-menu-link-contentee5f3460-62d0-4424-8e12-64c48064f8f1"
+                        class="sf-depth-2 sf-no-children"><a href="media-gallery/photo-gallery.html"
+                          title="Photo Gallery" class="sf-depth-2">Department Login</a></li>
+                      <li id="labour-department-menu-menu-link-content7541ad58-4f74-4875-847a-c5a265a0080d"
+                        class="sf-depth-2 sf-no-children"><a href="media-gallery/video-gallery.html"
+                          title="Video Gallery" class="sf-depth-2">User Login</a></li>
+                    </ul>
+                  </li>
+              
+                 
+                </ul>
+
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+      </nav>
+
+      <!--End Header Section-->
+      <div class="clearfix"></div>
+      <!--Start code for banner wrapper-->
+
+      <!-- <div class="banner-section">
+        <div class="d-flex justify-space-between">
+          <div class="labour-text">
+            Labour Department <br />
+            of Andhra Pradesh
+          </div>
+          <div>
+            <img src="assets/image 24.png" alt="" />
+          </div>
+        </div>
+      </div> -->
+      <section class="wrapper banner-wrapper">
+
+        <div class="row">
+          <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+
+            <div id="flexSlider" class="flexslider">
+              <div>
+                <div class="views-element-container block block-views block-views-blockslider-block-1"
+                  id="block-views-block-slider-block-1">
+
+
+                  <div class="content">
+                    <div>
+                      <div class="js-view-dom-id-72b87190ee30c6b31fb4969b132d97ba819a40ad0f1fce7ea5de7dd2a7b2f11f">
+
+                        <div class="item-list">
+
+                          <ul class="slides">
+
+                            <li> <img style="height: 390px;" src="/assets/images/slider1.jpg" width="832" height="380"
+                                alt="Secretary, MoLE, GOI reviewed ESIC issues on 22.01.2021" typeof="foaf:Image" />
+
+
+                            </li>
+
+                          </ul>
+
+                        </div>
+
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+
             </div>
           </div>
-    </footer>
+          <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+            <div class="latest-news-title">
+              <h2><i class="fa fa-newspaper-o"></i><b> Latest </b> News</h2>
+            </div>
+            <div class="events-details">
+              <div>
+                <div class="views-element-container block block-views block-views-blocknews-block-4"
+                  id="block-views-block-news-block-4-3">
 
-    <div class="news-scroll">
-      <span class="news-tag">News &amp; Updates</span>
-      <marquee attribute_name="attribute_value" ....more="" attributes="">
-          As the Government of India is strongly committed to the 2030 Agenda including the SDGs, what is more
-          important is the path we choose to achieve this goal of a Trillion Dollar Economy!
-      </marquee>
+
+                  <div class="content">
+                    <div>
+                      <div class="js-view-dom-id-c77f6b2b3810087493175675f978769f7a784c49cec895cd7395fafca905dc0d">
+
+                        <div class="item-list">
+
+                          <ul class="marquee-vertical">
+
+                            <li>
+                              <div class="date">
+                                <span class="day">12</span>
+                                <span class="month"> June <br> 2023</span>
+                              </div>
+                              <a href="news/publication-rfp-documents-engagement-manpower-through-service-provider-2022-23.html"
+                                title="Publication of RFP documents for engagement of Manpower through Service Provider-2022-23">National on Festival Holidays for the period of 2020.<span
+                                  class="pulse2">New</span></a>
+                            </li>
+                            <li>
+                              <div class="date">
+                                <span class="day">12</span>
+                                <span class="month"> June <br> 2023</span>
+                              </div>
+                              <a href="news/new-scheme-supply-dry-ration-migrant-labourers-workers.html"
+                                title="New Scheme-Supply-Dry-Ration-Migrant-Labourers-Workers">VDA
+                                w.e.f.01.04.2020.<span class="pulse2">New</span></a>
+                            </li>
+                            <li>
+                              <div class="date">
+                                <span class="day">12</span>
+                                <span class="month"> June <br> 2023</span>
+                              </div>
+                              <a href="news/pre-bid-meeting-decisions.html" title="Pre-Bid Meeting Decisions">Pre-Bid
+                                Meeting Decisions<span class="pulse2">New</span></a>
+                            </li>
+                            <li>
+                              <div class="date">
+                                <span class="day">12</span>
+                                <span class="month"> June <br> 2023</span>
+                              </div>
+                              <a href="news/self-verification-active-registered-construction-workers-data-special-covid-financial.html"
+                                title="Self verification of active registered construction workers data for Special Covid Financial…">Contract
+                                Labour VDA Points 01.04.2020 to 30.09.2020<span class="pulse2">New</span></a>
+                            </li>
+
+                          </ul>
+
+                        </div>
+
+
+
+
+
+
+
+
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+            <a href="news.html" class="know-more-news pull-right knw-mrg" title="Know More">Know More</a>
+          </div>
+        </div>
+
+
+      </section>
+      <!--Banner end-->
+      <div class="clearfix"></div>
+      <!--Start code for Services Section-->
+      <section class="five-t-sec">
+        <div class="sec-first">
+        
+          <!-- 5Ts Initiative blocks starts -->
+          <div>
+            <div class="views-element-container block block-views block-views-block5-ts-category-block-1"
+              id="block-views-block-5-ts-category-block-1-3">
+              <div class="content">
+                <div>
+                  <div class="js-view-dom-id-6629504df7a757cddeabe852d7d010799583af4a2b51e4fb1a4374cb08796832">
+                    <div>
+                      <ul class="five-t-listing">
+                        <li><span><a href="about-us.html" title="Teamwork"> <img
+                                src="/assets/images/about-us.png" width="42" height="42" alt="teamwork"
+                                typeof="Image" />
+
+                          </span> ABOUT US</a></li>
+                        <li><span><a href="EODB DashBoard.html" title="Teamwork"> <img
+                                src="/assets/images/eodbdashboard.png" width="42" height="42" alt="teamwork"
+                                typeof="Image" />
+
+                          </span> DASHBOARD</a></li>
+                        <li><span><a href="EODB Report.html" title="Technology"> <img
+                                src="/assets/images/eodbreport.png" width="41" height="41" alt="technology"
+                                typeof="Image" />
+
+                          </span> REPORTS</a></li>
+                        <li><span><a href="eodb-reforms.html" title="Transparency"> <img
+                                src="/assets/images/eodbreforms.png" width="41" height="25" alt="image1"
+                                typeof="Image" />
+
+                          </span>REFORMS</a></li>
+                       
+                      
+
+                      </ul>
+
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+          <!-- 5Ts Initiative blocks end -->
+        </div>
+        <div class="sec-second">
+            <!-- E-GOVERNANCE INITIATIVES,MOBILE APPS & EDUCATIONS block code starts -->
+            <div>
+              <div class="views-element-container block block-views block-views-blockmobile-apps-block-1"
+                id="block-views-block-mobile-apps-block-1-2">
+                <div class="content">
+                  <div>
+                    <div class="js-view-dom-id-bcc5afdac22cab09d14724143e8627075a8af7b298520eeb518f8018f59354d1">
+                      <div>
+  
+                        <ul>
+  
+                          <li>
+                            <div class="views-field views-field-nothing"><span class="field-content">
+                                <div class="icon"><a href="https://core.ap.gov.in/cmdashboard/index.aspx" title="CM CORE DASHBOARD"><a
+                                      href="https://core.ap.gov.in/cmdashboard/index.aspx"> <img
+                                        src="/assets/Dashboard.png" width="36" height="36"
+                                        alt="CM CORE DASHBOARD" title="CM CORE DASHBOARD" typeof="Image" />
+  
+                                    </a></a></div>
+                                <a href="https://core.ap.gov.in/cmdashboard/index.aspx" target="_blank" title="CM CORE DASHBOARD">CM CORE DASHBOARD</a>
+                              </span></div>
+                          </li>
+                          <li>
+                            <div class="views-field views-field-nothing"><span class="field-content">
+                                <div class="icon"><a href="http://www.bima.ap.gov.in/"
+                                    title="YSR BHIMA"><a href="http://www.bima.ap.gov.in/"> <img
+                                        src="/assets/YSR Bhima.png" width="36" height="36"
+                                        alt="YSR BHIMA" title="YSR BHIMA" typeof="Image" />
+  
+                                    </a></a></div>
+                                <a href="http://www.bima.ap.gov.in/" target="_blank" title="YSR BHIMA">YSR BHIMA</a>
+                              </span></div>
+                          </li>
+                          <li>
+                            <div class="views-field views-field-nothing"><span class="field-content">
+                                <div class="icon"><a href="http://aplabourwelfareboard.ap.gov.in/aplwb/index.jsp" title="BENEFITS DISBURSEMENTS"><a
+                                      href="http://aplabourwelfareboard.ap.gov.in/aplwb/index.jsp"> <img src="/assets/Benefits.png"
+                                        width="36" height="36" alt="BENEFITS DISBURSEMENTS" title="BENEFITS DISBURSEMENTS" typeof="Image" />
+  
+                                    </a></a></div>
+                                <a href="http://aplabourwelfareboard.ap.gov.in/aplwb/index.jsp" target="_blank" title="BENEFITS DISBURSEMENTS">BENEFITS DISBURSEMENTS</a>
+                              </span></div>
+                          </li>
+  
+                          <li><a href="http://labour.ap.gov.in:8080/industrialdisputes/indisputeshome.php" target="_blank" title="INDUSTRIAL DISPUTES">
+                              <div class="icon"> <img src="/assets/Industry.png" width="36"
+                                  height="36" alt="INDUSTRIAL DISPUTES" typeof="Image" />
+  
+                              </div>
+                              INDUSTRIAL DISPUTES
+                            </a>
+                          </li>
+       
+                          
+                          <li><a href="/Latest GO's.html" title="LATEST GO'S">
+                              <div class="icon"> <img src="/assets/latest-go.png" width="36"
+                                  height="36" alt="TENDER &amp; ADVERTISEMENT" typeof="Image" />
+  
+                              </div>
+                              LATEST GO'S
+                            </a>
+                          </li>
+                        </ul>
+  
+                      </div>
+                    </div>
+                  </div>
+  
+                </div>
+              </div>
+  
+            </div>
+  
+  
+            <!-- E-GOVERNANCE INITIATIVES,MOBILE APPS & EDUCATIONS block code ends -->
+            <!-- E-dispatch,citizen service, tender block code starts -->
+           
+  
+  
+            <!-- E-dispatch,citizen service, tender block code ends -->
+  
+          </div>
+      </section>
+
+<!-- ministers section -->
+<section class="mt-5 mb-5  pt-5 aos-animate" data-aos="fade-left" data-aos-duration="2000">
+    <div class="col-md-12">
+        <div class="container">
+            
+          <div class="row">
+            <div class="col-md-6">
+                <div class="connectivity">
+                    <div class="card">
+                        <img src="/assets/Minister-section.png">
+                        <ul>
+                            <li class="" style="color: #0088EE;font-size: 18px; font-weight: 600;
+                            ">Sri. Gummanur Jayaram</li>
+                            <li>Minister for Labour of Andhra Pradesh</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="connectivity">
+                    <div class="card">
+                        <img src="assets/sectary-section.png">
+                        <ul>
+                            <li style="color: #0088EE;font-size: 18px; font-weight: 600;"
+                            >Sri. M. Hari Jawaharlal IAS</li>
+                            <li>Principal Secretary to Government</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<section class="emc-ap-ranking-section emc-grp-section aos-animate" data-aos="fade-down" data-aos-duration="2000">
+    <div class="container">
+        <div class="row justify-content-start">
+            <h3 style="    color: #5C43AB;
+            padding-left: 60px;
+            padding-bottom: 20px;
+            font-weight: 600;">About Department</h3>
+
+            <div class="col-md-12 emc-rank-grp emc-rank-ap" >
+                <div class="row">
+
+                    <div class="col-md-6 emc-business-ranking mb-3">
+
+                        <div class="emc-rank-number">
+                            <div>
+                             
+                                <p> <span style="color:#d0529a;
+                                    font-size: 21px;
+                                    font-weight: 600;">WELCOME TO LABOUR COMMISSIONERATE</span> <br> The Labour Commissionerate facilitates not only conflict resolution between the management and the trade unions in the organized industrial sectors but also serves the greater purpose of enhancing the welfare of the large and heterogenous sections of the unorganized working classes through the just enforcement of labour laws as well as through the proper implementation of the various social security schemes.…</p>
+                            </div>
+                        </div>
+                        <div class="emc-grp-img">
+                        <img class="w-100 emcs-grp-img" src="/assets/about-us-section.png" alt="">
+                        <img class="w-100 emc-resposnive-img" src="/assets/about-us-section.png" alt="">
+                        <img class="w-100 emc-resposnive-img" src="/assets/about-us-section.png" alt="">
+                        <img class="w-100 emc-resposnive-img" src="/assets/about-us-section.png" alt="">
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+      <div id="skipCont"></div>
+     
+     
+
+                
+
+
+
+
+      <!-- <img src="/assets/images/dubai-image.png" alt="" srcset=""> -->
+      <div class="container aos-animate" data-aos="fade-down" data-aos-duration="2000">
+        <h2 class="trending-header text-center pt-5 pb-5">Trending Services</h2>
+        <div>
+          <ul class="nav nav-tabs trending-tabs" id="myTab" role="tablist">
+            <li class="nav-item quicklinks-updates">
+              <a  class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
+                aria-selected="true">Quick Links
+                <img src="/assets/quik-links.png" alt="" srcset="" style="height: 50px; 
+                padding-left: 26px;
+            ">
+              </a>
+            </li>
+            <li class="nav-item quicklinks-updates">
+              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
+                aria-selected="false">Our Services
+                <img src="/assets/our-services.png" alt="" srcset="" style="height: 50px; 
+                padding-left: 26px;
+            ">
+              </a>
+            </li>
+            <li class="nav-item quicklinks-updates">
+              <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact"
+                aria-selected="false">Government Services
+              <img src="/assets/gov-services.png" alt="" srcset="" style="height: 50px; 
+              padding-left: 26px;
+          ">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="tab-content trending-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <div class="row">
+              <div class="col-3 mb-3">
+               <a target="_blank" href="https://core.ap.gov.in/cmdashboard/index.aspx"><div class="card trending-card">
+                <span>
+                  <img src="/assets/Dashboard.png" alt="" />
+
+                </span>
+                <p>CM CORE DASHBOARD
+                </p>
+              </div></a> 
+              </div>
+              <div class="col-3 mb-3">
+                <a target="_blank" href="http://www.bima.ap.gov.in/">
+                  <div class="card trending-card">
+                    <img src="/assets/YSR Bhima.png" alt="" />
+                    <p>YSR BHIMA</p>
+                    
+                  </div>
+                </a>
+              </div>
+              <div class="col-3 mb-3">
+                <a target="_blank" href="http://aplabourwelfareboard.ap.gov.in/aplwb/index.jsp">
+                  <div class="card trending-card">
+                    <img src="/assets/Benefits.png" alt="" />
+                   <p> BENEFITS DISBURSEMENTS</p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-3 mb-3">
+                <a target="_blank" href="http://labour.ap.gov.in:8080/industrialdisputes/indisputeshome.php">
+                  <div class="card trending-card">
+                    <img src="/assets/Industry.png" alt="" />
+                    <p>INDUSTRIAL DISPUTES</p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-3 mb-3">
+                <a target="_blank" href="https://onlineap.meeseva.gov.in/CitizenPortal/UserInterface/Citizen/Home.aspx">
+                  <div class="card trending-card">
+                    <img src="/assets/licence-renewal.png" alt="" />
+                    <p>License Renewal Under Labour all Laws
+                    </p>
+                  </div>
+                </a>
+              
+              </div>
+              <div class="col-3 mb-3">
+                <a target="_blank" href="https://onlineap.meeseva.gov.in/CitizenPortal/UserInterface/Citizen/Home.aspx">
+                  <div class="card trending-card">
+                    <img src="assets/annual-returns.png" alt="" />
+                    <p>Annual Returns of Establishments Under Labour Laws</p>
+                    
+                  </div>
+                </a>
+              </div>
+              <div class="col-3 mb-3">
+               <a target="_blank" href="https://ap.meeseva.gov.in/DeptPortal/UserInterface/LoginForm.aspx"> <div class="card trending-card">
+                <img src="assets/download-certificate.png" alt="" />
+                <p>Download Certificate</p>
+              </div></a>
+              </div>
+              <div class="col-3 mb-3">
+                <a target="_blank" href="https://ap.meeseva.gov.in/DeptPortal/UserInterface/LoginForm.aspx">
+                  <div class="card trending-card">
+                    <img src="assets/third-part-verification.png" alt="" />
+                    <p>Third party Verification of Registration/License</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            <div class="row">
+              <div class="col-3 mb-3">
+                <a target="_blank" href="https://apbocwwb.ap.nic.in/">
+                  <div class="card trending-card">
+                    <img src="assets/bocww-board.png" alt="" />
+                    <p>BOCWW Board</p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-3 mb-3">
+                <a target="_blank" href="http://aplabourwelfareboard.ap.gov.in/aplwb/index.jsp">
+                  <div class="card trending-card">
+                    <img src="assets/rti-notes.png" alt="" />
+                    <p>Welfare Board</p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-3 mb-3">
+                <a target="_blank" href="/assets/pdf/RTI/NEW%20DIARY.pdf">
+                  <div class="card trending-card">
+                    <img src="assets/rti-sub-notes.png" alt="" />
+                    <p>RTI Sub Notes</p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-3 mb-3">
+                <a target="_blank" href="/assets/pdf/CitizenCharter/citizencharter.pdf">
+                  <div class="card trending-card">
+                    <img src="assets/citizen-character.png" alt="" />
+                   <p>Citizen Charter</p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-3 mb-3">
+                <a target="_blank" href="/Latest GO's.html">
+                  <div class="card trending-card">
+                    <img src="/assets/latest-go.png" alt="" />
+                    <p>Latest GO'S</p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-3 mb-3">
+                <a href="/eodb-reforms.html">
+                  <div class="card trending-card">
+                    <img src="/assets/eodb-refomrs.png" alt="" />
+                    <p>EODB Reforms</p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-3 mb-3">
+                <a href="EODB Report.html">
+                  <div class="card trending-card">
+                    <img src="assets/eodb-refort.png" alt="" />
+                    <p>EODB Report</p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-3 mb-3">
+                <a href="EODB DashBoard.html">
+                  <div class="card trending-card">
+                    <img src="assets/eodb-dashboard.png" alt="" />
+                    <p>EODB Dashboard</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+            <div class="row">
+              <div class="col-3 mb-3">
+                <div class="card trending-card">
+                  <img src="assets/factories-portal.png" alt="" />
+                  <p>Factories Portal</p>
+                </div>
+              </div>
+              <div class="col-3 mb-3">
+                <div class="card trending-card">
+                  <img src="/assets/industries-portal.png" alt="" />
+                  <p>Industries Portal</p>
+                </div>
+              </div>
+              <div class="col-3 mb-3">
+                <div class="card trending-card">
+                  <img src="assets/suvidha-portal.png" alt="" />
+                  <p>Shram Suvidha Portal</p>
+                </div>
+              </div>
+              <div class="col-3 mb-3">
+                <div class="card trending-card">
+                  <img src="/assets/minister-lbr.png" alt="" />
+                  <p>Ministry of Labour & Employment Portal</p>
+                </div>
+              </div>
+              <div class="col-3 mb-3">
+                <div class="card trending-card">
+                  <img src="/assets/central-labour.png" alt="" />
+                  <p>Central Labour Service</p>
+                </div>
+              </div>
+              <div class="col-3 mb-3">
+                <div class="card trending-card">
+                  <img src="/assets/labour-baureu.png" alt="" />
+                 <p>Labour Bureau</p>
+                </div>
+              </div>
+              <div class="col-3 mb-3">
+                <div class="card trending-card">
+                  <img src="/assets/labour-schemes.png" alt="" />
+                  <p>Labour Schemes</p>
+                </div>
+              </div>
+              <div class="col-3 mb-3">
+                <div class="card trending-card">
+                  <img src="/assets/e-booklabour-schemes.png" alt="" />
+                 <p>E book of Labour Schemes</p>
+                </div>
+              </div>
+            </div>  
+          </div>
+        </div>
+      </div>
+      <div class="aos-animate" data-aos="fade-up" data-aos-duration="2000">
+        <img src="/assets/actwise-registrations.png" alt="" srcset="">
+    
+    </div>
+      <div class="season_tabs pt-5 pb-5 mt-5 aos-animate" data-aos="fade-down" data-aos-duration="2000">
+        <div class="container">
+            <div class="season_tab">
+                <input type="radio" id="tab-1" name="tab-group-1" checked>
+                <label for="tab-1"><img class="pr-3" src="assets/latest-updates.png" alt="" srcset=""> Latest Updates</label>
+                
+                <div class="season_content">
+                    <img class="arrow" src="/assets/img/right-arrow.png" alt="arrow" />
+                    <a href="/assets/pdf/2019LETF_MS15.pdf" target="_blank" class="arrow-data">
+                      Ease of Compliance with Labour Laws – Exemption of all Shops and Establishments from
+                            renewal of
+                            registration under the Andhra Pradesh Shops & Establishments Act, 1988 – Notification
+                            Issued–
+                            Modification- Orders – Issued. </a>
+                            <hr class="border-text">
+                    <img class="arrow" src="/assets/img/right-arrow.png" alt="arrow" />
+                    <a href="/assets/pdf/LatestUpdates/STATUS_ON_GAZETTES.docx" target="_blank" class="arrow-data">
+                      Preliminary Notification On Revision Of Minimum Wages Scheduled Employments </a>
+                      <hr class="border-text">
+                      <img class="arrow" src="/assets/img/right-arrow.png" alt="arrow" />
+                    <a href="/assets/pdf/LatestUpdates/Minimum_Wages_eGazette_01102018_31032019.pdf" target="_blank" class="arrow-data">
+                      Vda Points In Respect Of Scheduled Employments Under Minimum Wages Act Applicable
+                            From 01.10.2018 TO
+                            31.03.2019  </a>
+                            <hr class="border-text">
+                    <img class="arrow" src="/assets/img/right-arrow.png" alt="arrow" />
+                    <a href="" target="_blank"
+                      class="arrow-data">May Day Celebrations A) Instructions B) Application Form For Best Management Award C)
+                      Application Form
+                      For Sharma Shakthi Award</a>
+                      <hr class="border-text">
+                      <img class="arrow" src="/assets/img/right-arrow.png" alt="arrow" />
+                    <a href="/assets/pdf/LatestUpdates/code_of_discipline.pdf" target="_blank"
+                      class="arrow-data">Code Of Discipline</a>
+                   
+               
+                  
+                </div> 
+            </div>
+             
+            <div class="season_tab">
+                <input type="radio" id="tab-2" name="tab-group-1">
+                <label for="tab-2"><img class="pr-3" src="assets/notices.png" alt="" srcset="">Notices</label>
+                
+                <div class="season_content">
+                    <img class="arrow" src="/assets/img/right-arrow.png" alt="arrow" />
+                              <a href="/assets/pdf/ShowCausee/2) Annexure-A.pdf" target="_blank" class="arrow-data">
+                                Annexure-A : Regular Cadre Strength of the ACLs with Stations in the Combined State
+                                      of AP </a>
+                                      <hr class="border-text">
+                                      <img class="arrow" src="/assets/img/right-arrow.png" alt="arrow" />
+                              <a href="/assets/pdf/ShowCausee/3) Annexure-B.pdf" target="_blank" class="arrow-data">
+                                Annexure-B : Deputation posts of ACL(SSS) of APBOCWW Board in the cadre of ACL </a>
+                                <hr class="border-text">
+                                <img class="arrow" src="/assets/img/right-arrow.png" alt="arrow" />
+                              <a href="/assets/pdf/ShowCausee/4) Annexure-C.pdf" target="_blank" class="arrow-data">
+                                Annexure-C : Inter-se-seniority of ALOs of Zone 1 to 6 & City Cadre in the Combined
+                                      State of AP  </a>
+                                      <hr class="border-text">
+                                      <img class="arrow" src="/assets/img/right-arrow.png" alt="arrow" />
+                              <a href="/assets/pdf/ShowCausee/5) Annexure-D.pdf" target="_blank"
+                                class="arrow-data">Annexure-D : Inter-se-seniority of Supdts. of Subordinate Offices in the Combined
+                                State of AP</a>
+                                <hr class="border-text">
+                                <img class="arrow" src="/assets/img/right-arrow.png" alt="arrow" />
+                              <a href="/assets/pdf/ShowCausee/6) Annexure-E.pdf" target="_blank"
+                                class="arrow-data">Annexure-E : Seniority of Supdts. of Head Office in the Combined State of AP</a>
+                                <hr class="border-text">
+                                <img class="arrow" src="/assets/img/right-arrow.png" alt="arrow" />
+                              <a href="/assets/pdf/ShowCausee/7) Annexure-F.pdf" target="_blank"
+                                class="arrow-data">Annexure-F : Cycle of promotions of the post of ACLs treating the post as State wide
+                                Post</a>
+                </div> 
+            </div>
+             
+             <div class="season_tab">
+                <input type="radio" id="tab-3" name="tab-group-1">
+                <label for="tab-3"><img class="pr-2" src="assets/common-list.png" alt="" srcset="">Common List of Acl's</label>
+              
+                <div class="season_content">
+                    <img class="arrow" src="/assets/img/right-arrow.png" alt="arrow" />
+                    <a href="/assets/pdf/FreshNotie/Review of promotions treats to post of ACL as State wide post - Show Cause Notice Issued.pdf" target="_blank" class="arrow-data">
+                      Review of promotions treats to post of ACL as State wide post - Show Cause Notice
+                            Issued </a>
+                            <hr class="border-text">
+                    <img class="arrow" src="/assets/img/right-arrow.png" alt="arrow" />
+                    <a href="/assets/pdf/FreshNotie/Annexure - A.pdf" target="_blank" class="arrow-data">
+                      Annexure - A</a>
+                      <hr class="border-text">
+                      <img class="arrow" src="/assets/img/right-arrow.png" alt="arrow" />
+                    <a href="/assets/pdf/FreshNotie/Annexure - B.pdf" target="_blank" class="arrow-data">
+                      Annexure - B </a>
+                      <hr class="border-text">
+                      <img class="arrow" src="/assets/img/right-arrow.png" alt="arrow" />
+                    <a href="/assets/pdf/FreshNotie/Objections.pdf" target="_blank"
+                      class="arrow-data">Objections</a>
+                </div> 
+            </div>
+        </div>
+                
+                   
+                 
+             </div>
+     
+     
+      
+      <!--Andhra  Pradesh Profile-->
+
+      <div class="rainbow-section-gap aos-animate" data-aos="fade-up" data-aos-duration="2000" >
+            <div class="container-fluid">
+                <div class="row mb--20">
+                    <div class="col-lg-12">
+                        <div class="section-title text-center sal-animate" data-sal="slide-up" data-sal-duration="700" data-sal-delay="100">
+                            <h2 class="gallery-title mb-5">Gallery</h2>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery_csr">
+                    <img src="/assets/images/gallery-1.jpg" alt="">
+                    <img src="/assets/images/gallery-2.jpg" alt="">
+                    <img class="active" src="/assets/images/gallery-3.jpg" alt="">
+                    <img src="/assets/images/gallery-4.jpg" alt="">
+                    <img src="/assets/images/gallery-5.jpg" alt="">
+                </div>
+               
+            </div>
+        </div>
+
+
+
+    
+
+        <footer class="footer pt-4 pt-sm-5 aos-animate" data-aos="fade-down" data-aos-duration="2000">
+            <div class="container-fluid pb-1 pb-md-0">
+              <div class="dark-mode footer-new-bg rounded-5 position-relative overflow-hidden w-100 px-3 px-sm-4 px-xl-5 mx-auto" style="max-width: 1660px; height:350px;">
+                <div class="position-absolute top-50 start-50 translate-middle" style="width: 1664px;"><img src="assets/img/landing/web-studio/footer-wave.png" alt="Wave"></div>
+                <div class="container-fluid position-relative zindex-2 pt-md-3 pt-lg-4 pt-xl-5 pb-2">
+                  <div class="row pb-2">
+                 
+                    <div class="col-md-4">
+                      <h6 class="fw-bold"><i class='fa fa-user-circle-o'
+                          style='font-size:22px;color:white;padding-right: 10px;'></i>Key Contacts</h6>
+                      <ul class="nav flex-column fs-sm">
+                        <li class="nav-item"><a class="nav-link fw-normal px-0 py-1" href="mailto:email@example.com"><i
+                              class='fa fa-user' style='font-size:18px;color:white;padding-right: 10px;'></i>
+                            Additional Commissioner of Labour
+                          </a></li>
+                        <li class="nav-item"><a class="nav-link fw-normal px-0 py-1" href="tel:+15262200444"><i
+                              class='fa fa-envelope'
+                              style='font-size:18px;color:white;padding-right: 10px;'></i>apjointcommissioneroflabour1@gmail.com</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-md-4">
+                      <h6 class="fw-bold"><i class='fa fa-user-circle-o'
+                          style='font-size:22px;color:white;padding-right: 10px;'></i>Meeseva Tech Support</h6>
+                      <ul class="nav flex-column fs-sm">
+                        <li class="nav-item"><a class="nav-link fw-normal px-0 py-1" href="mailto:email@example.com"><i
+                              class='fa fa-user' style='font-size:18px;color:white;padding-right: 10px;'></i>
+                            (Integrated Registration & Combined Annual Returns)</a></li>
+                        <li class="nav-item"><a class="nav-link fw-normal px-0 py-1" href="tel:+15262200459"><i
+                              class='fa fa-phone' style='font-size:18px;color:white;padding-right: 10px;'></i>040-45676688</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link fw-normal px-0 py-1" href="tel:+15262200444"><i
+                              class='fa fa-envelope'
+                              style='font-size:18px;color:white;padding-right: 10px;'></i>meeseva.support@aptonline.in</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-md-2">
+                      <h6 class="fw-bold"><i class='fa fa-user-circle-o'
+                          style='font-size:22px;color:white;padding-right: 10px;'></i>Key Contacts</h6>
+                      <ul class="nav flex-column fs-sm">
+                        <li class="nav-item"><a class="nav-link fw-normal px-0 py-1" href="mailto:email@example.com"><i
+                              class='fa fa-user' style='font-size:18px;color:white;padding-right: 10px;'></i>
+                            --</a></li>
+                        <li class="nav-item"><a class="nav-link fw-normal px-0 py-1" href="tel:+15262200459"><i
+                              class='fa fa-phone' style='font-size:18px;color:white;padding-right: 10px;'></i>+91
+                            949255104</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link fw-normal px-0 py-1" href="tel:+15262200444"><i
+                              class='fa fa-envelope'
+                              style='font-size:18px;color:white;padding-right: 10px;'></i>col.labour@gmail.com</a></li>
+                      </ul>
+                    </div>
+      
+                    <div class="col-md-2">
+                     <img src="/assets/qrcode.png" alt="">
+                    </div>
+                  </div>
+                  <div class="d-sm-flex align-items-center justify-content-between
+                   mt-lg-2 mt-xl-4">
+      
+      
+                    <div class="d-flex justify-content-center order-sm-2 me-md-n2">
+                      <div class="nav flex-nowrap justify-content-center justify-content-sm-start order-sm-2 mb-3 mb-sm-0"><a
+                          class="nav-link fw-normal py-0 px-3" href="privacy-policy.html">Privacy Policy</a><a
+                          class="nav-link fw-normal py-0 px-3" href="disclaimer.html">Disclaimer</a></div>
+      
+                      <div class="d-sm-flex text-nowrap justify-content-center justify-content-md-start">
+      
+                        <p class="fs-sm order-sm-1 text-center  pt-4 pt-sm-0 mb-0 me-4"><span class="text-white">&copy; 2023
+                            All
+                            rights reserved by Labour Department. Government Of Andhra Pradesh </span></p>
+                        </span></p>
+      
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          </footer>
+
+      <div id="stop" class="scrollTop"></div>
+    </section>
+
+    <script type="text/javascript">
+      window.onload = function () {
+        document.getElementById('button').onclick = function () {
+          document.getElementById('modal').style.display = "none"
+        };
+      };
+    </script>
+
   </div>
-
-  </main>
-
-  <!-- Back to top button--><a class="btn-scroll-top" href="#top" data-scroll>
-    <svg viewBox="0 0 40 40" fill="currentColor" xmlns="../external.html?link=http://www.w3.org/2000/svg">
-      <circle cx="20" cy="20" r="19" fill="none" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10">
-      </circle>
-    </svg><i class="ai-arrow-up"></i></a>
-  <!-- Vendor scripts: js libraries and plugins-->
-  <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
-  <script src="assets/vendor/parallax-js/dist/parallax.min.js"></script>
-  <script src="assets/vendor/aos/dist/aos.js"></script>
-  <script src="assets/vendor/%40lottiefiles/lottie-player/dist/lottie-player.js"></script>
-  <script src="assets/vendor/img-comparison-slider/dist/index.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Main theme script-->
-  <script src="assets/js/theme.min.js"></script>
-  <!-- <script src="assets/js/slick.min.js"></script>-->
- 
-  <script src="assets/js/common.js"></script>
-  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
- 
-
   
 
-  <!-- Customizer-->
-  <script>!function () { function e(e) { return localStorage.getItem(e) } function r(e, r) { localStorage.setItem(e, r) } var t = document.getElementById("customizer-styles"), n = document.getElementById("custom-generated-styles"), o = `\n    :root {\n      ${e("theme-primary") && `--ar-primary: ${e("theme-primary")};`}\n      ${e("theme-primary-rgb") && `--ar-primary-rgb: ${e("theme-primary-rgb")};`}\n      ${e("theme-warning") && `--ar-warning-rgb: ${e("theme-warning")};`}\n      ${e("theme-warning-rgb") && `--ar-warning-rgb: ${e("theme-warning-rgb")};`}\n      ${e("theme-info") && `--ar-info-rgb: ${e("theme-info")};`}\n      ${e("theme-info-rgb") && `--ar-info-rgb: ${e("theme-info-rgb")};`}\n      ${e("theme-success") && `--ar-success-rgb: ${e("success-info")};`}\n      ${e("theme-success-rgb") && `--ar-success-rgb: ${e("success-info-rgb")};`}\n      ${e("theme-danger") && `--ar-danger-rgb: ${e("danger-info")};`}\n      ${e("theme-danger-rgb") && `--ar-danger-rgb: ${e("danger-info-rgb")};`}\n      ${e("theme-font-family") && `--ar-body-font-family: ${e("theme-font-family")};`}\n      ${e("theme-root-font-size") && `--ar-root-font-size: ${e("theme-root-font-size")};`}\n      ${e("theme-body-font-size") && `--ar-body-font-size: ${e("theme-body-font-size")};`}\n      ${e("theme-border-width") && `--ar-border-width: ${e("theme-border-width")};`}\n      ${e("theme-border-radius") && `--ar-border-radius: ${e("theme-border-radius")};`}\n      ${e("theme-border-radius-sm") && `--ar-border-radius-sm: ${e("theme-border-radius-sm")};`}\n      ${e("theme-border-radius-lg") && `--ar-border-radius-lg: ${e("theme-border-radius-lg")};`}\n      ${e("theme-border-radius-xl") && `--ar-border-radius-xl: ${e("theme-border-radius-xl")};`}\n      ${e("theme-border-radius-2xl") && `--ar-border-radius-2xl: ${e("theme-border-radius-2xl")};`}\n      ${e("theme-primary") && `--ar-link-color: ${e("theme-primary")};`}\n      ${e("theme-primary-btn-hover-active-border-bg-color") && `--ar-link-hover-color: ${e("theme-primary-btn-hover-active-border-bg-color")};`}\n    }\n    .btn-primary {\n      ${e("theme-primary") && `--ar-btn-bg: ${e("theme-primary")};`}\n      ${e("theme-primary") && `--ar-btn-border-color: ${e("theme-primary")};`}\n      ${e("theme-primary-btn-hover-active-border-bg-color") && `--ar-btn-hover-bg: ${e("theme-primary-btn-hover-active-border-bg-color")};`}\n      ${e("theme-primary-btn-hover-active-border-bg-color") && `--ar-btn-hover-border-color: ${e("theme-primary-btn-hover-active-border-bg-color")};`}\n      ${e("theme-primary-btn-hover-active-border-bg-color") && `--ar-btn-active-bg: ${e("theme-primary-btn-hover-active-border-bg-color")};`}\n      ${e("theme-primary-btn-hover-active-border-bg-color") && `--ar-btn-active-border-color: ${e("theme-primary-btn-hover-active-border-bg-color")};`}\n      ${e("theme-primary") && `--ar-btn-disabled-bg: ${e("theme-primary")};`}\n      ${e("theme-primary") && `--ar-btn-disabled-border-color: ${e("theme-primary")};`}\n    }\n    .btn-warning {\n      ${e("theme-warning") && `--ar-btn-bg: ${e("theme-warning")};`}\n      ${e("theme-warning") && `--ar-btn-border-color: ${e("theme-warning")};`}\n      ${e("theme-warning-btn-hover-active-border-bg-color") && `--ar-btn-hover-bg: ${e("theme-warning-btn-hover-active-border-bg-color")};`}\n      ${e("theme-warning-btn-hover-active-border-bg-color") && `--ar-btn-hover-border-color: ${e("theme-warning-btn-hover-active-border-bg-color")};`}\n      ${e("theme-warning-btn-hover-active-border-bg-color") && `--ar-btn-active-bg: ${e("theme-warning-btn-hover-active-border-bg-color")};`}\n      ${e("theme-warning-btn-hover-active-border-bg-color") && `--ar-btn-active-border-color: ${e("theme-warning-btn-hover-active-border-bg-color")};`}\n      ${e("theme-warning") && `--ar-btn-disabled-bg: ${e("theme-warning")};`}\n      ${e("theme-warning") && `--ar-btn-disabled-border-color: ${e("theme-warning")};`}\n    }\n    .btn-info {\n      ${e("theme-info") && `--ar-btn-bg: ${e("theme-info")};`}\n      ${e("theme-info") && `--ar-btn-border-color: ${e("theme-info")};`}\n      ${e("theme-info-btn-hover-active-border-bg-color") && `--ar-btn-hover-bg: ${e("theme-info-btn-hover-active-border-bg-color")};`}\n      ${e("theme-info-btn-hover-active-border-bg-color") && `--ar-btn-hover-border-color: ${e("theme-info-btn-hover-active-border-bg-color")};`}\n      ${e("theme-info-btn-hover-active-border-bg-color") && `--ar-btn-active-bg: ${e("theme-info-btn-hover-active-border-bg-color")};`}\n      ${e("theme-info-btn-hover-active-border-bg-color") && `--ar-btn-active-border-color: ${e("theme-info-btn-hover-active-border-bg-color")};`}\n      ${e("theme-info") && `--ar-btn-disabled-bg: ${e("theme-info")};`}\n      ${e("theme-info") && `--ar-btn-disabled-border-color: ${e("theme-info")};`}\n    }\n    .btn-success {\n      ${e("theme-success") && `--ar-btn-bg: ${e("theme-success")};`}\n      ${e("theme-success") && `--ar-btn-border-color: ${e("theme-success")};`}\n      ${e("theme-success-btn-hover-active-border-bg-color") && `--ar-btn-hover-bg: ${e("theme-success-btn-hover-active-border-bg-color")};`}\n      ${e("theme-success-btn-hover-active-border-bg-color") && `--ar-btn-hover-border-color: ${e("theme-success-btn-hover-active-border-bg-color")};`}\n      ${e("theme-success-btn-hover-active-border-bg-color") && `--ar-btn-active-bg: ${e("theme-success-btn-hover-active-border-bg-color")};`}\n      ${e("theme-success-btn-hover-active-border-bg-color") && `--ar-btn-active-border-color: ${e("theme-success-btn-hover-active-border-bg-color")};`}\n      ${e("theme-success") && `--ar-btn-disabled-bg: ${e("theme-success")};`}\n      ${e("theme-success") && `--ar-btn-disabled-border-color: ${e("theme-success")};`}\n    }\n    .btn-danger {\n      ${e("theme-danger") && `--ar-btn-bg: ${e("theme-danger")};`}\n      ${e("theme-danger") && `--ar-btn-border-color: ${e("theme-danger")};`}\n      ${e("theme-danger-btn-hover-active-border-bg-color") && `--ar-btn-hover-bg: ${e("theme-danger-btn-hover-active-border-bg-color")};`}\n      ${e("theme-danger-btn-hover-active-border-bg-color") && `--ar-btn-hover-border-color: ${e("theme-danger-btn-hover-active-border-bg-color")};`}\n      ${e("theme-danger-btn-hover-active-border-bg-color") && `--ar-btn-active-bg: ${e("theme-danger-btn-hover-active-border-bg-color")};`}\n      ${e("theme-danger-btn-hover-active-border-bg-color") && `--ar-btn-active-border-color: ${e("theme-danger-btn-hover-active-border-bg-color")};`}\n      ${e("theme-danger") && `--ar-btn-disabled-bg: ${e("theme-danger")};`}\n      ${e("theme-danger") && `--ar-btn-disabled-border-color: ${e("theme-danger")};`}\n    }\n    .btn-outline-primary {\n      ${e("theme-primary") && `--ar-btn-color: ${e("theme-primary")};`}\n      ${e("theme-primary") && `--ar-btn-border-color: ${e("theme-primary")};`}\n      ${e("theme-primary") && `--ar-btn-hover-bg: ${e("theme-primary")};`}\n      ${e("theme-primary") && `--ar-btn-hover-border-color: ${e("theme-primary")};`}\n      ${e("theme-primary") && `--ar-btn-active-bg: ${e("theme-primary")};`}\n      ${e("theme-primary") && `--ar-btn-active-border-color: ${e("theme-primary")};`}\n      ${e("theme-primary") && `--ar-btn-disabled-color: ${e("theme-primary")};`}\n      ${e("theme-primary") && `--ar-btn-disabled-border-color: ${e("theme-primary")};`}\n    }\n    .btn-outline-warning {\n      ${e("theme-warning") && `--ar-btn-color: ${e("theme-warning")};`}\n      ${e("theme-warning") && `--ar-btn-border-color: ${e("theme-warning")};`}\n      ${e("theme-warning") && `--ar-btn-hover-bg: ${e("theme-warning")};`}\n      ${e("theme-warning") && `--ar-btn-hover-border-color: ${e("theme-warning")};`}\n      ${e("theme-warning") && `--ar-btn-active-bg: ${e("theme-warning")};`}\n      ${e("theme-warning") && `--ar-btn-active-border-color: ${e("theme-warning")};`}\n      ${e("theme-warning") && `--ar-btn-disabled-color: ${e("theme-warning")};`}\n      ${e("theme-warning") && `--ar-btn-disabled-border-color: ${e("theme-warning")};`}\n    }\n    .btn-outline-info {\n      ${e("theme-info") && `--ar-btn-color: ${e("theme-info")};`}\n      ${e("theme-info") && `--ar-btn-border-color: ${e("theme-info")};`}\n      ${e("theme-info") && `--ar-btn-hover-bg: ${e("theme-info")};`}\n      ${e("theme-info") && `--ar-btn-hover-border-color: ${e("theme-info")};`}\n      ${e("theme-info") && `--ar-btn-active-bg: ${e("theme-info")};`}\n      ${e("theme-info") && `--ar-btn-active-border-color: ${e("theme-info")};`}\n      ${e("theme-info") && `--ar-btn-disabled-color: ${e("theme-info")};`}\n      ${e("theme-info") && `--ar-btn-disabled-border-color: ${e("theme-info")};`}\n    }\n    .btn-outline-success {\n      ${e("theme-success") && `--ar-btn-color: ${e("theme-success")};`}\n      ${e("theme-success") && `--ar-btn-border-color: ${e("theme-success")};`}\n      ${e("theme-success") && `--ar-btn-hover-bg: ${e("theme-success")};`}\n      ${e("theme-success") && `--ar-btn-hover-border-color: ${e("theme-success")};`}\n      ${e("theme-success") && `--ar-btn-active-bg: ${e("theme-success")};`}\n      ${e("theme-success") && `--ar-btn-active-border-color: ${e("theme-success")};`}\n      ${e("theme-success") && `--ar-btn-disabled-color: ${e("theme-success")};`}\n      ${e("theme-success") && `--ar-btn-disabled-border-color: ${e("theme-success")};`}\n    }\n    .btn-outline-danger {\n      ${e("theme-danger") && `--ar-btn-color: ${e("theme-danger")};`}\n      ${e("theme-danger") && `--ar-btn-border-color: ${e("theme-danger")};`}\n      ${e("theme-danger") && `--ar-btn-hover-bg: ${e("theme-danger")};`}\n      ${e("theme-danger") && `--ar-btn-hover-border-color: ${e("theme-danger")};`}\n      ${e("theme-danger") && `--ar-btn-active-bg: ${e("theme-danger")};`}\n      ${e("theme-danger") && `--ar-btn-active-border-color: ${e("theme-danger")};`}\n      ${e("theme-danger") && `--ar-btn-disabled-color: ${e("theme-danger")};`}\n      ${e("theme-danger") && `--ar-btn-disabled-border-color: ${e("theme-danger")};`}\n    }\n  `, a = o; a = o.replace(/null|\s*(?![A-Z])/g, ""); t.append(a), a.split("}").map(function (e) { -1 !== e.indexOf("{--") && n.append(e + "}") }); var i = { root: t.sheet.cssRules[0], primaryBtn: t.sheet.cssRules[1], warningBtn: t.sheet.cssRules[2], infoBtn: t.sheet.cssRules[3], successBtn: t.sheet.cssRules[4], dangerBtn: t.sheet.cssRules[5], primaryOutlineBtn: t.sheet.cssRules[6], warningOutlineBtn: t.sheet.cssRules[7], infoOutlineBtn: t.sheet.cssRules[8], successOutlineBtn: t.sheet.cssRules[9], dangerOutlineBtn: t.sheet.cssRules[10] }; function b() { n.innerHTML = i.root.cssText.replace(/null|\s*(?![A-Z])/g, ""), n.innerHTML += -1 === i.primaryBtn.cssText.indexOf("{ }") ? i.primaryBtn.cssText.replace(/ /g, "") : "", n.innerHTML += -1 === i.warningBtn.cssText.indexOf("{ }") ? i.warningBtn.cssText.replace(/ /g, "") : "", n.innerHTML += -1 === i.infoBtn.cssText.indexOf("{ }") ? i.infoBtn.cssText.replace(/ /g, "") : "", n.innerHTML += -1 === i.successBtn.cssText.indexOf("{ }") ? i.successBtn.cssText.replace(/ /g, "") : "", n.innerHTML += -1 === i.dangerBtn.cssText.indexOf("{ }") ? i.dangerBtn.cssText.replace(/ /g, "") : "", n.innerHTML += -1 === i.primaryOutlineBtn.cssText.indexOf("{ }") ? i.primaryOutlineBtn.cssText.replace(/ /g, "") : "", n.innerHTML += -1 === i.warningOutlineBtn.cssText.indexOf("{ }") ? i.warningOutlineBtn.cssText.replace(/ /g, "") : "", n.innerHTML += -1 === i.infoOutlineBtn.cssText.indexOf("{ }") ? i.infoOutlineBtn.cssText.replace(/ /g, "") : "", n.innerHTML += -1 === i.successOutlineBtn.cssText.indexOf("{ }") ? i.successOutlineBtn.cssText.replace(/ /g, "") : "", n.innerHTML += -1 === i.dangerOutlineBtn.cssText.indexOf("{ }") ? i.dangerOutlineBtn.cssText.replace(/ /g, "") : "" } function s(e) { var r = 0, t = 0, n = 0; return 4 == e.length ? (r = "0x" + e[1] + e[1], t = "0x" + e[2] + e[2], n = "0x" + e[3] + e[3]) : 7 == e.length && (r = "0x" + e[1] + e[2], t = "0x" + e[3] + e[4], n = "0x" + e[5] + e[6]), +r + "," + +t + "," + +n } function c(e, r) { var t = parseInt(e.replace("#", ""), 16), n = Math.round(2.55 * r), o = (t >> 16) + n, a = (t >> 8 & 255) + n, i = (255 & t) + n; return "#" + (16777216 + 65536 * (o < 255 ? o < 1 ? 0 : o : 255) + 256 * (a < 255 ? a < 1 ? 0 : a : 255) + (i < 255 ? i < 1 ? 0 : i : 255)).toString(16).slice(1) } for (var l = document.querySelectorAll("#theme-colors .color-swatch"), d = 0; d < l.length; d++) { var m = l[d].querySelector("label"), h = l[d].querySelector('input[type="color"]'); colorInput = l[d].querySelector('input[type="text"]'), colorInput.value = e(l[d].id) || colorInput.value, h.value = e(l[d].id) || h.value, m.style.backgroundColor = e(l[d].id) || h.value, h.addEventListener("input", function (e) { var n = e.target.parentElement.querySelector("label"), o = e.target.parentElement.querySelector('input[type="text"]'), a = e.target.value; t.sheet.cssRules[d + 1]; r("theme-" + e.target.id, a), r("theme-" + e.target.id + "-rgb", s(a)), r("theme-" + e.target.id + "-btn-hover-active-border-bg-color", c(a, -10)), n.style.backgroundColor = a, o.value = a, i.root.style.setProperty("--ar-" + e.target.id, a), i.root.style.setProperty("--ar-" + e.target.id + "-rgb", s(a)), i[e.target.id + "Btn"].style.setProperty("--ar-btn-bg", a), i[e.target.id + "Btn"].style.setProperty("--ar-btn-border-color", a), i[e.target.id + "Btn"].style.setProperty("--ar-btn-hover-bg", c(a, -10)), i[e.target.id + "Btn"].style.setProperty("--ar-btn-hover-border-color", c(a, -10)), i[e.target.id + "Btn"].style.setProperty("--ar-btn-active-bg", c(a, -10)), i[e.target.id + "Btn"].style.setProperty("--ar-btn-active-border-color", c(a, -10)), i[e.target.id + "Btn"].style.setProperty("--ar-btn-disabled-bg", a), i[e.target.id + "Btn"].style.setProperty("--ar-btn-disabled-border-color", a), i[e.target.id + "OutlineBtn"].style.setProperty("--ar-btn-color", a), i[e.target.id + "OutlineBtn"].style.setProperty("--ar-btn-border-color", a), i[e.target.id + "OutlineBtn"].style.setProperty("--ar-btn-hover-bg", a), i[e.target.id + "OutlineBtn"].style.setProperty("--ar-btn-hover-border-color", a), i[e.target.id + "OutlineBtn"].style.setProperty("--ar-btn-active-bg", a), i[e.target.id + "OutlineBtn"].style.setProperty("--ar-btn-active-border-color", a), i[e.target.id + "OutlineBtn"].style.setProperty("--ar-btn-disabled-color", a), i[e.target.id + "OutlineBtn"].style.setProperty("--ar-btn-disabled-border-color", a), "primary" === e.target.id && (r("theme-link-hover-color", c(a, -10)), i.root.style.setProperty("--ar-link-color", a), i.root.style.setProperty("--ar-link-hover-color", c(a, -10))), b() }), colorInput.addEventListener("change", function (e) { var t = e.target.parentElement.querySelector("label"), n = e.target.parentElement.querySelector('input[type="color"]'), o = e.target.value; 0 != o.length && o.startsWith("#") && (r("theme-" + n.id, o), r("theme-" + n.id + "-rgb", s(o)), r("theme-" + n.id + "-btn-hover-active-border-bg-color", c(o, -10)), t.style.backgroundColor = o, n.value = o, i.root.style.setProperty("--ar-" + n.id, o), i.root.style.setProperty("--ar-" + n.id + "-rgb", s(o)), i[n.id + "Btn"].style.setProperty("--ar-btn-bg", o), i[n.id + "Btn"].style.setProperty("--ar-btn-border-color", o), i[n.id + "Btn"].style.setProperty("--ar-btn-hover-bg", c(o, -10)), i[n.id + "Btn"].style.setProperty("--ar-btn-hover-border-color", c(o, -10)), i[n.id + "Btn"].style.setProperty("--ar-btn-active-bg", c(o, -10)), i[n.id + "Btn"].style.setProperty("--ar-btn-active-border-color", c(o, -10)), i[n.id + "Btn"].style.setProperty("--ar-btn-disabled-bg", o), i[n.id + "Btn"].style.setProperty("--ar-btn-disabled-border-color", o), i[n.id + "OutlineBtn"].style.setProperty("--ar-btn-color", o), i[n.id + "OutlineBtn"].style.setProperty("--ar-btn-border-color", o), i[n.id + "OutlineBtn"].style.setProperty("--ar-btn-hover-bg", o), i[n.id + "OutlineBtn"].style.setProperty("--ar-btn-hover-border-color", o), i[n.id + "OutlineBtn"].style.setProperty("--ar-btn-active-bg", o), i[n.id + "OutlineBtn"].style.setProperty("--ar-btn-active-border-color", o), i[n.id + "OutlineBtn"].style.setProperty("--ar-btn-disabled-color", o), i[n.id + "OutlineBtn"].style.setProperty("--ar-btn-disabled-border-color", o), "primary" === n.id && (r("theme-link-hover-color", c(o, -10)), i.root.style.setProperty("--ar-link-color", o), i.root.style.setProperty("--ar-link-hover-color", c(o, -10))), b()) }) } var g = document.getElementById("font-url"), u = document.getElementById("google-font"); u.href = e("theme-font-url") || g.value, g.value = e("theme-font-url") || g.value, g.addEventListener("blur", function (e) { var t = e.target.value; r("theme-font-url", t), u.href = t }); var v = document.getElementById("body-font-family"); v.value = e("theme-font-family") || v.value, v.addEventListener("blur", function (e) { var t = e.target.value; r("theme-font-family", t), i.root.style.setProperty("--ar-body-font-family", t), b() }); var $ = document.getElementById("root-font-size"); $.value = e("theme-root-font-size") || $.value, $.addEventListener("change", function (e) { var t = e.target.value; r("theme-root-font-size", t), i.root.style.setProperty("--ar-root-font-size", t), b() }); var y = document.getElementById("body-font-size"); y.value = e("theme-body-font-size") || y.value, y.addEventListener("change", function (e) { var t = e.target.value; r("theme-body-font-size", t), i.root.style.setProperty("--ar-body-font-size", t), b() }); var p = document.getElementById("border-width"); p.value = parseInt(e("theme-border-width")) || p.value, p.addEventListener("input", function (e) { var t = e.target.value; r("theme-border-width", t + "px"), i.root.style.setProperty("--ar-border-width", t + "px"), b() }); var f = document.getElementById("border-radius"); f.value = parseFloat(e("theme-border-radius")) || f.value, f.addEventListener("input", function (e) { var t = e.target.value; r("theme-border-radius", t + "rem"), i.root.style.setProperty("--ar-border-radius", t + "rem"), b() }); var B = document.querySelectorAll('#theme-border-radiuses input[type="number"'); for (d = 0; d < B.length; d++)B[d].value = e("theme-" + B[d].id + "multiplier") || B[d].value, B[d].addEventListener("input", function (e) { var t = e.target.value; r("theme-" + e.target.id, "calc(var(--ar-border-radius) * " + t + ")"), r("theme-" + e.target.id + "multiplier", t), i.root.style.setProperty("--ar-" + e.target.id, "calc(var(--ar-border-radius) * " + t + ")"), b() }); var w = document.getElementById("customizer"), x = document.getElementById("customizer-btns"); e("theme-customizer-btns") && x.classList.remove("d-none"), w.addEventListener("change", function (e) { r("theme-customizer-btns", !0), x.classList.remove("d-none") }), document.getElementById("customizer-reset-btn").addEventListener("click", function () { for (var e = [], r = 0; r < localStorage.length; r++)"theme" == localStorage.key(r).substring(0, 5) && e.push(localStorage.key(r)); for (r = 0; r < e.length; r++)localStorage.removeItem(e[r]); window.location.reload() }); var P = document.getElementById("copy-styles-btn"); P.addEventListener("click", function () { var e = document.createRange(); e.selectNode(n), window.getSelection().removeAllRanges(), window.getSelection().addRange(e), navigator.clipboard.writeText(n.innerHTML), this.innerHTML = '<i class="ai-check me-2 ms-n1"></i>Copied!', setTimeout(function () { P.innerHTML = '<i class="ai-copy me-2 ms-n1"></i>Copy styles' }, 2e3) }) }();</script>
+  <script type="application/json"
+    data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node","currentPathIsAdmin":false,"isFront":true,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"ajaxPageState":{"libraries":"cmf_design\/design,core\/html5shiv,fullcalendar_view\/fullcalendar,fullcalendar_view\/tooltip,quicktabs\/quicktabs,superfish\/superfish,superfish\/superfish_hoverintent,superfish\/superfish_smallscreen,superfish\/superfish_supersubs,superfish\/superfish_supposition,swfone\/global-css,swfone\/global-js,system\/base,views\/views.module","theme":"swfone","theme_token":"-Rjbzu0oYcqylfyCMIVQtEj18fB3HwzUWQdSCJn3kig"},"ajaxTrustedUrl":{"\/search\/node":true},"firstDay":"0","fullCalendarView":[{"title":"\u003Ca href=\u0022\/eventcalander\/christmas-eve\u0022 hreflang=\u0022en\u0022\u003EChristmas Eve\u003C\/a\u003E","description":"\u003Ca href=\u0022\/eventcalander\/christmas-eve\u0022 hreflang=\u0022en\u0022\u003EChristmas Eve\u003C\/a\u003E","id":"15812","url":"\/eventcalander\/christmas-eve","editable":false,"start":"2020-12-24","durationEditable":false,"backgroundColor":"#ff80ff"},{"title":"\u003Ca href=\u0022\/eventcalander\/holi-1\u0022 hreflang=\u0022en\u0022\u003EHoli\u003C\/a\u003E","description":"\u003Ca href=\u0022\/eventcalander\/holi-1\u0022 hreflang=\u0022en\u0022\u003EHoli\u003C\/a\u003E","id":"6434","url":"\/eventcalander\/holi-1","editable":false,"start":"2020-03-10","durationEditable":false,"backgroundColor":"#ff80ff"}],"defaultDate":"2023-06-07","defaultLang":"en","languageSelector":0,"alloweventOverlap":0,"updateAllowed":0,"updateConfirm":0,"linkToEntity":true,"columnHeaderFormat":null,"eventBundleType":"event_calander","startField":"field_date_range","endField":"field_date","leftButtons":"prev,next today","rightButtons":"month","defaultView":"month","dblClickToCreate":false,"navLinks":0,"entityType":"node","addForm":"node\/add\/event_calander","token":"","openEntityInNewTab":0,"timeFormat":"H(:mm)","titleFormat":null,"quicktabs":{"qt_labour_directorate_tab":{"tabs":[{"title":"Directorate","weight":"0","type":"view_content","content":{"qtabs_content":{"options":{"machine_name":"album"}},"node_content":{"options":{"nid":"","view_mode":"full","hide_title":"1"}},"view_content":{"options":{"vid":"labour_directorate","display":"block_1","args":""}},"block_content":{"options":{"bid":"entity_view:node","block_title":"","display_title":0}}},"tab_page":0}]}},"superfish":{"superfish-labour-department-menu":{"id":"superfish-labour-department-menu","sf":{"animation":{"opacity":"show","height":"show"},"speed":"fast"},"plugins":{"smallscreen":{"mode":"window_width","title":"Labour Department Menu"},"supposition":true,"supersubs":true}}},"user":{"uid":0,"permissionsHash":"caf4c476e1c435bcaa2f64423e2077e51f6cf8bedcaf0a7a1177a74612756175"}}</script>
+  <script src="/themes/swfone/theme/js/jquery-min.js"></script>
+  <script src="/themes/swfone/theme/js/jquery.once.min.js"></script>
+  <script src="/themes/swfone/theme/js/drupalsettingsloader.js"></script>
+  <script src="/themes/swfone/theme/js/drupal.js"></script>
+  <script src="/themes/swfone/theme/js/drupal.init.js"></script>
+  <script src="modules/custom/cmf_design/js/bootstrap.mina0fc.js?v=1.x"></script>
+  <script src="modules/custom/cmf_design/js/font-sizea0fc.js?v=1.x"></script>
+  <script src="modules/custom/cmf_design/js/jquery.flexslidera0fc.js?v=1.x"></script>
+  <script src="themes/swfone/theme/js/easyResponsiveTabs63d9.js?rvdmaf"></script>
+  <script src="themes/swfone/theme/js/jquery.tickerNews.min63d9.js?rvdmaf"></script>
+  <script src="themes/swfone/theme/js/jquery.marquee63d9.js?rvdmaf"></script>
+  <script src="themes/swfone/theme/js/aos63d9.js?rvdmaf"></script>
+  <script src="themes/swfone/theme/js/jquery.phancy63d9.js?rvdmaf"></script>
+  <script src="themes/swfone/theme/js/float-panel63d9.js?rvdmaf"></script>
+  <script src="themes/swfone/theme/js/wow63d9.js?rvdmaf"></script>
+  <script src="themes/swfone/theme/js/site63d9.js?rvdmaf"></script>
+  <script src="themes/swfone/theme/js/custom63d9.js?rvdmaf"></script>
+  <script src="themes/swfone/theme/js/jquery.mCustomScrollbar.concat.min63d9.js?rvdmaf"></script>
+  <script src="themes/swfone/theme/js/jquery.dataTables.min63d9.js?rvdmaf"></script>
+  <script src="libraries/superfish/superfish63d9.js?rvdmaf"></script>
+  <script src="libraries/superfish/jquery.hoverIntent.minified63d9.js?rvdmaf"></script>
+  <script src="libraries/superfish/sfsmallscreen63d9.js?rvdmaf"></script>
+  <script src="libraries/superfish/supposition63d9.js?rvdmaf"></script>
+  <script src="libraries/superfish/supersubs63d9.js?rvdmaf"></script>
+  <script src="modules/contrib/superfish/js/superfish3661.js?v=2.0"></script>
+  <script src="/assets/js/common.js"></script>
+  <!--  <script src="/assets/js/common.js"></script> -->
+    <script>
+      
+        </script>
+    <script type="text/javascript"
+            src=
+"https://translate.google.com/translate_a/element.js?
+cb=googleTranslateElementInit">
+    </script>
+  <script
+    type="text/javascript">window.NREUM || (NREUM = {}); NREUM.info = { "beacon": "bam.nr-data.net", "licenseKey": "NRJS-f597df6f7f7da2ee8d7", "applicationID": "1101089445", "transactionName": "NVRbbUZXWUsHUEVcWQweeFpAX1hWSXdDQEYDXWVPXVNASzphXkBCC19eZWJfUk82UlZQdQ1fTUtbWltdFB4PXVcMVVVc", "queueTime": 0, "applicationTime": 8151, "atts": "GRNYGw5NSkU=", "errorBeacon": "bam.nr-data.net", "agent": "" }</script>
 </body>
 
 
