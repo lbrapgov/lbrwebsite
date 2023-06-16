@@ -20274,9 +20274,9 @@ padding-right: 10px;
 }
 .custom-accordion .accordion-button:not(.collapsed) {
     background-color: #fff;
-    color: #00B6E7;
-    font-weight: 500;
-    font-size: 22px;
+    color: #dd1466;
+    font-weight: 600;
+    font-size: 24px;
 }
 
 .custom-accordion .accordion-button:not(.collapsed)::after {
@@ -20907,6 +20907,12 @@ a.hvr-bounce-to-bottom {
 margin-bottom: 16px;
 }
 }
+.about-us-concillaiion{
+    font-weight: bold;
+    color: #7745ad;
+    font-size: 20px;
+}
+
 
   
 
