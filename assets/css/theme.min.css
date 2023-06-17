@@ -19882,6 +19882,7 @@ padding-right: 10px;
     padding-left: 25px;
     white-space: nowrap;
     border-right: 1px solid #C0C0C0;
+    text-align: center;
 }
 
 .pharma-table thead tr th:nth-child(2) {
