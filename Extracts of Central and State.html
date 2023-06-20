@@ -32,6 +32,70 @@
   <link rel="stylesheet" media="all" href="themes/swfone/theme/css/site63d9.css?rvdmaf" />
   <link rel="stylesheet" media="all" href="themes/swfone/theme/css/custom63d9.css?rvdmaf" />
   <link rel="stylesheet" media="all" href="themes/swfone/theme/css/site-responsive63d9.css?rvdmaf" />
+  <link rel="stylesheet" media="screen" href="assets/vendor/img-comparison-slider/dist/styles.css"/>
+  <link rel="stylesheet" media="screen" href="assets/vendor/swiper/swiper-bundle.min.css"/>
+  <style>
+
+.warpper{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tab{
+  cursor: pointer;
+  padding:10px 20px;
+  margin:0px 2px;
+  background:#000;
+  display:inline-block;
+  color:#fff;
+  border-radius:3px 3px 0px 0px;
+  box-shadow: 0 0.5rem 0.8rem #00000080;
+}
+.panels{
+  background:#fffffff6;
+  box-shadow: 0 2rem 2rem #00000080;
+  min-height:200px;
+  width:100%;
+  border-radius:3px;
+  overflow:hidden;
+  padding:20px;  
+}
+.panel{
+  display:none;
+  animation: fadein .8s;
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+.panel-title{
+  font-size:1.5em;
+  font-weight:bold
+}
+.radio{
+  display:none;
+}
+#one:checked ~ .panels #one-panel,
+#two:checked ~ .panels #two-panel,
+#three:checked ~ .panels #three-panel,
+#four:checked ~ .panels #four-panel,
+#five:checked ~ .panels #five-panel{
+  display:block
+}
+#one:checked ~ .tabs #one-tab,
+#two:checked ~ .tabs #two-tab,
+#three:checked ~ .tabs #three-tab,
+#four:checked ~ .tabs #four-tab,
+#five:checked ~ .tabs #five-tab{
+  background:#fffffff6;
+  color:#000;
+  border-top: 3px solid #000;
+}
+  </style>
 </head>
 <body class="en layout-one-sidebar layout-sidebar-first path-frontpage">
   <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
@@ -569,493 +633,2810 @@
         <li><a href="">Acts/Rules/Amendments</a></li>
         <li><a href="">Extracts of Central and State</a></li>
     </ul>
- 
-    <div class="accordion focus-sector-accordion focus-sector-content container-fluid" id="accordionExample">
-      <table class="table container pharma-table">
-        <thead>
-            <tr>
-                <th>Sl.No</th>
-                <th>Act Name</th>
-                <th>Download</th>
-              
-            </tr>
-        </thead>
-        <tbody>
-          <tr>
-          <td>1</td>
-          <td>Andhra Pradesh Integrated Registration Act, 2015</td>
-          <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/AP%20Integrated%20Registration%20Act%202015.pdf">Download</a></td>
-          </tr>
-          <tr>
-          <td>2</td>
-          <td>Andhra Pradesh Integrated Registration Act, 2015(Forms A,B &amp; C)</td>
-          <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/AP%20Integrated%20Registration%20Act%202015(Forms%20A,B%20&%20C).pdf">Download</a></td>
-          </tr>
-          <tr>
-          <td>3</td>
-          <td>Andhra Pradesh Labour Welfare Fund Rules, 1988.</td>
-          <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/APLabourWelfareFundRules1988.pdf">Download</a></td>
-          </tr>
-          <tr>
-          <td>4</td>
-          <td>Andhra Pradesh Compusory Gratuity Insurance Rules, 2011.</td>
-          <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/AndhraPradeshCompusoryGratuityInsuranceRules2011.pdf">Download</a></td>
-          </tr>
-          <tr>
-          <td>5</td>
-          <td>Andhra Pradesh Contract Labour Rules, 1971.</td>
-          <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/AndhraPradeshContractLabourRules1971.pdf">Download</a></td>
-          </tr>
-          <tr>
-          <td>6</td>
-          <td>Andhra Pradesh Minimum Wages Rules, 1960.</td>
-          <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/MinimumwagesAndhraPradeshRules1960.pdf">Download</a></td>
-          </tr>
-          <tr>
-          <td>7</td>
-          <td>Andhra Pradesh Factories &amp; Establishents NFOH Act, 1974.</td>
-          <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/AndhraPradeshFactoriesEstablishentsNFOHAct1974.pdf">Download</a></td>
-          </tr>
-          <tr>
-          <td>8</td>
-          <td>Andhra Pradesh Labour Welfare Fund Act, 1987.</td>
-          <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/APLabourWelfareFundAct1987.pdf">Download</a></td>
-          </tr>
-          <tr>
-          <td>9</td>
-          <td>Andhra Pradesh Shops &amp; Establishments Rules, 1990.</td>
-          <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/AndhraPradeshShopsEsablishmensRules1990.pdf">Download</a></td>
-          </tr>
-          <tr>
-          <td>10</td>
-          <td>Andhra Pradesh Shops &amp; Establishments Act, 1988.</td>
-          <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/AndhraPradeshShopsEstablishmentsAct1988.pdf">Download</a></td>
-          </tr>
-          <tr>
-          <td>11</td>
-          <td>AP Beedi &amp; Cigar Workers (COE) Rules, 1968</td>
-          <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/APBeediCigarWorkersCOERules1968.pdf">Download</a></td>
-          </tr>
-          <tr>
-          <td>12</td>
-          <td>AP Building &amp; Other Construction Workers (RECS) Rules, 1999.</td>
-          <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/APBuildingOtherConstructionWorkersRECSRules1999.pdf">Download</a></td>
-          <tr>
-          <td>13</td>
-          <td>AP Motor Transport Workers Rules, 1963.</td>
-          <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/APMotorTransportWorkersRules1963.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>14</td>
-                                  <td>AP Payment of Gratuity Rules, 1972.</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/APPaymentofGratuityRules1972.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>15</td>
-                                  <td>AP Payment of Wages Rules, 1937.</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/APPaymentofWagesRules1937.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>16</td>
-                                  <td>AP Contract Labour Rules, GO48. Date:22-08-2003, CL</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/AP_Contract_Labour_Rules_GO48_22082003_CL.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>17</td>
-                                  <td>AP Contract Labour Andhra Pradesh Rules, 1971</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/AndhraPradeshContractLabourRules1971%20(1).pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>18</td>
-                                  <td>AP Inter State Migrant Workmen(Regulaltion of Employment and Conditions of Service) Rules, 1982</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/AP_Inter_State_Migrant_Workmen_Rules_1982.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>19</td>
-                                  <td>Beedi and Cigar Workers (COE) Act.</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/BeediandCigarWorkersCOEAct1966.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>20</td>
-                                  <td>Beedi Worker Welfare Cess Act Rules, 1977.</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/BeediWorkerWelfareCessActRules1977.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>21</td>
-                                  <td>Beedi Workers Welfare Cess Act, 1976.</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/BeediWorkersWelfareCessAct1976.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>22</td>
-                                  <td>Beedi Workers Welfare Fund Act, 1976.</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/BeediWorkersWelfareFundAct1976.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>23</td>
-                                  <td>Bonded Labour System (Abolition) Act, 1976.</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/Bonded%20Labour%20System%20Abolition%20Act%201976.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>24</td>
-                                  <td>Building &amp; Other Construction Workers Welfare Cess Act, 1996.</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/Building%20Other%20Construction%20Workers%20Welfare%20Cess%20Act%201996.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>25</td>
-                                  <td>Revised Construction Rates w.e.f 01.08.2017</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/RevisedConstructionRateswef01082017.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>26</td>
-                                  <td>Building and Other Construction Workers RE &amp; CS Central Rules,1998.</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/BuildingandOtherConstructionWorkersRECSCentralRules1998.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>27</td>
-                                  <td>Building and Other Construction Workers' Welfare Cess Rules, 1998.</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/Building%20Other%20Construction%20Workers%20Welfare%20Cess%20Act%201996.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>28</td>
-                                  <td>Building and Other Construction Workers RE &amp; CS Act,1996</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/BuildligandOtherConstructionWorkersRECSAct1996.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>29</td>
-                                  <td>Child Labour (P&amp;R) Rules, 1988</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/ChildLabourPRRules1988.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>30</td>
-                                  <td>Child Labour (Prohibition &amp; Regulation) Act, 1986.</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/ChildLabourPRRules1988.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>31</td>
-                                  <td>Cine Workers and Cinema Theatre Workers (ROE) Rules, 1984.</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/CineWorkersandCinemaTheatreWorkersROERules1984.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>32</td>
-                                  <td>Cine Workers Welfare Cess Act, 1981.</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/CineWorkersWelfareCessAct1981.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>33</td>
-                                  <td>Cine Workers Welfare Fund Act, 1981.</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/CINEWORKERSWELFAREFUNDACT1981.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>34</td>
-                                  <td>Contract Labour (R&amp;A) Rules, 1971.</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/ContracatLabourRAndARules1971.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>35</td>
-                                  <td>Contract Labour(Regulation &amp; Abolition)Act, 1970.</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/ContractLabourRegulationAndAbolitionAct1970.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>36</td>
-                                  <td>Contract Labour Regulation and Abolition Act, 1971.</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/contractlabourregulationandabolitionact1971.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>36(a)</td>
-                                  <td>Contract Labour AP Amendment Act, 2003.</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/1.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-      
-                                  <td>37</td>
-                                  <td>Employees State Insurance Act, 1948.</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/EmployeesStateInsuranceAct1948.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>38</td>
-                                  <td>Employees Compensation Act, 1923.</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/Employees%20Compensation%20Act%201923.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>39</td>
-                                  <td>Employees Compensation Rules, 1923.</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/EmployeesCompensationwagelimitEightThousand.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>40</td>
-                                  <td>Employees Compensation Act, Amendment.</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/EmployeesCompensationActamendment.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>41</td>
-                                  <td>Employees Compensation wage limit (Eight Thousand).</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/EmployeesCompensationwagelimitEightThousand.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>42</td>
-                                  <td>Employees Provident Funds and Miscellaneous Provisons Act, 1952.</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/EmployeesProvidentFundsandMiscellaneousProvisonsAct1952.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>43</td>
-                                  <td>Equal Remuneration Central Rules, 1976.</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/EqualRemunerationrules1976.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>44</td>
-                                  <td>Equal Remuneration Act, 1976.</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/EqualRemunerationAct1976.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>45</td>
-                                  <td>Factories Act, 1948.</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/FactoriesAct1948.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>46</td>
-                                  <td>General Clauses Act, 1897.</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/GeneralClausesAct1897.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>47</td>
-                                  <td>GO No.27 by Rural Development on NREGS.</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/GONo27byRuralDevelopmentonNREGS.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>48</td>
-                                  <td>Industrial Disputes Act, 1947.</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/IndustrialDisputesAct1947.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>49</td>
-                                  <td>Industrial Disputes (Amendment) Act, 2010.</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/TheIndustrialDisputesAmendmentAct2010.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>50</td>
-                                  <td>Industrial Disputes (Central Rules), 1957.</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/IndustrialDisputesCentralRules1957.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>51</td>
-                                  <td>Industrial Disputes Andhra Pradesh Rules, 1958.</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/IndustrialDisputesAndhraPradeshRules1958.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>52</td>
-                                  <td>Industrial Employment (Standing Orders) Andhra PradeshRules, 1953.</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/IndustrialEmploymentStandingOrdersAndhraPradeshRules1953.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>53</td>
-                                  <td>Inter-State Migrant Workmen (RECS)Cetral Rules, 1980.</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/InterStateMigrantWorkmenRECSCetralRules1980.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>54</td>
-                                  <td>Industrial Employment Standing Orders Central Rules, 1946.</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/INDUSTRIALEMPLOYMENTSTANDINGORDERS1CENTRALRULES1946.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>55</td>
-                                  <td>Interstate Migrant Worker RE And CS Act, 1979.</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/InterstateMigrantWorkerREAndCSAct1979.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>56</td>
-                                  <td>Juvenile Justice Act, 2000.</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/JuvenileJusticeAct2000.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>57</td>
-                                  <td>Labour Laws(Exemption from Furnishing returns maintaining by certain establishments)Act, 1988.</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/LabourLawsExemptionfromFurnishingreturnsmaintainingbycertainestablishmentsAct1988.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>58</td>
-                                  <td>labour laws exemption from furnishing returns amendment Act, 2014</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/labour_laws_exemption_from_furnishing_returns.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>59</td>
-                                  <td>Majithia Wage Board.</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/MajithiaWageBoardWB11112o11.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>60</td>
-                                  <td>Maternity Benefit Act, 1961.</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/MaternityBenefitAct1961.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>61</td>
-                                  <td>Maternity Benefit Act, 1966.</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/AP_Maternity_Benefit_Rules_1966.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>62</td>
-                                  <td>Minimum Wages Act, 1948.</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/MinimumWagesAct1948.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>63</td>
-                                  <td>Minimum Wages Central Rules, 1950.</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/MinimumWagesCentralRules1950.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>64</td>
-                                  <td>Motor Transport Workers Act, 1961.</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/MotorTransportWorkersAct1961.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>65</td>
-                                  <td>Majithia Wage Boards Recommendations Notification.</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/MajithiaWageBoardsRecommendationsNotification.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>66</td>
-                                  <td>Manisana Wage Board for Journalists Final recommendations.</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/ManisanaWageBoardforJournalistsFinalrecommendations.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>67</td>
-                                  <td>Nofication of establishments under Payment of Wages Act, 2011LETF_RT590 (2).</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/NoficationofestablishmentsunderPaymentofWagesAct2011LETFRT5902.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>68</td>
-                                  <td>NREG Act, 2005.</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/NREGAct2005.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>69</td>
-                                  <td>Payment of Bonus Act, 1965.</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/PaymentofBonusAct1965.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>70</td>
-                                  <td>Payment of Bonus Central Rules, 1975.</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/PaymentofBonusRules1975.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>71</td>
-                                  <td>Payment of Gratuity Rules, 1972.</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/PaymentofGratuityRules.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>72</td>
-                                  <td>Payment of Wages AMENDMENT Act, 2005.</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/PaymentofWagesAMENDMENTAct2005.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>73</td>
-                                  <td>Payment of Wages Act, 1936.</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/PaymentofWagesAct1936.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>74</td>
-                                  <td>Payment of Wages Rules, 1937.</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/PaymentofWagesRules1937.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>75</td>
-                                  <td>Payment of Gratuity Act, 1972</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/PaymentofGratuityAct1972.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>76</td>
-                                  <td>Plantation Labour Act, 1951.</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts//ExtractsOfCentalActAndRulesStateActAndRules/PlantationLabourAct1951.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>77</td>
-                                  <td>Pay Wages by Cheque or Credit to the Bank Account 2011-LETF RT591-2.</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/PaywagesbychequeorcredittotheBankAccount2011LETFRT591.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>78</td>
-                                  <td>Payment of Wages Act - Wage Enhancement to 18,000 per month in 2012.</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/PaymentofWagesActWageenhancementto18000permonthin2012.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>79</td>
-                                  <td>Right to Free and Compulsary Education Act.</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/RighttoFreeandCompulsaryEducationAct.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>80</td>
-                                  <td>Sales Promotion Employees Act 1976.</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/The_Sales_Promotion_Employees_Act_1976.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>81</td>
-                                  <td>Sales Promotion Employees Act Extension of 10 Industries.</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/SalesPromotionEmployeesActExtensionof10industries.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>82</td>
-                                  <td>Sales Promotion Employees (Conditions of Service) Central Rules, 1976.</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/SalesPromotionEmployeesConditionsofServiceCentralRules1976.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>83</td>
-                                  <td>Small Factories Bill.</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/SmallFactoriesBill.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>84</td>
-                                  <td>Small Estts. Exemptioin of Reg. Returns Act, 1988-1.</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/SmallEsttsExemptioinofRegReturnsAct19881.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>85</td>
-                                  <td>Trade Unions Act, 1926.</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/TradeUnionsAct1926.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>86</td>
-                                  <td>Trade Unions amendment Act, 2001.</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/TradeUnionsamendmentact2001.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>87</td>
-                                  <td>The Industrial Disputes (Amendment) Act, 2010.</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/TheIndustrialDisputesAmendmentAct2010.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>88</td>
-                                  <td>Trade Union (Andhra Pradesh Regulations), 1927.</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/TradeUnionAndhraPradeshRegulations1927.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>89</td>
-                                  <td>Unorganised Workers Social Security Act, 2008.</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/UnorganisedWorkersSocialSecurityAct2008.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>90</td>
-                                  <td>Unorganised Workers Social Security Central Rules, 2009.</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/UnorganizedWorkersSocialSecurlityRules2009.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>91</td>
-                                  <td>Working Journalist (COE) and Miscellaneous Provisions Central Rules, 1957.</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/WorkingJournalistCOEandMiscellaneousProvisionsCentralRules1957.pdf">Download</a></td>
-                              </tr>
-                              <tr>
-                                  <td>92</td>
-                                  <td>Working Journalists (COE) and Miscellaneous Act, 1955.</td>
-                                  <td><a target="_blank" href="/assets/pdf/Acts/ExtractsOfCentalActAndRulesStateActAndRules/WorkingJournalistsCOEandmiscellaneousAct1955.pdf">Download</a></td>
-                              </tr>
-                          </tbody>
-      
-    </table>
-    </div>
 
+
+<div class="warpper">
+  <input class="radio" id="one" name="group" type="radio" checked>
+  <input class="radio" id="two" name="group" type="radio">
+  <input class="radio" id="three" name="group" type="radio">
+  <input class="radio" id="four" name="group" type="radio">
+  <input class="radio" id="five" name="group" type="radio">
+
+
+  <div class="tabs">
+  <label class="tab" id="one-tab" for="one">Wages</label>
+  <label class="tab" id="two-tab" for="two">Industrial Relations </label>
+  <label class="tab" id="three-tab" for="three">Social Security </label>
+  <label class="tab" id="four-tab" for="four">The Occupational Safety, Health and Working Conditions  </label>
+  <label class="tab" id="five-tab" for="five">Andhra Pradesh State Acts</label>
+
+    </div>
+  <div class="panels">
+ 
+  <div class="panel" id="one-panel">
+    <div class="accordion custom-accordion" id="accordionExample">
+      <div class="d-flex aboutmb-res-img">
+          <img class="about-edb-img" src="https://apedb.gov.in/assets/images/about-edb/ippd.png" alt="sppd" />
+          <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button custom-accordion-btn" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#collapseone" aria-expanded="false"
+                      aria-controls="collapseone">
+                      Code/Acts
+                  </button>
+              </h2>
+            
+
+              <div id="collapseone" class="accordion-collapse collapse show" aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample">
+                  <table class="table container">
+                    <thead>
+                        <tr>
+                            <th class="text-center">Description</th>
+                            <th class="text-center">Code/Acts</th>
+                           
+                          
+                        </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                      <td>
+                        <p>The Code on Wages seeks to – regulate wages & bonus payments in all employments – where any industry, trade, business, or manufacturing is carried out.
+                        </p> 
+                      <p>
+                        Code has 9 Chapters, 67 Sections & 26 definitions of constantly used terms Intend to promote equity & labour welfare and sustainability of enterprises, thereby catalyzing economic growth and creation of employment opportunities
+                        Amalgamation of the following four laws:</p>  
+                        <ul>
+                          <li style="list-style-type: decimal;">
+                            The Payment of Wages Act, 1936,
+                          </li>
+                          <li style="list-style-type: decimal;">
+                            The Minimum Wages Act, 1948,
+                          </li>
+                          <li style="list-style-type: decimal;">
+                            The Payment of Bonus Act, 1965, and
+                          </li>
+                          <li style="list-style-type: decimal;">
+                            The Equal Remuneration Act, 1976.
+                          </li>
+                        </ul>
+                      </td>
+                      <td>Code on Wages, 2019 No 29 of 2019 dated 08.08.2019. Chapters: IX Sections: 69 <br> Schedules: --</td>
+                      </tr>
+                     
+                      
+                      
+                      <tr>
+                      
+                                      </tbody>
+                  
+                </table>
+              </div>
+          </div>
+      </div>
+      <div class="d-flex aboutmb-res-img">
+          <img class="about-edb-img" src="https://apedb.gov.in/assets/images/about-edb/ippd.png" alt="sppd" />
+          <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFive">
+                  <button class="accordion-button custom-accordion-btn collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#collapsetwo" aria-expanded="false"
+                      aria-controls="collapsetwo">
+                      Central Rules
+
+                  </button>
+              </h2>
+              <div id="collapsetwo" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                      <ul>
+                          <li>
+                              <p class="accordion-content">Implement an online application system under “License and renewal of license for contractors under provision of The Contracts Labour (Regulation and Abolition) Act, 1970”:
+
+                              </p>
+                          </li>
+                          <li>
+                              <p class="accordion-content">Implemented as detailed below
+                          </li>
+                          <li>
+                              <p class="accordion-content">Online Registration enabled  </p>
+                          </li>
+                          <li>                                <p class="accordion-content">Need not approach any officer for document submission    </p>
+                          </li>
+                          <li><p class="accordion-content">Payment gateway enabled /through meeseva
+
+                          </p></li>
+                          <li> <p class="accordion-content">Tracking of application option enabled
+                          </p></li>
+                          <!-- <li><p class="accordion-content">Download of final certificate enabled
+                          </p></li>
+                          <li><p class="accordion-content">Rescue and release of child labour.
+                          </p></li>
+                          <li><p class="accordion-content">Certification of Standing Orders for Industries.
+                          </p></li>
+                          <li>   <p class="accordion-content">Assessment and collection of Cess from construction works.
+                          </p></li>
+                          <li><p class="accordion-content">Registration of building and other construction workers.
+                          </p></li>
+                          <li> <p class="accordion-content">Registration of unorganized workers.
+
+
+                          </p></li> -->
+                      </ul>
+                     
+                         
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="d-flex aboutmb-res-img">
+          <img class="about-edb-img" src="https://apedb.gov.in/assets/images/about-edb/ippd.png" alt="sppd" />
+          <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button custom-accordion-btn collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                      aria-controls="collapseThree">
+                      A.P.State Rules 
+
+                  </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                      <ul><li>
+                          <p class="accordion-content">
+                            Implement an online application system under Registration and renewal under “The Shops and Establishment Act”:
+                            Implemented as detailed below
+
+
+                          </p>
+                      </li>
+                      <li><p class="accordion-content">
+                        No pre inspection before the registration
+
+
+                      </p></li>
+                      <li><p class="accordion-content">
+                        Grant of final registration on instant enabled
+
+
+                      </p></li>
+                      <li><p class="accordion-content">
+                        Online Registration enabled
+
+
+                      </p></li>
+                      <li><p class="accordion-content">
+                        Need not approach any officer for document submission
+
+
+                      </p></li>
+                      <li> <p class="accordion-content">
+                        Payment gateway enabled /through meeseva
+
+
+                      </p></li>
+                      <li> <p class="accordion-content">
+                        Tracking of application option enabled
+
+
+                      </p></li>
+                      <li><p class="accordion-content">
+                        Download of final certificate enabled
+
+
+                      </p></li>
+                      <li> 
+                          <p class="accordion-content">
+                            All shops & establishments are exempted from renewal of registration vide G.O. Ms. No.7, LETF (Lab-I) Dept. Dt.13.02.2019 and G.O.Ms.No.15, LETF (Lab-I) Dept. Dt.06.06.2019
+
+
+                          </p></li>
+                          <!-- <li><p class="accordion-content">
+                              Assessment and collection of Cess from construction works.
+
+
+                          </p></li>
+                          <li><p class="accordion-content">
+                              Registration of building and other construction workers.
+
+
+                          </p></li>
+                          <li><p class="accordion-content">
+                              Registration of unorganized workers.
+
+                          </p></li> -->
+                  
+                  </ul>
+                      
+                 
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="d-flex aboutmb-res-img">
+          <img class="about-edb-img" src="https://apedb.gov.in/assets/images/about-edb/ippd.png" alt="sppd" />
+          <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button custom-accordion-btn collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapsefour" aria-expanded="true" aria-controls="collapsfour">
+                      Central Amendments 
+
+
+                  </button>
+              </h2>
+              <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                      <ul>
+                            Implement an online application system under “Registration of Principal Employer's establishment under provision of The Contracts Labour (Regulation and Abolition) Act, 1970”:
+                           
+                            
+                          </p></li>
+                          <li><p class="accordion-content">
+                              Online Registration enabled
+                          </p></li>
+                          <li> <p class="accordion-content">
+                              
+                            Need not approach any officer for document submission   
+                          </p></li>
+                          <li><p class="accordion-content">
+                            Payment gateway enabled /through meeseva
+                          </p></li>
+                          <li><p class="accordion-content">
+                            Tracking of application option enabled
+                          </p></li>
+                          <li><p class="accordion-content">
+                            Download of final certificate enabled
+                          </p></li>
+                         
+                      </ul>
+                     
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- <div class="d-flex aboutmb-res-img">
+        <img class="about-edb-img" src="https://apedb.gov.in/assets/images/about-edb/ippd.png" alt="sppd" />
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button custom-accordion-btn collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsefive" aria-expanded="true" aria-controls="collapsefive">
+                    Reform: 43
+
+
+                </button>
+            </h2>
+            <div id="collapseive" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <ul>
+                          Implement an online application system under “Registration of Principal Employer's establishment under provision of The Contracts Labour (Regulation and Abolition) Act, 1970”:
+                         
+                          
+                        </p></li>
+                        <li><p class="accordion-content">
+                            Online Registration enabled
+                        </p></li>
+                        <li> <p class="accordion-content">
+                            
+                          Need not approach any officer for document submission   
+                        </p></li>
+                        <li><p class="accordion-content">
+                          Payment gateway enabled /through meeseva
+                        </p></li>
+                        <li><p class="accordion-content">
+                          Tracking of application option enabled
+                        </p></li>
+                        <li><p class="accordion-content">
+                          Download of final certificate enabled
+                        </p></li>
+                      
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <div class="d-flex aboutmb-res-img">
+      <img class="about-edb-img" src="https://apedb.gov.in/assets/images/about-edb/ippd.png" alt="sppd" />
+      <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button custom-accordion-btn collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapsesix" aria-expanded="true" aria-controls="collapsesix">
+                  State Amendments 
+
+
+
+              </button>
+          </h2>
+          <div id="collapsesix" class="accordion-collapse collapse" aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                  <ul>
+                    Implement an online application system under “Registration under The Building and Other Construction Workers (Regulation of Employment and Conditions of Service) Act, 1996”:
+                       
+                        
+                      </p></li>
+                      <li><p class="accordion-content">
+                        Online Registration enabled
+                      </p></li>
+                      <li> <p class="accordion-content">
+                          
+                        Need not approach any officer for document submission   
+                      </p></li>
+                      <li><p class="accordion-content">
+                        Payment gateway enabled /through meeseva
+                      </p></li>
+                      <li><p class="accordion-content">
+                        Tracking of application option enabled
+                      </p></li>
+                      <li><p class="accordion-content">
+                        Download of final certificate enabled
+                      </p></li>
+                    
+                  </ul>
+                  
+                  
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="d-flex aboutmb-res-img">
+    <img class="about-edb-img" src="https://apedb.gov.in/assets/images/about-edb/ippd.png" alt="sppd" />
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button custom-accordion-btn collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseseven" aria-expanded="true" aria-controls="collapseseven">
+                Ordinance 
+
+
+
+            </button>
+        </h2>
+        <div id="collapseseven" class="accordion-collapse collapse" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <ul>
+                  Implement an online application system under “Registration of establishment under the Inter State Migrant Workmen (RE&CS) Act, 1979”:
+                     
+                      
+                    </p></li>
+                    <li><p class="accordion-content">
+                      Online Registration enabled
+                    </p></li>
+                    <li> <p class="accordion-content">
+                        
+                      Need not approach any officer for document submission   
+                    </p></li>
+                    <li><p class="accordion-content">
+                      Payment gateway enabled /through meeseva
+                    </p></li>
+                    <li><p class="accordion-content">
+                      Tracking of application option enabled
+                    </p></li>
+                    <li><p class="accordion-content">
+                      Download of final certificate enabled
+                    </p></li>
+                  
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<div class="d-flex aboutmb-res-img">
+  <img class="about-edb-img" src="https://apedb.gov.in/assets/images/about-edb/ippd.png" alt="sppd" />
+  <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button custom-accordion-btn collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseeight" aria-expanded="true" aria-controls="collapseOne">
+              Orders 
+
+          </button>
+      </h2>
+      <div id="collapseeight" class="accordion-collapse collapse" aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+              <ul>
+                Labour Regulation-Enablers-Mandate online filing of single integrated return under the Labour Laws:
+
+                   
+                    
+                  </p></li>
+                  <li><p class="accordion-content">
+                    It is mandated for filling Single Integrated Return online by the Employers of the Establishments. Vide G.O.Ms.No. 11, LETF (Lab-I) Dept. Dt.18.03.2019 and G.O.Ms. No. 14, LETF (Lab-I) Dept. Dt.15.04.2019 it is facilitated furnishing of combined annual returns under labour laws online. Vide Procgs. No. I/2465/2015, Dt: 26.03.2019 of Commissioner of Labour, it is mandated for filling Single Integrated Return online by the Employers.
+                  </p></li>
+                 
+                
+              </ul>
+              
+          </div>
+      </div>
+  </div>
+</div>
+<div class="d-flex aboutmb-res-img">
+<img class="about-edb-img" src="https://apedb.gov.in/assets/images/about-edb/ippd.png" alt="sppd" />
+<div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button custom-accordion-btn collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapsenine" aria-expanded="true" aria-controls="collapseOne">
+            Circulars 
+
+
+
+
+        </button>
+    </h2>
+    <div id="collapsenine" class="accordion-collapse collapse" aria-labelledby="headingOne"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+            <ul>
+              Central Inspection Framework, Compliance Inspection under Labour, Factories and Boilers- Institutionalize a Central Inspection System (CIS) responsible for undertaking compliance inspections of the departments concerned. Mandate surprise inspection or inspections based on complaints are conducted with specific permissions from the respective Head of Department:
+                 
+                  
+                </p></li>
+                <li><p class="accordion-content">
+                  CIS is able to define Risk criteria to classify industries which undergo inspections.
+                </p></li>
+                <li> <p class="accordion-content">
+                    
+                  Inspection requirements based on risk profiled of industries is available in CIS portal.
+                </p></li>
+                <li><p class="accordion-content">
+                  Inspections procedure/checklist is available on Labour department portal & CIS website
+                </p></li>
+                <li><p class="accordion-content">
+                  Establishments that need to be inspected based on computerized risk assesment are available in CIS portal.
+                </p></li>
+                <li><p class="accordion-content">
+                  Computerization allocation of inspectors is implemented.
+                </p></li>
+                <li><p class="accordion-content">
+                  Instruction were issued to the Officers of Labour department vide Procgs. No.LAE03-18025(31)/1/2019-I-LBR COMR, Dt: 11.02.2019 that only follow the checklist while conducting inspections, except in case of complaint based.
+                </p></li>
+                <li><p class="accordion-content">
+                  Online submission of inspection report within 48 hours to the Labour department/CIS is implemented.
+                </p></li>
+                <li><p class="accordion-content">
+                  Same Inspector will not inspect the same establishment twice consequently is implemented.
+                </p></li>
+                <li><p class="accordion-content">
+                  Viewing and downloading submitted inspection reports of at least past three years is enabled..
+                </p></li>
+                <li><p class="accordion-content">
+                  Instruction were issued to the Officers of Labour department vide Procgs.No. 18025/4/2018-I-LBR COMR, Dt:03.12.2018 to take up surprise inspections in respect of genuine complaints, only on specific written orders of the COL.
+                </p></li>
+              
+            </ul>
+            
+        </div>
+    </div>
+</div>
+</div>
+<div class="d-flex aboutmb-res-img">
+<img class="about-edb-img" src="https://apedb.gov.in/assets/images/about-edb/ippd.png" alt="sppd" />
+<div class="accordion-item">
+  <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button custom-accordion-btn collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseten" aria-expanded="true" aria-controls="collapseOne">
+          Regulations 
+
+
+      </button>
+  </h2>
+  <div id="collapseten" class="accordion-collapse collapse" aria-labelledby="headingOne"
+      data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+          <ul>
+            Joint Inspection- Mandate joint inspections under all of the Labour Acts:
+
+               
+                
+              </p></li>
+              <li><p class="accordion-content">
+                Joint Inspection Report by the Labour and Factories departments is designed by the, Industries department
+              </p></li>
+              
+          </ul>
+         
+         
+      </div>
+  </div>
+</div>
+</div>
+<div class="d-flex aboutmb-res-img">
+  <img class="about-edb-img" src="https://apedb.gov.in/assets/images/about-edb/ippd.png" alt="sppd" />
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button custom-accordion-btn collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseeleven" aria-expanded="true" aria-controls="collapseOne">
+            Notifications 
+  
+  
+        </button>
+    </h2>
+    <div id="collapseeleven" class="accordion-collapse collapse" aria-labelledby="headingOne"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+            <ul>
+              Joint Inspection- Mandate joint inspections under all of the Labour Acts:
+  
+                 
+                  
+                </p></li>
+                <li><p class="accordion-content">
+                  Joint Inspection Report by the Labour and Factories departments is designed by the, Industries department
+                </p></li>
+                
+            </ul>
+           
+           
+        </div>
+    </div>
+  </div>
+  </div>
+  <div class="d-flex aboutmb-res-img">
+    <img class="about-edb-img" src="https://apedb.gov.in/assets/images/about-edb/ippd.png" alt="sppd" />
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button custom-accordion-btn collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapsetwelve" aria-expanded="true" aria-controls="collapseOne">
+              Statutes
+    
+    
+          </button>
+      </h2>
+      <div id="collapsetwelve" class="accordion-collapse collapse" aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+              <ul>
+                Joint Inspection- Mandate joint inspections under all of the Labour Acts:
+    
+                   
+                    
+                  </p></li>
+                  <li><p class="accordion-content">
+                    Joint Inspection Report by the Labour and Factories departments is designed by the, Industries department
+                  </p></li>
+                  
+              </ul>
+             
+             
+          </div>
+      </div>
+    </div>
+    </div>
+  </div>
+  </div>
+  <div class="panel" id="two-panel">
+    <div class="accordion custom-accordion" id="accordionExample">
+      <div class="d-flex aboutmb-res-img">
+          <img class="about-edb-img" src="https://apedb.gov.in/assets/images/about-edb/ippd.png" alt="sppd" />
+          <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button custom-accordion-btn" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#collapseone" aria-expanded="false"
+                      aria-controls="collapseone">
+                      Code/Acts
+                  </button>
+              </h2>
+            
+
+              <div id="collapseone" class="accordion-collapse collapse show" aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample">
+                  <table class="table container">
+                    <thead>
+                        <tr>
+                            <th>Description</th>
+                            <th>Code/Acts</th>
+                           
+                          
+                        </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                      <td>
+                        <p>The Code on Wages seeks to – regulate wages & bonus payments in all employments – where any industry, trade, business, or manufacturing is carried out.
+                        </p> 
+                      <p>
+                        Code has 9 Chapters, 67 Sections & 26 definitions of constantly used terms Intend to promote equity & labour welfare and sustainability of enterprises, thereby catalyzing economic growth and creation of employment opportunities
+                        Amalgamation of the following four laws:</p>  
+                        <ul>
+                          <li style="list-style-type: decimal;">
+                            The Payment of Wages Act, 1936,
+                          </li>
+                          <li style="list-style-type: decimal;">
+                            The Minimum Wages Act, 1948,
+                          </li>
+                          <li style="list-style-type: decimal;">
+                            The Payment of Bonus Act, 1965, and
+                          </li>
+                          <li style="list-style-type: decimal;">
+                            The Equal Remuneration Act, 1976.
+                          </li>
+                        </ul>
+                      </td>
+                      <td>Code on Wages, 2019 No 29 of 2019 dated 08.08.2019. Chapters: IX Sections: 69 Schedules: --</td>
+                      </tr>
+                     
+                      
+                      
+                      <tr>
+                      
+                                      </tbody>
+                  
+                </table>
+              </div>
+          </div>
+      </div>
+      <div class="d-flex aboutmb-res-img">
+          <img class="about-edb-img" src="https://apedb.gov.in/assets/images/about-edb/ippd.png" alt="sppd" />
+          <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFive">
+                  <button class="accordion-button custom-accordion-btn collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#collapsetwo" aria-expanded="false"
+                      aria-controls="collapsetwo">
+                      Central Rules
+
+                  </button>
+              </h2>
+              <div id="collapsetwo" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                      <ul>
+                          <li>
+                              <p class="accordion-content">Implement an online application system under “License and renewal of license for contractors under provision of The Contracts Labour (Regulation and Abolition) Act, 1970”:
+
+                              </p>
+                          </li>
+                          <li>
+                              <p class="accordion-content">Implemented as detailed below
+                          </li>
+                          <li>
+                              <p class="accordion-content">Online Registration enabled  </p>
+                          </li>
+                          <li>                                <p class="accordion-content">Need not approach any officer for document submission    </p>
+                          </li>
+                          <li><p class="accordion-content">Payment gateway enabled /through meeseva
+
+                          </p></li>
+                          <li> <p class="accordion-content">Tracking of application option enabled
+                          </p></li>
+                          <!-- <li><p class="accordion-content">Download of final certificate enabled
+                          </p></li>
+                          <li><p class="accordion-content">Rescue and release of child labour.
+                          </p></li>
+                          <li><p class="accordion-content">Certification of Standing Orders for Industries.
+                          </p></li>
+                          <li>   <p class="accordion-content">Assessment and collection of Cess from construction works.
+                          </p></li>
+                          <li><p class="accordion-content">Registration of building and other construction workers.
+                          </p></li>
+                          <li> <p class="accordion-content">Registration of unorganized workers.
+
+
+                          </p></li> -->
+                      </ul>
+                     
+                         
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="d-flex aboutmb-res-img">
+          <img class="about-edb-img" src="https://apedb.gov.in/assets/images/about-edb/ippd.png" alt="sppd" />
+          <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button custom-accordion-btn collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                      aria-controls="collapseThree">
+                      A.P.State Rules 
+
+                  </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                      <ul><li>
+                          <p class="accordion-content">
+                            Implement an online application system under Registration and renewal under “The Shops and Establishment Act”:
+                            Implemented as detailed below
+
+
+                          </p>
+                      </li>
+                      <li><p class="accordion-content">
+                        No pre inspection before the registration
+
+
+                      </p></li>
+                      <li><p class="accordion-content">
+                        Grant of final registration on instant enabled
+
+
+                      </p></li>
+                      <li><p class="accordion-content">
+                        Online Registration enabled
+
+
+                      </p></li>
+                      <li><p class="accordion-content">
+                        Need not approach any officer for document submission
+
+
+                      </p></li>
+                      <li> <p class="accordion-content">
+                        Payment gateway enabled /through meeseva
+
+
+                      </p></li>
+                      <li> <p class="accordion-content">
+                        Tracking of application option enabled
+
+
+                      </p></li>
+                      <li><p class="accordion-content">
+                        Download of final certificate enabled
+
+
+                      </p></li>
+                      <li> 
+                          <p class="accordion-content">
+                            All shops & establishments are exempted from renewal of registration vide G.O. Ms. No.7, LETF (Lab-I) Dept. Dt.13.02.2019 and G.O.Ms.No.15, LETF (Lab-I) Dept. Dt.06.06.2019
+
+
+                          </p></li>
+                          <!-- <li><p class="accordion-content">
+                              Assessment and collection of Cess from construction works.
+
+
+                          </p></li>
+                          <li><p class="accordion-content">
+                              Registration of building and other construction workers.
+
+
+                          </p></li>
+                          <li><p class="accordion-content">
+                              Registration of unorganized workers.
+
+                          </p></li> -->
+                  
+                  </ul>
+                      
+                 
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="d-flex aboutmb-res-img">
+          <img class="about-edb-img" src="https://apedb.gov.in/assets/images/about-edb/ippd.png" alt="sppd" />
+          <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button custom-accordion-btn collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapsefour" aria-expanded="true" aria-controls="collapsfour">
+                      Central Amendments 
+
+
+                  </button>
+              </h2>
+              <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                      <ul>
+                            Implement an online application system under “Registration of Principal Employer's establishment under provision of The Contracts Labour (Regulation and Abolition) Act, 1970”:
+                           
+                            
+                          </p></li>
+                          <li><p class="accordion-content">
+                              Online Registration enabled
+                          </p></li>
+                          <li> <p class="accordion-content">
+                              
+                            Need not approach any officer for document submission   
+                          </p></li>
+                          <li><p class="accordion-content">
+                            Payment gateway enabled /through meeseva
+                          </p></li>
+                          <li><p class="accordion-content">
+                            Tracking of application option enabled
+                          </p></li>
+                          <li><p class="accordion-content">
+                            Download of final certificate enabled
+                          </p></li>
+                         
+                      </ul>
+                     
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- <div class="d-flex aboutmb-res-img">
+        <img class="about-edb-img" src="https://apedb.gov.in/assets/images/about-edb/ippd.png" alt="sppd" />
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button custom-accordion-btn collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsefive" aria-expanded="true" aria-controls="collapsefive">
+                    Reform: 43
+
+
+                </button>
+            </h2>
+            <div id="collapseive" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <ul>
+                          Implement an online application system under “Registration of Principal Employer's establishment under provision of The Contracts Labour (Regulation and Abolition) Act, 1970”:
+                         
+                          
+                        </p></li>
+                        <li><p class="accordion-content">
+                            Online Registration enabled
+                        </p></li>
+                        <li> <p class="accordion-content">
+                            
+                          Need not approach any officer for document submission   
+                        </p></li>
+                        <li><p class="accordion-content">
+                          Payment gateway enabled /through meeseva
+                        </p></li>
+                        <li><p class="accordion-content">
+                          Tracking of application option enabled
+                        </p></li>
+                        <li><p class="accordion-content">
+                          Download of final certificate enabled
+                        </p></li>
+                      
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <div class="d-flex aboutmb-res-img">
+      <img class="about-edb-img" src="https://apedb.gov.in/assets/images/about-edb/ippd.png" alt="sppd" />
+      <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button custom-accordion-btn collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapsesix" aria-expanded="true" aria-controls="collapsesix">
+                  State Amendments 
+
+
+
+              </button>
+          </h2>
+          <div id="collapsesix" class="accordion-collapse collapse" aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                  <ul>
+                    Implement an online application system under “Registration under The Building and Other Construction Workers (Regulation of Employment and Conditions of Service) Act, 1996”:
+                       
+                        
+                      </p></li>
+                      <li><p class="accordion-content">
+                        Online Registration enabled
+                      </p></li>
+                      <li> <p class="accordion-content">
+                          
+                        Need not approach any officer for document submission   
+                      </p></li>
+                      <li><p class="accordion-content">
+                        Payment gateway enabled /through meeseva
+                      </p></li>
+                      <li><p class="accordion-content">
+                        Tracking of application option enabled
+                      </p></li>
+                      <li><p class="accordion-content">
+                        Download of final certificate enabled
+                      </p></li>
+                    
+                  </ul>
+                  
+                  
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="d-flex aboutmb-res-img">
+    <img class="about-edb-img" src="https://apedb.gov.in/assets/images/about-edb/ippd.png" alt="sppd" />
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button custom-accordion-btn collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseseven" aria-expanded="true" aria-controls="collapseseven">
+                Ordinance 
+
+
+
+            </button>
+        </h2>
+        <div id="collapseseven" class="accordion-collapse collapse" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <ul>
+                  Implement an online application system under “Registration of establishment under the Inter State Migrant Workmen (RE&CS) Act, 1979”:
+                     
+                      
+                    </p></li>
+                    <li><p class="accordion-content">
+                      Online Registration enabled
+                    </p></li>
+                    <li> <p class="accordion-content">
+                        
+                      Need not approach any officer for document submission   
+                    </p></li>
+                    <li><p class="accordion-content">
+                      Payment gateway enabled /through meeseva
+                    </p></li>
+                    <li><p class="accordion-content">
+                      Tracking of application option enabled
+                    </p></li>
+                    <li><p class="accordion-content">
+                      Download of final certificate enabled
+                    </p></li>
+                  
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<div class="d-flex aboutmb-res-img">
+  <img class="about-edb-img" src="https://apedb.gov.in/assets/images/about-edb/ippd.png" alt="sppd" />
+  <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button custom-accordion-btn collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseeight" aria-expanded="true" aria-controls="collapseOne">
+              Orders 
+
+          </button>
+      </h2>
+      <div id="collapseeight" class="accordion-collapse collapse" aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+              <ul>
+                Labour Regulation-Enablers-Mandate online filing of single integrated return under the Labour Laws:
+
+                   
+                    
+                  </p></li>
+                  <li><p class="accordion-content">
+                    It is mandated for filling Single Integrated Return online by the Employers of the Establishments. Vide G.O.Ms.No. 11, LETF (Lab-I) Dept. Dt.18.03.2019 and G.O.Ms. No. 14, LETF (Lab-I) Dept. Dt.15.04.2019 it is facilitated furnishing of combined annual returns under labour laws online. Vide Procgs. No. I/2465/2015, Dt: 26.03.2019 of Commissioner of Labour, it is mandated for filling Single Integrated Return online by the Employers.
+                  </p></li>
+                 
+                
+              </ul>
+              
+          </div>
+      </div>
+  </div>
+</div>
+<div class="d-flex aboutmb-res-img">
+<img class="about-edb-img" src="https://apedb.gov.in/assets/images/about-edb/ippd.png" alt="sppd" />
+<div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button custom-accordion-btn collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapsenine" aria-expanded="true" aria-controls="collapseOne">
+            Circulars 
+
+
+
+
+        </button>
+    </h2>
+    <div id="collapsenine" class="accordion-collapse collapse" aria-labelledby="headingOne"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+            <ul>
+              Central Inspection Framework, Compliance Inspection under Labour, Factories and Boilers- Institutionalize a Central Inspection System (CIS) responsible for undertaking compliance inspections of the departments concerned. Mandate surprise inspection or inspections based on complaints are conducted with specific permissions from the respective Head of Department:
+                 
+                  
+                </p></li>
+                <li><p class="accordion-content">
+                  CIS is able to define Risk criteria to classify industries which undergo inspections.
+                </p></li>
+                <li> <p class="accordion-content">
+                    
+                  Inspection requirements based on risk profiled of industries is available in CIS portal.
+                </p></li>
+                <li><p class="accordion-content">
+                  Inspections procedure/checklist is available on Labour department portal & CIS website
+                </p></li>
+                <li><p class="accordion-content">
+                  Establishments that need to be inspected based on computerized risk assesment are available in CIS portal.
+                </p></li>
+                <li><p class="accordion-content">
+                  Computerization allocation of inspectors is implemented.
+                </p></li>
+                <li><p class="accordion-content">
+                  Instruction were issued to the Officers of Labour department vide Procgs. No.LAE03-18025(31)/1/2019-I-LBR COMR, Dt: 11.02.2019 that only follow the checklist while conducting inspections, except in case of complaint based.
+                </p></li>
+                <li><p class="accordion-content">
+                  Online submission of inspection report within 48 hours to the Labour department/CIS is implemented.
+                </p></li>
+                <li><p class="accordion-content">
+                  Same Inspector will not inspect the same establishment twice consequently is implemented.
+                </p></li>
+                <li><p class="accordion-content">
+                  Viewing and downloading submitted inspection reports of at least past three years is enabled..
+                </p></li>
+                <li><p class="accordion-content">
+                  Instruction were issued to the Officers of Labour department vide Procgs.No. 18025/4/2018-I-LBR COMR, Dt:03.12.2018 to take up surprise inspections in respect of genuine complaints, only on specific written orders of the COL.
+                </p></li>
+              
+            </ul>
+            
+        </div>
+    </div>
+</div>
+</div>
+<div class="d-flex aboutmb-res-img">
+<img class="about-edb-img" src="https://apedb.gov.in/assets/images/about-edb/ippd.png" alt="sppd" />
+<div class="accordion-item">
+  <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button custom-accordion-btn collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseten" aria-expanded="true" aria-controls="collapseOne">
+          Regulations 
+
+
+      </button>
+  </h2>
+  <div id="collapseten" class="accordion-collapse collapse" aria-labelledby="headingOne"
+      data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+          <ul>
+            Joint Inspection- Mandate joint inspections under all of the Labour Acts:
+
+               
+                
+              </p></li>
+              <li><p class="accordion-content">
+                Joint Inspection Report by the Labour and Factories departments is designed by the, Industries department
+              </p></li>
+              
+          </ul>
+         
+         
+      </div>
+  </div>
+</div>
+</div>
+<div class="d-flex aboutmb-res-img">
+  <img class="about-edb-img" src="https://apedb.gov.in/assets/images/about-edb/ippd.png" alt="sppd" />
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button custom-accordion-btn collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseeleven" aria-expanded="true" aria-controls="collapseOne">
+            Notifications 
+  
+  
+        </button>
+    </h2>
+    <div id="collapseeleven" class="accordion-collapse collapse" aria-labelledby="headingOne"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+            <ul>
+              Joint Inspection- Mandate joint inspections under all of the Labour Acts:
+  
+                 
+                  
+                </p></li>
+                <li><p class="accordion-content">
+                  Joint Inspection Report by the Labour and Factories departments is designed by the, Industries department
+                </p></li>
+                
+            </ul>
+           
+           
+        </div>
+    </div>
+  </div>
+  </div>
+  <div class="d-flex aboutmb-res-img">
+    <img class="about-edb-img" src="https://apedb.gov.in/assets/images/about-edb/ippd.png" alt="sppd" />
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button custom-accordion-btn collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapsetwelve" aria-expanded="true" aria-controls="collapseOne">
+              Statutes
+    
+    
+          </button>
+      </h2>
+      <div id="collapsetwelve" class="accordion-collapse collapse" aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+              <ul>
+                Joint Inspection- Mandate joint inspections under all of the Labour Acts:
+    
+                   
+                    
+                  </p></li>
+                  <li><p class="accordion-content">
+                    Joint Inspection Report by the Labour and Factories departments is designed by the, Industries department
+                  </p></li>
+                  
+              </ul>
+             
+             
+          </div>
+      </div>
+    </div>
+    </div>
+  </div>
+  </div>
+  <div class="panel" id="three-panel">
+    <div class="accordion custom-accordion" id="accordionExample">
+      <div class="d-flex aboutmb-res-img">
+          <img class="about-edb-img" src="https://apedb.gov.in/assets/images/about-edb/ippd.png" alt="sppd" />
+          <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button custom-accordion-btn" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#collapseone" aria-expanded="false"
+                      aria-controls="collapseone">
+                      Code/Acts
+                  </button>
+              </h2>
+            
+
+              <div id="collapseone" class="accordion-collapse collapse show" aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample">
+                  <table class="table container">
+                    <thead>
+                        <tr>
+                            <th>Description</th>
+                            <th>Code/Acts</th>
+                           
+                          
+                        </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                      <td>
+                        <p>The Code on Wages seeks to – regulate wages & bonus payments in all employments – where any industry, trade, business, or manufacturing is carried out.
+                        </p> 
+                      <p>
+                        Code has 9 Chapters, 67 Sections & 26 definitions of constantly used terms Intend to promote equity & labour welfare and sustainability of enterprises, thereby catalyzing economic growth and creation of employment opportunities
+                        Amalgamation of the following four laws:</p>  
+                        <ul>
+                          <li style="list-style-type: decimal;">
+                            The Payment of Wages Act, 1936,
+                          </li>
+                          <li style="list-style-type: decimal;">
+                            The Minimum Wages Act, 1948,
+                          </li>
+                          <li style="list-style-type: decimal;">
+                            The Payment of Bonus Act, 1965, and
+                          </li>
+                          <li style="list-style-type: decimal;">
+                            The Equal Remuneration Act, 1976.
+                          </li>
+                        </ul>
+                      </td>
+                      <td>Code on Wages, 2019 No 29 of 2019 dated 08.08.2019. Chapters: IX Sections: 69 Schedules: --</td>
+                      </tr>
+                     
+                      
+                      
+                      <tr>
+                      
+                                      </tbody>
+                  
+                </table>
+              </div>
+          </div>
+      </div>
+      <div class="d-flex aboutmb-res-img">
+          <img class="about-edb-img" src="https://apedb.gov.in/assets/images/about-edb/ippd.png" alt="sppd" />
+          <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFive">
+                  <button class="accordion-button custom-accordion-btn collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#collapsetwo" aria-expanded="false"
+                      aria-controls="collapsetwo">
+                      Central Rules
+
+                  </button>
+              </h2>
+              <div id="collapsetwo" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                      <ul>
+                          <li>
+                              <p class="accordion-content">Implement an online application system under “License and renewal of license for contractors under provision of The Contracts Labour (Regulation and Abolition) Act, 1970”:
+
+                              </p>
+                          </li>
+                          <li>
+                              <p class="accordion-content">Implemented as detailed below
+                          </li>
+                          <li>
+                              <p class="accordion-content">Online Registration enabled  </p>
+                          </li>
+                          <li>                                <p class="accordion-content">Need not approach any officer for document submission    </p>
+                          </li>
+                          <li><p class="accordion-content">Payment gateway enabled /through meeseva
+
+                          </p></li>
+                          <li> <p class="accordion-content">Tracking of application option enabled
+                          </p></li>
+                          <!-- <li><p class="accordion-content">Download of final certificate enabled
+                          </p></li>
+                          <li><p class="accordion-content">Rescue and release of child labour.
+                          </p></li>
+                          <li><p class="accordion-content">Certification of Standing Orders for Industries.
+                          </p></li>
+                          <li>   <p class="accordion-content">Assessment and collection of Cess from construction works.
+                          </p></li>
+                          <li><p class="accordion-content">Registration of building and other construction workers.
+                          </p></li>
+                          <li> <p class="accordion-content">Registration of unorganized workers.
+
+
+                          </p></li> -->
+                      </ul>
+                     
+                         
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="d-flex aboutmb-res-img">
+          <img class="about-edb-img" src="https://apedb.gov.in/assets/images/about-edb/ippd.png" alt="sppd" />
+          <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button custom-accordion-btn collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                      aria-controls="collapseThree">
+                      A.P.State Rules 
+
+                  </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                      <ul><li>
+                          <p class="accordion-content">
+                            Implement an online application system under Registration and renewal under “The Shops and Establishment Act”:
+                            Implemented as detailed below
+
+
+                          </p>
+                      </li>
+                      <li><p class="accordion-content">
+                        No pre inspection before the registration
+
+
+                      </p></li>
+                      <li><p class="accordion-content">
+                        Grant of final registration on instant enabled
+
+
+                      </p></li>
+                      <li><p class="accordion-content">
+                        Online Registration enabled
+
+
+                      </p></li>
+                      <li><p class="accordion-content">
+                        Need not approach any officer for document submission
+
+
+                      </p></li>
+                      <li> <p class="accordion-content">
+                        Payment gateway enabled /through meeseva
+
+
+                      </p></li>
+                      <li> <p class="accordion-content">
+                        Tracking of application option enabled
+
+
+                      </p></li>
+                      <li><p class="accordion-content">
+                        Download of final certificate enabled
+
+
+                      </p></li>
+                      <li> 
+                          <p class="accordion-content">
+                            All shops & establishments are exempted from renewal of registration vide G.O. Ms. No.7, LETF (Lab-I) Dept. Dt.13.02.2019 and G.O.Ms.No.15, LETF (Lab-I) Dept. Dt.06.06.2019
+
+
+                          </p></li>
+                          <!-- <li><p class="accordion-content">
+                              Assessment and collection of Cess from construction works.
+
+
+                          </p></li>
+                          <li><p class="accordion-content">
+                              Registration of building and other construction workers.
+
+
+                          </p></li>
+                          <li><p class="accordion-content">
+                              Registration of unorganized workers.
+
+                          </p></li> -->
+                  
+                  </ul>
+                      
+                 
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="d-flex aboutmb-res-img">
+          <img class="about-edb-img" src="https://apedb.gov.in/assets/images/about-edb/ippd.png" alt="sppd" />
+          <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button custom-accordion-btn collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapsefour" aria-expanded="true" aria-controls="collapsfour">
+                      Central Amendments 
+
+
+                  </button>
+              </h2>
+              <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                      <ul>
+                            Implement an online application system under “Registration of Principal Employer's establishment under provision of The Contracts Labour (Regulation and Abolition) Act, 1970”:
+                           
+                            
+                          </p></li>
+                          <li><p class="accordion-content">
+                              Online Registration enabled
+                          </p></li>
+                          <li> <p class="accordion-content">
+                              
+                            Need not approach any officer for document submission   
+                          </p></li>
+                          <li><p class="accordion-content">
+                            Payment gateway enabled /through meeseva
+                          </p></li>
+                          <li><p class="accordion-content">
+                            Tracking of application option enabled
+                          </p></li>
+                          <li><p class="accordion-content">
+                            Download of final certificate enabled
+                          </p></li>
+                         
+                      </ul>
+                     
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- <div class="d-flex aboutmb-res-img">
+        <img class="about-edb-img" src="https://apedb.gov.in/assets/images/about-edb/ippd.png" alt="sppd" />
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button custom-accordion-btn collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsefive" aria-expanded="true" aria-controls="collapsefive">
+                    Reform: 43
+
+
+                </button>
+            </h2>
+            <div id="collapseive" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <ul>
+                          Implement an online application system under “Registration of Principal Employer's establishment under provision of The Contracts Labour (Regulation and Abolition) Act, 1970”:
+                         
+                          
+                        </p></li>
+                        <li><p class="accordion-content">
+                            Online Registration enabled
+                        </p></li>
+                        <li> <p class="accordion-content">
+                            
+                          Need not approach any officer for document submission   
+                        </p></li>
+                        <li><p class="accordion-content">
+                          Payment gateway enabled /through meeseva
+                        </p></li>
+                        <li><p class="accordion-content">
+                          Tracking of application option enabled
+                        </p></li>
+                        <li><p class="accordion-content">
+                          Download of final certificate enabled
+                        </p></li>
+                      
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <div class="d-flex aboutmb-res-img">
+      <img class="about-edb-img" src="https://apedb.gov.in/assets/images/about-edb/ippd.png" alt="sppd" />
+      <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button custom-accordion-btn collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapsesix" aria-expanded="true" aria-controls="collapsesix">
+                  State Amendments 
+
+
+
+              </button>
+          </h2>
+          <div id="collapsesix" class="accordion-collapse collapse" aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                  <ul>
+                    Implement an online application system under “Registration under The Building and Other Construction Workers (Regulation of Employment and Conditions of Service) Act, 1996”:
+                       
+                        
+                      </p></li>
+                      <li><p class="accordion-content">
+                        Online Registration enabled
+                      </p></li>
+                      <li> <p class="accordion-content">
+                          
+                        Need not approach any officer for document submission   
+                      </p></li>
+                      <li><p class="accordion-content">
+                        Payment gateway enabled /through meeseva
+                      </p></li>
+                      <li><p class="accordion-content">
+                        Tracking of application option enabled
+                      </p></li>
+                      <li><p class="accordion-content">
+                        Download of final certificate enabled
+                      </p></li>
+                    
+                  </ul>
+                  
+                  
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="d-flex aboutmb-res-img">
+    <img class="about-edb-img" src="https://apedb.gov.in/assets/images/about-edb/ippd.png" alt="sppd" />
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button custom-accordion-btn collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseseven" aria-expanded="true" aria-controls="collapseseven">
+                Ordinance 
+
+
+
+            </button>
+        </h2>
+        <div id="collapseseven" class="accordion-collapse collapse" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <ul>
+                  Implement an online application system under “Registration of establishment under the Inter State Migrant Workmen (RE&CS) Act, 1979”:
+                     
+                      
+                    </p></li>
+                    <li><p class="accordion-content">
+                      Online Registration enabled
+                    </p></li>
+                    <li> <p class="accordion-content">
+                        
+                      Need not approach any officer for document submission   
+                    </p></li>
+                    <li><p class="accordion-content">
+                      Payment gateway enabled /through meeseva
+                    </p></li>
+                    <li><p class="accordion-content">
+                      Tracking of application option enabled
+                    </p></li>
+                    <li><p class="accordion-content">
+                      Download of final certificate enabled
+                    </p></li>
+                  
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<div class="d-flex aboutmb-res-img">
+  <img class="about-edb-img" src="https://apedb.gov.in/assets/images/about-edb/ippd.png" alt="sppd" />
+  <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button custom-accordion-btn collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseeight" aria-expanded="true" aria-controls="collapseOne">
+              Orders 
+
+          </button>
+      </h2>
+      <div id="collapseeight" class="accordion-collapse collapse" aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+              <ul>
+                Labour Regulation-Enablers-Mandate online filing of single integrated return under the Labour Laws:
+
+                   
+                    
+                  </p></li>
+                  <li><p class="accordion-content">
+                    It is mandated for filling Single Integrated Return online by the Employers of the Establishments. Vide G.O.Ms.No. 11, LETF (Lab-I) Dept. Dt.18.03.2019 and G.O.Ms. No. 14, LETF (Lab-I) Dept. Dt.15.04.2019 it is facilitated furnishing of combined annual returns under labour laws online. Vide Procgs. No. I/2465/2015, Dt: 26.03.2019 of Commissioner of Labour, it is mandated for filling Single Integrated Return online by the Employers.
+                  </p></li>
+                 
+                
+              </ul>
+              
+          </div>
+      </div>
+  </div>
+</div>
+<div class="d-flex aboutmb-res-img">
+<img class="about-edb-img" src="https://apedb.gov.in/assets/images/about-edb/ippd.png" alt="sppd" />
+<div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button custom-accordion-btn collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapsenine" aria-expanded="true" aria-controls="collapseOne">
+            Circulars 
+
+
+
+
+        </button>
+    </h2>
+    <div id="collapsenine" class="accordion-collapse collapse" aria-labelledby="headingOne"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+            <ul>
+              Central Inspection Framework, Compliance Inspection under Labour, Factories and Boilers- Institutionalize a Central Inspection System (CIS) responsible for undertaking compliance inspections of the departments concerned. Mandate surprise inspection or inspections based on complaints are conducted with specific permissions from the respective Head of Department:
+                 
+                  
+                </p></li>
+                <li><p class="accordion-content">
+                  CIS is able to define Risk criteria to classify industries which undergo inspections.
+                </p></li>
+                <li> <p class="accordion-content">
+                    
+                  Inspection requirements based on risk profiled of industries is available in CIS portal.
+                </p></li>
+                <li><p class="accordion-content">
+                  Inspections procedure/checklist is available on Labour department portal & CIS website
+                </p></li>
+                <li><p class="accordion-content">
+                  Establishments that need to be inspected based on computerized risk assesment are available in CIS portal.
+                </p></li>
+                <li><p class="accordion-content">
+                  Computerization allocation of inspectors is implemented.
+                </p></li>
+                <li><p class="accordion-content">
+                  Instruction were issued to the Officers of Labour department vide Procgs. No.LAE03-18025(31)/1/2019-I-LBR COMR, Dt: 11.02.2019 that only follow the checklist while conducting inspections, except in case of complaint based.
+                </p></li>
+                <li><p class="accordion-content">
+                  Online submission of inspection report within 48 hours to the Labour department/CIS is implemented.
+                </p></li>
+                <li><p class="accordion-content">
+                  Same Inspector will not inspect the same establishment twice consequently is implemented.
+                </p></li>
+                <li><p class="accordion-content">
+                  Viewing and downloading submitted inspection reports of at least past three years is enabled..
+                </p></li>
+                <li><p class="accordion-content">
+                  Instruction were issued to the Officers of Labour department vide Procgs.No. 18025/4/2018-I-LBR COMR, Dt:03.12.2018 to take up surprise inspections in respect of genuine complaints, only on specific written orders of the COL.
+                </p></li>
+              
+            </ul>
+            
+        </div>
+    </div>
+</div>
+</div>
+<div class="d-flex aboutmb-res-img">
+<img class="about-edb-img" src="https://apedb.gov.in/assets/images/about-edb/ippd.png" alt="sppd" />
+<div class="accordion-item">
+  <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button custom-accordion-btn collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseten" aria-expanded="true" aria-controls="collapseOne">
+          Regulations 
+
+
+      </button>
+  </h2>
+  <div id="collapseten" class="accordion-collapse collapse" aria-labelledby="headingOne"
+      data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+          <ul>
+            Joint Inspection- Mandate joint inspections under all of the Labour Acts:
+
+               
+                
+              </p></li>
+              <li><p class="accordion-content">
+                Joint Inspection Report by the Labour and Factories departments is designed by the, Industries department
+              </p></li>
+              
+          </ul>
+         
+         
+      </div>
+  </div>
+</div>
+</div>
+<div class="d-flex aboutmb-res-img">
+  <img class="about-edb-img" src="https://apedb.gov.in/assets/images/about-edb/ippd.png" alt="sppd" />
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button custom-accordion-btn collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseeleven" aria-expanded="true" aria-controls="collapseOne">
+            Notifications 
+  
+  
+        </button>
+    </h2>
+    <div id="collapseeleven" class="accordion-collapse collapse" aria-labelledby="headingOne"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+            <ul>
+              Joint Inspection- Mandate joint inspections under all of the Labour Acts:
+  
+                 
+                  
+                </p></li>
+                <li><p class="accordion-content">
+                  Joint Inspection Report by the Labour and Factories departments is designed by the, Industries department
+                </p></li>
+                
+            </ul>
+           
+           
+        </div>
+    </div>
+  </div>
+  </div>
+  <div class="d-flex aboutmb-res-img">
+    <img class="about-edb-img" src="https://apedb.gov.in/assets/images/about-edb/ippd.png" alt="sppd" />
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button custom-accordion-btn collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapsetwelve" aria-expanded="true" aria-controls="collapseOne">
+              Statutes
+    
+    
+          </button>
+      </h2>
+      <div id="collapsetwelve" class="accordion-collapse collapse" aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+              <ul>
+                Joint Inspection- Mandate joint inspections under all of the Labour Acts:
+    
+                   
+                    
+                  </p></li>
+                  <li><p class="accordion-content">
+                    Joint Inspection Report by the Labour and Factories departments is designed by the, Industries department
+                  </p></li>
+                  
+              </ul>
+             
+             
+          </div>
+      </div>
+    </div>
+    </div>
+  </div>
+  </div>
+  <div class="panel" id="four-panel">
+    <div class="accordion custom-accordion" id="accordionExample">
+      <div class="d-flex aboutmb-res-img">
+          <img class="about-edb-img" src="https://apedb.gov.in/assets/images/about-edb/ippd.png" alt="sppd" />
+          <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button custom-accordion-btn" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#collapseone" aria-expanded="false"
+                      aria-controls="collapseone">
+                      Code/Acts
+                  </button>
+              </h2>
+            
+
+              <div id="collapseone" class="accordion-collapse collapse show" aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample">
+                  <table class="table container">
+                    <thead>
+                        <tr>
+                            <th>Description</th>
+                            <th>Code/Acts</th>
+                           
+                          
+                        </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                      <td>
+                        <p>The Code on Wages seeks to – regulate wages & bonus payments in all employments – where any industry, trade, business, or manufacturing is carried out.
+                        </p> 
+                      <p>
+                        Code has 9 Chapters, 67 Sections & 26 definitions of constantly used terms Intend to promote equity & labour welfare and sustainability of enterprises, thereby catalyzing economic growth and creation of employment opportunities
+                        Amalgamation of the following four laws:</p>  
+                        <ul>
+                          <li style="list-style-type: decimal;">
+                            The Payment of Wages Act, 1936,
+                          </li>
+                          <li style="list-style-type: decimal;">
+                            The Minimum Wages Act, 1948,
+                          </li>
+                          <li style="list-style-type: decimal;">
+                            The Payment of Bonus Act, 1965, and
+                          </li>
+                          <li style="list-style-type: decimal;">
+                            The Equal Remuneration Act, 1976.
+                          </li>
+                        </ul>
+                      </td>
+                      <td>Code on Wages, 2019 No 29 of 2019 dated 08.08.2019. Chapters: IX Sections: 69 Schedules: --</td>
+                      </tr>
+                     
+                      
+                      
+                      <tr>
+                      
+                                      </tbody>
+                  
+                </table>
+              </div>
+          </div>
+      </div>
+      <div class="d-flex aboutmb-res-img">
+          <img class="about-edb-img" src="https://apedb.gov.in/assets/images/about-edb/ippd.png" alt="sppd" />
+          <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFive">
+                  <button class="accordion-button custom-accordion-btn collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#collapsetwo" aria-expanded="false"
+                      aria-controls="collapsetwo">
+                      Central Rules
+
+                  </button>
+              </h2>
+              <div id="collapsetwo" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                      <ul>
+                          <li>
+                              <p class="accordion-content">Implement an online application system under “License and renewal of license for contractors under provision of The Contracts Labour (Regulation and Abolition) Act, 1970”:
+
+                              </p>
+                          </li>
+                          <li>
+                              <p class="accordion-content">Implemented as detailed below
+                          </li>
+                          <li>
+                              <p class="accordion-content">Online Registration enabled  </p>
+                          </li>
+                          <li>                                <p class="accordion-content">Need not approach any officer for document submission    </p>
+                          </li>
+                          <li><p class="accordion-content">Payment gateway enabled /through meeseva
+
+                          </p></li>
+                          <li> <p class="accordion-content">Tracking of application option enabled
+                          </p></li>
+                          <!-- <li><p class="accordion-content">Download of final certificate enabled
+                          </p></li>
+                          <li><p class="accordion-content">Rescue and release of child labour.
+                          </p></li>
+                          <li><p class="accordion-content">Certification of Standing Orders for Industries.
+                          </p></li>
+                          <li>   <p class="accordion-content">Assessment and collection of Cess from construction works.
+                          </p></li>
+                          <li><p class="accordion-content">Registration of building and other construction workers.
+                          </p></li>
+                          <li> <p class="accordion-content">Registration of unorganized workers.
+
+
+                          </p></li> -->
+                      </ul>
+                     
+                         
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="d-flex aboutmb-res-img">
+          <img class="about-edb-img" src="https://apedb.gov.in/assets/images/about-edb/ippd.png" alt="sppd" />
+          <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button custom-accordion-btn collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                      aria-controls="collapseThree">
+                      A.P.State Rules 
+
+                  </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                      <ul><li>
+                          <p class="accordion-content">
+                            Implement an online application system under Registration and renewal under “The Shops and Establishment Act”:
+                            Implemented as detailed below
+
+
+                          </p>
+                      </li>
+                      <li><p class="accordion-content">
+                        No pre inspection before the registration
+
+
+                      </p></li>
+                      <li><p class="accordion-content">
+                        Grant of final registration on instant enabled
+
+
+                      </p></li>
+                      <li><p class="accordion-content">
+                        Online Registration enabled
+
+
+                      </p></li>
+                      <li><p class="accordion-content">
+                        Need not approach any officer for document submission
+
+
+                      </p></li>
+                      <li> <p class="accordion-content">
+                        Payment gateway enabled /through meeseva
+
+
+                      </p></li>
+                      <li> <p class="accordion-content">
+                        Tracking of application option enabled
+
+
+                      </p></li>
+                      <li><p class="accordion-content">
+                        Download of final certificate enabled
+
+
+                      </p></li>
+                      <li> 
+                          <p class="accordion-content">
+                            All shops & establishments are exempted from renewal of registration vide G.O. Ms. No.7, LETF (Lab-I) Dept. Dt.13.02.2019 and G.O.Ms.No.15, LETF (Lab-I) Dept. Dt.06.06.2019
+
+
+                          </p></li>
+                          <!-- <li><p class="accordion-content">
+                              Assessment and collection of Cess from construction works.
+
+
+                          </p></li>
+                          <li><p class="accordion-content">
+                              Registration of building and other construction workers.
+
+
+                          </p></li>
+                          <li><p class="accordion-content">
+                              Registration of unorganized workers.
+
+                          </p></li> -->
+                  
+                  </ul>
+                      
+                 
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="d-flex aboutmb-res-img">
+          <img class="about-edb-img" src="https://apedb.gov.in/assets/images/about-edb/ippd.png" alt="sppd" />
+          <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button custom-accordion-btn collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapsefour" aria-expanded="true" aria-controls="collapsfour">
+                      Central Amendments 
+
+
+                  </button>
+              </h2>
+              <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                      <ul>
+                            Implement an online application system under “Registration of Principal Employer's establishment under provision of The Contracts Labour (Regulation and Abolition) Act, 1970”:
+                           
+                            
+                          </p></li>
+                          <li><p class="accordion-content">
+                              Online Registration enabled
+                          </p></li>
+                          <li> <p class="accordion-content">
+                              
+                            Need not approach any officer for document submission   
+                          </p></li>
+                          <li><p class="accordion-content">
+                            Payment gateway enabled /through meeseva
+                          </p></li>
+                          <li><p class="accordion-content">
+                            Tracking of application option enabled
+                          </p></li>
+                          <li><p class="accordion-content">
+                            Download of final certificate enabled
+                          </p></li>
+                         
+                      </ul>
+                     
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- <div class="d-flex aboutmb-res-img">
+        <img class="about-edb-img" src="https://apedb.gov.in/assets/images/about-edb/ippd.png" alt="sppd" />
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button custom-accordion-btn collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsefive" aria-expanded="true" aria-controls="collapsefive">
+                    Reform: 43
+
+
+                </button>
+            </h2>
+            <div id="collapseive" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <ul>
+                          Implement an online application system under “Registration of Principal Employer's establishment under provision of The Contracts Labour (Regulation and Abolition) Act, 1970”:
+                         
+                          
+                        </p></li>
+                        <li><p class="accordion-content">
+                            Online Registration enabled
+                        </p></li>
+                        <li> <p class="accordion-content">
+                            
+                          Need not approach any officer for document submission   
+                        </p></li>
+                        <li><p class="accordion-content">
+                          Payment gateway enabled /through meeseva
+                        </p></li>
+                        <li><p class="accordion-content">
+                          Tracking of application option enabled
+                        </p></li>
+                        <li><p class="accordion-content">
+                          Download of final certificate enabled
+                        </p></li>
+                      
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <div class="d-flex aboutmb-res-img">
+      <img class="about-edb-img" src="https://apedb.gov.in/assets/images/about-edb/ippd.png" alt="sppd" />
+      <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button custom-accordion-btn collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapsesix" aria-expanded="true" aria-controls="collapsesix">
+                  State Amendments 
+
+
+
+              </button>
+          </h2>
+          <div id="collapsesix" class="accordion-collapse collapse" aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                  <ul>
+                    Implement an online application system under “Registration under The Building and Other Construction Workers (Regulation of Employment and Conditions of Service) Act, 1996”:
+                       
+                        
+                      </p></li>
+                      <li><p class="accordion-content">
+                        Online Registration enabled
+                      </p></li>
+                      <li> <p class="accordion-content">
+                          
+                        Need not approach any officer for document submission   
+                      </p></li>
+                      <li><p class="accordion-content">
+                        Payment gateway enabled /through meeseva
+                      </p></li>
+                      <li><p class="accordion-content">
+                        Tracking of application option enabled
+                      </p></li>
+                      <li><p class="accordion-content">
+                        Download of final certificate enabled
+                      </p></li>
+                    
+                  </ul>
+                  
+                  
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="d-flex aboutmb-res-img">
+    <img class="about-edb-img" src="https://apedb.gov.in/assets/images/about-edb/ippd.png" alt="sppd" />
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button custom-accordion-btn collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseseven" aria-expanded="true" aria-controls="collapseseven">
+                Ordinance 
+
+
+
+            </button>
+        </h2>
+        <div id="collapseseven" class="accordion-collapse collapse" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <ul>
+                  Implement an online application system under “Registration of establishment under the Inter State Migrant Workmen (RE&CS) Act, 1979”:
+                     
+                      
+                    </p></li>
+                    <li><p class="accordion-content">
+                      Online Registration enabled
+                    </p></li>
+                    <li> <p class="accordion-content">
+                        
+                      Need not approach any officer for document submission   
+                    </p></li>
+                    <li><p class="accordion-content">
+                      Payment gateway enabled /through meeseva
+                    </p></li>
+                    <li><p class="accordion-content">
+                      Tracking of application option enabled
+                    </p></li>
+                    <li><p class="accordion-content">
+                      Download of final certificate enabled
+                    </p></li>
+                  
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<div class="d-flex aboutmb-res-img">
+  <img class="about-edb-img" src="https://apedb.gov.in/assets/images/about-edb/ippd.png" alt="sppd" />
+  <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button custom-accordion-btn collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseeight" aria-expanded="true" aria-controls="collapseOne">
+              Orders 
+
+          </button>
+      </h2>
+      <div id="collapseeight" class="accordion-collapse collapse" aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+              <ul>
+                Labour Regulation-Enablers-Mandate online filing of single integrated return under the Labour Laws:
+
+                   
+                    
+                  </p></li>
+                  <li><p class="accordion-content">
+                    It is mandated for filling Single Integrated Return online by the Employers of the Establishments. Vide G.O.Ms.No. 11, LETF (Lab-I) Dept. Dt.18.03.2019 and G.O.Ms. No. 14, LETF (Lab-I) Dept. Dt.15.04.2019 it is facilitated furnishing of combined annual returns under labour laws online. Vide Procgs. No. I/2465/2015, Dt: 26.03.2019 of Commissioner of Labour, it is mandated for filling Single Integrated Return online by the Employers.
+                  </p></li>
+                 
+                
+              </ul>
+              
+          </div>
+      </div>
+  </div>
+</div>
+<div class="d-flex aboutmb-res-img">
+<img class="about-edb-img" src="https://apedb.gov.in/assets/images/about-edb/ippd.png" alt="sppd" />
+<div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button custom-accordion-btn collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapsenine" aria-expanded="true" aria-controls="collapseOne">
+            Circulars 
+
+
+
+
+        </button>
+    </h2>
+    <div id="collapsenine" class="accordion-collapse collapse" aria-labelledby="headingOne"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+            <ul>
+              Central Inspection Framework, Compliance Inspection under Labour, Factories and Boilers- Institutionalize a Central Inspection System (CIS) responsible for undertaking compliance inspections of the departments concerned. Mandate surprise inspection or inspections based on complaints are conducted with specific permissions from the respective Head of Department:
+                 
+                  
+                </p></li>
+                <li><p class="accordion-content">
+                  CIS is able to define Risk criteria to classify industries which undergo inspections.
+                </p></li>
+                <li> <p class="accordion-content">
+                    
+                  Inspection requirements based on risk profiled of industries is available in CIS portal.
+                </p></li>
+                <li><p class="accordion-content">
+                  Inspections procedure/checklist is available on Labour department portal & CIS website
+                </p></li>
+                <li><p class="accordion-content">
+                  Establishments that need to be inspected based on computerized risk assesment are available in CIS portal.
+                </p></li>
+                <li><p class="accordion-content">
+                  Computerization allocation of inspectors is implemented.
+                </p></li>
+                <li><p class="accordion-content">
+                  Instruction were issued to the Officers of Labour department vide Procgs. No.LAE03-18025(31)/1/2019-I-LBR COMR, Dt: 11.02.2019 that only follow the checklist while conducting inspections, except in case of complaint based.
+                </p></li>
+                <li><p class="accordion-content">
+                  Online submission of inspection report within 48 hours to the Labour department/CIS is implemented.
+                </p></li>
+                <li><p class="accordion-content">
+                  Same Inspector will not inspect the same establishment twice consequently is implemented.
+                </p></li>
+                <li><p class="accordion-content">
+                  Viewing and downloading submitted inspection reports of at least past three years is enabled..
+                </p></li>
+                <li><p class="accordion-content">
+                  Instruction were issued to the Officers of Labour department vide Procgs.No. 18025/4/2018-I-LBR COMR, Dt:03.12.2018 to take up surprise inspections in respect of genuine complaints, only on specific written orders of the COL.
+                </p></li>
+              
+            </ul>
+            
+        </div>
+    </div>
+</div>
+</div>
+<div class="d-flex aboutmb-res-img">
+<img class="about-edb-img" src="https://apedb.gov.in/assets/images/about-edb/ippd.png" alt="sppd" />
+<div class="accordion-item">
+  <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button custom-accordion-btn collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseten" aria-expanded="true" aria-controls="collapseOne">
+          Regulations 
+
+
+      </button>
+  </h2>
+  <div id="collapseten" class="accordion-collapse collapse" aria-labelledby="headingOne"
+      data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+          <ul>
+            Joint Inspection- Mandate joint inspections under all of the Labour Acts:
+
+               
+                
+              </p></li>
+              <li><p class="accordion-content">
+                Joint Inspection Report by the Labour and Factories departments is designed by the, Industries department
+              </p></li>
+              
+          </ul>
+         
+         
+      </div>
+  </div>
+</div>
+</div>
+<div class="d-flex aboutmb-res-img">
+  <img class="about-edb-img" src="https://apedb.gov.in/assets/images/about-edb/ippd.png" alt="sppd" />
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button custom-accordion-btn collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseeleven" aria-expanded="true" aria-controls="collapseOne">
+            Notifications 
+  
+  
+        </button>
+    </h2>
+    <div id="collapseeleven" class="accordion-collapse collapse" aria-labelledby="headingOne"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+            <ul>
+              Joint Inspection- Mandate joint inspections under all of the Labour Acts:
+  
+                 
+                  
+                </p></li>
+                <li><p class="accordion-content">
+                  Joint Inspection Report by the Labour and Factories departments is designed by the, Industries department
+                </p></li>
+                
+            </ul>
+           
+           
+        </div>
+    </div>
+  </div>
+  </div>
+  <div class="d-flex aboutmb-res-img">
+    <img class="about-edb-img" src="https://apedb.gov.in/assets/images/about-edb/ippd.png" alt="sppd" />
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button custom-accordion-btn collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapsetwelve" aria-expanded="true" aria-controls="collapseOne">
+              Statutes
+    
+    
+          </button>
+      </h2>
+      <div id="collapsetwelve" class="accordion-collapse collapse" aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+              <ul>
+                Joint Inspection- Mandate joint inspections under all of the Labour Acts:
+    
+                   
+                    
+                  </p></li>
+                  <li><p class="accordion-content">
+                    Joint Inspection Report by the Labour and Factories departments is designed by the, Industries department
+                  </p></li>
+                  
+              </ul>
+             
+             
+          </div>
+      </div>
+    </div>
+    </div>
+  </div>
+  </div>
+  <div class="panel" id="five-panel">
+    <div class="accordion custom-accordion" id="accordionExample">
+      <div class="d-flex aboutmb-res-img">
+          <img class="about-edb-img" src="https://apedb.gov.in/assets/images/about-edb/ippd.png" alt="sppd" />
+          <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button custom-accordion-btn" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#collapseone" aria-expanded="false"
+                      aria-controls="collapseone">
+                      Code/Acts
+                  </button>
+              </h2>
+            
+
+              <div id="collapseone" class="accordion-collapse collapse show" aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample">
+                  <table class="table container">
+                    <thead>
+                        <tr>
+                            <th>Description</th>
+                            <th>Code/Acts</th>
+                           
+                          
+                        </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                      <td>
+                        <p>The Code on Wages seeks to – regulate wages & bonus payments in all employments – where any industry, trade, business, or manufacturing is carried out.
+                        </p> 
+                      <p>
+                        Code has 9 Chapters, 67 Sections & 26 definitions of constantly used terms Intend to promote equity & labour welfare and sustainability of enterprises, thereby catalyzing economic growth and creation of employment opportunities
+                        Amalgamation of the following four laws:</p>  
+                        <ul>
+                          <li style="list-style-type: decimal;">
+                            The Payment of Wages Act, 1936,
+                          </li>
+                          <li style="list-style-type: decimal;">
+                            The Minimum Wages Act, 1948,
+                          </li>
+                          <li style="list-style-type: decimal;">
+                            The Payment of Bonus Act, 1965, and
+                          </li>
+                          <li style="list-style-type: decimal;">
+                            The Equal Remuneration Act, 1976.
+                          </li>
+                        </ul>
+                      </td>
+                      <td>Code on Wages, 2019 No 29 of 2019 dated 08.08.2019. Chapters: IX Sections: 69 Schedules: --</td>
+                      </tr>
+                     
+                      
+                      
+                      <tr>
+                      
+                                      </tbody>
+                  
+                </table>
+              </div>
+          </div>
+      </div>
+      <div class="d-flex aboutmb-res-img">
+          <img class="about-edb-img" src="https://apedb.gov.in/assets/images/about-edb/ippd.png" alt="sppd" />
+          <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFive">
+                  <button class="accordion-button custom-accordion-btn collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#collapsetwo" aria-expanded="false"
+                      aria-controls="collapsetwo">
+                      Central Rules
+
+                  </button>
+              </h2>
+              <div id="collapsetwo" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                      <ul>
+                          <li>
+                              <p class="accordion-content">Implement an online application system under “License and renewal of license for contractors under provision of The Contracts Labour (Regulation and Abolition) Act, 1970”:
+
+                              </p>
+                          </li>
+                          <li>
+                              <p class="accordion-content">Implemented as detailed below
+                          </li>
+                          <li>
+                              <p class="accordion-content">Online Registration enabled  </p>
+                          </li>
+                          <li>                                <p class="accordion-content">Need not approach any officer for document submission    </p>
+                          </li>
+                          <li><p class="accordion-content">Payment gateway enabled /through meeseva
+
+                          </p></li>
+                          <li> <p class="accordion-content">Tracking of application option enabled
+                          </p></li>
+                          <!-- <li><p class="accordion-content">Download of final certificate enabled
+                          </p></li>
+                          <li><p class="accordion-content">Rescue and release of child labour.
+                          </p></li>
+                          <li><p class="accordion-content">Certification of Standing Orders for Industries.
+                          </p></li>
+                          <li>   <p class="accordion-content">Assessment and collection of Cess from construction works.
+                          </p></li>
+                          <li><p class="accordion-content">Registration of building and other construction workers.
+                          </p></li>
+                          <li> <p class="accordion-content">Registration of unorganized workers.
+
+
+                          </p></li> -->
+                      </ul>
+                     
+                         
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="d-flex aboutmb-res-img">
+          <img class="about-edb-img" src="https://apedb.gov.in/assets/images/about-edb/ippd.png" alt="sppd" />
+          <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button custom-accordion-btn collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                      aria-controls="collapseThree">
+                      A.P.State Rules 
+
+                  </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                      <ul><li>
+                          <p class="accordion-content">
+                            Implement an online application system under Registration and renewal under “The Shops and Establishment Act”:
+                            Implemented as detailed below
+
+
+                          </p>
+                      </li>
+                      <li><p class="accordion-content">
+                        No pre inspection before the registration
+
+
+                      </p></li>
+                      <li><p class="accordion-content">
+                        Grant of final registration on instant enabled
+
+
+                      </p></li>
+                      <li><p class="accordion-content">
+                        Online Registration enabled
+
+
+                      </p></li>
+                      <li><p class="accordion-content">
+                        Need not approach any officer for document submission
+
+
+                      </p></li>
+                      <li> <p class="accordion-content">
+                        Payment gateway enabled /through meeseva
+
+
+                      </p></li>
+                      <li> <p class="accordion-content">
+                        Tracking of application option enabled
+
+
+                      </p></li>
+                      <li><p class="accordion-content">
+                        Download of final certificate enabled
+
+
+                      </p></li>
+                      <li> 
+                          <p class="accordion-content">
+                            All shops & establishments are exempted from renewal of registration vide G.O. Ms. No.7, LETF (Lab-I) Dept. Dt.13.02.2019 and G.O.Ms.No.15, LETF (Lab-I) Dept. Dt.06.06.2019
+
+
+                          </p></li>
+                          <!-- <li><p class="accordion-content">
+                              Assessment and collection of Cess from construction works.
+
+
+                          </p></li>
+                          <li><p class="accordion-content">
+                              Registration of building and other construction workers.
+
+
+                          </p></li>
+                          <li><p class="accordion-content">
+                              Registration of unorganized workers.
+
+                          </p></li> -->
+                  
+                  </ul>
+                      
+                 
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="d-flex aboutmb-res-img">
+          <img class="about-edb-img" src="https://apedb.gov.in/assets/images/about-edb/ippd.png" alt="sppd" />
+          <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button custom-accordion-btn collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapsefour" aria-expanded="true" aria-controls="collapsfour">
+                      Central Amendments 
+
+
+                  </button>
+              </h2>
+              <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                      <ul>
+                            Implement an online application system under “Registration of Principal Employer's establishment under provision of The Contracts Labour (Regulation and Abolition) Act, 1970”:
+                           
+                            
+                          </p></li>
+                          <li><p class="accordion-content">
+                              Online Registration enabled
+                          </p></li>
+                          <li> <p class="accordion-content">
+                              
+                            Need not approach any officer for document submission   
+                          </p></li>
+                          <li><p class="accordion-content">
+                            Payment gateway enabled /through meeseva
+                          </p></li>
+                          <li><p class="accordion-content">
+                            Tracking of application option enabled
+                          </p></li>
+                          <li><p class="accordion-content">
+                            Download of final certificate enabled
+                          </p></li>
+                         
+                      </ul>
+                     
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- <div class="d-flex aboutmb-res-img">
+        <img class="about-edb-img" src="https://apedb.gov.in/assets/images/about-edb/ippd.png" alt="sppd" />
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button custom-accordion-btn collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsefive" aria-expanded="true" aria-controls="collapsefive">
+                    Reform: 43
+
+
+                </button>
+            </h2>
+            <div id="collapseive" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <ul>
+                          Implement an online application system under “Registration of Principal Employer's establishment under provision of The Contracts Labour (Regulation and Abolition) Act, 1970”:
+                         
+                          
+                        </p></li>
+                        <li><p class="accordion-content">
+                            Online Registration enabled
+                        </p></li>
+                        <li> <p class="accordion-content">
+                            
+                          Need not approach any officer for document submission   
+                        </p></li>
+                        <li><p class="accordion-content">
+                          Payment gateway enabled /through meeseva
+                        </p></li>
+                        <li><p class="accordion-content">
+                          Tracking of application option enabled
+                        </p></li>
+                        <li><p class="accordion-content">
+                          Download of final certificate enabled
+                        </p></li>
+                      
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <div class="d-flex aboutmb-res-img">
+      <img class="about-edb-img" src="https://apedb.gov.in/assets/images/about-edb/ippd.png" alt="sppd" />
+      <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button custom-accordion-btn collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapsesix" aria-expanded="true" aria-controls="collapsesix">
+                  State Amendments 
+
+
+
+              </button>
+          </h2>
+          <div id="collapsesix" class="accordion-collapse collapse" aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                  <ul>
+                    Implement an online application system under “Registration under The Building and Other Construction Workers (Regulation of Employment and Conditions of Service) Act, 1996”:
+                       
+                        
+                      </p></li>
+                      <li><p class="accordion-content">
+                        Online Registration enabled
+                      </p></li>
+                      <li> <p class="accordion-content">
+                          
+                        Need not approach any officer for document submission   
+                      </p></li>
+                      <li><p class="accordion-content">
+                        Payment gateway enabled /through meeseva
+                      </p></li>
+                      <li><p class="accordion-content">
+                        Tracking of application option enabled
+                      </p></li>
+                      <li><p class="accordion-content">
+                        Download of final certificate enabled
+                      </p></li>
+                    
+                  </ul>
+                  
+                  
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="d-flex aboutmb-res-img">
+    <img class="about-edb-img" src="https://apedb.gov.in/assets/images/about-edb/ippd.png" alt="sppd" />
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button custom-accordion-btn collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseseven" aria-expanded="true" aria-controls="collapseseven">
+                Ordinance 
+
+
+
+            </button>
+        </h2>
+        <div id="collapseseven" class="accordion-collapse collapse" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <ul>
+                  Implement an online application system under “Registration of establishment under the Inter State Migrant Workmen (RE&CS) Act, 1979”:
+                     
+                      
+                    </p></li>
+                    <li><p class="accordion-content">
+                      Online Registration enabled
+                    </p></li>
+                    <li> <p class="accordion-content">
+                        
+                      Need not approach any officer for document submission   
+                    </p></li>
+                    <li><p class="accordion-content">
+                      Payment gateway enabled /through meeseva
+                    </p></li>
+                    <li><p class="accordion-content">
+                      Tracking of application option enabled
+                    </p></li>
+                    <li><p class="accordion-content">
+                      Download of final certificate enabled
+                    </p></li>
+                  
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<div class="d-flex aboutmb-res-img">
+  <img class="about-edb-img" src="https://apedb.gov.in/assets/images/about-edb/ippd.png" alt="sppd" />
+  <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button custom-accordion-btn collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseeight" aria-expanded="true" aria-controls="collapseOne">
+              Orders 
+
+          </button>
+      </h2>
+      <div id="collapseeight" class="accordion-collapse collapse" aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+              <ul>
+                Labour Regulation-Enablers-Mandate online filing of single integrated return under the Labour Laws:
+
+                   
+                    
+                  </p></li>
+                  <li><p class="accordion-content">
+                    It is mandated for filling Single Integrated Return online by the Employers of the Establishments. Vide G.O.Ms.No. 11, LETF (Lab-I) Dept. Dt.18.03.2019 and G.O.Ms. No. 14, LETF (Lab-I) Dept. Dt.15.04.2019 it is facilitated furnishing of combined annual returns under labour laws online. Vide Procgs. No. I/2465/2015, Dt: 26.03.2019 of Commissioner of Labour, it is mandated for filling Single Integrated Return online by the Employers.
+                  </p></li>
+                 
+                
+              </ul>
+              
+          </div>
+      </div>
+  </div>
+</div>
+<div class="d-flex aboutmb-res-img">
+<img class="about-edb-img" src="https://apedb.gov.in/assets/images/about-edb/ippd.png" alt="sppd" />
+<div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button custom-accordion-btn collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapsenine" aria-expanded="true" aria-controls="collapseOne">
+            Circulars 
+
+
+
+
+        </button>
+    </h2>
+    <div id="collapsenine" class="accordion-collapse collapse" aria-labelledby="headingOne"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+            <ul>
+              Central Inspection Framework, Compliance Inspection under Labour, Factories and Boilers- Institutionalize a Central Inspection System (CIS) responsible for undertaking compliance inspections of the departments concerned. Mandate surprise inspection or inspections based on complaints are conducted with specific permissions from the respective Head of Department:
+                 
+                  
+                </p></li>
+                <li><p class="accordion-content">
+                  CIS is able to define Risk criteria to classify industries which undergo inspections.
+                </p></li>
+                <li> <p class="accordion-content">
+                    
+                  Inspection requirements based on risk profiled of industries is available in CIS portal.
+                </p></li>
+                <li><p class="accordion-content">
+                  Inspections procedure/checklist is available on Labour department portal & CIS website
+                </p></li>
+                <li><p class="accordion-content">
+                  Establishments that need to be inspected based on computerized risk assesment are available in CIS portal.
+                </p></li>
+                <li><p class="accordion-content">
+                  Computerization allocation of inspectors is implemented.
+                </p></li>
+                <li><p class="accordion-content">
+                  Instruction were issued to the Officers of Labour department vide Procgs. No.LAE03-18025(31)/1/2019-I-LBR COMR, Dt: 11.02.2019 that only follow the checklist while conducting inspections, except in case of complaint based.
+                </p></li>
+                <li><p class="accordion-content">
+                  Online submission of inspection report within 48 hours to the Labour department/CIS is implemented.
+                </p></li>
+                <li><p class="accordion-content">
+                  Same Inspector will not inspect the same establishment twice consequently is implemented.
+                </p></li>
+                <li><p class="accordion-content">
+                  Viewing and downloading submitted inspection reports of at least past three years is enabled..
+                </p></li>
+                <li><p class="accordion-content">
+                  Instruction were issued to the Officers of Labour department vide Procgs.No. 18025/4/2018-I-LBR COMR, Dt:03.12.2018 to take up surprise inspections in respect of genuine complaints, only on specific written orders of the COL.
+                </p></li>
+              
+            </ul>
+            
+        </div>
+    </div>
+</div>
+</div>
+<div class="d-flex aboutmb-res-img">
+<img class="about-edb-img" src="https://apedb.gov.in/assets/images/about-edb/ippd.png" alt="sppd" />
+<div class="accordion-item">
+  <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button custom-accordion-btn collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseten" aria-expanded="true" aria-controls="collapseOne">
+          Regulations 
+
+
+      </button>
+  </h2>
+  <div id="collapseten" class="accordion-collapse collapse" aria-labelledby="headingOne"
+      data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+          <ul>
+            Joint Inspection- Mandate joint inspections under all of the Labour Acts:
+
+               
+                
+              </p></li>
+              <li><p class="accordion-content">
+                Joint Inspection Report by the Labour and Factories departments is designed by the, Industries department
+              </p></li>
+              
+          </ul>
+         
+         
+      </div>
+  </div>
+</div>
+</div>
+<div class="d-flex aboutmb-res-img">
+  <img class="about-edb-img" src="https://apedb.gov.in/assets/images/about-edb/ippd.png" alt="sppd" />
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button custom-accordion-btn collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseeleven" aria-expanded="true" aria-controls="collapseOne">
+            Notifications 
+  
+  
+        </button>
+    </h2>
+    <div id="collapseeleven" class="accordion-collapse collapse" aria-labelledby="headingOne"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+            <ul>
+              Joint Inspection- Mandate joint inspections under all of the Labour Acts:
+  
+                 
+                  
+                </p></li>
+                <li><p class="accordion-content">
+                  Joint Inspection Report by the Labour and Factories departments is designed by the, Industries department
+                </p></li>
+                
+            </ul>
+           
+           
+        </div>
+    </div>
+  </div>
+  </div>
+  <div class="d-flex aboutmb-res-img">
+    <img class="about-edb-img" src="https://apedb.gov.in/assets/images/about-edb/ippd.png" alt="sppd" />
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button custom-accordion-btn collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapsetwelve" aria-expanded="true" aria-controls="collapseOne">
+              Statutes
+    
+    
+          </button>
+      </h2>
+      <div id="collapsetwelve" class="accordion-collapse collapse" aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+              <ul>
+                Joint Inspection- Mandate joint inspections under all of the Labour Acts:
+    
+                   
+                    
+                  </p></li>
+                  <li><p class="accordion-content">
+                    Joint Inspection Report by the Labour and Factories departments is designed by the, Industries department
+                  </p></li>
+                  
+              </ul>
+             
+             
+          </div>
+      </div>
+    </div>
+    </div>
+  </div>
+  </div>
+  </div>
+</div>
+ 
+   
 
 
     
 
-        <footer class="footer pt-4 pt-sm-5 aos-animate" data-aos="fade-down" data-aos-duration="2000">
+        <footer class="footer pt-4 pt-sm-5 aos-animate" data-aos="fade-up" data-aos-duration="2000">
             <div class="container-fluid pb-1 pb-md-0">
               <div class="dark-mode footer-new-bg rounded-5 position-relative overflow-hidden w-100 px-3 px-sm-4 px-xl-5 mx-auto" style="max-width: 1660px; height:350px;">
                 <div class="position-absolute top-50 start-50 translate-middle" style="width: 1664px;"><img src="assets/img/landing/web-studio/footer-wave.png" alt="Wave"></div>
@@ -1176,9 +3557,14 @@
   <script src="libraries/superfish/supposition63d9.js?rvdmaf"></script>
   <script src="libraries/superfish/supersubs63d9.js?rvdmaf"></script>
   <script src="modules/contrib/superfish/js/superfish3661.js?v=2.0"></script>
+  <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+  <script src="assets/vendor/parallax-js/dist/parallax.min.js"></script>
+  <script src="assets/vendor/%40lottiefiles/lottie-player/dist/lottie-player.js"></script>
+  <script src="assets/vendor/img-comparison-slider/dist/index.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
    <script src="/assets/js/common.js"></script>
-  
-    <script type="text/javascript"
+      <script type="text/javascript"
             src=
 "https://translate.google.com/translate_a/element.js?
 cb=googleTranslateElementInit">
