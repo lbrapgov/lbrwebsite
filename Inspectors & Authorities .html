@@ -32,69 +32,135 @@
   <link rel="stylesheet" media="all" href="themes/swfone/theme/css/site63d9.css?rvdmaf" />
   <link rel="stylesheet" media="all" href="themes/swfone/theme/css/custom63d9.css?rvdmaf" />
   <link rel="stylesheet" media="all" href="themes/swfone/theme/css/site-responsive63d9.css?rvdmaf" />
+  <link rel="stylesheet" media="screen" href="assets/vendor/img-comparison-slider/dist/styles.css"/>
+  <link rel="stylesheet" media="screen" href="assets/vendor/swiper/swiper-bundle.min.css"/>
+  <style>
+
+.warpper{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tab{
+  cursor: pointer;
+  padding:10px 20px;
+  margin:0px 2px;
+  background:#ad467ee8;
+  display:inline-block;
+  color:#fff;
+  border-radius:3px 3px 0px 0px;
+  box-shadow: 0 0.5rem 0.8rem #00000080;
+}
+.panels{
+  background:#fffffff6;
+  box-shadow: 0 2rem 2rem #00000080;
+  min-height:200px;
+  width:100%;
+  border-radius:3px;
+  overflow:hidden;
+  padding:20px;  
+}
+.panel{
+  display:none;
+  animation: fadein .8s;
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+.panel-title{
+  font-size:1.5em;
+  font-weight:bold
+}
+.radio{
+  display:none;
+}
+#one:checked ~ .panels #one-panel,
+#two:checked ~ .panels #two-panel,
+#three:checked ~ .panels #three-panel,
+#four:checked ~ .panels #four-panel,
+#five:checked ~ .panels #five-panel{
+  display:block
+}
+#one:checked ~ .tabs #one-tab,
+#two:checked ~ .tabs #two-tab,
+#three:checked ~ .tabs #three-tab,
+#four:checked ~ .tabs #four-tab,
+#five:checked ~ .tabs #five-tab{
+  background:#fffffff6;
+  color:#000;
+  border-top: 3px solid #b35689;
+  font-size:16px;
+  font-weight: 500;
+}
+  </style>
 </head>
 <body class="en layout-one-sidebar layout-sidebar-first path-frontpage">
   <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
     <div class="hdg"></div>
     <!--Start Header Section-->
    
-      <div id="block-cmfdesignstructure" class="block block-cmf-design">
-        <div class="content">
-          <div class="wrapper common-wrapper">
-            <div class="container common-container four_content top-header">
-              <div class="common-left clearfix">
-                <ul>
-                  
-                  <li><a href="https://www.ap.gov.in/" title="ఆంధ్ర ప్రదేశ్ప్రభుత్వం">ఆంధ్రప్రదేశ్ ప్రభుత్వం </a></li>
-                </ul>
-              </div>
-              <div class="common-right clearfix">
-                <ul id="header-nav">
-                  <li>
-                    <a style="font-size: 16px;
-                    font-weight: 500;" href="">RTI</a>
-                    <ul style="width: 100px; background-color: #216db9;">
-                      <li style="background-color: #216db9; color: white;">
-                        <a style="color: white;font-size: 16px; font-weight: 600;" target="_blank" href="/assets/pdf/RTI.pdf">Notes</a>
+    <div id="block-cmfdesignstructure" class="block block-cmf-design">
+      <div class="content">
+        <div class="wrapper common-wrapper">
+          <div class="container common-container four_content top-header">
+            <div class="common-left clearfix">
+              <ul>
+                
+                <li><a href="https://www.ap.gov.in/" title="ఆంధ్ర ప్రదేశ్ప్రభుత్వం">ఆంధ్రప్రదేశ్ ప్రభుత్వం </a></li>
+              </ul>
+            </div>
+            <div class="common-right clearfix">
+              <ul id="header-nav">
+                <li>
+                  <a style="font-size: 16px;
+                  font-weight: 500;" href="">RTI</a>
+                  <ul style="width: 100px; background-color: #216db9;">
+                    <li style="background-color: #216db9; color: white;">
+                      <a style="color: white;font-size: 16px; font-weight: 600;" target="_blank" href="/assets/pdf/RTI.pdf">Notes</a>
 
-                      </li>
-                      <li>
-                        <a style="color: white;font-size: 16px; font-weight: 600;" target="_blank" href="Right to Information Act, 2015.html">RTI Act</a>
-
-                      </li>
-                    
-                    </ul>
-                  </li>
-                  <li>
-                    <a style="font-size: 16px;
-                    font-weight: 500;" target="_blank" href="">CITIZEN CHARCTER</a>
-                    
-                  </li>
-                  <li class="ico-accessibility cf">
-                    <a href="#" id="toggleAccessibility" title="Accessibility Dropdown">
-                      <img class="top" src="modules/custom/cmf_design/images/ico-accessibility.png"
-                        alt="Accessibility Dropdown" />
-                    </a>
-                    <ul>
-                      <li> <a class="fontincrease" title="Increase font size" href="#">A<sup>+</sup></a> </li>
-                      <li> <a class="fontreset" title="Reset font size" href="#">A<sup>&nbsp;</sup></a> </li>
-                      <li> <a class="fontdecrease" title="Decrease font size" href="#">A<sup>-</sup></a> </li>
-                      <li> <a href="#" class="high-contrast dark" title="High Contrast">A</a> </li>
-                      <li> <a href="#" class="high-contrast light" title="Normal Contrast">A</a> </li>
-                    </ul>
-                  </li>
-                  <li class="ico-sitemap cf"><a href="sitemap.html" title="Sitemap">
-                      <img class="top" src="modules/custom/cmf_design/images/ico-sitemap.png" alt="Sitemap" /></a>
-                  </li>
-                  <li>
-                    <div id="google_translate_element"></div>
                     </li>
-                </ul>
-              </div>
+                    <li>
+                      <a style="color: white;font-size: 16px; font-weight: 600;" target="_blank" href="Right to Information Act, 2015.html">RTI Act</a>
+
+                    </li>
+                  
+                  </ul>
+                </li>
+                <li>
+                  <a style="font-size: 16px;
+                  font-weight: 500;" target="_blank" href="">CITIZEN CHARCTER</a>
+                  
+                </li>
+                <li class="ico-accessibility cf">
+                  <a href="#" id="toggleAccessibility" title="Accessibility Dropdown">
+                    <img class="top" src="modules/custom/cmf_design/images/ico-accessibility.png"
+                      alt="Accessibility Dropdown" />
+                  </a>
+                  <ul>
+                    <li> <a class="fontincrease" title="Increase font size" href="#">A<sup>+</sup></a> </li>
+                    <li> <a class="fontreset" title="Reset font size" href="#">A<sup>&nbsp;</sup></a> </li>
+                    <li> <a class="fontdecrease" title="Decrease font size" href="#">A<sup>-</sup></a> </li>
+                    <li> <a href="#" class="high-contrast dark" title="High Contrast">A</a> </li>
+                    <li> <a href="#" class="high-contrast light" title="Normal Contrast">A</a> </li>
+                  </ul>
+                </li>
+                <li class="ico-sitemap cf"><a href="sitemap.html" title="Sitemap">
+                    <img class="top" src="modules/custom/cmf_design/images/ico-sitemap.png" alt="Sitemap" /></a>
+                </li>
+                <li>
+                  <div id="google_translate_element"></div>
+                  </li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
     <!--end Header Section-->
 
@@ -103,8 +169,8 @@
       <!--Start code for navigation-->
       <section class="wrapper header-wrapper">
         <div class="container-fluid header-container">
-          <h1 class="logo"> <a href="index.html" title="Andhra Pradesh Labour Department"> <img
-                src="/assets/images/Logo-ap.png" title="Andhra Pradesh Labour Department">
+          <h1 class="logo"> <a href="index.html" title="Labour and Employee&#039;s State Insurance Department"> <img
+                src="/assets/images/Logo-ap.png" title="Labour and Employee&#039;s State Insurance Department">
               <span>Andhra Pradesh Labour Department </span>
               <span>Government of Andhra Pradesh</span> </a></h1>
           <!-- Minister header section -->
@@ -117,10 +183,18 @@
                 <div class="content">
                   <div>
                     <div class="js-view-dom-id-692484219d7968fd28fee2f45b98eee25e6d8e30d5779bc41b8be2f22e1480fa">
+
+
+
+
+
+
+
+
                       <div class="views-row">
                         <div><span>
                             <div class="minister">
-                              <a class="float-left" href="#" title="Shri Y.S Jagan Mohan Reddy">Shri Y.S. Jagan Mohan
+                              <a class="float-left" href="#" title="Shri Y.S Jagan Mohan Reddy">Shri Y.S Jagan Mohan
                                 Reddy <br>
                                 <span>Hon&#039;ble Chief Minister</span></a>
                               <img src="/assets/images/cm-pic1.png" width="100" height="100"
@@ -130,6 +204,13 @@
                             </div>
                           </span></div>
                       </div>
+
+
+
+
+
+
+
 
                     </div>
                   </div>
@@ -294,9 +375,6 @@
                             class="sf-depth-3 sf-no-children"><a href="Exemptions and Self Certification.html"
                               title="Web Directory" class="sf-depth-3">Exemptions and Self
                      Certification</a></li>
-                     <li id="labour-department-menu-menu-link-content84b1ecb3-7564-41aa-9edd-f259f04c98b1"
-                     class="sf-depth-3 sf-no-children"><a href="Inspectors & Authorities .html"
-                       title="Web Directory" class="sf-depth-3">Inspectors & Authorities </a></li>
                               <!-- <li id="labour-department-menu-menu-link-content84b1ecb3-7564-41aa-9edd-f259f04c98b1"
                             class="sf-depth-3 sf-no-children"><a target="_blank" href="/assets/pdf/PSDGA/AP_public_services_Ordinance_Gazette_copy.pdf"
                               title="Web Directory" class="sf-depth-3">PSDGA Ordinance</a></li>
@@ -1111,1095 +1189,528 @@
 
         </div>
       </nav>
-
-      <!--End Header Section-->
-      <div class="clearfix"></div>
-      <!--Start code for banner wrapper-->
-
-      <!-- <div class="banner-section">
-        <div class="d-flex justify-space-between">
-          <div class="labour-text">
-            Labour Department <br />
-            of Andhra Pradesh
-          </div>
-          <div>
-            <img src="assets/image 24.png" alt="" />
-          </div>
-        </div>
-      </div> -->
-      <section class="wrapper banner-wrapper">
-
-        <div class="row">
-          <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
-
-            <div id="flexSlider" class="flexslider">
-              <div>
-                <div class="views-element-container block block-views block-views-blockslider-block-1"
-                  id="block-views-block-slider-block-1">
+      <ul class="breadcrumbs">
+        <li><a href="">Home</a></li>
+        <li><a href="">Policy & Legislation</a></li>  
+        <li><a href="">Regulations/procedures</a></li>
+        <li><a href="">Inspectors & Authorities </a></li>
+    </ul>
 
 
-                  <div class="content">
-                    <div>
-                      <div class="js-view-dom-id-72b87190ee30c6b31fb4969b132d97ba819a40ad0f1fce7ea5de7dd2a7b2f11f">
-
-                        <div class="item-list">
-
-                          <ul class="slides">
-
-                            <li> <img style="height: 390px;" src="/assets/images/banner-labour.png" width="832" height="380"
-                                alt="" typeof="foaf:Image" />
+<div class="warpper">
+  <input class="radio" id="one" name="group" type="radio" checked>
+  <input class="radio" id="two" name="group" type="radio">
+  <input class="radio" id="three" name="group" type="radio">
+  <input class="radio" id="four" name="group" type="radio">
+  <input class="radio" id="five" name="group" type="radio">
 
 
-                            </li>
+  <div class="tabs">
+  <label class="tab" id="five-tab" for="five">Inspectors & Authorities </label>
 
-                          </ul>
-
-                        </div>
-
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-
-              </div>
-
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
-            <div class="latest-news-title">
-              <h2><i class="fa fa-newspaper-o"></i><b> Latest </b> News</h2>
-            </div>
-            <div class="events-details">
-              <div>
-                <div class="views-element-container block block-views block-views-blocknews-block-4"
-                  id="block-views-block-news-block-4-3">
-
-
-                  <div class="content">
-                    <div>
-                      <div class="js-view-dom-id-c77f6b2b3810087493175675f978769f7a784c49cec895cd7395fafca905dc0d">
-
-                        <div class="item-list">
-
-                          <ul class="marquee-vertical">
-                            <li>
-                              <div class="date">
-                                <span class="day">31</span>
-                                <span class="month"> May<br> 2023</span>
-                              </div>
-                              <a target="_blank" href="/assets/pdf/latest-news/G.O.Ms. No.7  dated 31.05.2023.pdf"
-                                title="Y.S.R BIMA in the year 2023-2024 w.e.f 1st July, 2023">
-                                Y.S.R BIMA Scheme 2023-2024 w.e.f 1st July, 2023 <span class="pulse2">New</span></a>
-                            </li>
-                            <li>
-                              <div class="date">
-                                <span class="day">08</span>
-                                <span class="month"> May <br> 2023</span>
-                              </div>
-                              <a target="_blank" href="/assets/pdf/latest-news/CHILD LABOUR -ACTION MONTH DRIVE-JUNE 1ST TO 30TH JUNE 2023.pdf"
-                                title="Action Month against Child Labour between 1st June to 30th June 2023 in tune with ILO Convention 182">Action Month against Child Labour between 1st June to 30th June 2023 in tune with ILO Convention 182<span
-                                  class="pulse2">New</span></a>
-                            </li>
-                            
-                            <li>
-                              <div class="date">
-                                <span class="day">04</span>
-                                <span class="month"> April <br> 2023</span>
-                              </div>
-                              <a href="/assets/pdf/latest-news/New District Local Government Codes by GOI.pdf" title="New 26 District masters and local Government directory codes issued by GOI">New 26 District masters and local Govt directory codes by GOI<span class="pulse2">New</span></a>
-                            </li>
-                            <li>
-                              <div class="date">
-                                <span class="day">29</span>
-                                <span class="month"> March <br> 2023</span>
-                              </div>
-                              <a href="/assets/pdf/latest-news/Gazettee VDA as on 01.04.2023.pdf"
-                                title="For all Schedule Employments VDA Points 01.04.2023 to 30.09.2023">For all Schedule Employments VDA Points 01.04.2023 to 30.09.2023<span class="pulse2">New</span></a>
-                            </li>
-
-                          </ul>
-
-                        </div>
-
-
-
-
-
-
-
-
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-
-              </div>
-
-            </div>
-            <a href="news.html" class="know-more-news pull-right knw-mrg" title="Know More">Know More</a>
-          </div>
-        </div>
-
-
-      </section>
-      <!--Banner end-->
-      <div class="clearfix"></div>
-      <!--Start code for Services Section-->
-      <section class="five-t-sec">
-        <div class="sec-first">
-        
-          <!-- 5Ts Initiative blocks starts -->
-          <div>
-            <div class="views-element-container block block-views block-views-block5-ts-category-block-1"
-              id="block-views-block-5-ts-category-block-1-3">
-              <div class="content">
-                <div>
-                  <div class="js-view-dom-id-6629504df7a757cddeabe852d7d010799583af4a2b51e4fb1a4374cb08796832">
-                    <div>
-                      <ul class="five-t-listing pl-0">
-                        <li><span><a href="about-us.html" title="Teamwork"> <img
-                                src="/assets/images/about-us.png" width="42" height="42" alt="teamwork"
-                                typeof="Image" />
-
-                          </span> ABOUT US</a></li>
-                        <li><span><a href="EODB DashBoard.html" title="Teamwork"> <img
-                                src="/assets/images/eodbdashboard.png" width="42" height="42" alt="teamwork"
-                                typeof="Image" />
-
-                          </span> DASHBOARD</a></li>
-                        <li><span><a href="EODB Report.html" title="Technology"> <img
-                                src="/assets/images/eodbreport.png" width="41" height="41" alt="technology"
-                                typeof="Image" />
-
-                          </span> REPORTS</a></li>
-                        <li><span><a href="eodb-reforms.html" title="Transparency"> <img
-                                src="/assets/images/eodbreforms.png" width="41" height="25" alt="image1"
-                                typeof="Image" />
-
-                          </span>REFORMS</a></li>
-                       
-                      
-
-                      </ul>
-
-                    </div>
-
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
-          </div>
-
-          <!-- 5Ts Initiative blocks end -->
-        </div>
-        <div class="sec-second">
-            <!-- E-GOVERNANCE INITIATIVES,MOBILE APPS & EDUCATIONS block code starts -->
-            <div>
-              <div class="views-element-container block block-views block-views-blockmobile-apps-block-1"
-                id="block-views-block-mobile-apps-block-1-2">
-                <div class="content">
-                  <div>
-                    <div class="js-view-dom-id-bcc5afdac22cab09d14724143e8627075a8af7b298520eeb518f8018f59354d1">
-                      <div>
-  
-                        <ul>
-  
-                          <li>
-                            <div class="views-field views-field-nothing"><span class="field-content">
-                                <div class="icon"><a href="https://core.ap.gov.in/cmdashboard/index.aspx" title="CM CORE DASHBOARD"><a
-                                      href="https://core.ap.gov.in/cmdashboard/index.aspx"> <img
-                                        src="/assets/Dashboard.png" width="36" height="36"
-                                        alt="CM CORE DASHBOARD" title="CM CORE DASHBOARD" typeof="Image" />
-  
-                                    </a></a></div>
-                                <a href="https://core.ap.gov.in/cmdashboard/index.aspx" target="_blank" title="CM CORE DASHBOARD">CM CORE DASHBOARD</a>
-                              </span></div>
-                          </li>
-                          <li>
-                            <div class="views-field views-field-nothing"><span class="field-content">
-                                <div class="icon"><a href="http://www.bima.ap.gov.in/"
-                                    title="YSR BHIMA"><a href="http://www.bima.ap.gov.in/"> <img
-                                        src="/assets/YSR Bhima.png" width="36" height="36"
-                                        alt="YSR BHIMA" title="YSR BHIMA" typeof="Image" />
-  
-                                    </a></a></div>
-                                <a href="http://www.bima.ap.gov.in/" target="_blank" title="YSR BHIMA">YSR BHIMA</a>
-                              </span></div>
-                          </li>
-                          <li><a href="https://www.apolcms.ap.gov.in/login?" title="OLCMS">
-                            <div class="icon"> <img src="/assets/latest-go.png" width="36"
-                                height="36" alt="OLCMS" typeof="Image" />
-
-                            </div>
-                            OLCMS
-                          </a>
-                        </li>
-                          <li>
-                            
-                            <div class="views-field views-field-nothing"><span class="field-content">
-                                <div class="icon"><a href="https://www.eshram.gov.in" title="BENEFITS DISBURSEMENTS"><a
-                                      href="https://www.eshram.gov.in"> <img src="/assets/Benefits.png"
-                                        width="36" height="36" alt="BENEFITS DISBURSEMENTS" title="BENEFITS DISBURSEMENTS" typeof="Image" />
-  
-                                    </a></a></div>
-                                <a href="https://www.eshram.gov.in" target="_blank" title="eSharam">eSharam</a>
-                              </span></div>
-                          </li>
-  
-                          <li><a href="https://www.pencil.gov.in" target="_blank" title="INDUSTRIAL DISPUTES">
-                              <div class="icon"> <img src="/assets/Industry.png" width="36"
-                                  height="36" alt="Child Labour(Pencil)" typeof="Image" />
-  
-                              </div>
-                              Child Labour(Pencil)
-                            </a>
-                          </li>
-       
-                          
-                          <li><a href="https://apegazette.cgg.gov.in/login.do" title="LATEST GO'S">
-                              <div class="icon"> <img src="/assets/latest-go.png" width="36"
-                                  height="36" alt="TENDER &amp; ADVERTISEMENT" typeof="Image" />
-  
-                              </div>
-                              AP e-Gazette
-                            </a>
-                          </li>
-                          
-                        </ul>
-  
-                      </div>
-                    </div>
-                  </div>
-  
-                </div>
-              </div>
-  
-            </div>
-  
-  
-            <!-- E-GOVERNANCE INITIATIVES,MOBILE APPS & EDUCATIONS block code ends -->
-            <!-- E-dispatch,citizen service, tender block code starts -->
-           
-  
-  
-            <!-- E-dispatch,citizen service, tender block code ends -->
-  
-          </div>
-      </section>
-
-<!-- ministers section -->
-<section class="mt-5 mb-5  pt-5 aos-animate" data-aos="fade-left" data-aos-duration="2000">
-    <div class="col-md-12">
-        <div class="container">
-            
-          <div class="row">
-            <div class="col-md-6">
-                <div class="connectivity">
-                    <div class="card">
-                        <img src="/assets/Minister-section.png">
-                        <ul>
-                            <li class="" style="color: #0088EE;font-size: 18px; font-weight: 600;
-                            ">Sri. Gummanur Jayaram</li>
-                            <li>Hon'ble Minister for Labour</li>
-                            
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="connectivity">
-                    <div class="card">
-                        <img src="assets/sectary-section.png">
-                        <ul>
-                            <li style="color: #0088EE;font-size: 18px; font-weight: 600;"
-                            >Sri. M. Hari Jawaharlal IAS</li>
-                            <li>Principal Secretary to Government</li>
-
-                        </ul>
-                    </div>
-                </div>
-            </div>
-          </div>
-        </div>
     </div>
-</section>
+  <div class="panels">
+  <div class="panel" id="one-panel">
+    <div class="accordion custom-accordion" id="accordionExample">
+      <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Appointment of Inspector
+              </button>
 
 
 
+          </h2>
 
 
 
+          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
 
 
 
-
-
-<section class="emc-ap-ranking-section emc-grp-section aos-animate" data-aos="fade-down" data-aos-duration="2000">
-    <div class="container">
-        <div class="row justify-content-start">
-            <h3 style="    color: #5C43AB;
-            padding-left: 60px;
-            padding-bottom: 20px;
-            font-weight: 600;">About Department</h3>
-
-            <div class="col-md-12 emc-rank-grp emc-rank-ap" >
-                <div class="row">
-
-                    <div class="col-md-6 emc-business-ranking mb-3">
-
-                        <div class="emc-rank-number">
-                            <div>
-                             
-                                <p> <span style="color:#d0529a;
-                                    font-size: 21px;
-                                    font-weight: 600;">WELCOME TO LABOUR DEPARTMENT</span> <br> The Labour Department facilitates not only conflict resolution between the management and the trade unions in the organized industrial sectors but also serves the greater purpose of enhancing the welfare of the large and heterogenous sections of the unorganized working classes through the just enforcement of labour laws as well as through the proper implementation of the various social security schemes.…</p>
-                            </div>
-                        </div>
-                        <div class="emc-grp-img">
-                        <img class="w-100 emcs-grp-img" src="/assets/about-us-section.png" alt="">
-                        <img class="w-100 emc-resposnive-img" src="/assets/about-us-section.png" alt="">
-                        <img class="w-100 emc-resposnive-img" src="/assets/about-us-section.png" alt="">
-                        <img class="w-100 emc-resposnive-img" src="/assets/about-us-section.png" alt="">
-                    </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
-      <div id="skipCont"></div>
-     
-     
-
-                
-
-
-
-
-      <div class="container aos-animate" data-aos="fade-down" data-aos-duration="2000">
-        <h2 class="trending-header text-center pt-5 pb-5">Trending Services</h2>
-        <div>
-          <ul class="nav nav-tabs trending-tabs" id="myTab" role="tablist">
-            <li class="nav-item quicklinks-updates">
-              <a  class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
-                aria-selected="true">Quick Links
-                <img src="/assets/quik-links.png" alt="" srcset="" style="height: 50px; 
-                padding-left: 26px;
-            ">
-              </a>
-            </li>
-            <li class="nav-item quicklinks-updates">
-              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
-                aria-selected="false">Our Services
-                <img src="/assets/our-services.png" alt="" srcset="" style="height: 50px; 
-                padding-left: 26px;
-            ">
-              </a>
-            </li>
-            <li class="nav-item quicklinks-updates">
-              <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact"
-                aria-selected="false">Government Services
-              <img src="/assets/gov-services.png" alt="" srcset="" style="height: 50px; 
-              padding-left: 26px;
-          ">
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="tab-content trending-content" id="myTabContent">
-          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-            <div class="row">
-              <div class="col-3 mb-3">
-               <a target="_blank" href="https://core.ap.gov.in/cmdashboard/index.aspx"><div class="card trending-card">
-                <span>
-                  <img src="/assets/Dashboard.png" alt="" />
-
-                </span>
-                <p>CM CORE DASHBOARD
-                </p>
-              </div></a> 
-              </div>
-              <div class="col-3 mb-3">
-                <a target="_blank" href="http://www.bima.ap.gov.in/">
-                  <div class="card trending-card">
-                    <img src="/assets/YSR Bhima.png" alt="" />
-                    <p>YSR BHIMA</p>
-                    
-                  </div>
-                </a>
-              </div>
-              <div class="col-3 mb-3">
-                <a target="_blank" href="https://www.apolcms.ap.gov.in/login?">
-                  <div class="card trending-card">
-                    <img src="/assets/Benefits.png" alt="" />
-                   <p>OLCMS</p>
-                  </div>
-                </a>
-              </div>
-              <div class="col-3 mb-3">
-                <a target="_blank" href="https://www.eshram.gov.in/">
-                  <div class="card trending-card">
-                    <img src="/assets/Industry.png" alt="" />
-                    <p>eshram</p>
-                  </div>
-                </a>
-              </div>
-              <div class="col-3 mb-3">
-                <a target="_blank" href="https://www.pencil.gov.in/">
-                  <div class="card trending-card">
-                    <img src="/assets/licence-renewal.png" alt="" />
-                    <p>Child Labour (Pencil)
-                    </p>
-                  </div>
-                </a>
-              
-              </div>
-              <div class="col-3 mb-3">
-                <a target="_blank" href="https://apegazette.cgg.gov.in/login.do">
-                  <div class="card trending-card">
-                    <img src="assets/annual-returns.png" alt="" />
-                    <p>AP e-Gazette</p>
-                    
-                  </div>
-                </a>
-              </div>
-              <div class="col-3 mb-3">
-               <a target="_blank" href="https://www.maandhan.in/maandhan/summary"> <div class="card trending-card">
-                <img src="assets/download-certificate.png" alt="" />
-                <p>PMSYM Dashboard</p>
-              </div></a>
-              </div>
-              <div class="col-3 mb-3">
-                <a target="_blank" href="https://www.aphc.gov.in/hcservices.html">
-                  <div class="card trending-card">
-                    <img src="assets/third-part-verification.png" alt="" />
-                    <p>AP High Court</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-            <div class="row">
-              <div class="col-3 mb-3">
-                <a target="_blank" href="https://apbocwwb.ap.nic.in/">
-                  <div class="card trending-card">
-                    <img src="assets/bocww-board.png" alt="" />
-                    <p>AP Building & Other Construction Workers Welfare Board(APBOCWW)</p>
-                  </div>
-                </a>
-              </div>
-              <div class="col-3 mb-3">
-                <a target="_blank" href="http://aplabourwelfareboard.ap.gov.in/">
-                  <div class="card trending-card">
-                    <img src="assets/rti-notes.png" alt="" />
-                    <p>AP Labour Welfare Board</p>
-                  </div>
-                </a>
-              </div>
-              <div class="col-3 mb-3">
-                <a target="_blank" href="/assets/pdf/RTI Act, 2005 (Amended)-English Version.pdf">
-                  <div class="card trending-card">
-                    <img src="assets/rti-sub-notes.png" alt="" />
-                    <p>RTI Act</p>
-                  </div>
-                </a>
-              </div>
-              <div class="col-3 mb-3">
-                <a target="_blank" href="/assets/pdf/CitizenCharter/citizencharter.pdf">
-                  <div class="card trending-card">
-                    <img src="assets/citizen-character.png" alt="" />
-                   <p>Citizen Charter</p>
-                  </div>
-                </a>
-              </div>
-              <div class="col-3 mb-3">
-                <a target="_blank" href="/Latest GO's.html">
-                  <div class="card trending-card">
-                    <img src="/assets/latest-go.png" alt="" />
-                    <p>Latest GO'S</p>
-                  </div>
-                </a>
-              </div>
-              <div class="col-3 mb-3">
-                <a href="/eodb-reforms.html">
-                  <div class="card trending-card">
-                    <img src="/assets/eodb-refomrs.png" alt="" />
-                    <p>EODB Reforms</p>
-                  </div>
-                </a>
-              </div>
-              <div class="col-3 mb-3">
-                <a href="EODB Report.html">
-                  <div class="card trending-card">
-                    <img src="assets/eodb-refort.png" alt="" />
-                    <p>EODB Report</p>
-                  </div>
-                </a>
-              </div>
-              <div class="col-3 mb-3">
-                <a href="EODB DashBoard.html">
-                  <div class="card trending-card">
-                    <img src="assets/eodb-dashboard.png" alt="" />
-                    <p>EODB Dashboard</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-            <div class="row">
-              <div class="col-3 mb-3">
-                <a target="_blank" href="http://factories.ap.gov.in/factories/">
-                  <div class="card trending-card">
-                    <img src="assets/factories-portal.png" alt="" />
-                    <p>Factories Portal</p>
-                  </div>
-                </a>
-                
-              </div>
-              <div class="col-3 mb-3">
-                <a target="_blank" href="https://apindustries.gov.in">
-                  <div class="card trending-card">
-                    <img src="/assets/industries-portal.png" alt="" />
-                    <p>Industries Portal</p>
-                  </div>
-                </a>
-                
-              </div>
-              <div class="col-3 mb-3">
-                <a target="_blank" href="https://www.shramsuvidha.gov.in">
-                  <div class="card trending-card">
-                    <img src="assets/suvidha-portal.png" alt="" />
-                    <p>Shram Suvidha Portal</p>
-                  </div>
-                </a>
-              </div>
-              <div class="col-3 mb-3">
-                <a target="_blank" href="https://www.labour.gov.in">
-                  <div class="card trending-card">
-                    <img src="/assets/minister-lbr.png" alt="" />
-                    <p>Ministry of Labour & Employment Portal(GOI)</p>
-                  </div>
-                </a>
-              </div>
-              <div class="col-3 mb-3">
-                <a target="_blank" href="https://www.esic.gov.in">
-                  <div class="card trending-card">
-                    <img src="/assets/central-labour.png" alt="" />
-                    <p>Employee's State Insurance Corporation</p>
-                  </div>
-                </a>
-              </div>
-              <div class="col-3 mb-3">
-                <a target="_blank" href="https://www.labourbureau.gov.in">
-                  <div class="card trending-card">
-                    <img src="/assets/labour-baureu.png" alt="" />
-                   <p>Labour Bureau</p>
-                  </div>
-                </a>
-              </div>
-              <div class="col-3 mb-3">
-               <a target="_blank" href="https://www.epfindia.gov.in">
-                <div class="card trending-card">
-                  <img src="/assets/labour-schemes.png" alt="" />
-                  <p>EPFO</p>
-                </div>
-               </a>
-              </div>
-              <div class="col-3 mb-3">
-               <a href="http://www.labour.gov.in/labour-codes" target="_blank" rel="noopener noreferrer">
-                <div class="card trending-card">
-                  <img src="/assets/e-booklabour-schemes.png" alt="" />
-                 <p>Labour Codes</p>
-                </div>
-               </a>
-              </div>
-            </div>  
-          </div>
-        </div>
-      </div>
-      <div class="aos-animate" data-aos="fade-up" data-aos-duration="2000">
-        <img src="/assets/actwise-registrations.png" alt="" srcset="">
-    
-    </div>
-      <!-- <div class="season_tabs pt-5 pb-5 mt-5 aos-animate" data-aos="fade-down" data-aos-duration="2000">
-        <div class="container">
-            <div class="season_tab">
-                <input type="radio" id="tab-1" name="tab-group-1" checked>
-                <label for="tab-1"><img class="pr-3" src="assets/latest-updates.png" alt="" srcset=""> Latest Updates</label>
-                
-                <div class="season_content">
-                    <img class="arrow" src="/assets/img/right-arrow.png" alt="arrow" />
-                    <a href="/assets/pdf/2019LETF_MS15.pdf" target="_blank" class="arrow-data">
-                      Ease of Compliance with Labour Laws – Exemption of all Shops and Establishments from
-                            renewal of
-                            registration under the Andhra Pradesh Shops & Establishments Act, 1988 – Notification
-                            Issued–
-                            Modification- Orders – Issued. </a>
-                            <hr class="border-text">
-                    <img class="arrow" src="/assets/img/right-arrow.png" alt="arrow" />
-                    <a href="/assets/pdf/LatestUpdates/STATUS_ON_GAZETTES.docx" target="_blank" class="arrow-data">
-                      Preliminary Notification On Revision Of Minimum Wages Scheduled Employments </a>
-                      <hr class="border-text">
-                      <img class="arrow" src="/assets/img/right-arrow.png" alt="arrow" />
-                    <a href="/assets/pdf/LatestUpdates/Minimum_Wages_eGazette_01102018_31032019.pdf" target="_blank" class="arrow-data">
-                      Vda Points In Respect Of Scheduled Employments Under Minimum Wages Act Applicable
-                            From 01.10.2018 TO
-                            31.03.2019  </a>
-                            <hr class="border-text">
-                    <img class="arrow" src="/assets/img/right-arrow.png" alt="arrow" />
-                    <a href="" target="_blank"
-                      class="arrow-data">May Day Celebrations A) Instructions B) Application Form For Best Management Award C)
-                      Application Form
-                      For Sharma Shakthi Award</a>
-                      <hr class="border-text">
-                      <img class="arrow" src="/assets/img/right-arrow.png" alt="arrow" />
-                    <a href="/assets/pdf/LatestUpdates/code_of_discipline.pdf" target="_blank"
-                      class="arrow-data">Code Of Discipline</a>
-                   
-               
-                  
-                </div> 
-            </div>
-             
-            <div class="season_tab">
-                <input type="radio" id="tab-2" name="tab-group-1">
-                <label for="tab-2"><img class="pr-3" src="assets/notices.png" alt="" srcset="">Notices</label>
-                
-                <div class="season_content">
-                    <img class="arrow" src="/assets/img/right-arrow.png" alt="arrow" />
-                              <a href="/assets/pdf/ShowCausee/2) Annexure-A.pdf" target="_blank" class="arrow-data">
-                                Annexure-A : Regular Cadre Strength of the ACLs with Stations in the Combined State
-                                      of AP </a>
-                                      <hr class="border-text">
-                                      <img class="arrow" src="/assets/img/right-arrow.png" alt="arrow" />
-                              <a href="/assets/pdf/ShowCausee/3) Annexure-B.pdf" target="_blank" class="arrow-data">
-                                Annexure-B : Deputation posts of ACL(SSS) of APBOCWW Board in the cadre of ACL </a>
-                                <hr class="border-text">
-                                <img class="arrow" src="/assets/img/right-arrow.png" alt="arrow" />
-                              <a href="/assets/pdf/ShowCausee/4) Annexure-C.pdf" target="_blank" class="arrow-data">
-                                Annexure-C : Inter-se-seniority of ALOs of Zone 1 to 6 & City Cadre in the Combined
-                                      State of AP  </a>
-                                      <hr class="border-text">
-                                      <img class="arrow" src="/assets/img/right-arrow.png" alt="arrow" />
-                              <a href="/assets/pdf/ShowCausee/5) Annexure-D.pdf" target="_blank"
-                                class="arrow-data">Annexure-D : Inter-se-seniority of Supdts. of Subordinate Offices in the Combined
-                                State of AP</a>
-                                <hr class="border-text">
-                                <img class="arrow" src="/assets/img/right-arrow.png" alt="arrow" />
-                              <a href="/assets/pdf/ShowCausee/6) Annexure-E.pdf" target="_blank"
-                                class="arrow-data">Annexure-E : Seniority of Supdts. of Head Office in the Combined State of AP</a>
-                                <hr class="border-text">
-                                <img class="arrow" src="/assets/img/right-arrow.png" alt="arrow" />
-                              <a href="/assets/pdf/ShowCausee/7) Annexure-F.pdf" target="_blank"
-                                class="arrow-data">Annexure-F : Cycle of promotions of the post of ACLs treating the post as State wide
-                                Post</a>
-                </div> 
-            </div>
-             
-             <div class="season_tab">
-                <input type="radio" id="tab-3" name="tab-group-1">
-                <label for="tab-3"><img class="pr-2" src="assets/common-list.png" alt="" srcset="">Common List of Acl's</label>
-              
-                <div class="season_content">
-                    <img class="arrow" src="/assets/img/right-arrow.png" alt="arrow" />
-                    <a href="/assets/pdf/FreshNotie/Review of promotions treats to post of ACL as State wide post - Show Cause Notice Issued.pdf" target="_blank" class="arrow-data">
-                      Review of promotions treats to post of ACL as State wide post - Show Cause Notice
-                            Issued </a>
-                            <hr class="border-text">
-                    <img class="arrow" src="/assets/img/right-arrow.png" alt="arrow" />
-                    <a href="/assets/pdf/FreshNotie/Annexure - A.pdf" target="_blank" class="arrow-data">
-                      Annexure - A</a>
-                      <hr class="border-text">
-                      <img class="arrow" src="/assets/img/right-arrow.png" alt="arrow" />
-                    <a href="/assets/pdf/FreshNotie/Annexure - B.pdf" target="_blank" class="arrow-data">
-                      Annexure - B </a>
-                      <hr class="border-text">
-                      <img class="arrow" src="/assets/img/right-arrow.png" alt="arrow" />
-                    <a href="/assets/pdf/FreshNotie/Objections.pdf" target="_blank"
-                      class="arrow-data">Objections</a>
-                </div> 
-            </div>
-            <div class="season_tab">
-              <input type="radio" id="tab-4" name="tab-group-1">
-             <label for="tab-4"><img class="pr-2" src="assets/common-list.png" alt="" srcset="">List of Commissioners</label>          
-              <div class="season_content">
-                <div class="accordion focus-sector-accordion focus-sector-content container-fluid" id="accordionExample" style="width:100%; overflow: auto; height:394px;">
-                  <table class="table container pharma-table">
-                    LIST OF COMMISSIONERS IN RESIDUARY ANDHRA PRADESH.
-                    <thead>
-                        <tr>
-                            <th>Sl.No</th>
-                            <th>Name of the Commissioner</th>
-                            <th>Post Held</th>
-                            <th>Period</th>
-                        </tr>
-                    </thead>
+              <div class="accordion-body">
+                <table class="table container">
                     <tbody>
-            
-                  <tr>
-                      <td>1</td>
-                      <td>Sri B.RAMANJANEYULU,I.A.S.,</td>
-                      <td>Commissioner of Labour (FAC)</td>
-                      <td>5
-                        th June 2014 to <br>20th
-                        January 2015</td>
-                  </tr>
-                  <tr>
-                      <td>2</td>
-                      <td>Sri D.VARAPRASAD, I.A.S., </td>
-                      <td>Commissioner of Labour </td>
-                      <td> 21st January 2015 to <br>
-                        31st July 2019</td>
-                  </tr>
-                  <tr>
-                      <td>3</td>
-                      <td>Smt. B.UDAYALAKSHMI, I.A.S.,</td>
-                      <td>Commissioner of Labour 
-                        (FAC) </td>
-                      <td>5
-                        th August 2019 to <br>
-                        15th September 2019</td>
-                  </tr>
-                  <tr>
-                      <td>4</td>
-                      <td>Smt. G.REKHA RANI, I.A.S.,</td>
-                      <td>Spl.Commissioner of 
-                        Labour </td>
-                      <td>16th September 2019 
-                        to<br> 1
-                        st February 2022</td>
-                  </tr>
-                  <tr>
-                      <td>5</td>
-                      <td>Sri KARTIKEYA MISRA, I.A.S.,</td>
-                      <td>Sri KARTIKEYA MISRA, I.A.S.,</td>
-                      <td>2
-                        nd February 2022 to <br>
-                        18th October 2022</td>
-                  </tr>
-                  <tr>
-                      <td>6</td>
-                      <td>Smt G.SRUJANA, I.A.S., </td>
-                      <td>Spl.Commissioner of 
-                        Labour (FAC) 
-                         </td>
-                      <td>19th October 2022 to<br> 
-                        24th October 2022</td>
-                  </tr>
-                  <tr>
-                    <td>7</td>
-                    <td>Sri M.M.NAYAK, I.A.S., </td>
-                    <td>Commissioner of Labour 
-                      (FAC)                       
-                       </td>
-                    <td>25th October 2022 to<br> 
-                      12th April 2023
-                      </td>
-                </tr>
-                <tr style="color: green;">
-                  <td><b>8</b></td>
-                  <td><b>Sri M.V.SESHAGIRIBABU, </b></td>
-                  <td><b>Commissioner of 
-                    Labour</b> 
-                     </td>
-                  <td><b>12th April 2023 to</b></td>
-              </tr>                 
-                                                </tbody>
-                            
-                          </table>
-                          <table class="table container pharma-table">
-                            LIST OF COMMISSIONERS of Combined Andhra Pradesh
-                            <thead>
-                                <tr>
-                                    <th>Sl.No</th>
-                                    <th>Name of the Commissioner</th>
-                                    <th>Period</th>
-                                </tr>
-                            </thead>
+                      <tr>
+                      <td>Appointment of Inspector</td>
+                      <td>Appointment of inspectors and fixation of their local limits
+                        GO Ms No 37 of LET&F (Lab.IV) Dept dated 06.06.2008
+                        Ref:- GO Ms No 57 of LET&F (Lab.IV) Dept dated 18.10.2011.
+                        Ref:- 1. G.O.Ms.No.11, Labour, Employment, Training and Factories (Lab.IV) 
+                        Department, dated:12.3.1998. 
+                       <br> 2. G.O.Ms.No.64, Labour, Employment, Training and Factories (Lab.IV) 
+                        Department, dated: 01.06.2005. 
+                       <br> 3. G.O.Ms.No.26, Labour, Employment, Training and Factories (Lab.IV) 
+                        Department, dated:22.04.2008.</td>
+                      <td>Appointment of Inspectors and Fixation of Local Limits under certain Labour Legislations:- 
+                        In excerse of powers conferred by Section 57 of the Andhra Pradesh Shops and Establishments Act, 1988; 
+                       <br> (2) sub-section (1) of section 19 of the Minimum Wages Act, 1948 [Central Act XI of 1948]; 
+                       <br> (3) sub-section (1) of section 4 of the Motor Transport Workers Act, 1961; 
+                        <br>(4) section 2© and section 6 of the Beedi and Cigar Workers (Conditions of employment) Act, 1966; 
+                        <br>(5) sub-section (1) of section 28 of the Contract Labour (Regulation & Abolition) Act, 1970; 
+                        <br>(6) sub-section (3) of section 14 of the Payment of Wages Act, 1936 [Act No. IV of 1936]; 
+                        <br>(7) section 17 of the Child Labour (Prohibition and Regulation) Act, 1986; 
+                        <br>(8) sub-section (1) of section 9 of the Equal Remuneration Act, 1976; 
+                        <br>(9) sub section (1) of section 6 of the Andhra Pradesh Factories and Establishments (National festival and other Holidays) Act, 1974; 
+                        <br>(10) sub-section (1) of section 18 of the Andhra Pradesh Labour Welfare Fund Act, 1987; 
+                        <br>(11) sub-section (1) of section 27 of the Payment of Bonus Act, 1965; 
+                        <br>(12) sub-section (1) of section 8 of the Sales Promotion Employees (Conditions of Service) Act, 1976; (13) section 14 of the Maternity Benefit Act, 1961; 
+                        <br>(14) sub-section (1) of section 7A of the Payment of Gratuity Act, 1972; 
+                        <br>(15) sub-section (1) of section 20 of the Inter-State Migrant Workmen (Regulation of Employment and Conditions of Service) Act, 1979; 
+                        <br>(16) sub-section (1) of section 17B of the Working Journalists and Other Newspapers Employees (Conditions of Service) and Miscellaneous Provisions Act,1955; 
+                        <br>(17) sub-sections (2) and (3) of section 42 of the Building and Other Construction Workers (Regulation of Employment and Conditions of Service) Act, 1996 {Act No. XXVII of 1996} 
+                        and in supersession of the notification issued in G.O.Ms.No.11, Labour, Employment, Training and Factories Department, dated 12.3.1998, the Governor of Andhra Pradesh hereby appoint the officers mentioned in the Schedule below at column (2) and the areas specified in column (3) against such officers to be the Inspectors and Competent Authorities under the above Labour Acts.
+                        <table class="table table-bordered">
+                                                                      
                             <tbody>
-                    
-                          <tr>
-                              <td>1</td>
-                              <td>MAJOR GURUSWAMY</td>
-                              <td>1961 to 1962</td>
-                                                       </tr>
-                          <tr>
-                              <td>2</td>
-                              <td>SRI E.V.RAM REDDY </td>
-                              <td>1963 to 1966 </td>
-                          </tr>
-                          <tr>
-                              <td>3</td>
-                              <td>SRI BHARATH CHAND KHANNA</td>
-                              <td>1966 to 9
-                                th Jan 1968</td>
-                          </tr>
-                          <tr>
-                              <td>4</td>
-                              <td>SRI K.B.LAL</td>
-                              <td>1st Jan 1968 to 23rd April 1969 </td>
-                          </tr>
-                          <tr>
-                              <td>5</td>
-                              <td>SRI C.N.SHASTRY</td>
-                              <td>23rd April 1969 to 2nd August 1970</td>
-                          </tr>
-                          <tr>
-                              <td>6</td>
-                              <td>SRI SHRAVAN KUMAR </td>
-                              <td>21st August 1970 to 12th July 1972 </td>
-                          </tr>
-                          <tr>
-                            <td>7</td>
-                            <td>SRI KHALID ANSARI</td>
-                            <td>13th July 1972 to 30th December 1972 </td>
+                              <tr>
+                                <td>Designation of Officer</td>
+                                <td>Jurisidiction</td>
+                               
+                              </tr>
+                              <tr>
+                                <td>(2) </td>
+                                <td>(3) </td>
+                               
+                              </tr>
+                              <tr>
+                                <td><br>COL, Addl.COL
+                                    <br>JCL (HO), DCL (HO)
+                                    <br>ACL (HO)</td>
+                                <td>Whole of the State</td>
+                               
+                              </tr>
+                              <tr>
+                                <td>JCL, VSP</td>
+                                <td>Districts of SRK, VZM and VSP</td>
+                               
+                              </tr>
+                              <tr>
+                                <td>JCL, Elr </td>
+                                <td>Districts of EG, WG and Krishna</td>
+                              </tr>
+                              <tr>
+                                <td>JCL, Gnt</td>
+                                <td>Districts of GNT, ONG and Nellore</td>
+                              </tr>
+                              <tr>
+                                <td>JCL, Krnl</td>
+                                <td>Districts of Kurnool, Kadapa, Ananthapuram and Chittoor</td>
+                              </tr>
+                              <tr>
+                                <td>DCL</td>
+                                <td>Respective District</td>
+                              </tr>
+                              <tr>
+                                <td>ACL</td>
+                                <td>Respective District</td>
+                              </tr>
+                              <tr>
+                                <td>ALO</td>
+                                <td>Respective District</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        <b>Note:</b> The Assistant Labour Officers and Assistant Commissioners of Labour shall exercise district wise jurisdiction in specific duties like squad inspections and other inspections authorized by the concerned Joint Commissioner of Labour. In normal duties they exercise the functions of inspectors in their respective areas assigned to them by the Commissioner of Labour and the concerned Joint Commissioner of Labour.</td>
+                      <td><a target="_blank" href="/assets/pdf/New Folder/appointment of inspectors and fixation of their local limits go 37 dtd 06062008.pdf">Download</a></td>
+                      </tr>                                   
+                                      </tbody>
+                </table>
+              </div>
+          </div>
+      </div>
+      <div class="accordion custom-accordion" id="accordionExample">
+
+ 
+
+        <div class="accordion-item">
+  
+  
+  
+            <h2 class="accordion-header" id="headingtwo">
+  
+  
+  
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetwo" aria-expanded="true" aria-controls="collapsetwo">
+  
+  
+  
+                    Conciliation Officers
+  
+  
+                </button>
+  
+  
+  
+            </h2>
+  
+  
+  
+            <div id="collapsetwo" class="accordion-collapse collapse" aria-labelledby="headingtwo" data-bs-parent="#accordionExample">
+  
+  
+  
+                <div class="accordion-body">
+                  <table class="table container">
+                      <thead>
+                      
+                      <tboady>
+                        <tr>
+                          <td>Conciliation Officers</td>
+                          <td>Appointment of Officers of the Department 
+                            as Conciliation Officers and Authorities under various Labour Acts
+                            GO Ms No 46 of LET&F (Lab.IV) Dept dated 20.06.2008
+                          <br>  Ref:- GO Ms No 57 of LET&F (Lab.IV) Dept dated 18.10.2011.
+                           <br> Ref:- 1) G.O.Ms.No.115, Labour, Employment, Nutrition and Technical Education 
+                            (Lab.IV) Department, dated 23rd March, 1983. 
+                           <br> 2) G.O.Ms.No.128, Labour, Employment Nutrition and Technical Education 
+                            (Lab.IV) Department, dated 6th April, 1984. 
+                          <br>  3) G.O.Ms.No.235, Labour Employment Nutrition and Technical Education 
+                            (Lab.IV) Department, dated 18th August, 1986. 
+                          <br>4) G.O.Ms.No.70, Women’s Development, Child Welfare and Labour (Lab.II) 
+                            Department, dated 7th April, 1992. 
+                          <br>5) G.O.Ms.No.125, Women’s Development, Child Welfare and Labour (Lab.II) 
+                            Department, dated 19th August, 1992. 
+                          <br>6) G.O.Ms.No.128, Women’s Development, Child Welfare and Labour (Lab.II) 
+                            Department, dated 19th August, 1992. 
+                         <br>7) G.O.Ms.No.129, Women’s Development, Child Welfare and Labour (Lab.II) 
+                            Department, dated 19th August, 1992. 
+                          <br>8) G.O.Ms.No.136, Women’s Development, Child Welfare and Labour (Lab.II) 
+                            Department, dated 9th September, 1992. 
+                          <br>9) G.O.Ms.No.138, Women’s Development, Child Welfare and Labour (Lab.II) 
+                            Department, dated 9th September, 1992. 
+                          <br>10) G.O.Ms.No.139, Women’s Development, Child Welfare and Labour (Lab.II) 
+                            Department, dated 26th August, 1992. 
+                          <br>11) G.O.Ms.No.53, Labour Employment Training and Factories (Lab.IV) 
+                            Department, dated 23rd September, 1999. 
+                           <br>12) G.O.Ms.No.64, Labour, Employment, Training and Factories (Lab.IV) 
+                            Department, dated 1st June, 2005. 
+                          <br>13) G.O.Ms.No.26, Labour, Employment, Training and Factories (Lab.IV) 
+                            Department, dated 22nd April, 2008. 
+                          <br>14) From the Commissioner of Labour, Andhra Pradesh, Hyderabad, Letter 
+                            No.I1/12195/2005-3, dated 15th May, 2008.</td>
+                          <td>Government after careful examination decided to supersede all the previous notifications issued in the G.Os. 1 to 11 read above and issue fresh notification 
+                            appointing the officers in the Labour Department as Conciliation Officers and Authorities etc. under various Labour Acts to exercise their powers and functions 
+                            under the said Labour Acts. 
+                            Accordingly, the following notification shall be published in the next issue of the A.P. Gazette.
+                          <br><br><br><br><br>  NOTIFICATION
+                            In exercise of the powers conferred by section 4 and clause (b) of sub section (1) of section 25 -N of the Industrial Disputes Act, 1947, sub-section (1) of section 15 of the Payment of Wages Act, 1936, sub-section (1) of section 20 of the Minimum Wages Act, 1948, sub-sections (1) and (6) of section 7 of the Equal Remuneration Act, 1976, section 3 and sub-section (7) of section 7 of the Payment of Gratuity Act, 1972, Clause (a) of section 6, clause (a) section 11 and section 15 of the Contract Labour (Regulation and Abolition) Act, 1970, sections 3 and 7 and sub section (1) of section 11 of the Inter State Migrant Workmen (Regulation of  Employment and Conditions of Service) Act, 1979, sections 48 and 50, and sub section (1) of section 53, of the Andhra Pradesh Shops and Establishments Act, 1988, Clauses (a) and (c) of section 2 of the Industrial Employment (Standing Orders ) Act, 1946, sub-section (1) and sub-section (2) of section 3 of the Trade Unions Act, 1926, sub section (1) of section 17 of the Working Journalists and Other News Papers Employees (Conditions of Service) and Miscellaneous Provisions Act, 1955, section 5 of the Beedi and Cigar Workers (Conditions of Employment) Act, 1966, section 2(d) and section 4 of Cine Workers and the Cinema Workers and Cinema Theatre Workers (Regulation of Employment) Act, 1981 as delegated under section 22-A of the said Act by the Government of India in Special Order 3455, dated 4.11.1998, and section 6 of the Building and Other Construction Workers (Regulation of Employment and Conditions of Service) Act, 1996 and in super session of all previous notifications issued under the above Acts on the subject in this behalf in the G.Os 1st to 11 read above, the Governor of Andhra Pradesh hereby appoint the officers mentioned in column (2) of the Annexure to this Order as Authorities and Conciliation Officers mentioned at column (3) thereof under the above mentioned Labour Legislations for the areas mentioned therein at column (4) with effect from the date of publication of this 
+                            notification in the A.P. Gazette.
+                            ANNEXURE
+                            Designation of Officer
+                            Appointed as
+                            Jurisdiction
+                            (2)
+                            (3)
+                            (4)
+                            Commissioner of Labour [Commissioner for Workmen’s Compensation ] 
+                            Appointed as 
+                            Conciliation Officer under section 4, of the Industrial Disputes Act, 1947, Specified Authority under section 25- N (1) (b) of the Industrial Disputes Act, 1947 
+                            Conciliation Officer under section 4 and Competent Authority under section 2 (d) of the Cine-Workers and Cinema Theatre Workers (Regulation of Employment) Act, 1981 
+                            Authority under section 15 of Payment of Wages Act, 1936 
+                            Authority under section 20(1) of the Minimum Wages Act, 1948, 
+                            Appellate Authority under section 7(6) of the Equal Remuneration Act, 1976, 
+                            Appellate Authority under section 7(7) of the Payment of Gratuity Act, 1972 
+                            Appellate Authority under section 15 of the Contract Labour (Regulation & Abolition) Act, 1970. 
+                            Appellate Officer under section 11 of the Inter State Migrant Workmen 
+                            (Regulation of Employment and Conditions of Service) Act, 1979, 
+                            Registering Officer under section 6 of the Building and Other Construction Workers (Regulation of Employment and Conditions of Service) Act, 1996
+                            Whole of the State
+                            Additional Commissioner of Labour (Commissioner for Workmen's Compensation)
+                            Appointed as 
+                            Conciliation Officer, under section 4, of the Industrial Disputes Act, 1947, 
+                            Conciliation Officer under section 4 and Competent Authority under section 2 (d) of the Cine-Workers and Cinema Theatre Workers (Regulation of Employment) Act, 1981
+                            Designated Authority under sub section 2 of section 10 of Contract  Labour (Regulation & Abolition) Act, 1970 
+                            Authority under Section 15 of Payment of Wages Act, 1936 
+                            Authority under section 20(1) of the Minimum Wages Act, 1948, 
+                            Appellate Authority under section 7(6) of the Equal Remuneration Act, 1976, 
+                            Appellate Authority under section 7(7) of the Payment of Gratuity Act, 1972 
+                            Appellate Authority under section 15 of the Contract Labour (Regulation & Abolition) Act, 1970. 
+                            Appellate Officer under section 11 of the Inter State Migrant Workmen (Regulation of Employment and Conditions of Service) Act, 1979, 
+                            Appellate Authority under section 2(a) of the Industrial Employment (Standing Orders ) Act, 1946, 
+                            Registrar of Trade Unions under section 3 (1) of the Trade Union Act, 1926 
+                            Authority under section 17 (1) of the Working Journalists and Other News Papers Employees (Conditions of Service) and Miscellaneous Provisions Act, 1955, 
+                            Appellate Authority under section 5 of Beedi & Cigar Workers (Conditions of Employment) Act, 1966 
+                            Registering Officer under section 6 of the Building and Other Construction Workers (Regulation of Employment and Conditions of Service) Act, 1996
+                            
+                            Joint Commissioner of Labour, (HQ) and Joint Commissioners of Labour, Vsp, Elr, Gnt and Kurnool
+                            Appointed as 
+                            Conciliation Officer, under section 4, of the Industrial Disputes Act,1947, 
+                            Conciliation Officer under section 4 and Competent Authority undersection 2 (d) of the Cine-Workers  and Cinema Theatre Workers  (Regulation of Employment) Act, 1981 
+                            Authority under section 15 of the Payment of Wages Act, 1936, 
+                            Authority under section 20(1) of the  Minimum Wages Act, 1948, 
+                            Appellate Authority under section 7(6)of the Equal Remuneration Act, 1976, 
+                            Appellate Authority under section 7(7) of the Payment of Gratuity Act, 1972 
+                            Registering Officer under section 6, Licensing Officer under section 11 and Appellate Authority under section 15 of the Contract Labour (Regulation & Abolition) Act, 1970 
+                            Registering Officer under section 3 & Licensing Officer under section 7 of the Inter State Migrant Workmen (Regulation of Employment and Conditions of Service) Act, 1979, 
+                            Appellate Officer under section 11 of the Inter State Migrant Workmen (Regulation of Employment and Conditions of Service) Act, 1979, 
+                            Additional Registrar of the Trade Unions under section 3 (2) of the Trade Union Act, 1926 
+                            Authority under section 17 (1) of the Working Journalists and Other News Papers Employees (Conditions of Service) and Miscellaneous Provisions Act, 1955 
+                            Certifying Officer under section 2 (c) of the Industrial Employment (Standing Orders) Act, 1946, 
+                            Appellate Authority under section 5 of the Beedi & Cigar Workers (Conditions of Employment) Act, 1966 
+                            Appellate Authority under section 48 (3) of the Andhra Pradesh Shops and Establishments Act, 1988 
+                            Appellate Authority under section 53 of the Andhra Pradesh Shops and Establishments Act, 1988 
+                            Registering Officer under section 6 of The Building and Other Construction Workers (Regulation of Employment and Conditions of Service) Act, 1996
+                            JCL(HQ) – Whole State
+                            JCLs – Respective zones
+                            Deputy Commissioners of Labour
+                            Appointed as 
+                            Conciliation Officer, under section 4 of the Industrial Disputes Act, 1947, 
+                            Conciliation Officer under section 4 of the Cine-Workers and Cinema Theatre Workers (Regulation of Employment) Act, 1981 
+                            Authority under section 15 of the Payment of Wages Act, 1936, 
+                            Authority under section 20(1) of the Minimum Wages Act, 1948, 
+                            Appellate Authority under section 7(6)of the Equal Remuneration Act, 1976, 
+                            Appellate Authority under section 7(7) of the Payment of Gratuity Act, 1972 
+                            Appellate Authority under section 48 (3) of the Andhra Pradesh Shops and Establishments Act, 1988 
+                            Appellate Authority under section 53 of the Andhra Pradesh Shops and Establishments Act, 1988 
+                            Registering Officer under section 6 and Licensing Officer under section 11 of the Contract Labour (Regulation & Abolition) Act, 1970, 
+                            Registering Officer under section 3 & Licensing Officer under section 7 of the Inter State Migrant Workmen (Regulation of Employment and Conditions of Service) Act, 1979, 
+                            Appellate Officer under section 11 of the Inter State Migrant Workmen (Regulation of Employment and Conditions of Service) Act, 1979 
+                            Appellate Authority under section 5 of the Beedi & Cigar Workers (Conditions of Employment) Act, 1966 
+                            Registering Officer under section 6 of the Building and Other Construction Workers (Regulation of Employment and Conditions of Service) Act, 1996
+                            Respective Districts
+                            Assistant Commissioner of Labour
+                            Conciliation Officer, under section 4 of the Industrial Disputes Act, 1947, 
+                            Conciliation Officer under section 4 of the Cine-Workers and Cinema Theatre Workers (Regulation of Employment) Act, 1981 
+                            Authority under section 15 of the Payment of Wages Act, 1936, 
+                            Authority under section 20(1) of the Minimum Wages Act, 1948,
+                            Controlling Authority under section 3 of the Payment of Gratuity Act, 1972 
+                            Authority under section 7(1) of the Equal Remuneration Act, 1976 
+                            Authority under section 48 (1) of the Andhra Pradesh Shops and Establishments Act,1988 
+                            Authority under section 50 of the Andhra Pradesh Shops and Establishments Act, 1988 
+                            Registering Officer under section 6 and Licensing Officer under section 11 of the Contract Labour (Regulation & Abolition) Act, 1970, 
+                            Registering Officer under section 3 & Licensing Officer under section 7 of the Inter State Migrant Workmen (Regulation of Employment and Conditions of Service) Act, 1979, 
+                            Appellate Authority under section 5 of the Beedi & Cigar Workers (Conditions of Employment) Act,1966 
+                            Registering Officer under section 6 of the Building and Other Construction Workers (Regulation of Employment and Conditions of Service) Act, 1996
+                            
+                            Note: 
+                            1. The Assistant Commissioners of Labour shall exercise their functions as Authorities in their respective administrative areas within the district. 
+                            2. In respect of Claims under Payment of Wages Act, 1936 , Minimum Wages Act, 1948 the concerned Assistant Commissioner of Labour shall take up claim for amount up to Rs.20,000/- . Exceeding Rs.20,000/- and up to Rs.50,000/- claims shall be taken up by the concerned Deputy Commissioner of Labour and claims for amount above Rs.50,000/- shall be taken up by the concerned Joint Commissioner of Labour. 
+                            3. The Joint Commissioners of Labour and above ranked officers can also take up any claims under the above Acts irrespective of the amount, if it is required under certain circumstances. 
+                            4. The Conciliation Officers shall take up Industrial Disputes in Industries as specified below: 
+                            (a) Assistant Commissioners of Labour : up to 50 workers, 
+                            (b) Deputy Commissioners of Labour: Above 50 and up to 200 workers</td>
+                          <td><a target="_blank" href="/assets/pdf/New Folder/ANDHRA_PRADESH_LABOUR_WELFARE_FUND_ACT_1987.pdf">Download</a></td>
                         </tr>
                         <tr>
-                          <td>8</td>
-                          <td>SRI B.N.WAGHRAY </td>
-                          <td>13th December 1973 to 27th September 
-                            1977
-                             </td>
-                         
-                      </tr>
-                      <tr>
-                        <td>9</td>
-                        <td>SRI M.B.BALARAJ </td>
-                        <td>28th September 1977 to 29th May 1980
-                           </td>
-                       
-                    </tr>
-                    <tr>
-                      <td>10</td>
-                      <td> SRI B.V.REDDY </td>
-                      <td>3rd July 1980 to 17th June 1983
-                         </td>
-                     
-                  </tr>
-                  <tr>
-                    <td>11</td>
-                    <td> SRO T.N.R.RAO</td>
-                    <td>17th June 1983 to 20th October 1984
-                       </td>
-                   
-                </tr>
-                <tr>
-                  <td>12</td>
-                  <td>DR.C.S.RANGACHARI </td>
-                  <td>21st November 1983 to 27th October 
-                    1984
-                     </td>
-                 
-              </tr>
-              <tr>
-                <td>13</td>
-                <td> SRI R.PARTHASARATHY</td>
-                <td>27th October 1984 to 25th May 1985
-                   </td>
-               
-            </tr>
-            <tr>
-              <td>14</td>
-              <td>DR.M.S.RAJAJEE </td>
-              <td>15th July 1985 to 14th July 1986</td>
-             
-          </tr>
-          <tr>
-            <td>15</td>
-            <td>SRI K.SWAMINATHAN  </td>
-            <td>2nd June 1986 to 7th September 1987
-               </td>
-           
-        </tr>
-        <tr>
-          <td>16</td>
-          <td>DR.J.S.SARMA </td>
-          <td>8
-            th September 1987 to 8th June 1990
-             </td>
-         
-      </tr>
-      <tr>
-        <td>17</td>
-        <td>SRI S.L.ARORA </td>
-        <td>14th July 1990 to 30th September 1990
-           </td>
-       
-    </tr>
-    <tr>
-      <td>18</td>
-      <td>DR.S.R.GOVINDRAJAN</td>
-      <td>10th October 1990 to 4th July 1991
-         </td>
-     
-  </tr>
-  <tr>
-    <td>19</td>
-    <td>SRI D.V.L.N.MURTHY </td>
-    <td>12th July 1991 to 11th May 1992
-       </td>
-   
-</tr>
-<tr>
-  <td>20</td>
-  <td> Sri A.RAMALAKSHMAN</td>
-  <td>11th May 1992 to 9th September 1992
-     </td>
- 
-</tr>
-<tr>
-  <td>21</td>
-  <td>SRI R.HRUDAYARANJAN</td>
-  <td>7
-    th November 1992 to 3rd August 1995
-     </td>
- 
-</tr>
-<tr>
-  <td>22</td>
-  <td>SRI K.SATYARAJU </td>
-  <td>3
-    rd August 1995 to 30th November 1996
-     </td>
- 
-</tr>
-<tr>
-  <td>23</td>
-  <td>SRI R.S.GOEL </td>
-  <td>18th February 1997 to 21st March 2000
-     </td>
- 
-</tr>
-<tr>
-  <td>24</td>
-  <td> SRI AJOYENDRA PYAL</td>
-  <td>26th June 2000 to 23rd June 2003
-     </td>
- 
-</tr>
-<tr>
-  <td>25</td>
-  <td> SRI R.KARIKAL VALAVEN </td>
-  <td>24th June 2003 to 31st August 2004</td>
- 
-</tr>
-<tr>
-  <td>26</td>
-  <td> SRI RANI KUMUDINI </td>
-  <td>24th September 2004 to 30th November</td>
- 
-</tr>
-<tr>
-  <td>27</td>
-  <td>SRI R.KARIKAL VALAVEN</td>
-  <td>7th December 2005 to 11th April 2007
-     </td>
- 
-</tr>
-<tr>
-  <td>28</td>
-  <td> SRI STISH CHANDRA</td>
-  <td>12th April 2007 to 24th April 2008
-     </td>
- 
-</tr>
-<tr>
-  <td>29</td>
-  <td> SRI BANWAR LAL</td>
-  <td>25th April 2008 to 9th November 2008
-     </td>
- 
-</tr>
-<tr>
-  <td>30</td>
-  <td>SRI.K.B.R.N.CHAKRAVARTHI</td>
-  <td>10th November 2008 to 17th June 2009
-     </td>
- 
-</tr>
-<tr>
-  <td>31</td>
-  <td> SRI D.SREENIVASULU</td>
-  <td>18th June 2009 to 14th September 2010
-     </td>
- 
-</tr>
-<tr>
-  <td>32</td>
-  <td> SRI B.KISHORE </td>
-  <td>21st April 2011 to 17th September 2012
-     </td>
- 
-</tr>
-<tr>
-  <td>33</td>
-  <td>SRI B.RAMANJANEYULU</td>
-  <td>17TH September 2012 to 5th June 2014
-     </td>
- 
-</tr>
-                
+                          <td>APLWF Rules</td>
+                          <td>AP Labour Welfare Fund Rules, 1988</td>
+                          <td>Rules come into force on 1st May 1988.
+                            Rules : 24, Forms:- A to G</td>
+                          <td><a target="_blank" href="/assets/pdf/New Folder/AP Labour Welfare Fund Rules, 1988.pdf">Download</a></td>
+                        </tr>
+                        <tr>
+                          <td>APLWF Amendment</td>
+                          <td>AP Welfare Fund Act, 1987 -Decriminalisation sec 25 and 30</td>
+                          <td>Act No 27 of 2022 - Andhra Pradesh Labour Welfare Fund (Second Amendment) Act, 2022 and come into force from 9th September 2022
+                            Substitution of Sec 25 :- Penalty for obstructing inspection or for failure to produce documents, etc.
+                            Omission of Sections 26,27 and 28
+                            Substition of Sec 30:- Penality for non complainance with the directions of the Board
+                            Section 30 - A omitted</td>
+                          <td><a target="_blank" href="/assets/pdf/New Folder/AP Welfare Fund Act, 1987 -Decriminalisation sec 25 and 30.pdf">Download</a></td>
+                        </tr>
+                        <tr>
+                          <td>APLWF Amendment</td>
+                          <td>ap_labour_welfare_fund_amendment_act_2015</td>
+                          <td>Act No 7 of 2015 - Andhra Pradesh Labour Welfare Fund (Amendment) Act, 2015 
+                            Amendment of Section 2 (Act No 34 of 1987)
+                            substituted factory in Act No 53 of Factories Act, 1948
+                            Amendment of Section 8, 10
+                            Section 30-A inserted</td>
+                          <td><a target="_blank" href="/assets/pdf/New Folder/ap_labour_welfare_fund_amendment_act_2015.pdf">Download</a></td>
+                        </tr>
+                        <tr>
+                          <td>APLWF Amendment</td>
+                          <td>APLWF - Amendment Commencement dated 23042015-GO Ms. No 7</td>
+                          <td>Andhra Pradesh Labour Welfare Fund (Amendment) Act, 2015 (Act No.7 of 2015), the Government hereby appoint the Twenty Third day of April, 2015, as the date on which the provisions of the said Act shall come into force.</td>
+                          <td><a target="_blank" href="/assets/pdf/New Folder/APLWF - Amendment Commencement dated 23042015-GO Ms. No 7.pdf">Download</a></td>
+                        </tr>
+                        <tr>
+                          <td>APLWF Amendment</td>
+                          <td>APLWF - Insertion of 22 A and B vide G.O.Ms.No.3 dtd 14052023</td>
+                          <td>Rule 22-A : Appointment of Authorities and Appellate Authorities under Sub Section 3 of Section 25 and sub section 3 of Section 30 of the Act
+                            <br>Rule 22-B - Appeal on fines (from of applal, mode of submission and procedure to be followed by the Appellate Authority)
+                            <br>Rule 25: Penalty for violation
+                            <br>After Form - G, Form H added (See Rule 22-B(4) - Register of Appeals on fines</td>
+                          <td><a target="_blank" href="/assets/pdf/New Folder/APLWF - Insertion of 22 A and B vide G.O.Ms.No.3 dtd 14052023.pdf">Download</a></td>
+                        </tr>
+                        <tr>
+                          <td>Notification</td>
+                          <td>GOMs No 9 dated 07122020- APLWF - Online Payment</td>
+                          <td>Introducing online payment facility for the contribution under APLWF Act, 1987 - Mandating online payment -  ‘Every employee shall contribute thirty (30) rupees per year to the Fund and every employer shall, in respect of each such employee, contribute seventy (70) rupees per year to the Fund’.</td>
+                          <td><a target="_blank" href="/assets/pdf/New Folder/GOMs No 9 dated 07122020- APLWF - Online Payment.PDF">Download</a></td>
+                        </tr>
+                        <tr>
+                          <td>APLWF Amendment</td>
+                          <td>Notification_of_commencing_date_for_APLWF_Amendment_2015</td>
+                          <td>Andhra Pradesh Labour Welfare Fund (Amendment) Act, 2015 (Act No.7 of 2015), the Government hereby appoint the Twenty Third day of April, 2015, as the date on which the provisions of the said Act shall come into force. Issued vide Gazette No 120 dated 23.04.2015</td>
+                          <td><a target="_blank" href="/assets/pdf/New Folder/Notification_of_commencing_date_for_APLWF_Amendment_2015.pdf">Download</a></td>
+                        </tr>
+                        <tr>
+                          <td>Notification</td>
+                          <td>Ordinance on APLWF Act</td>
+                          <td>AP Ordinance No 11 of 2022 published in Gazette No 11 dated 09.09.2022 - An ordinance further to amend the APLWF Act, 1987</td>
+                          <td><a target="_blank" href="/assets/pdf/New Folder/Ordinance on APLWF Act.pdf">Download</a></td>
+                        </tr>
+                        </tr>                        
+                      </tboady>
+                  </table>
+                    
                      
                          
-                                        
-                                        
-                                                        </tbody>
-                                    
-                                  </table>
-                            
-                              
-                         
-                          </div>
-                      </div>
                   </div>
               </div>
-                 
-              </div>  -->
           </div>
-        </div>          
-             </div>
-             
-     
-     
-      
-      <!--Andhra  Pradesh Profile-->
+      </div>
+      <div class="accordion custom-accordion" id="accordionExample">
 
-      <div class="rainbow-section-gap aos-animate" data-aos="fade-up" data-aos-duration="2000" >
-            <div class="container-fluid">
-                <div class="row mb--20">
-                    <div class="col-lg-12">
-                        <div class="section-title text-center sal-animate" data-sal="slide-up" data-sal-duration="700" data-sal-delay="100">
-                            <h2 class="gallery-title mb-5">Gallery</h2>
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="gallery_csr">
-                  <img src="/assets/images/gallery-7.png" alt="">
-                    <img src="/assets/images/gallery-1.png" alt="">
-                    <img src="/assets/images/gallery-2.jpg" alt="">
-                    <img class="active" src="/assets/images/gallery-3.jpg" alt="">
-                    <img src="/assets/images/gallery-4.jpg" alt="">
-                    <img src="/assets/images/gallery-5.png" alt="">
-                </div>
-               
-            </div>
-        </div>
+ 
 
+        <div class="accordion-item">
+  
+  
+  
+            <h2 class="accordion-header" id="headingthree">
+  
+  
+  
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+  
+  
+  
+                  APMJH
+  
+  
+                </button>
+  
+  
+  
+            </h2>
+  
+  
+  
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <table class="table container">
+                      <thead>
+                          <tr>
+                              <th>Category</th>
+                              <th> Description
+                                Date
+                                Details</th>
+                                <th>Gist</th>
+                                <th>Document</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>APMJH Act</td>
+                          <td>THE ANDHRA PRADESH MUTTAH, JATTU, HAMAL AND OTHER MANUAL act_no_61_of_1976</td>
+                          <td>An act to provide for regulating the employment of unprotected manual workers such as Muttah, Jattu and Hamal engaged in market areas, factories and the like in the state of Andhra Pradesh in connection with loading, packing, carrying, weighing, measuring, stitching, etc., for ensuring an adequate supply and full and proper utilisation of, such workers to prevent avoidable unemployment, for securing to such workers better terms and conditions of employment and for matters connected therewith.</td>
+                          <td><a target="_blank" href="/assets/pdf/New Folder/THE ANDHRA PRADESH MUTTAH, JATTU, HAMAL AND OTHER MANUAL act_no_61_of_1976.pdf">Download</a></td>
+                        </tr>
+                        <tr>
+                          <td>APMJH Rules</td>
+                          <td>Andhra Pradesh Mutta, Jattu, Hamal And Other Manual Workers (Regulation Of Employment And Welfare) Rules, 1977</td>
+                          <td>issued vide GO Ms No 144 of LET&F (LabV) Dept dated 19.02.1977</td>
+                          <td><a target="_blank" href="/assets/pdf/New Folder/Andhra Pradesh Mutta, Jattu, Hamal And Other Manual Workers (Regulation Of Employment And Welfare) Rules, 1977.pdf">Download</a></td>
+                        </tr>
+                        <tr>
+                          <td>Notification</td>
+                          <td>GO RT 3 of 2023 on HAMALIES</td>
+                          <td>Enhancement of charges for handling commodities at MLS points from Rs 25/- per quintal and other charges payable to Hamalies - Orders issued vide GO Rt No 3 of CAFCS (CS-I) Dept dated 27.01.2023</td>
+                          <td><a target="_blank" href="/assets/pdf/New Folder/GO RT 3 of 2023 on HAMALIES.pdf">Download</a></td>
+                        </tr>
+                       
+                                        </tbody>
+                    
+                  </table>
+                 
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="accordion custom-accordion" id="accordionExample">
+
+ 
+
+        <div class="accordion-item">
+  
+  
+  
+            <h2 class="accordion-header" id="headingfour">
+  
+  
+  
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="true" aria-controls="collapsefour">
+  
+  
+  
+                  APNFOH Act
+  
+  
+                </button>
+  
+  
+  
+            </h2>
+  
+  
+  
+            <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingfour" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <table class="table container">
+                      <thead>
+                          <tr>
+                              <th>Category</th>
+                              <th> Description
+                                Date
+                                Details</th>
+                                <th>Gist</th>
+                                <th>Document</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>APNFOH Amendment Act</td>
+                          <td>The Factories (Andhra Pradesh Amendment) Act, 2015 (Act No.13/2015) vide GO Ms No 29 of LET&F (Lab-II) Dept dated 23.11.2015</td>
+                          <td>Appoints the 26.11.2015 as the date on which the provisions of the The Factories (Andhra Pradesh Amendment).  Act shall come into force.</td>
+                          <td><a target="_blank" href="/assets/pdf/New Folder/The Factories (Andhra Pradesh Amendment) Act, 2015 (Act No.13/2015) vide GO Ms No 29 of LET&F (Lab-II) Dept dated 23.11.2015.pdf">Download</a></td>
+                        </tr>
+                        <tr>
+                          <td>APNFOH Act</td>
+                          <td>THE ANDHRA PRADESH FACTORIES AND ESTABLISHMENTS (NATIONAL, Festival and Other Holidays) Act, 1974 </td>
+                          <td>Act 32 of 1974 - 28.08.1974 -AN ACT TO PROVIDE FOR THE GRANT OF NATIONAL, FESTIVAL AND OTHER HOLIDAYS TO PERSONS EMPLOYED IN FACTORIES AND ESTABLISHMENTS IN THE STATE OF ANDHRA PRADESH.</td>
+                          <td><a target="_blank" href="/assets/pdf/New Folder/THE ANDHRA PRADESH FACTORIES AND ESTABLISHMENTS (NATIONAL, Festival and Other Holidays) Act, 1974 .pdf">Download</a></td>
+                        </tr>
+                        <tr>
+                          <td>APNFOH Rules</td>
+                          <td>the_andhra_pradesh_factories_and_establishments_national_festival_and_other_holidays_rules_1974</td>
+                          <td>GO Ms No 966, Emp & SW Dept dated 16.12.1974 makes these rules.
+                            Rules : 7</td>
+                          <td><a target="_blank" href="/assets/pdf/New Folder/the_andhra_pradesh_factories_and_establishments_national_festival_and_other_holidays_rules_1974.pdf">Download</a></td>
+                        </tr>
+                       
+                                        </tbody>
+                    
+                  </table>
+                 
+                  </div>
+              </div>
+          </div>
+      </div>
+   
+  </div>
+  </div>
+  <!-- </div>
+</div> -->
+ 
+   
 
 
     
 
-        <footer class="footer pt-4 pt-sm-5 aos-animate" data-aos="fade-down" data-aos-duration="2000">
+        <footer class="footer pt-4 pt-sm-5 aos-animate" data-aos="fade-up" data-aos-duration="2000">
             <div class="container-fluid pb-1 pb-md-0">
               <div class="dark-mode footer-new-bg rounded-5 position-relative overflow-hidden w-100 px-3 px-sm-4 px-xl-5 mx-auto" style="max-width: 1660px; height:350px;">
                 <div class="position-absolute top-50 start-50 translate-middle" style="width: 1664px;"><img src="assets/img/landing/web-studio/footer-wave.png" alt="Wave"></div>
@@ -2320,16 +1831,20 @@
   <script src="libraries/superfish/supposition63d9.js?rvdmaf"></script>
   <script src="libraries/superfish/supersubs63d9.js?rvdmaf"></script>
   <script src="modules/contrib/superfish/js/superfish3661.js?v=2.0"></script>
-  <script src="/assets/js/common.js"></script>
-    <script>
-      
-        </script>
-    <script type="text/javascript"
+  <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+  <script src="assets/vendor/parallax-js/dist/parallax.min.js"></script>
+  <script src="assets/vendor/%40lottiefiles/lottie-player/dist/lottie-player.js"></script>
+  <script src="assets/vendor/img-comparison-slider/dist/index.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+   <script src="/assets/js/common.js"></script>
+      <script type="text/javascript"
             src=
 "https://translate.google.com/translate_a/element.js?
 cb=googleTranslateElementInit">
     </script>
- 
+  <script
+    type="text/javascript">window.NREUM || (NREUM = {}); NREUM.info = { "beacon": "bam.nr-data.net", "licenseKey": "NRJS-f597df6f7f7da2ee8d7", "applicationID": "1101089445", "transactionName": "NVRbbUZXWUsHUEVcWQweeFpAX1hWSXdDQEYDXWVPXVNASzphXkBCC19eZWJfUk82UlZQdQ1fTUtbWltdFB4PXVcMVVVc", "queueTime": 0, "applicationTime": 8151, "atts": "GRNYGw5NSkU=", "errorBeacon": "bam.nr-data.net", "agent": "" }</script>
 </body>
 
 
