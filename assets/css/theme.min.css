@@ -20265,7 +20265,7 @@ padding-right: 10px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 8%);
     border-radius: 16px;
     width: 100%;
-    margin-bottom: 50px !important;
+    margin-bottom: 10px !important;
 }
 
 .custom-accordion .accordion-button:not(.collapsed) {
@@ -20278,6 +20278,7 @@ padding-right: 10px;
     color: #dd1466;
     font-weight: 600;
     font-size: 24px;
+    border-radius: 20px !important;
 }
 
 .custom-accordion .accordion-button:not(.collapsed)::after {
@@ -20299,7 +20300,7 @@ padding-right: 10px;
 
 .custom-accordion .accordion-button {
     font-size: 22px;
-    padding: 26px 30px;
+    padding: 16px 30px;
     background-color: #fff;
     border: 1px solid #DEDEDE !important;
     border-radius: 10px !important;
